@@ -46,7 +46,7 @@ const navItems: Record<UserRole, { label: string; path: string; icon: React.Elem
 const roleLabels: Record<UserRole, string> = {
   student: "Student",
   faculty: "Faculty",
-  placement: "Placement Team",
+  placement: "Placement",
   admin: "Administrator",
 };
 
