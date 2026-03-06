@@ -1,4 +1,4 @@
-export function parseCSV<T extends Record<string, string>>(csv: string): T[] {
+export function parseCSV<T>(csv: string): T[] {
   const lines = csv.trim().split("\n");
   if (lines.length < 2) return [];
   const headers = lines[0].split(",").map((h) => h.trim());
