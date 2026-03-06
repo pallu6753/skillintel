@@ -1,0 +1,3559 @@
+student_id,skill_name,skill_level
+1,Python,Beginner
+1,Power BI,Beginner
+2,SQL,Advanced
+2,Deep Learning,Intermediate
+2,Java,Beginner
+3,SQL,Beginner
+3,Data Visualization,Advanced
+4,Deep Learning,Advanced
+4,Data Visualization,Advanced
+5,Data Visualization,Beginner
+5,Statistics,Advanced
+5,Power BI,Intermediate
+5,Problem Solving,Intermediate
+5,Python,Intermediate
+6,Data Visualization,Beginner
+6,Communication,Intermediate
+6,SQL,Beginner
+7,Communication,Intermediate
+7,Power BI,Advanced
+7,Python,Beginner
+7,Java,Intermediate
+8,Deep Learning,Advanced
+8,Power BI,Advanced
+9,Java,Advanced
+9,Data Visualization,Beginner
+9,SQL,Intermediate
+9,Python,Beginner
+10,SQL,Intermediate
+10,Problem Solving,Advanced
+10,Power BI,Intermediate
+11,Communication,Advanced
+11,Java,Intermediate
+11,Data Visualization,Advanced
+12,Java,Advanced
+12,Machine Learning,Advanced
+13,Machine Learning,Intermediate
+13,Statistics,Advanced
+13,Problem Solving,Advanced
+14,Communication,Beginner
+14,Python,Intermediate
+14,Data Visualization,Intermediate
+15,SQL,Advanced
+15,Data Visualization,Intermediate
+15,Communication,Intermediate
+15,Java,Advanced
+16,Machine Learning,Advanced
+16,Power BI,Advanced
+16,Java,Intermediate
+16,SQL,Advanced
+16,Communication,Advanced
+17,Java,Advanced
+17,Problem Solving,Intermediate
+17,Communication,Beginner
+17,SQL,Beginner
+17,Deep Learning,Beginner
+18,Machine Learning,Intermediate
+18,Problem Solving,Intermediate
+18,SQL,Advanced
+19,Deep Learning,Beginner
+19,Power BI,Advanced
+19,Python,Advanced
+19,Communication,Intermediate
+19,Problem Solving,Advanced
+20,SQL,Intermediate
+20,Power BI,Beginner
+20,Problem Solving,Advanced
+20,Java,Advanced
+21,Deep Learning,Advanced
+21,Machine Learning,Intermediate
+21,SQL,Advanced
+21,Problem Solving,Advanced
+22,Machine Learning,Advanced
+22,Communication,Advanced
+22,Java,Beginner
+23,Statistics,Intermediate
+23,Python,Beginner
+23,SQL,Beginner
+23,Machine Learning,Beginner
+24,SQL,Beginner
+24,Statistics,Advanced
+25,Machine Learning,Intermediate
+25,Statistics,Advanced
+25,Java,Advanced
+26,Data Visualization,Intermediate
+26,Deep Learning,Advanced
+26,Java,Advanced
+26,Communication,Intermediate
+26,Machine Learning,Intermediate
+27,SQL,Beginner
+27,Data Visualization,Advanced
+27,Deep Learning,Advanced
+27,Python,Beginner
+27,Machine Learning,Advanced
+28,Python,Beginner
+28,SQL,Beginner
+28,Java,Beginner
+29,SQL,Advanced
+29,Deep Learning,Intermediate
+29,Data Visualization,Beginner
+29,Machine Learning,Advanced
+30,Java,Intermediate
+30,Statistics,Intermediate
+30,Data Visualization,Beginner
+31,SQL,Intermediate
+31,Problem Solving,Intermediate
+32,Statistics,Advanced
+32,Python,Intermediate
+32,SQL,Beginner
+32,Deep Learning,Beginner
+32,Data Visualization,Beginner
+33,Deep Learning,Intermediate
+33,Statistics,Beginner
+33,Machine Learning,Intermediate
+34,Data Visualization,Beginner
+34,SQL,Beginner
+34,Statistics,Advanced
+34,Problem Solving,Advanced
+34,Power BI,Beginner
+35,Data Visualization,Intermediate
+35,Machine Learning,Intermediate
+36,Data Visualization,Beginner
+36,Problem Solving,Intermediate
+36,Python,Intermediate
+36,SQL,Intermediate
+36,Java,Intermediate
+37,Deep Learning,Beginner
+37,Statistics,Beginner
+37,Machine Learning,Advanced
+37,SQL,Advanced
+37,Java,Advanced
+38,Communication,Beginner
+38,Python,Advanced
+39,Deep Learning,Beginner
+39,Java,Beginner
+39,Machine Learning,Beginner
+39,Python,Advanced
+39,Power BI,Beginner
+40,Problem Solving,Advanced
+40,SQL,Advanced
+40,Data Visualization,Beginner
+41,Problem Solving,Intermediate
+41,Deep Learning,Intermediate
+42,Communication,Intermediate
+42,Data Visualization,Beginner
+42,Power BI,Advanced
+43,Statistics,Intermediate
+43,Communication,Advanced
+43,SQL,Advanced
+43,Python,Beginner
+44,Deep Learning,Advanced
+44,Data Visualization,Intermediate
+45,Communication,Intermediate
+45,SQL,Intermediate
+45,Data Visualization,Beginner
+46,Deep Learning,Intermediate
+46,Power BI,Advanced
+46,Python,Beginner
+46,Communication,Beginner
+46,Java,Intermediate
+47,SQL,Beginner
+47,Deep Learning,Intermediate
+48,Java,Advanced
+48,Data Visualization,Advanced
+48,Communication,Intermediate
+48,SQL,Advanced
+49,Power BI,Intermediate
+49,Python,Beginner
+49,SQL,Beginner
+49,Communication,Intermediate
+49,Data Visualization,Beginner
+50,Machine Learning,Beginner
+50,Statistics,Beginner
+50,Problem Solving,Beginner
+50,Power BI,Advanced
+51,Deep Learning,Advanced
+51,Python,Advanced
+51,Communication,Beginner
+52,Machine Learning,Intermediate
+52,Python,Beginner
+52,Power BI,Advanced
+52,Java,Beginner
+52,Deep Learning,Advanced
+53,Communication,Intermediate
+53,Deep Learning,Advanced
+54,Data Visualization,Intermediate
+54,Machine Learning,Beginner
+54,Deep Learning,Beginner
+55,Problem Solving,Advanced
+55,Data Visualization,Beginner
+55,Power BI,Intermediate
+55,SQL,Beginner
+56,Data Visualization,Beginner
+56,Java,Beginner
+56,Statistics,Beginner
+56,Machine Learning,Advanced
+56,Problem Solving,Beginner
+57,Communication,Intermediate
+57,Power BI,Advanced
+57,SQL,Advanced
+57,Problem Solving,Intermediate
+57,Machine Learning,Advanced
+58,Python,Advanced
+58,SQL,Intermediate
+58,Power BI,Beginner
+58,Deep Learning,Beginner
+59,Communication,Beginner
+59,Java,Intermediate
+59,Problem Solving,Advanced
+59,Power BI,Beginner
+59,Statistics,Intermediate
+60,Problem Solving,Advanced
+60,Python,Advanced
+61,Communication,Advanced
+61,Problem Solving,Intermediate
+61,SQL,Advanced
+62,SQL,Intermediate
+62,Power BI,Intermediate
+62,Deep Learning,Intermediate
+62,Communication,Advanced
+63,Deep Learning,Advanced
+63,Machine Learning,Intermediate
+63,Data Visualization,Advanced
+63,Statistics,Advanced
+64,Java,Advanced
+64,Power BI,Beginner
+64,Problem Solving,Intermediate
+65,Data Visualization,Intermediate
+65,Problem Solving,Intermediate
+65,Communication,Advanced
+65,Java,Beginner
+66,Machine Learning,Advanced
+66,SQL,Advanced
+66,Power BI,Intermediate
+66,Statistics,Beginner
+66,Communication,Beginner
+67,Data Visualization,Beginner
+67,Java,Beginner
+67,Machine Learning,Intermediate
+67,Python,Advanced
+68,Statistics,Advanced
+68,Problem Solving,Advanced
+69,Problem Solving,Beginner
+69,Statistics,Beginner
+69,Java,Advanced
+70,SQL,Beginner
+70,Problem Solving,Beginner
+71,Python,Intermediate
+71,Deep Learning,Beginner
+71,Data Visualization,Intermediate
+71,Problem Solving,Advanced
+71,Java,Advanced
+72,Statistics,Advanced
+72,Deep Learning,Intermediate
+72,Problem Solving,Beginner
+72,Java,Advanced
+73,Statistics,Intermediate
+73,Power BI,Advanced
+73,Data Visualization,Intermediate
+73,Problem Solving,Advanced
+73,Communication,Beginner
+74,Statistics,Intermediate
+74,SQL,Intermediate
+74,Power BI,Intermediate
+74,Deep Learning,Advanced
+75,Machine Learning,Beginner
+75,Java,Intermediate
+76,Data Visualization,Intermediate
+76,SQL,Intermediate
+76,Problem Solving,Advanced
+77,Problem Solving,Intermediate
+77,Python,Advanced
+77,Data Visualization,Advanced
+77,Java,Beginner
+77,Statistics,Advanced
+78,Statistics,Intermediate
+78,Python,Advanced
+78,Communication,Advanced
+78,Machine Learning,Advanced
+78,Data Visualization,Advanced
+79,Statistics,Intermediate
+79,Data Visualization,Intermediate
+79,Power BI,Beginner
+80,Communication,Beginner
+80,Problem Solving,Advanced
+80,Machine Learning,Advanced
+80,Deep Learning,Beginner
+80,Data Visualization,Intermediate
+81,SQL,Beginner
+81,Problem Solving,Intermediate
+82,Python,Intermediate
+82,Power BI,Beginner
+82,Problem Solving,Intermediate
+83,Communication,Intermediate
+83,Problem Solving,Intermediate
+83,Power BI,Beginner
+83,Deep Learning,Intermediate
+84,Deep Learning,Intermediate
+84,Python,Beginner
+85,Python,Beginner
+85,Java,Beginner
+86,Java,Beginner
+86,Machine Learning,Beginner
+87,SQL,Intermediate
+87,Data Visualization,Beginner
+87,Statistics,Advanced
+87,Communication,Advanced
+87,Machine Learning,Advanced
+88,Machine Learning,Beginner
+88,Power BI,Advanced
+89,Power BI,Intermediate
+89,Problem Solving,Advanced
+90,SQL,Advanced
+90,Data Visualization,Intermediate
+90,Java,Advanced
+91,Java,Intermediate
+91,Python,Advanced
+92,Communication,Intermediate
+92,SQL,Beginner
+92,Java,Intermediate
+92,Python,Intermediate
+92,Data Visualization,Advanced
+93,Machine Learning,Advanced
+93,Problem Solving,Intermediate
+93,Java,Advanced
+93,Communication,Advanced
+93,Power BI,Intermediate
+94,Problem Solving,Beginner
+94,Power BI,Intermediate
+94,Communication,Intermediate
+94,Java,Beginner
+94,SQL,Intermediate
+95,Communication,Beginner
+95,Python,Intermediate
+95,Statistics,Beginner
+95,Problem Solving,Intermediate
+95,Machine Learning,Intermediate
+96,Power BI,Beginner
+96,Java,Beginner
+96,Python,Beginner
+96,Deep Learning,Advanced
+97,Statistics,Advanced
+97,Deep Learning,Advanced
+97,Data Visualization,Intermediate
+97,Communication,Intermediate
+97,Java,Beginner
+98,Power BI,Intermediate
+98,Data Visualization,Advanced
+99,Power BI,Advanced
+99,Communication,Advanced
+99,Statistics,Intermediate
+100,Deep Learning,Intermediate
+100,Communication,Intermediate
+100,Java,Intermediate
+100,Statistics,Beginner
+100,Data Visualization,Beginner
+101,Communication,Beginner
+101,SQL,Beginner
+101,Machine Learning,Advanced
+102,Power BI,Intermediate
+102,Deep Learning,Beginner
+102,Java,Intermediate
+102,Python,Beginner
+102,SQL,Intermediate
+103,Deep Learning,Intermediate
+103,Machine Learning,Beginner
+104,Deep Learning,Advanced
+104,Power BI,Beginner
+105,SQL,Intermediate
+105,Python,Intermediate
+105,Power BI,Beginner
+105,Data Visualization,Beginner
+105,Problem Solving,Intermediate
+106,SQL,Advanced
+106,Java,Advanced
+106,Problem Solving,Advanced
+106,Data Visualization,Beginner
+106,Python,Beginner
+107,Java,Beginner
+107,Power BI,Beginner
+107,SQL,Advanced
+108,Java,Intermediate
+108,Data Visualization,Advanced
+108,Problem Solving,Intermediate
+108,Deep Learning,Intermediate
+108,Statistics,Advanced
+109,Java,Beginner
+109,SQL,Advanced
+110,Power BI,Beginner
+110,SQL,Beginner
+110,Machine Learning,Advanced
+111,Machine Learning,Intermediate
+111,Python,Intermediate
+112,Power BI,Intermediate
+112,Python,Advanced
+112,Data Visualization,Intermediate
+112,Machine Learning,Beginner
+112,Communication,Advanced
+113,Power BI,Beginner
+113,Data Visualization,Advanced
+113,Problem Solving,Beginner
+114,Power BI,Beginner
+114,Machine Learning,Beginner
+114,SQL,Intermediate
+115,Statistics,Intermediate
+115,SQL,Advanced
+115,Java,Intermediate
+115,Communication,Intermediate
+116,Statistics,Intermediate
+116,SQL,Advanced
+116,Python,Intermediate
+116,Data Visualization,Beginner
+116,Communication,Beginner
+117,Java,Advanced
+117,Python,Beginner
+117,Power BI,Beginner
+118,Deep Learning,Intermediate
+118,Statistics,Advanced
+118,Power BI,Intermediate
+118,SQL,Beginner
+118,Java,Intermediate
+119,Problem Solving,Beginner
+119,Communication,Beginner
+119,Deep Learning,Intermediate
+119,Statistics,Intermediate
+120,Power BI,Intermediate
+120,Problem Solving,Intermediate
+120,Python,Intermediate
+120,Data Visualization,Beginner
+120,Statistics,Intermediate
+121,Deep Learning,Intermediate
+121,Statistics,Beginner
+122,Deep Learning,Advanced
+122,Communication,Intermediate
+122,Statistics,Beginner
+123,Power BI,Intermediate
+123,Deep Learning,Intermediate
+123,Machine Learning,Advanced
+124,SQL,Intermediate
+124,Python,Advanced
+124,Data Visualization,Beginner
+124,Communication,Advanced
+124,Java,Intermediate
+125,Data Visualization,Intermediate
+125,SQL,Beginner
+126,Statistics,Intermediate
+126,Power BI,Intermediate
+126,Deep Learning,Intermediate
+127,Statistics,Intermediate
+127,Deep Learning,Beginner
+127,Machine Learning,Advanced
+128,SQL,Intermediate
+128,Power BI,Advanced
+128,Problem Solving,Intermediate
+129,Power BI,Advanced
+129,Java,Advanced
+130,Machine Learning,Advanced
+130,Statistics,Advanced
+130,Deep Learning,Intermediate
+130,Java,Intermediate
+130,Problem Solving,Intermediate
+131,Data Visualization,Intermediate
+131,Problem Solving,Beginner
+131,Java,Intermediate
+132,Problem Solving,Beginner
+132,Java,Advanced
+132,Machine Learning,Advanced
+132,Data Visualization,Intermediate
+132,Python,Beginner
+133,SQL,Beginner
+133,Deep Learning,Intermediate
+133,Statistics,Advanced
+133,Python,Beginner
+133,Communication,Beginner
+134,Power BI,Intermediate
+134,Communication,Advanced
+134,Problem Solving,Advanced
+134,Deep Learning,Intermediate
+134,Python,Intermediate
+135,Deep Learning,Advanced
+135,Python,Intermediate
+135,SQL,Beginner
+135,Statistics,Advanced
+135,Communication,Beginner
+136,SQL,Intermediate
+136,Java,Beginner
+136,Statistics,Beginner
+136,Deep Learning,Intermediate
+136,Communication,Beginner
+137,Communication,Beginner
+137,Java,Advanced
+137,Problem Solving,Intermediate
+137,SQL,Advanced
+138,Machine Learning,Advanced
+138,Java,Intermediate
+138,SQL,Advanced
+139,Statistics,Intermediate
+139,Machine Learning,Advanced
+139,Data Visualization,Intermediate
+140,Power BI,Advanced
+140,Python,Beginner
+140,Statistics,Beginner
+140,Machine Learning,Intermediate
+140,Communication,Intermediate
+141,Problem Solving,Intermediate
+141,Power BI,Beginner
+141,Statistics,Intermediate
+141,Java,Intermediate
+142,Data Visualization,Advanced
+142,Problem Solving,Intermediate
+143,Power BI,Beginner
+143,Python,Advanced
+143,Problem Solving,Advanced
+143,Machine Learning,Advanced
+144,Java,Intermediate
+144,Statistics,Beginner
+145,Data Visualization,Advanced
+145,Java,Advanced
+145,Power BI,Advanced
+145,Communication,Beginner
+146,Python,Intermediate
+146,Power BI,Beginner
+147,Machine Learning,Advanced
+147,SQL,Intermediate
+147,Power BI,Beginner
+147,Java,Beginner
+148,Deep Learning,Beginner
+148,Communication,Intermediate
+148,Power BI,Intermediate
+149,Communication,Beginner
+149,SQL,Beginner
+149,Statistics,Advanced
+149,Python,Advanced
+150,Deep Learning,Beginner
+150,Communication,Intermediate
+150,SQL,Advanced
+150,Problem Solving,Beginner
+150,Data Visualization,Intermediate
+151,Power BI,Advanced
+151,Problem Solving,Beginner
+151,Communication,Intermediate
+151,Python,Beginner
+152,Java,Intermediate
+152,Data Visualization,Advanced
+152,SQL,Intermediate
+152,Communication,Advanced
+153,SQL,Intermediate
+153,Machine Learning,Beginner
+153,Python,Beginner
+153,Statistics,Beginner
+153,Deep Learning,Advanced
+154,Problem Solving,Advanced
+154,Statistics,Advanced
+154,Communication,Advanced
+155,Java,Intermediate
+155,Machine Learning,Advanced
+155,Problem Solving,Intermediate
+155,Communication,Intermediate
+155,Python,Beginner
+156,Data Visualization,Intermediate
+156,Statistics,Beginner
+156,Deep Learning,Advanced
+156,SQL,Intermediate
+157,Python,Beginner
+157,Problem Solving,Intermediate
+157,Power BI,Beginner
+157,SQL,Advanced
+158,Java,Intermediate
+158,Python,Beginner
+158,Deep Learning,Beginner
+159,SQL,Advanced
+159,Deep Learning,Beginner
+159,Data Visualization,Beginner
+160,Machine Learning,Beginner
+160,Python,Beginner
+160,Power BI,Advanced
+160,Problem Solving,Intermediate
+161,SQL,Beginner
+161,Python,Intermediate
+161,Machine Learning,Beginner
+162,Python,Beginner
+162,Machine Learning,Advanced
+162,Power BI,Intermediate
+162,Java,Advanced
+163,SQL,Intermediate
+163,Statistics,Intermediate
+164,Statistics,Beginner
+164,Deep Learning,Advanced
+165,Deep Learning,Intermediate
+165,Power BI,Advanced
+166,Python,Intermediate
+166,Statistics,Intermediate
+167,Statistics,Beginner
+167,Java,Beginner
+168,Java,Intermediate
+168,Machine Learning,Advanced
+168,SQL,Advanced
+168,Statistics,Advanced
+169,Problem Solving,Advanced
+169,Deep Learning,Advanced
+169,Power BI,Intermediate
+169,Data Visualization,Beginner
+170,Deep Learning,Intermediate
+170,Data Visualization,Intermediate
+171,Problem Solving,Intermediate
+171,Communication,Intermediate
+171,Statistics,Advanced
+172,Communication,Intermediate
+172,Problem Solving,Advanced
+173,Communication,Beginner
+173,Machine Learning,Beginner
+173,Statistics,Beginner
+173,Python,Intermediate
+174,Communication,Advanced
+174,Machine Learning,Beginner
+175,SQL,Advanced
+175,Problem Solving,Intermediate
+175,Communication,Advanced
+175,Deep Learning,Beginner
+176,Java,Advanced
+176,Power BI,Advanced
+176,Communication,Beginner
+176,Python,Beginner
+177,Data Visualization,Intermediate
+177,SQL,Beginner
+177,Communication,Intermediate
+177,Problem Solving,Advanced
+177,Power BI,Beginner
+178,Deep Learning,Advanced
+178,Java,Intermediate
+178,Python,Beginner
+178,Power BI,Beginner
+178,Communication,Intermediate
+179,Communication,Beginner
+179,Java,Advanced
+179,Python,Advanced
+179,SQL,Intermediate
+180,Machine Learning,Beginner
+180,Python,Advanced
+181,Problem Solving,Intermediate
+181,Java,Beginner
+181,Statistics,Intermediate
+182,Communication,Beginner
+182,SQL,Advanced
+182,Python,Beginner
+182,Deep Learning,Advanced
+183,Power BI,Advanced
+183,Statistics,Intermediate
+184,Java,Advanced
+184,Statistics,Beginner
+184,Problem Solving,Intermediate
+184,Machine Learning,Intermediate
+184,SQL,Beginner
+185,Java,Beginner
+185,Statistics,Intermediate
+185,Power BI,Advanced
+185,Python,Beginner
+186,Data Visualization,Beginner
+186,Power BI,Beginner
+187,Power BI,Intermediate
+187,Communication,Advanced
+187,SQL,Intermediate
+187,Python,Beginner
+188,Problem Solving,Advanced
+188,Deep Learning,Advanced
+188,Data Visualization,Advanced
+189,SQL,Beginner
+189,Problem Solving,Intermediate
+189,Python,Beginner
+189,Data Visualization,Intermediate
+190,Java,Intermediate
+190,Problem Solving,Beginner
+190,Deep Learning,Intermediate
+190,Machine Learning,Beginner
+190,Python,Advanced
+191,Communication,Beginner
+191,SQL,Intermediate
+191,Problem Solving,Advanced
+191,Statistics,Intermediate
+191,Python,Advanced
+192,Problem Solving,Advanced
+192,Power BI,Intermediate
+193,Communication,Advanced
+193,Machine Learning,Advanced
+193,SQL,Beginner
+194,Communication,Beginner
+194,Java,Beginner
+194,Machine Learning,Beginner
+195,Data Visualization,Advanced
+195,Machine Learning,Beginner
+195,Deep Learning,Beginner
+195,Problem Solving,Advanced
+196,Statistics,Intermediate
+196,Java,Beginner
+196,Communication,Intermediate
+196,Problem Solving,Beginner
+196,Deep Learning,Intermediate
+197,Power BI,Beginner
+197,Java,Intermediate
+197,Python,Intermediate
+197,Machine Learning,Intermediate
+197,Deep Learning,Beginner
+198,Communication,Beginner
+198,Power BI,Advanced
+199,Java,Intermediate
+199,Deep Learning,Intermediate
+200,Statistics,Intermediate
+200,Data Visualization,Advanced
+201,Deep Learning,Intermediate
+201,Machine Learning,Advanced
+201,Python,Beginner
+201,Data Visualization,Advanced
+201,Statistics,Advanced
+202,Python,Intermediate
+202,Data Visualization,Advanced
+202,Statistics,Advanced
+203,Communication,Intermediate
+203,Java,Intermediate
+203,Power BI,Intermediate
+204,Communication,Intermediate
+204,SQL,Beginner
+205,Power BI,Advanced
+205,Java,Advanced
+205,Machine Learning,Beginner
+205,Statistics,Intermediate
+205,Python,Intermediate
+206,Machine Learning,Advanced
+206,SQL,Intermediate
+206,Power BI,Beginner
+206,Statistics,Advanced
+206,Data Visualization,Advanced
+207,Problem Solving,Intermediate
+207,Deep Learning,Beginner
+208,Power BI,Intermediate
+208,Machine Learning,Beginner
+208,Data Visualization,Beginner
+208,Deep Learning,Beginner
+209,SQL,Advanced
+209,Power BI,Advanced
+209,Java,Advanced
+210,Communication,Advanced
+210,Machine Learning,Intermediate
+211,Machine Learning,Advanced
+211,Java,Intermediate
+211,Deep Learning,Beginner
+212,Communication,Advanced
+212,Data Visualization,Intermediate
+212,Statistics,Beginner
+212,Power BI,Advanced
+212,Machine Learning,Beginner
+213,Statistics,Advanced
+213,Data Visualization,Intermediate
+213,Communication,Intermediate
+213,Java,Intermediate
+214,Deep Learning,Advanced
+214,Java,Beginner
+214,Problem Solving,Intermediate
+214,SQL,Beginner
+214,Statistics,Advanced
+215,Communication,Beginner
+215,Deep Learning,Intermediate
+215,SQL,Beginner
+215,Java,Beginner
+215,Power BI,Intermediate
+216,Deep Learning,Intermediate
+216,Machine Learning,Intermediate
+216,Problem Solving,Beginner
+216,Python,Intermediate
+216,SQL,Beginner
+217,Deep Learning,Intermediate
+217,Communication,Beginner
+217,Data Visualization,Beginner
+217,Statistics,Intermediate
+217,Python,Beginner
+218,Machine Learning,Intermediate
+218,Java,Advanced
+218,Python,Beginner
+218,Deep Learning,Advanced
+219,Statistics,Beginner
+219,Python,Beginner
+219,SQL,Advanced
+219,Deep Learning,Advanced
+219,Machine Learning,Advanced
+220,SQL,Beginner
+220,Power BI,Beginner
+220,Data Visualization,Intermediate
+220,Machine Learning,Advanced
+220,Python,Advanced
+221,SQL,Beginner
+221,Java,Advanced
+221,Statistics,Advanced
+221,Power BI,Advanced
+221,Problem Solving,Beginner
+222,Power BI,Advanced
+222,Problem Solving,Intermediate
+222,Python,Beginner
+223,Machine Learning,Advanced
+223,SQL,Advanced
+223,Communication,Advanced
+223,Python,Advanced
+223,Power BI,Beginner
+224,Statistics,Advanced
+224,Python,Beginner
+224,Problem Solving,Intermediate
+224,Machine Learning,Beginner
+224,Java,Intermediate
+225,SQL,Beginner
+225,Communication,Intermediate
+225,Machine Learning,Advanced
+226,Machine Learning,Beginner
+226,Statistics,Beginner
+226,Deep Learning,Beginner
+226,Communication,Advanced
+227,Python,Beginner
+227,Power BI,Intermediate
+227,Data Visualization,Intermediate
+227,Java,Advanced
+227,SQL,Intermediate
+228,Power BI,Beginner
+228,Python,Advanced
+228,Data Visualization,Intermediate
+228,Machine Learning,Intermediate
+228,Problem Solving,Beginner
+229,Problem Solving,Intermediate
+229,Java,Beginner
+229,Statistics,Intermediate
+229,Data Visualization,Advanced
+230,Communication,Advanced
+230,Deep Learning,Intermediate
+230,Power BI,Beginner
+230,Problem Solving,Intermediate
+230,Python,Advanced
+231,Deep Learning,Beginner
+231,Power BI,Beginner
+231,Communication,Intermediate
+232,Power BI,Advanced
+232,Statistics,Intermediate
+232,Problem Solving,Intermediate
+232,SQL,Intermediate
+233,Communication,Intermediate
+233,Problem Solving,Advanced
+234,SQL,Intermediate
+234,Problem Solving,Advanced
+235,Python,Beginner
+235,Machine Learning,Beginner
+235,Statistics,Beginner
+236,Communication,Advanced
+236,Java,Beginner
+236,Problem Solving,Advanced
+237,Statistics,Intermediate
+237,Communication,Beginner
+237,Deep Learning,Advanced
+238,Deep Learning,Intermediate
+238,Communication,Advanced
+238,Problem Solving,Intermediate
+239,SQL,Intermediate
+239,Python,Advanced
+239,Machine Learning,Intermediate
+240,Power BI,Advanced
+240,Java,Intermediate
+241,Java,Beginner
+241,Power BI,Beginner
+241,Statistics,Beginner
+242,Statistics,Advanced
+242,Machine Learning,Intermediate
+243,Communication,Advanced
+243,Java,Beginner
+244,Power BI,Intermediate
+244,Machine Learning,Advanced
+244,Deep Learning,Beginner
+244,Problem Solving,Beginner
+245,Machine Learning,Beginner
+245,Data Visualization,Intermediate
+245,Statistics,Advanced
+246,Statistics,Beginner
+246,Deep Learning,Beginner
+246,Machine Learning,Intermediate
+246,Power BI,Intermediate
+247,Deep Learning,Beginner
+247,Problem Solving,Beginner
+247,Java,Intermediate
+247,Statistics,Advanced
+247,Power BI,Beginner
+248,Statistics,Advanced
+248,Deep Learning,Advanced
+248,Communication,Beginner
+248,SQL,Beginner
+248,Power BI,Intermediate
+249,SQL,Beginner
+249,Deep Learning,Intermediate
+250,Machine Learning,Intermediate
+250,Communication,Advanced
+250,Data Visualization,Intermediate
+251,Power BI,Advanced
+251,Data Visualization,Advanced
+252,Machine Learning,Advanced
+252,Power BI,Beginner
+252,SQL,Advanced
+252,Deep Learning,Advanced
+253,Machine Learning,Beginner
+253,Communication,Beginner
+253,Python,Beginner
+254,Data Visualization,Advanced
+254,Problem Solving,Advanced
+254,Python,Intermediate
+254,Java,Advanced
+255,Statistics,Intermediate
+255,Data Visualization,Beginner
+255,Problem Solving,Advanced
+255,Machine Learning,Beginner
+256,Statistics,Intermediate
+256,Problem Solving,Beginner
+256,Java,Intermediate
+257,Communication,Intermediate
+257,Java,Beginner
+257,Deep Learning,Intermediate
+258,Communication,Intermediate
+258,Data Visualization,Beginner
+259,Statistics,Beginner
+259,Data Visualization,Intermediate
+259,Machine Learning,Intermediate
+259,Python,Advanced
+260,Data Visualization,Intermediate
+260,Machine Learning,Beginner
+260,Communication,Beginner
+260,Power BI,Intermediate
+260,Statistics,Advanced
+261,Statistics,Intermediate
+261,Power BI,Advanced
+261,Java,Intermediate
+261,Python,Beginner
+261,Problem Solving,Beginner
+262,Python,Advanced
+262,Java,Advanced
+262,Power BI,Advanced
+262,Data Visualization,Intermediate
+263,Deep Learning,Beginner
+263,Python,Intermediate
+263,SQL,Advanced
+263,Data Visualization,Intermediate
+264,Communication,Advanced
+264,Python,Beginner
+264,Problem Solving,Intermediate
+264,Deep Learning,Advanced
+264,Power BI,Intermediate
+265,Problem Solving,Intermediate
+265,Deep Learning,Advanced
+266,Java,Intermediate
+266,SQL,Intermediate
+266,Machine Learning,Intermediate
+266,Python,Advanced
+267,Machine Learning,Beginner
+267,Data Visualization,Beginner
+267,Problem Solving,Beginner
+267,Power BI,Beginner
+268,Statistics,Advanced
+268,Deep Learning,Advanced
+268,Java,Beginner
+268,SQL,Intermediate
+269,Machine Learning,Intermediate
+269,Problem Solving,Advanced
+269,Power BI,Advanced
+269,Statistics,Advanced
+270,Java,Intermediate
+270,Power BI,Intermediate
+270,Statistics,Advanced
+270,Problem Solving,Beginner
+270,Python,Intermediate
+271,Python,Advanced
+271,Statistics,Advanced
+271,Power BI,Beginner
+271,Communication,Advanced
+272,Java,Beginner
+272,Statistics,Advanced
+273,Machine Learning,Beginner
+273,Data Visualization,Beginner
+273,Python,Beginner
+273,Power BI,Intermediate
+273,Communication,Intermediate
+274,Machine Learning,Advanced
+274,Problem Solving,Intermediate
+274,Data Visualization,Advanced
+274,Statistics,Advanced
+274,Power BI,Beginner
+275,Deep Learning,Advanced
+275,Data Visualization,Intermediate
+275,Communication,Advanced
+276,Communication,Advanced
+276,Machine Learning,Intermediate
+276,Statistics,Advanced
+276,Power BI,Advanced
+276,Deep Learning,Advanced
+277,Java,Intermediate
+277,Statistics,Advanced
+277,Data Visualization,Intermediate
+277,SQL,Beginner
+278,Power BI,Intermediate
+278,Data Visualization,Intermediate
+278,Statistics,Advanced
+278,Machine Learning,Advanced
+279,Power BI,Intermediate
+279,SQL,Beginner
+279,Problem Solving,Intermediate
+279,Data Visualization,Beginner
+280,SQL,Intermediate
+280,Communication,Advanced
+280,Statistics,Intermediate
+280,Deep Learning,Beginner
+281,Deep Learning,Beginner
+281,Power BI,Beginner
+281,Java,Advanced
+282,Data Visualization,Advanced
+282,Python,Beginner
+282,Java,Beginner
+283,Problem Solving,Advanced
+283,Communication,Intermediate
+284,Machine Learning,Advanced
+284,Python,Beginner
+285,Statistics,Intermediate
+285,Java,Intermediate
+285,Data Visualization,Advanced
+285,Problem Solving,Beginner
+285,Machine Learning,Beginner
+286,Deep Learning,Intermediate
+286,Python,Beginner
+286,Machine Learning,Beginner
+287,Statistics,Intermediate
+287,Machine Learning,Advanced
+287,Power BI,Advanced
+287,Python,Beginner
+287,Problem Solving,Intermediate
+288,Statistics,Advanced
+288,Deep Learning,Intermediate
+288,Java,Intermediate
+288,SQL,Beginner
+289,Communication,Advanced
+289,Machine Learning,Intermediate
+290,Machine Learning,Intermediate
+290,Python,Advanced
+290,Communication,Advanced
+290,Problem Solving,Beginner
+291,Java,Advanced
+291,Problem Solving,Intermediate
+291,Deep Learning,Beginner
+292,SQL,Beginner
+292,Machine Learning,Beginner
+292,Deep Learning,Intermediate
+292,Data Visualization,Intermediate
+292,Statistics,Beginner
+293,Power BI,Advanced
+293,Communication,Beginner
+293,Java,Intermediate
+293,Statistics,Advanced
+293,Deep Learning,Intermediate
+294,Python,Intermediate
+294,SQL,Beginner
+294,Statistics,Intermediate
+295,SQL,Beginner
+295,Power BI,Beginner
+295,Communication,Beginner
+295,Deep Learning,Intermediate
+296,Statistics,Advanced
+296,Communication,Advanced
+296,Problem Solving,Intermediate
+297,Data Visualization,Advanced
+297,SQL,Advanced
+297,Statistics,Intermediate
+298,Java,Beginner
+298,SQL,Advanced
+299,Java,Beginner
+299,Deep Learning,Intermediate
+299,Machine Learning,Advanced
+300,SQL,Intermediate
+300,Data Visualization,Beginner
+300,Statistics,Intermediate
+300,Python,Beginner
+300,Power BI,Advanced
+301,Statistics,Advanced
+301,Python,Beginner
+301,Java,Intermediate
+301,Communication,Intermediate
+301,Machine Learning,Beginner
+302,Java,Intermediate
+302,SQL,Intermediate
+302,Python,Advanced
+303,Deep Learning,Beginner
+303,Python,Intermediate
+304,Power BI,Beginner
+304,Problem Solving,Beginner
+305,Communication,Intermediate
+305,Problem Solving,Beginner
+305,Statistics,Advanced
+305,Deep Learning,Advanced
+305,Data Visualization,Advanced
+306,Communication,Advanced
+306,SQL,Intermediate
+306,Machine Learning,Advanced
+307,Data Visualization,Intermediate
+307,Python,Intermediate
+307,Deep Learning,Advanced
+308,Deep Learning,Intermediate
+308,Problem Solving,Beginner
+308,Data Visualization,Intermediate
+308,SQL,Beginner
+308,Statistics,Advanced
+309,Python,Advanced
+309,Problem Solving,Beginner
+310,Data Visualization,Advanced
+310,SQL,Beginner
+310,Deep Learning,Intermediate
+311,Data Visualization,Intermediate
+311,Python,Intermediate
+312,Deep Learning,Beginner
+312,Data Visualization,Advanced
+312,Python,Intermediate
+313,Java,Beginner
+313,Communication,Intermediate
+313,Deep Learning,Beginner
+314,Problem Solving,Beginner
+314,Power BI,Advanced
+314,Deep Learning,Advanced
+315,Problem Solving,Beginner
+315,Deep Learning,Intermediate
+315,Statistics,Advanced
+316,Deep Learning,Intermediate
+316,Communication,Intermediate
+316,Problem Solving,Beginner
+316,Data Visualization,Advanced
+316,SQL,Intermediate
+317,Data Visualization,Intermediate
+317,Power BI,Beginner
+317,Machine Learning,Advanced
+318,Problem Solving,Intermediate
+318,Deep Learning,Beginner
+318,Machine Learning,Intermediate
+318,Data Visualization,Advanced
+318,SQL,Beginner
+319,Communication,Intermediate
+319,SQL,Advanced
+319,Data Visualization,Advanced
+319,Python,Advanced
+319,Machine Learning,Beginner
+320,Data Visualization,Beginner
+320,Deep Learning,Intermediate
+321,Communication,Beginner
+321,Power BI,Beginner
+321,Python,Advanced
+322,Statistics,Advanced
+322,Data Visualization,Advanced
+323,Problem Solving,Intermediate
+323,Data Visualization,Intermediate
+323,Communication,Intermediate
+324,Power BI,Intermediate
+324,Java,Intermediate
+324,Communication,Beginner
+324,Deep Learning,Advanced
+325,Communication,Beginner
+325,Data Visualization,Advanced
+325,Java,Beginner
+325,Machine Learning,Advanced
+325,Deep Learning,Beginner
+326,Power BI,Advanced
+326,Deep Learning,Advanced
+327,Power BI,Intermediate
+327,Machine Learning,Advanced
+327,Data Visualization,Beginner
+327,Deep Learning,Intermediate
+327,SQL,Advanced
+328,Power BI,Beginner
+328,Statistics,Advanced
+328,Deep Learning,Intermediate
+328,Data Visualization,Beginner
+329,Deep Learning,Advanced
+329,Statistics,Advanced
+329,Machine Learning,Beginner
+330,SQL,Beginner
+330,Python,Intermediate
+331,Data Visualization,Beginner
+331,SQL,Beginner
+331,Machine Learning,Advanced
+332,Communication,Beginner
+332,Python,Beginner
+332,Statistics,Advanced
+332,Java,Advanced
+332,Data Visualization,Intermediate
+333,Python,Advanced
+333,Deep Learning,Intermediate
+334,Python,Beginner
+334,Deep Learning,Beginner
+334,Problem Solving,Beginner
+334,Statistics,Advanced
+335,Data Visualization,Intermediate
+335,Java,Intermediate
+335,Power BI,Intermediate
+336,Communication,Intermediate
+336,Problem Solving,Advanced
+337,Data Visualization,Advanced
+337,Power BI,Advanced
+337,SQL,Beginner
+338,Problem Solving,Intermediate
+338,Java,Advanced
+339,Python,Intermediate
+339,Java,Advanced
+339,Machine Learning,Intermediate
+339,Deep Learning,Advanced
+339,Data Visualization,Beginner
+340,Data Visualization,Advanced
+340,Java,Advanced
+341,Power BI,Advanced
+341,Python,Advanced
+341,SQL,Advanced
+341,Communication,Beginner
+341,Machine Learning,Beginner
+342,Python,Advanced
+342,Data Visualization,Intermediate
+342,Machine Learning,Beginner
+342,Problem Solving,Intermediate
+343,Java,Advanced
+343,Data Visualization,Advanced
+343,Problem Solving,Intermediate
+344,Machine Learning,Intermediate
+344,SQL,Beginner
+344,Communication,Beginner
+344,Python,Intermediate
+344,Problem Solving,Advanced
+345,Communication,Intermediate
+345,Python,Beginner
+345,Power BI,Intermediate
+345,Problem Solving,Advanced
+345,Data Visualization,Intermediate
+346,Machine Learning,Intermediate
+346,Problem Solving,Beginner
+346,SQL,Advanced
+346,Deep Learning,Beginner
+346,Power BI,Beginner
+347,Machine Learning,Intermediate
+347,Problem Solving,Intermediate
+347,Java,Intermediate
+347,Communication,Beginner
+348,Python,Intermediate
+348,Power BI,Intermediate
+349,SQL,Intermediate
+349,Machine Learning,Intermediate
+349,Java,Advanced
+349,Statistics,Advanced
+350,SQL,Beginner
+350,Python,Advanced
+350,Java,Advanced
+350,Machine Learning,Intermediate
+350,Power BI,Intermediate
+351,Power BI,Intermediate
+351,Problem Solving,Beginner
+352,Java,Advanced
+352,Deep Learning,Intermediate
+352,Machine Learning,Beginner
+353,Power BI,Intermediate
+353,Java,Beginner
+353,Deep Learning,Beginner
+354,Problem Solving,Intermediate
+354,Power BI,Intermediate
+354,Java,Beginner
+355,Power BI,Advanced
+355,Data Visualization,Beginner
+355,Statistics,Intermediate
+355,Java,Beginner
+356,Power BI,Intermediate
+356,Python,Advanced
+356,Problem Solving,Intermediate
+357,Statistics,Advanced
+357,Communication,Advanced
+357,Problem Solving,Beginner
+357,Java,Intermediate
+358,Java,Beginner
+358,Data Visualization,Intermediate
+358,Statistics,Intermediate
+358,Machine Learning,Intermediate
+359,Java,Intermediate
+359,Data Visualization,Intermediate
+359,Communication,Beginner
+359,Deep Learning,Advanced
+359,Machine Learning,Beginner
+360,Deep Learning,Advanced
+360,Python,Beginner
+360,Statistics,Intermediate
+361,SQL,Advanced
+361,Problem Solving,Intermediate
+361,Statistics,Beginner
+361,Java,Intermediate
+362,Problem Solving,Intermediate
+362,Java,Advanced
+362,SQL,Intermediate
+363,Deep Learning,Intermediate
+363,Java,Advanced
+363,Problem Solving,Advanced
+363,Power BI,Advanced
+363,Python,Advanced
+364,SQL,Advanced
+364,Data Visualization,Advanced
+365,Machine Learning,Intermediate
+365,Python,Intermediate
+365,Problem Solving,Beginner
+365,Statistics,Beginner
+366,Power BI,Advanced
+366,Data Visualization,Advanced
+367,Statistics,Intermediate
+367,Communication,Advanced
+367,Problem Solving,Advanced
+368,Communication,Beginner
+368,Python,Intermediate
+368,Statistics,Intermediate
+369,SQL,Intermediate
+369,Machine Learning,Intermediate
+370,Statistics,Intermediate
+370,Data Visualization,Beginner
+370,Java,Intermediate
+370,Machine Learning,Advanced
+371,Communication,Beginner
+371,SQL,Beginner
+371,Power BI,Intermediate
+371,Python,Advanced
+371,Java,Beginner
+372,Data Visualization,Advanced
+372,Deep Learning,Beginner
+372,Machine Learning,Intermediate
+373,Statistics,Beginner
+373,Data Visualization,Advanced
+373,Problem Solving,Advanced
+373,Communication,Intermediate
+373,SQL,Intermediate
+374,Java,Intermediate
+374,Data Visualization,Advanced
+375,Problem Solving,Advanced
+375,Python,Beginner
+375,Data Visualization,Advanced
+375,SQL,Beginner
+375,Machine Learning,Advanced
+376,Communication,Intermediate
+376,Java,Beginner
+376,Data Visualization,Intermediate
+377,Deep Learning,Advanced
+377,Communication,Beginner
+377,Problem Solving,Intermediate
+377,Power BI,Intermediate
+377,Data Visualization,Intermediate
+378,Power BI,Intermediate
+378,SQL,Beginner
+378,Machine Learning,Beginner
+379,SQL,Beginner
+379,Machine Learning,Advanced
+379,Communication,Intermediate
+379,Statistics,Intermediate
+380,Java,Beginner
+380,Problem Solving,Intermediate
+380,Deep Learning,Advanced
+381,Deep Learning,Intermediate
+381,Machine Learning,Beginner
+381,Statistics,Beginner
+382,Statistics,Intermediate
+382,Python,Beginner
+382,Communication,Beginner
+382,Deep Learning,Intermediate
+383,Problem Solving,Intermediate
+383,Statistics,Beginner
+383,Java,Beginner
+383,Communication,Advanced
+383,Data Visualization,Beginner
+384,Power BI,Beginner
+384,Python,Advanced
+384,Java,Intermediate
+385,Statistics,Advanced
+385,Java,Beginner
+385,SQL,Intermediate
+386,Deep Learning,Beginner
+386,Python,Intermediate
+386,Statistics,Beginner
+386,Power BI,Advanced
+387,Power BI,Intermediate
+387,Python,Intermediate
+387,Statistics,Beginner
+388,SQL,Advanced
+388,Data Visualization,Advanced
+388,Deep Learning,Intermediate
+388,Problem Solving,Advanced
+388,Communication,Advanced
+389,Machine Learning,Beginner
+389,Java,Advanced
+389,Data Visualization,Intermediate
+389,Problem Solving,Advanced
+389,SQL,Intermediate
+390,Communication,Advanced
+390,Power BI,Intermediate
+390,Deep Learning,Advanced
+391,Machine Learning,Beginner
+391,Problem Solving,Intermediate
+392,Machine Learning,Advanced
+392,Data Visualization,Intermediate
+392,Java,Beginner
+393,Statistics,Intermediate
+393,Machine Learning,Intermediate
+393,Power BI,Beginner
+393,Communication,Advanced
+393,Data Visualization,Beginner
+394,Deep Learning,Intermediate
+394,Power BI,Advanced
+394,Communication,Beginner
+394,Data Visualization,Advanced
+394,Problem Solving,Beginner
+395,Communication,Beginner
+395,SQL,Intermediate
+395,Problem Solving,Intermediate
+395,Deep Learning,Intermediate
+395,Data Visualization,Intermediate
+396,Deep Learning,Intermediate
+396,Machine Learning,Advanced
+396,Statistics,Beginner
+396,Problem Solving,Beginner
+397,Statistics,Beginner
+397,Python,Beginner
+398,Statistics,Beginner
+398,Python,Advanced
+398,Problem Solving,Intermediate
+398,SQL,Beginner
+398,Communication,Intermediate
+399,Communication,Beginner
+399,Power BI,Intermediate
+400,Python,Advanced
+400,Problem Solving,Advanced
+400,Power BI,Beginner
+401,SQL,Beginner
+401,Java,Beginner
+401,Python,Advanced
+401,Deep Learning,Beginner
+401,Data Visualization,Advanced
+402,Python,Intermediate
+402,Java,Advanced
+402,Communication,Beginner
+402,Problem Solving,Intermediate
+402,Deep Learning,Beginner
+403,Problem Solving,Beginner
+403,SQL,Intermediate
+403,Deep Learning,Intermediate
+404,Machine Learning,Advanced
+404,Problem Solving,Beginner
+404,Java,Beginner
+404,Communication,Advanced
+405,Java,Intermediate
+405,Machine Learning,Intermediate
+406,Machine Learning,Beginner
+406,Problem Solving,Beginner
+406,Statistics,Beginner
+407,SQL,Intermediate
+407,Problem Solving,Intermediate
+407,Communication,Beginner
+408,Power BI,Advanced
+408,SQL,Advanced
+408,Data Visualization,Advanced
+409,Python,Advanced
+409,Power BI,Advanced
+409,Data Visualization,Beginner
+409,Deep Learning,Advanced
+410,Power BI,Beginner
+410,Python,Beginner
+410,Data Visualization,Intermediate
+410,Statistics,Advanced
+410,Problem Solving,Advanced
+411,Deep Learning,Intermediate
+411,Python,Intermediate
+412,Problem Solving,Advanced
+412,Java,Advanced
+412,Communication,Beginner
+413,SQL,Beginner
+413,Python,Beginner
+413,Java,Beginner
+413,Deep Learning,Intermediate
+413,Machine Learning,Advanced
+414,Deep Learning,Intermediate
+414,Problem Solving,Beginner
+414,Java,Advanced
+414,Communication,Advanced
+415,Power BI,Beginner
+415,SQL,Advanced
+415,Java,Beginner
+416,Deep Learning,Advanced
+416,Communication,Advanced
+416,Problem Solving,Advanced
+417,Power BI,Advanced
+417,Problem Solving,Beginner
+418,Data Visualization,Intermediate
+418,SQL,Beginner
+419,Java,Advanced
+419,Python,Advanced
+419,Power BI,Beginner
+419,Communication,Beginner
+419,Problem Solving,Beginner
+420,Python,Intermediate
+420,Machine Learning,Advanced
+420,Statistics,Advanced
+421,Machine Learning,Intermediate
+421,Communication,Advanced
+421,Java,Beginner
+421,Deep Learning,Beginner
+422,Problem Solving,Advanced
+422,Power BI,Advanced
+422,SQL,Advanced
+422,Machine Learning,Beginner
+423,Statistics,Advanced
+423,Deep Learning,Beginner
+423,Communication,Intermediate
+423,Python,Beginner
+423,Data Visualization,Intermediate
+424,Java,Beginner
+424,SQL,Advanced
+425,Python,Beginner
+425,Java,Beginner
+426,Communication,Advanced
+426,Problem Solving,Advanced
+426,Machine Learning,Advanced
+426,SQL,Advanced
+426,Python,Intermediate
+427,Communication,Advanced
+427,Data Visualization,Intermediate
+427,Problem Solving,Intermediate
+428,Java,Beginner
+428,Communication,Advanced
+429,Machine Learning,Advanced
+429,Data Visualization,Beginner
+430,SQL,Intermediate
+430,Statistics,Beginner
+430,Power BI,Advanced
+430,Problem Solving,Intermediate
+430,Machine Learning,Beginner
+431,Data Visualization,Advanced
+431,Power BI,Beginner
+431,Deep Learning,Intermediate
+431,Communication,Intermediate
+432,Data Visualization,Intermediate
+432,Deep Learning,Beginner
+432,Java,Beginner
+432,SQL,Advanced
+432,Python,Intermediate
+433,Communication,Advanced
+433,Python,Intermediate
+434,SQL,Intermediate
+434,Data Visualization,Beginner
+434,Deep Learning,Beginner
+434,Statistics,Advanced
+435,SQL,Advanced
+435,Python,Intermediate
+435,Data Visualization,Advanced
+435,Problem Solving,Intermediate
+436,SQL,Beginner
+436,Java,Advanced
+436,Machine Learning,Advanced
+436,Communication,Beginner
+436,Data Visualization,Intermediate
+437,Data Visualization,Intermediate
+437,Power BI,Intermediate
+437,Deep Learning,Advanced
+438,Communication,Beginner
+438,Statistics,Beginner
+438,Power BI,Beginner
+438,SQL,Advanced
+439,Machine Learning,Beginner
+439,SQL,Intermediate
+440,Communication,Beginner
+440,Problem Solving,Intermediate
+440,SQL,Intermediate
+440,Power BI,Intermediate
+440,Machine Learning,Intermediate
+441,SQL,Advanced
+441,Machine Learning,Intermediate
+442,Data Visualization,Beginner
+442,Communication,Beginner
+443,Communication,Advanced
+443,Problem Solving,Intermediate
+443,Python,Intermediate
+444,Python,Advanced
+444,Problem Solving,Advanced
+444,Statistics,Advanced
+445,SQL,Beginner
+445,Statistics,Beginner
+445,Java,Beginner
+446,Data Visualization,Beginner
+446,Machine Learning,Intermediate
+447,SQL,Beginner
+447,Power BI,Beginner
+447,Java,Advanced
+447,Python,Intermediate
+448,SQL,Beginner
+448,Communication,Intermediate
+448,Java,Beginner
+449,Java,Intermediate
+449,Problem Solving,Beginner
+449,Deep Learning,Intermediate
+450,Machine Learning,Intermediate
+450,Communication,Intermediate
+450,Data Visualization,Beginner
+450,SQL,Beginner
+450,Java,Advanced
+451,Power BI,Advanced
+451,Statistics,Intermediate
+451,Problem Solving,Beginner
+452,Power BI,Beginner
+452,Problem Solving,Intermediate
+453,Deep Learning,Intermediate
+453,Data Visualization,Advanced
+453,Python,Intermediate
+454,Deep Learning,Intermediate
+454,Statistics,Intermediate
+454,Communication,Intermediate
+454,Power BI,Beginner
+454,Problem Solving,Beginner
+455,Java,Intermediate
+455,Data Visualization,Beginner
+455,Python,Intermediate
+455,Problem Solving,Advanced
+456,Java,Beginner
+456,Data Visualization,Advanced
+456,Machine Learning,Beginner
+456,Python,Intermediate
+457,Data Visualization,Intermediate
+457,Problem Solving,Beginner
+458,Data Visualization,Advanced
+458,Communication,Beginner
+458,Deep Learning,Advanced
+459,Java,Intermediate
+459,Machine Learning,Advanced
+459,Data Visualization,Intermediate
+459,Problem Solving,Beginner
+460,Python,Beginner
+460,SQL,Beginner
+460,Java,Advanced
+460,Deep Learning,Intermediate
+460,Power BI,Beginner
+461,Java,Advanced
+461,Data Visualization,Beginner
+461,Machine Learning,Intermediate
+461,Statistics,Beginner
+462,Machine Learning,Beginner
+462,Java,Advanced
+463,SQL,Beginner
+463,Communication,Intermediate
+463,Problem Solving,Intermediate
+463,Power BI,Intermediate
+464,Machine Learning,Advanced
+464,Problem Solving,Intermediate
+464,Statistics,Beginner
+465,Data Visualization,Advanced
+465,Machine Learning,Advanced
+465,Problem Solving,Intermediate
+465,Deep Learning,Beginner
+466,Python,Beginner
+466,Problem Solving,Advanced
+466,Java,Intermediate
+467,Java,Beginner
+467,SQL,Intermediate
+467,Statistics,Advanced
+468,Data Visualization,Intermediate
+468,Communication,Beginner
+469,Communication,Beginner
+469,Statistics,Intermediate
+470,Data Visualization,Intermediate
+470,SQL,Beginner
+470,Communication,Advanced
+471,Python,Intermediate
+471,Problem Solving,Advanced
+472,Machine Learning,Advanced
+472,Problem Solving,Intermediate
+472,Statistics,Beginner
+472,Data Visualization,Intermediate
+472,Java,Advanced
+473,Machine Learning,Beginner
+473,Statistics,Intermediate
+473,SQL,Beginner
+474,Power BI,Beginner
+474,SQL,Intermediate
+474,Deep Learning,Beginner
+474,Machine Learning,Advanced
+475,Deep Learning,Intermediate
+475,SQL,Advanced
+476,Python,Beginner
+476,Problem Solving,Beginner
+476,Machine Learning,Beginner
+476,Power BI,Intermediate
+476,Data Visualization,Beginner
+477,Problem Solving,Advanced
+477,Deep Learning,Intermediate
+477,Power BI,Intermediate
+478,SQL,Advanced
+478,Python,Advanced
+478,Problem Solving,Intermediate
+479,Python,Intermediate
+479,Communication,Beginner
+479,Java,Intermediate
+480,Data Visualization,Advanced
+480,SQL,Intermediate
+480,Python,Beginner
+480,Deep Learning,Intermediate
+480,Problem Solving,Beginner
+481,Problem Solving,Intermediate
+481,Statistics,Beginner
+481,Deep Learning,Advanced
+481,Communication,Advanced
+482,Machine Learning,Intermediate
+482,Communication,Beginner
+482,Problem Solving,Intermediate
+482,Java,Intermediate
+482,SQL,Intermediate
+483,Data Visualization,Advanced
+483,Power BI,Advanced
+483,Python,Beginner
+483,SQL,Beginner
+484,Deep Learning,Beginner
+484,Problem Solving,Intermediate
+484,Data Visualization,Advanced
+484,Power BI,Intermediate
+485,Java,Intermediate
+485,Data Visualization,Advanced
+485,Statistics,Beginner
+485,Machine Learning,Advanced
+485,Python,Advanced
+486,SQL,Beginner
+486,Statistics,Beginner
+486,Machine Learning,Beginner
+487,Python,Advanced
+487,Problem Solving,Intermediate
+487,SQL,Beginner
+488,Java,Advanced
+488,Power BI,Beginner
+488,Communication,Beginner
+489,Deep Learning,Advanced
+489,Problem Solving,Intermediate
+489,Communication,Beginner
+489,Java,Advanced
+489,Machine Learning,Advanced
+490,SQL,Advanced
+490,Problem Solving,Advanced
+490,Machine Learning,Beginner
+490,Java,Beginner
+490,Power BI,Advanced
+491,Power BI,Intermediate
+491,Deep Learning,Intermediate
+492,Problem Solving,Beginner
+492,Statistics,Intermediate
+492,Deep Learning,Intermediate
+492,Python,Beginner
+493,Python,Beginner
+493,Problem Solving,Advanced
+493,Communication,Intermediate
+493,Statistics,Intermediate
+493,SQL,Intermediate
+494,Communication,Intermediate
+494,Power BI,Intermediate
+495,SQL,Intermediate
+495,Data Visualization,Intermediate
+495,Machine Learning,Intermediate
+495,Statistics,Advanced
+495,Communication,Intermediate
+496,Data Visualization,Beginner
+496,Statistics,Intermediate
+497,Deep Learning,Beginner
+497,Communication,Intermediate
+497,Python,Advanced
+497,Power BI,Advanced
+497,SQL,Intermediate
+498,Deep Learning,Beginner
+498,Python,Beginner
+498,Machine Learning,Beginner
+499,Python,Intermediate
+499,Statistics,Advanced
+499,Java,Beginner
+500,Communication,Beginner
+500,Statistics,Advanced
+500,Problem Solving,Beginner
+500,Java,Beginner
+501,Statistics,Intermediate
+501,Java,Advanced
+501,Machine Learning,Advanced
+501,Problem Solving,Intermediate
+502,Machine Learning,Beginner
+502,Power BI,Intermediate
+502,SQL,Beginner
+502,Java,Beginner
+503,Data Visualization,Intermediate
+503,Java,Advanced
+503,Deep Learning,Intermediate
+504,Python,Beginner
+504,Statistics,Advanced
+505,Java,Intermediate
+505,Python,Advanced
+505,Data Visualization,Intermediate
+506,Problem Solving,Intermediate
+506,Java,Beginner
+506,Communication,Intermediate
+506,Data Visualization,Intermediate
+507,Java,Intermediate
+507,SQL,Advanced
+507,Python,Advanced
+507,Power BI,Advanced
+507,Communication,Advanced
+508,Power BI,Intermediate
+508,SQL,Intermediate
+508,Statistics,Advanced
+508,Python,Intermediate
+509,Power BI,Advanced
+509,Java,Beginner
+509,Data Visualization,Beginner
+509,SQL,Advanced
+510,Communication,Intermediate
+510,Machine Learning,Intermediate
+510,Python,Intermediate
+510,Java,Intermediate
+510,Data Visualization,Intermediate
+511,Java,Intermediate
+511,Data Visualization,Advanced
+512,Deep Learning,Advanced
+512,Statistics,Intermediate
+512,Communication,Beginner
+513,Power BI,Beginner
+513,SQL,Advanced
+513,Statistics,Intermediate
+514,Communication,Intermediate
+514,SQL,Beginner
+514,Data Visualization,Advanced
+515,Problem Solving,Advanced
+515,Communication,Intermediate
+515,Deep Learning,Intermediate
+515,Machine Learning,Beginner
+516,Python,Beginner
+516,SQL,Advanced
+516,Statistics,Intermediate
+516,Deep Learning,Advanced
+516,Power BI,Intermediate
+517,Python,Intermediate
+517,Machine Learning,Advanced
+517,Deep Learning,Intermediate
+517,SQL,Beginner
+517,Statistics,Intermediate
+518,SQL,Advanced
+518,Statistics,Beginner
+518,Communication,Intermediate
+519,Python,Intermediate
+519,Statistics,Beginner
+520,Java,Beginner
+520,Machine Learning,Beginner
+520,Statistics,Advanced
+521,Problem Solving,Beginner
+521,Java,Beginner
+521,Deep Learning,Advanced
+521,Data Visualization,Beginner
+521,Statistics,Advanced
+522,Python,Advanced
+522,Communication,Beginner
+522,Data Visualization,Advanced
+522,Java,Advanced
+523,Data Visualization,Beginner
+523,Communication,Beginner
+523,Power BI,Intermediate
+524,Machine Learning,Intermediate
+524,SQL,Intermediate
+524,Python,Advanced
+524,Java,Advanced
+525,Problem Solving,Intermediate
+525,Machine Learning,Beginner
+525,Communication,Beginner
+525,Data Visualization,Intermediate
+526,Data Visualization,Advanced
+526,Java,Beginner
+527,Python,Beginner
+527,Deep Learning,Intermediate
+527,Machine Learning,Advanced
+528,Problem Solving,Advanced
+528,Power BI,Advanced
+529,Java,Advanced
+529,Python,Beginner
+530,Python,Intermediate
+530,SQL,Intermediate
+531,SQL,Beginner
+531,Deep Learning,Beginner
+531,Power BI,Advanced
+531,Data Visualization,Advanced
+531,Communication,Advanced
+532,Power BI,Advanced
+532,Problem Solving,Beginner
+533,Java,Beginner
+533,Machine Learning,Advanced
+533,Problem Solving,Advanced
+533,Statistics,Advanced
+534,Power BI,Beginner
+534,SQL,Intermediate
+535,Java,Advanced
+535,Data Visualization,Beginner
+535,Power BI,Intermediate
+536,Power BI,Beginner
+536,Machine Learning,Advanced
+536,Python,Intermediate
+536,Java,Intermediate
+536,Data Visualization,Beginner
+537,Python,Beginner
+537,SQL,Advanced
+538,Machine Learning,Beginner
+538,SQL,Intermediate
+538,Deep Learning,Advanced
+538,Communication,Beginner
+538,Problem Solving,Intermediate
+539,Power BI,Beginner
+539,Statistics,Beginner
+539,Python,Intermediate
+539,Deep Learning,Intermediate
+540,Problem Solving,Beginner
+540,SQL,Beginner
+540,Deep Learning,Beginner
+540,Java,Advanced
+541,Communication,Advanced
+541,Java,Intermediate
+541,Statistics,Advanced
+542,Communication,Beginner
+542,Java,Beginner
+543,Problem Solving,Advanced
+543,Statistics,Intermediate
+543,Power BI,Intermediate
+543,Java,Advanced
+543,Data Visualization,Beginner
+544,Machine Learning,Beginner
+544,Python,Beginner
+545,Java,Intermediate
+545,Statistics,Intermediate
+545,Deep Learning,Advanced
+545,SQL,Beginner
+545,Power BI,Advanced
+546,Statistics,Intermediate
+546,Java,Intermediate
+546,SQL,Beginner
+547,Power BI,Beginner
+547,Communication,Advanced
+548,Communication,Intermediate
+548,Deep Learning,Advanced
+548,SQL,Advanced
+549,Statistics,Beginner
+549,Communication,Advanced
+549,Problem Solving,Advanced
+550,Python,Advanced
+550,Machine Learning,Intermediate
+551,Machine Learning,Intermediate
+551,SQL,Intermediate
+551,Statistics,Beginner
+551,Java,Advanced
+551,Deep Learning,Beginner
+552,Problem Solving,Advanced
+552,Data Visualization,Intermediate
+552,SQL,Beginner
+552,Deep Learning,Intermediate
+552,Java,Intermediate
+553,SQL,Intermediate
+553,Statistics,Intermediate
+553,Python,Beginner
+553,Deep Learning,Advanced
+554,SQL,Advanced
+554,Power BI,Advanced
+555,Statistics,Beginner
+555,Communication,Beginner
+555,Deep Learning,Intermediate
+556,Deep Learning,Intermediate
+556,Statistics,Beginner
+556,Communication,Beginner
+556,Java,Advanced
+557,Python,Advanced
+557,Communication,Intermediate
+557,Deep Learning,Advanced
+558,SQL,Beginner
+558,Python,Advanced
+558,Machine Learning,Advanced
+558,Data Visualization,Advanced
+559,SQL,Intermediate
+559,Power BI,Beginner
+559,Data Visualization,Intermediate
+559,Java,Beginner
+559,Python,Advanced
+560,SQL,Advanced
+560,Problem Solving,Advanced
+560,Python,Beginner
+560,Communication,Intermediate
+561,Java,Advanced
+561,Deep Learning,Advanced
+561,Machine Learning,Beginner
+561,Data Visualization,Advanced
+561,Python,Intermediate
+562,Deep Learning,Beginner
+562,Machine Learning,Intermediate
+562,Java,Advanced
+562,Communication,Advanced
+562,SQL,Advanced
+563,Deep Learning,Advanced
+563,Problem Solving,Beginner
+563,Java,Intermediate
+563,Power BI,Intermediate
+564,Power BI,Intermediate
+564,Statistics,Advanced
+564,Machine Learning,Advanced
+564,SQL,Advanced
+565,Deep Learning,Beginner
+565,Communication,Advanced
+565,Data Visualization,Advanced
+565,SQL,Intermediate
+566,Machine Learning,Beginner
+566,Java,Intermediate
+566,Communication,Advanced
+566,Statistics,Intermediate
+567,Deep Learning,Advanced
+567,Power BI,Beginner
+567,Problem Solving,Beginner
+567,Statistics,Intermediate
+567,Python,Beginner
+568,Python,Intermediate
+568,Data Visualization,Beginner
+569,Power BI,Intermediate
+569,Machine Learning,Beginner
+569,Python,Advanced
+569,Communication,Beginner
+570,Statistics,Advanced
+570,SQL,Advanced
+570,Data Visualization,Intermediate
+570,Communication,Beginner
+571,Python,Advanced
+571,Problem Solving,Intermediate
+571,Deep Learning,Advanced
+571,Data Visualization,Beginner
+572,Power BI,Advanced
+572,Data Visualization,Intermediate
+573,Communication,Advanced
+573,Deep Learning,Beginner
+573,Data Visualization,Intermediate
+574,Machine Learning,Advanced
+574,SQL,Beginner
+574,Java,Intermediate
+574,Deep Learning,Beginner
+574,Communication,Intermediate
+575,Deep Learning,Advanced
+575,Power BI,Intermediate
+575,Machine Learning,Beginner
+575,SQL,Intermediate
+576,Machine Learning,Beginner
+576,Python,Advanced
+576,Java,Advanced
+576,Statistics,Advanced
+576,Power BI,Intermediate
+577,Java,Intermediate
+577,Deep Learning,Advanced
+577,Communication,Beginner
+577,Python,Beginner
+577,Statistics,Advanced
+578,Deep Learning,Intermediate
+578,Machine Learning,Advanced
+579,SQL,Intermediate
+579,Communication,Intermediate
+579,Data Visualization,Intermediate
+579,Java,Intermediate
+579,Deep Learning,Beginner
+580,Deep Learning,Intermediate
+580,Python,Beginner
+580,SQL,Advanced
+580,Communication,Advanced
+580,Machine Learning,Advanced
+581,Python,Beginner
+581,Communication,Intermediate
+581,Problem Solving,Intermediate
+582,Python,Advanced
+582,Deep Learning,Intermediate
+582,Communication,Intermediate
+582,Power BI,Beginner
+583,Data Visualization,Beginner
+583,Communication,Advanced
+583,SQL,Advanced
+583,Python,Beginner
+584,Data Visualization,Advanced
+584,Java,Intermediate
+585,Data Visualization,Advanced
+585,Deep Learning,Advanced
+586,SQL,Intermediate
+586,Machine Learning,Beginner
+586,Python,Beginner
+586,Data Visualization,Beginner
+586,Communication,Beginner
+587,Power BI,Advanced
+587,Deep Learning,Beginner
+587,SQL,Intermediate
+588,Problem Solving,Beginner
+588,Statistics,Intermediate
+588,Java,Advanced
+588,Data Visualization,Beginner
+588,Machine Learning,Advanced
+589,Java,Advanced
+589,SQL,Advanced
+590,SQL,Advanced
+590,Communication,Beginner
+591,Power BI,Intermediate
+591,SQL,Intermediate
+591,Java,Intermediate
+591,Problem Solving,Advanced
+592,Statistics,Advanced
+592,Machine Learning,Beginner
+593,Problem Solving,Advanced
+593,Deep Learning,Beginner
+593,Power BI,Intermediate
+594,Python,Beginner
+594,Deep Learning,Beginner
+594,Machine Learning,Advanced
+594,Java,Advanced
+595,Deep Learning,Advanced
+595,Java,Advanced
+595,SQL,Advanced
+595,Machine Learning,Intermediate
+595,Statistics,Beginner
+596,Deep Learning,Advanced
+596,Machine Learning,Intermediate
+596,Java,Beginner
+596,SQL,Beginner
+596,Problem Solving,Beginner
+597,Deep Learning,Advanced
+597,Statistics,Advanced
+598,Power BI,Intermediate
+598,SQL,Beginner
+599,Java,Intermediate
+599,Statistics,Beginner
+599,Communication,Advanced
+600,SQL,Beginner
+600,Power BI,Intermediate
+600,Java,Intermediate
+601,Communication,Intermediate
+601,Power BI,Intermediate
+601,Machine Learning,Intermediate
+601,Deep Learning,Beginner
+601,Problem Solving,Beginner
+602,Data Visualization,Intermediate
+602,Java,Beginner
+602,Problem Solving,Advanced
+602,Machine Learning,Advanced
+603,Statistics,Intermediate
+603,Java,Intermediate
+603,Deep Learning,Advanced
+603,Machine Learning,Beginner
+604,Java,Beginner
+604,SQL,Advanced
+604,Power BI,Beginner
+605,SQL,Advanced
+605,Java,Advanced
+605,Python,Beginner
+605,Problem Solving,Advanced
+606,Java,Advanced
+606,Data Visualization,Advanced
+606,Python,Intermediate
+606,Power BI,Advanced
+606,Machine Learning,Beginner
+607,Problem Solving,Intermediate
+607,Data Visualization,Advanced
+607,Power BI,Advanced
+607,SQL,Beginner
+608,Communication,Advanced
+608,Deep Learning,Advanced
+608,Python,Beginner
+608,Java,Advanced
+608,SQL,Beginner
+609,Machine Learning,Intermediate
+609,Java,Intermediate
+609,Deep Learning,Beginner
+609,Communication,Beginner
+609,Problem Solving,Intermediate
+610,SQL,Beginner
+610,Power BI,Beginner
+610,Communication,Advanced
+611,Deep Learning,Intermediate
+611,Communication,Intermediate
+611,Problem Solving,Beginner
+612,Communication,Advanced
+612,SQL,Advanced
+613,Power BI,Advanced
+613,Deep Learning,Intermediate
+613,Machine Learning,Intermediate
+613,Data Visualization,Advanced
+614,Deep Learning,Intermediate
+614,Power BI,Beginner
+615,Communication,Advanced
+615,Java,Beginner
+615,Statistics,Advanced
+615,Problem Solving,Beginner
+615,Data Visualization,Intermediate
+616,Data Visualization,Beginner
+616,SQL,Beginner
+616,Power BI,Beginner
+617,Communication,Intermediate
+617,SQL,Intermediate
+617,Data Visualization,Advanced
+618,Statistics,Intermediate
+618,Java,Beginner
+619,Problem Solving,Beginner
+619,Python,Beginner
+619,Data Visualization,Advanced
+620,Machine Learning,Advanced
+620,Deep Learning,Beginner
+620,Python,Beginner
+621,Power BI,Advanced
+621,Machine Learning,Advanced
+621,Problem Solving,Advanced
+622,Power BI,Beginner
+622,SQL,Intermediate
+623,Statistics,Advanced
+623,Machine Learning,Beginner
+623,Data Visualization,Advanced
+623,Problem Solving,Beginner
+623,Java,Advanced
+624,Machine Learning,Advanced
+624,Communication,Beginner
+624,Statistics,Beginner
+624,Power BI,Intermediate
+625,Machine Learning,Advanced
+625,SQL,Advanced
+625,Python,Intermediate
+625,Deep Learning,Beginner
+625,Power BI,Advanced
+626,Machine Learning,Advanced
+626,Statistics,Advanced
+627,Deep Learning,Beginner
+627,Java,Beginner
+628,Machine Learning,Advanced
+628,Deep Learning,Intermediate
+628,Python,Advanced
+628,Problem Solving,Intermediate
+628,Communication,Intermediate
+629,Deep Learning,Beginner
+629,Problem Solving,Intermediate
+630,Communication,Intermediate
+630,SQL,Beginner
+630,Problem Solving,Beginner
+630,Deep Learning,Intermediate
+630,Machine Learning,Advanced
+631,Power BI,Beginner
+631,Data Visualization,Advanced
+631,Python,Advanced
+631,Communication,Beginner
+631,Problem Solving,Advanced
+632,Problem Solving,Advanced
+632,Data Visualization,Intermediate
+633,Communication,Advanced
+633,SQL,Intermediate
+633,Machine Learning,Intermediate
+633,Data Visualization,Advanced
+633,Java,Intermediate
+634,Java,Beginner
+634,Power BI,Intermediate
+634,Problem Solving,Advanced
+634,Statistics,Advanced
+635,Machine Learning,Advanced
+635,Communication,Intermediate
+635,Statistics,Advanced
+635,Java,Intermediate
+635,Problem Solving,Advanced
+636,SQL,Advanced
+636,Data Visualization,Beginner
+636,Statistics,Beginner
+637,Deep Learning,Advanced
+637,Problem Solving,Advanced
+637,Communication,Advanced
+638,Machine Learning,Advanced
+638,Problem Solving,Beginner
+639,Machine Learning,Advanced
+639,Statistics,Intermediate
+640,SQL,Beginner
+640,Power BI,Intermediate
+641,Java,Advanced
+641,Python,Intermediate
+642,Java,Beginner
+642,Deep Learning,Beginner
+642,Power BI,Advanced
+642,Communication,Intermediate
+642,Statistics,Intermediate
+643,Data Visualization,Intermediate
+643,Deep Learning,Beginner
+644,Java,Advanced
+644,Deep Learning,Advanced
+645,Java,Intermediate
+645,Machine Learning,Beginner
+645,Python,Advanced
+646,Machine Learning,Intermediate
+646,SQL,Intermediate
+647,Problem Solving,Beginner
+647,Java,Advanced
+647,Data Visualization,Advanced
+647,Power BI,Beginner
+648,Deep Learning,Advanced
+648,Power BI,Advanced
+649,Communication,Beginner
+649,Power BI,Intermediate
+649,Data Visualization,Intermediate
+649,Deep Learning,Advanced
+650,Power BI,Intermediate
+650,Machine Learning,Advanced
+651,Deep Learning,Advanced
+651,SQL,Intermediate
+652,SQL,Advanced
+652,Deep Learning,Intermediate
+652,Power BI,Advanced
+652,Statistics,Intermediate
+653,Java,Intermediate
+653,Statistics,Advanced
+653,Data Visualization,Intermediate
+653,Problem Solving,Advanced
+653,Machine Learning,Beginner
+654,SQL,Beginner
+654,Power BI,Advanced
+654,Java,Advanced
+654,Data Visualization,Beginner
+654,Communication,Intermediate
+655,Communication,Beginner
+655,Deep Learning,Intermediate
+655,Python,Beginner
+655,Java,Intermediate
+655,Machine Learning,Advanced
+656,SQL,Intermediate
+656,Deep Learning,Intermediate
+656,Machine Learning,Beginner
+656,Data Visualization,Advanced
+657,Machine Learning,Beginner
+657,Data Visualization,Beginner
+657,Statistics,Advanced
+657,Communication,Beginner
+658,Data Visualization,Beginner
+658,Java,Advanced
+658,Deep Learning,Intermediate
+658,Problem Solving,Beginner
+659,SQL,Advanced
+659,Java,Advanced
+660,Java,Intermediate
+660,Python,Advanced
+660,Deep Learning,Intermediate
+660,Problem Solving,Intermediate
+660,Data Visualization,Advanced
+661,Statistics,Beginner
+661,Machine Learning,Advanced
+661,Power BI,Beginner
+661,Data Visualization,Beginner
+662,Statistics,Intermediate
+662,Deep Learning,Advanced
+662,Python,Beginner
+662,Power BI,Intermediate
+662,Machine Learning,Beginner
+663,Communication,Intermediate
+663,Python,Advanced
+663,Deep Learning,Beginner
+663,Java,Intermediate
+663,SQL,Intermediate
+664,Machine Learning,Intermediate
+664,Deep Learning,Intermediate
+664,Power BI,Advanced
+664,SQL,Intermediate
+665,Machine Learning,Intermediate
+665,Statistics,Advanced
+665,Problem Solving,Intermediate
+665,SQL,Intermediate
+666,Power BI,Advanced
+666,Statistics,Advanced
+666,Machine Learning,Beginner
+666,Java,Beginner
+666,SQL,Advanced
+667,Data Visualization,Intermediate
+667,Deep Learning,Beginner
+667,Problem Solving,Beginner
+667,Statistics,Advanced
+668,Statistics,Intermediate
+668,Python,Intermediate
+668,Machine Learning,Beginner
+669,Statistics,Advanced
+669,Power BI,Beginner
+669,Deep Learning,Intermediate
+669,Java,Beginner
+670,Python,Intermediate
+670,Data Visualization,Advanced
+670,Power BI,Beginner
+671,Communication,Advanced
+671,Power BI,Intermediate
+671,Java,Intermediate
+671,Machine Learning,Beginner
+671,Deep Learning,Intermediate
+672,Communication,Advanced
+672,Data Visualization,Advanced
+673,Power BI,Advanced
+673,Communication,Advanced
+673,Deep Learning,Intermediate
+674,SQL,Beginner
+674,Problem Solving,Beginner
+674,Power BI,Advanced
+674,Data Visualization,Intermediate
+674,Communication,Intermediate
+675,SQL,Intermediate
+675,Java,Intermediate
+675,Machine Learning,Advanced
+675,Statistics,Intermediate
+675,Deep Learning,Advanced
+676,Java,Intermediate
+676,Problem Solving,Advanced
+676,Power BI,Advanced
+676,Data Visualization,Advanced
+677,Problem Solving,Beginner
+677,Machine Learning,Advanced
+677,Deep Learning,Beginner
+677,Java,Advanced
+677,Python,Intermediate
+678,Data Visualization,Intermediate
+678,Machine Learning,Beginner
+679,SQL,Advanced
+679,Statistics,Beginner
+680,Problem Solving,Beginner
+680,Deep Learning,Beginner
+681,Java,Intermediate
+681,Machine Learning,Intermediate
+681,SQL,Beginner
+681,Communication,Beginner
+682,Statistics,Beginner
+682,Machine Learning,Beginner
+682,Deep Learning,Beginner
+682,Power BI,Advanced
+683,Communication,Advanced
+683,Statistics,Intermediate
+683,Deep Learning,Advanced
+683,Problem Solving,Intermediate
+684,Deep Learning,Advanced
+684,Machine Learning,Advanced
+684,Statistics,Advanced
+685,Deep Learning,Advanced
+685,Java,Beginner
+685,Power BI,Beginner
+685,Machine Learning,Intermediate
+685,Data Visualization,Intermediate
+686,Problem Solving,Beginner
+686,Power BI,Beginner
+686,Machine Learning,Advanced
+686,Statistics,Beginner
+687,Power BI,Intermediate
+687,Statistics,Intermediate
+687,Python,Intermediate
+687,Communication,Beginner
+688,Power BI,Beginner
+688,Data Visualization,Intermediate
+688,Python,Advanced
+688,Java,Intermediate
+688,Machine Learning,Intermediate
+689,Machine Learning,Beginner
+689,Problem Solving,Intermediate
+689,Deep Learning,Beginner
+690,Data Visualization,Advanced
+690,Deep Learning,Advanced
+690,Power BI,Intermediate
+690,Machine Learning,Intermediate
+690,Communication,Beginner
+691,Machine Learning,Intermediate
+691,Java,Beginner
+692,Java,Intermediate
+692,Statistics,Beginner
+692,Power BI,Intermediate
+692,Communication,Beginner
+692,Deep Learning,Beginner
+693,Deep Learning,Beginner
+693,Python,Beginner
+694,Power BI,Beginner
+694,Machine Learning,Beginner
+694,Statistics,Beginner
+694,Communication,Beginner
+695,Statistics,Intermediate
+695,Data Visualization,Intermediate
+696,Statistics,Beginner
+696,Communication,Intermediate
+696,Java,Beginner
+696,Deep Learning,Beginner
+697,Power BI,Beginner
+697,Problem Solving,Advanced
+698,Machine Learning,Beginner
+698,Data Visualization,Beginner
+698,Power BI,Advanced
+698,Problem Solving,Beginner
+698,Deep Learning,Intermediate
+699,Data Visualization,Beginner
+699,Python,Advanced
+699,Java,Advanced
+699,Statistics,Beginner
+699,Communication,Intermediate
+700,Power BI,Beginner
+700,Communication,Advanced
+700,Machine Learning,Advanced
+700,Deep Learning,Advanced
+700,Problem Solving,Beginner
+701,Statistics,Beginner
+701,Power BI,Advanced
+701,Data Visualization,Beginner
+701,Machine Learning,Beginner
+702,Problem Solving,Beginner
+702,Communication,Intermediate
+702,Python,Advanced
+703,Problem Solving,Beginner
+703,Data Visualization,Beginner
+704,Java,Beginner
+704,Machine Learning,Beginner
+704,Communication,Intermediate
+704,Problem Solving,Beginner
+704,Python,Advanced
+705,Python,Beginner
+705,Java,Advanced
+705,Communication,Advanced
+705,Statistics,Beginner
+706,Statistics,Advanced
+706,Data Visualization,Advanced
+706,Communication,Intermediate
+707,Data Visualization,Beginner
+707,Python,Intermediate
+707,Problem Solving,Beginner
+707,Machine Learning,Intermediate
+707,Communication,Advanced
+708,Deep Learning,Beginner
+708,Power BI,Advanced
+708,Statistics,Intermediate
+708,SQL,Intermediate
+708,Java,Advanced
+709,Power BI,Beginner
+709,Deep Learning,Intermediate
+709,Machine Learning,Intermediate
+709,Python,Intermediate
+709,Java,Advanced
+710,Statistics,Beginner
+710,Python,Beginner
+710,Problem Solving,Advanced
+710,Communication,Intermediate
+711,Communication,Beginner
+711,SQL,Advanced
+711,Problem Solving,Advanced
+712,Deep Learning,Advanced
+712,Machine Learning,Intermediate
+712,Power BI,Beginner
+712,Java,Beginner
+712,Data Visualization,Advanced
+713,Python,Beginner
+713,Machine Learning,Beginner
+714,SQL,Beginner
+714,Statistics,Beginner
+714,Data Visualization,Advanced
+715,Statistics,Beginner
+715,Deep Learning,Advanced
+715,Power BI,Advanced
+715,Python,Beginner
+715,Machine Learning,Beginner
+716,Statistics,Advanced
+716,SQL,Beginner
+716,Java,Intermediate
+717,Communication,Advanced
+717,Python,Beginner
+717,Power BI,Intermediate
+717,Statistics,Beginner
+717,Deep Learning,Beginner
+718,SQL,Advanced
+718,Data Visualization,Intermediate
+719,Data Visualization,Advanced
+719,Deep Learning,Advanced
+719,Java,Beginner
+720,SQL,Intermediate
+720,Communication,Beginner
+720,Statistics,Beginner
+720,Deep Learning,Beginner
+720,Problem Solving,Advanced
+721,Deep Learning,Intermediate
+721,Communication,Intermediate
+721,Machine Learning,Intermediate
+721,Power BI,Advanced
+721,Problem Solving,Intermediate
+722,Problem Solving,Beginner
+722,Java,Advanced
+722,Communication,Advanced
+722,Power BI,Beginner
+723,Deep Learning,Intermediate
+723,Power BI,Beginner
+723,Communication,Advanced
+723,Data Visualization,Beginner
+723,Problem Solving,Intermediate
+724,Deep Learning,Intermediate
+724,Machine Learning,Beginner
+725,Data Visualization,Advanced
+725,Java,Intermediate
+725,Communication,Advanced
+725,Python,Advanced
+726,SQL,Intermediate
+726,Python,Beginner
+726,Statistics,Beginner
+727,Communication,Intermediate
+727,Data Visualization,Beginner
+727,Deep Learning,Advanced
+727,Machine Learning,Intermediate
+728,SQL,Beginner
+728,Communication,Intermediate
+728,Statistics,Advanced
+729,Java,Beginner
+729,Power BI,Advanced
+730,SQL,Intermediate
+730,Python,Beginner
+730,Communication,Beginner
+730,Machine Learning,Advanced
+730,Data Visualization,Advanced
+731,Problem Solving,Intermediate
+731,Python,Advanced
+732,Communication,Advanced
+732,Deep Learning,Beginner
+733,Deep Learning,Advanced
+733,Data Visualization,Advanced
+733,Machine Learning,Intermediate
+733,Python,Intermediate
+734,Data Visualization,Intermediate
+734,Problem Solving,Intermediate
+735,Machine Learning,Intermediate
+735,Communication,Advanced
+735,SQL,Advanced
+736,Deep Learning,Intermediate
+736,Problem Solving,Beginner
+737,Deep Learning,Intermediate
+737,Problem Solving,Advanced
+737,Machine Learning,Beginner
+737,Java,Intermediate
+737,SQL,Intermediate
+738,Deep Learning,Beginner
+738,Java,Beginner
+738,Data Visualization,Intermediate
+739,Communication,Intermediate
+739,SQL,Intermediate
+739,Deep Learning,Intermediate
+739,Java,Beginner
+739,Data Visualization,Intermediate
+740,Java,Intermediate
+740,Python,Advanced
+740,Power BI,Intermediate
+740,SQL,Advanced
+741,Statistics,Beginner
+741,Python,Advanced
+741,Data Visualization,Intermediate
+742,SQL,Beginner
+742,Java,Advanced
+742,Python,Beginner
+743,Python,Intermediate
+743,Communication,Intermediate
+743,SQL,Beginner
+743,Machine Learning,Intermediate
+744,Deep Learning,Advanced
+744,Data Visualization,Advanced
+744,Java,Intermediate
+745,Java,Advanced
+745,Machine Learning,Advanced
+745,Python,Beginner
+745,Data Visualization,Intermediate
+745,Power BI,Beginner
+746,Power BI,Advanced
+746,Data Visualization,Advanced
+747,Python,Intermediate
+747,Statistics,Advanced
+747,Java,Intermediate
+747,Deep Learning,Advanced
+748,SQL,Advanced
+748,Python,Intermediate
+748,Power BI,Beginner
+748,Problem Solving,Intermediate
+749,Communication,Advanced
+749,Statistics,Advanced
+750,Machine Learning,Advanced
+750,Data Visualization,Intermediate
+751,Python,Advanced
+751,Data Visualization,Intermediate
+752,Statistics,Intermediate
+752,Problem Solving,Advanced
+752,Machine Learning,Intermediate
+752,Python,Intermediate
+753,Data Visualization,Beginner
+753,Deep Learning,Advanced
+753,Power BI,Intermediate
+753,Problem Solving,Intermediate
+754,Deep Learning,Beginner
+754,Power BI,Beginner
+755,Problem Solving,Intermediate
+755,Machine Learning,Advanced
+755,SQL,Advanced
+755,Communication,Advanced
+756,Problem Solving,Intermediate
+756,Data Visualization,Intermediate
+756,Machine Learning,Advanced
+757,Statistics,Advanced
+757,Deep Learning,Beginner
+757,Machine Learning,Advanced
+757,SQL,Advanced
+758,Machine Learning,Intermediate
+758,Power BI,Beginner
+758,Java,Advanced
+759,Communication,Beginner
+759,SQL,Intermediate
+759,Deep Learning,Beginner
+760,Communication,Intermediate
+760,Problem Solving,Intermediate
+761,Power BI,Beginner
+761,Machine Learning,Beginner
+761,Data Visualization,Advanced
+761,Python,Advanced
+761,SQL,Intermediate
+762,Java,Advanced
+762,Data Visualization,Beginner
+762,Deep Learning,Intermediate
+763,Statistics,Advanced
+763,Machine Learning,Advanced
+764,Communication,Beginner
+764,Machine Learning,Beginner
+764,Problem Solving,Beginner
+764,Data Visualization,Beginner
+764,Statistics,Beginner
+765,Python,Advanced
+765,Power BI,Beginner
+765,Problem Solving,Beginner
+765,SQL,Beginner
+765,Communication,Beginner
+766,Java,Beginner
+766,Statistics,Intermediate
+766,Communication,Intermediate
+766,Problem Solving,Beginner
+766,Data Visualization,Advanced
+767,Communication,Intermediate
+767,Problem Solving,Intermediate
+767,Python,Beginner
+767,Power BI,Beginner
+767,Statistics,Advanced
+768,Python,Beginner
+768,Deep Learning,Beginner
+768,Problem Solving,Intermediate
+768,Power BI,Intermediate
+768,Communication,Intermediate
+769,Power BI,Intermediate
+769,Statistics,Advanced
+769,Machine Learning,Beginner
+769,Data Visualization,Advanced
+770,Statistics,Advanced
+770,Java,Advanced
+770,SQL,Beginner
+771,Java,Intermediate
+771,Deep Learning,Intermediate
+771,Machine Learning,Intermediate
+772,Python,Beginner
+772,Machine Learning,Intermediate
+772,Statistics,Beginner
+772,Power BI,Intermediate
+772,Communication,Intermediate
+773,SQL,Advanced
+773,Java,Intermediate
+773,Deep Learning,Advanced
+774,SQL,Advanced
+774,Deep Learning,Advanced
+774,Problem Solving,Beginner
+774,Communication,Intermediate
+775,Python,Beginner
+775,Machine Learning,Beginner
+775,Communication,Beginner
+775,Power BI,Beginner
+775,Statistics,Advanced
+776,Problem Solving,Intermediate
+776,Power BI,Advanced
+777,Power BI,Beginner
+777,Machine Learning,Advanced
+777,SQL,Intermediate
+777,Statistics,Beginner
+777,Problem Solving,Intermediate
+778,Statistics,Beginner
+778,Deep Learning,Beginner
+778,Python,Advanced
+778,Power BI,Advanced
+778,Data Visualization,Intermediate
+779,Problem Solving,Beginner
+779,Statistics,Beginner
+779,SQL,Advanced
+779,Power BI,Intermediate
+779,Java,Advanced
+780,Python,Beginner
+780,Machine Learning,Advanced
+780,Deep Learning,Intermediate
+781,Machine Learning,Advanced
+781,Python,Advanced
+782,Communication,Intermediate
+782,SQL,Beginner
+782,Python,Beginner
+782,Statistics,Advanced
+783,Java,Advanced
+783,Deep Learning,Advanced
+783,Machine Learning,Intermediate
+783,Data Visualization,Beginner
+784,Power BI,Intermediate
+784,Communication,Intermediate
+785,Problem Solving,Beginner
+785,Deep Learning,Intermediate
+786,Machine Learning,Intermediate
+786,SQL,Advanced
+786,Power BI,Beginner
+786,Java,Advanced
+786,Statistics,Beginner
+787,SQL,Beginner
+787,Deep Learning,Intermediate
+788,Problem Solving,Advanced
+788,Communication,Advanced
+788,Power BI,Intermediate
+788,Statistics,Beginner
+789,Deep Learning,Advanced
+789,Statistics,Beginner
+789,Java,Advanced
+789,Problem Solving,Intermediate
+789,SQL,Beginner
+790,SQL,Intermediate
+790,Python,Advanced
+791,Data Visualization,Intermediate
+791,Problem Solving,Beginner
+792,Communication,Advanced
+792,Deep Learning,Beginner
+792,Data Visualization,Advanced
+792,Python,Intermediate
+793,SQL,Advanced
+793,Power BI,Intermediate
+793,Deep Learning,Beginner
+793,Statistics,Beginner
+794,Communication,Beginner
+794,Problem Solving,Beginner
+794,Python,Intermediate
+794,Deep Learning,Intermediate
+795,Statistics,Advanced
+795,Python,Intermediate
+795,Machine Learning,Advanced
+795,Data Visualization,Intermediate
+795,SQL,Intermediate
+796,Python,Advanced
+796,Deep Learning,Intermediate
+796,Power BI,Advanced
+796,Statistics,Advanced
+796,Communication,Beginner
+797,Java,Beginner
+797,Communication,Beginner
+797,Deep Learning,Intermediate
+798,Communication,Advanced
+798,Problem Solving,Advanced
+799,Java,Advanced
+799,Problem Solving,Beginner
+799,Machine Learning,Intermediate
+800,Python,Intermediate
+800,Power BI,Beginner
+800,Problem Solving,Intermediate
+800,Java,Intermediate
+801,Data Visualization,Beginner
+801,Deep Learning,Intermediate
+801,Power BI,Beginner
+801,SQL,Beginner
+802,Statistics,Beginner
+802,Deep Learning,Intermediate
+803,Data Visualization,Advanced
+803,Communication,Advanced
+803,Statistics,Intermediate
+804,Machine Learning,Advanced
+804,SQL,Beginner
+804,Java,Intermediate
+804,Deep Learning,Intermediate
+805,Python,Beginner
+805,Power BI,Advanced
+806,Communication,Beginner
+806,Statistics,Beginner
+807,Python,Beginner
+807,Power BI,Beginner
+807,Data Visualization,Intermediate
+807,Machine Learning,Intermediate
+808,Statistics,Beginner
+808,SQL,Intermediate
+808,Power BI,Beginner
+808,Deep Learning,Beginner
+809,Data Visualization,Intermediate
+809,Deep Learning,Advanced
+810,Power BI,Beginner
+810,Machine Learning,Beginner
+810,Java,Beginner
+810,Statistics,Intermediate
+811,Deep Learning,Beginner
+811,Statistics,Intermediate
+811,Python,Advanced
+811,SQL,Beginner
+812,Problem Solving,Beginner
+812,Python,Intermediate
+813,Machine Learning,Beginner
+813,Statistics,Advanced
+813,Communication,Advanced
+813,Java,Advanced
+813,Problem Solving,Beginner
+814,Java,Intermediate
+814,Machine Learning,Beginner
+814,SQL,Intermediate
+814,Problem Solving,Intermediate
+814,Communication,Advanced
+815,Statistics,Intermediate
+815,Data Visualization,Intermediate
+815,Deep Learning,Intermediate
+815,SQL,Beginner
+815,Power BI,Advanced
+816,Communication,Beginner
+816,Statistics,Intermediate
+816,Deep Learning,Beginner
+816,Python,Intermediate
+817,Statistics,Advanced
+817,Machine Learning,Advanced
+817,Power BI,Beginner
+817,Problem Solving,Advanced
+817,Deep Learning,Beginner
+818,SQL,Advanced
+818,Communication,Intermediate
+818,Java,Intermediate
+818,Problem Solving,Advanced
+818,Machine Learning,Intermediate
+819,Java,Intermediate
+819,Data Visualization,Intermediate
+819,Machine Learning,Beginner
+820,Data Visualization,Intermediate
+820,Problem Solving,Advanced
+820,Deep Learning,Advanced
+820,Power BI,Beginner
+821,SQL,Advanced
+821,Statistics,Advanced
+821,Java,Intermediate
+822,Deep Learning,Intermediate
+822,SQL,Intermediate
+822,Statistics,Beginner
+822,Java,Advanced
+823,Java,Intermediate
+823,Problem Solving,Intermediate
+824,SQL,Beginner
+824,Data Visualization,Advanced
+825,Machine Learning,Intermediate
+825,Java,Advanced
+826,Problem Solving,Advanced
+826,Statistics,Intermediate
+826,Data Visualization,Intermediate
+826,SQL,Advanced
+827,Problem Solving,Beginner
+827,Communication,Advanced
+827,SQL,Advanced
+827,Power BI,Intermediate
+828,Power BI,Advanced
+828,Python,Beginner
+828,Communication,Beginner
+829,SQL,Intermediate
+829,Power BI,Advanced
+829,Python,Advanced
+829,Java,Intermediate
+830,Problem Solving,Advanced
+830,Java,Beginner
+830,Deep Learning,Advanced
+830,Data Visualization,Beginner
+831,Machine Learning,Intermediate
+831,Data Visualization,Beginner
+831,Problem Solving,Intermediate
+831,Statistics,Advanced
+831,Java,Beginner
+832,Python,Beginner
+832,SQL,Advanced
+832,Java,Intermediate
+833,Machine Learning,Intermediate
+833,SQL,Advanced
+833,Java,Advanced
+833,Communication,Intermediate
+833,Data Visualization,Advanced
+834,Statistics,Advanced
+834,Deep Learning,Intermediate
+834,Problem Solving,Intermediate
+835,Data Visualization,Beginner
+835,Machine Learning,Advanced
+835,Problem Solving,Intermediate
+835,Power BI,Advanced
+836,Deep Learning,Advanced
+836,Power BI,Advanced
+836,Problem Solving,Intermediate
+837,Python,Advanced
+837,Statistics,Intermediate
+838,Java,Advanced
+838,Statistics,Beginner
+839,Deep Learning,Advanced
+839,Power BI,Beginner
+839,Statistics,Advanced
+840,Data Visualization,Advanced
+840,Statistics,Advanced
+841,Deep Learning,Advanced
+841,Power BI,Beginner
+842,Deep Learning,Advanced
+842,Python,Intermediate
+842,Statistics,Advanced
+842,Data Visualization,Advanced
+843,Problem Solving,Beginner
+843,Communication,Beginner
+843,Power BI,Advanced
+843,Machine Learning,Advanced
+844,Java,Intermediate
+844,Power BI,Advanced
+844,Python,Beginner
+844,Communication,Advanced
+845,Power BI,Intermediate
+845,Python,Intermediate
+846,Machine Learning,Beginner
+846,Deep Learning,Intermediate
+847,Machine Learning,Intermediate
+847,Power BI,Beginner
+847,Deep Learning,Advanced
+847,Problem Solving,Beginner
+848,Java,Intermediate
+848,Machine Learning,Beginner
+848,Statistics,Intermediate
+849,Statistics,Intermediate
+849,Machine Learning,Beginner
+849,Python,Beginner
+850,Statistics,Beginner
+850,Problem Solving,Advanced
+850,Deep Learning,Intermediate
+851,Data Visualization,Advanced
+851,Communication,Intermediate
+851,Python,Beginner
+852,Machine Learning,Intermediate
+852,Statistics,Intermediate
+853,Statistics,Advanced
+853,Deep Learning,Advanced
+853,Data Visualization,Intermediate
+853,Java,Intermediate
+854,Machine Learning,Intermediate
+854,Deep Learning,Intermediate
+854,Problem Solving,Intermediate
+854,Python,Advanced
+855,Deep Learning,Advanced
+855,Python,Intermediate
+855,SQL,Intermediate
+855,Power BI,Advanced
+856,Communication,Beginner
+856,Power BI,Intermediate
+856,Deep Learning,Advanced
+856,Problem Solving,Advanced
+857,Statistics,Advanced
+857,Data Visualization,Advanced
+857,Deep Learning,Beginner
+857,Power BI,Intermediate
+857,Machine Learning,Advanced
+858,Python,Beginner
+858,SQL,Intermediate
+859,Deep Learning,Advanced
+859,SQL,Intermediate
+860,Data Visualization,Beginner
+860,Power BI,Beginner
+860,Deep Learning,Advanced
+860,SQL,Beginner
+861,Java,Advanced
+861,Data Visualization,Advanced
+862,SQL,Advanced
+862,Java,Beginner
+863,Java,Intermediate
+863,Machine Learning,Intermediate
+863,SQL,Intermediate
+863,Communication,Advanced
+863,Statistics,Beginner
+864,Power BI,Beginner
+864,Problem Solving,Intermediate
+864,Communication,Beginner
+864,Machine Learning,Intermediate
+864,SQL,Intermediate
+865,Python,Intermediate
+865,Power BI,Beginner
+865,Deep Learning,Intermediate
+865,SQL,Beginner
+866,Machine Learning,Intermediate
+866,Statistics,Beginner
+866,SQL,Advanced
+866,Deep Learning,Advanced
+866,Power BI,Beginner
+867,Power BI,Advanced
+867,SQL,Advanced
+867,Python,Intermediate
+867,Statistics,Intermediate
+867,Problem Solving,Beginner
+868,Machine Learning,Intermediate
+868,Python,Beginner
+868,Deep Learning,Advanced
+868,Communication,Intermediate
+868,Data Visualization,Intermediate
+869,Deep Learning,Intermediate
+869,Statistics,Intermediate
+870,SQL,Advanced
+870,Deep Learning,Intermediate
+870,Data Visualization,Beginner
+870,Python,Advanced
+870,Statistics,Advanced
+871,Communication,Advanced
+871,Power BI,Advanced
+871,Problem Solving,Beginner
+871,Python,Intermediate
+872,SQL,Beginner
+872,Statistics,Beginner
+872,Power BI,Advanced
+872,Communication,Beginner
+873,Data Visualization,Advanced
+873,Power BI,Intermediate
+873,Problem Solving,Intermediate
+873,Python,Beginner
+873,Communication,Advanced
+874,Data Visualization,Advanced
+874,Machine Learning,Advanced
+874,Python,Beginner
+874,SQL,Intermediate
+874,Statistics,Intermediate
+875,Deep Learning,Intermediate
+875,Power BI,Advanced
+876,Python,Advanced
+876,Java,Beginner
+876,Communication,Intermediate
+876,Deep Learning,Beginner
+876,Machine Learning,Beginner
+877,Deep Learning,Advanced
+877,Machine Learning,Beginner
+877,Data Visualization,Intermediate
+877,Python,Advanced
+877,Problem Solving,Beginner
+878,Java,Beginner
+878,Python,Beginner
+878,Data Visualization,Beginner
+878,Communication,Advanced
+878,Problem Solving,Beginner
+879,SQL,Advanced
+879,Statistics,Beginner
+879,Machine Learning,Beginner
+879,Problem Solving,Beginner
+880,Java,Intermediate
+880,Data Visualization,Intermediate
+880,SQL,Advanced
+880,Problem Solving,Advanced
+880,Statistics,Intermediate
+881,SQL,Beginner
+881,Deep Learning,Beginner
+881,Machine Learning,Advanced
+881,Statistics,Beginner
+882,SQL,Intermediate
+882,Java,Beginner
+882,Power BI,Advanced
+882,Deep Learning,Intermediate
+883,Statistics,Beginner
+883,Data Visualization,Beginner
+883,Python,Advanced
+884,Machine Learning,Beginner
+884,Python,Beginner
+884,Statistics,Beginner
+884,Deep Learning,Advanced
+884,Problem Solving,Advanced
+885,Problem Solving,Beginner
+885,Statistics,Advanced
+885,Machine Learning,Intermediate
+885,SQL,Advanced
+886,Problem Solving,Beginner
+886,Data Visualization,Advanced
+886,Machine Learning,Beginner
+886,Power BI,Advanced
+886,Communication,Intermediate
+887,Power BI,Intermediate
+887,Communication,Beginner
+888,Data Visualization,Advanced
+888,SQL,Intermediate
+888,Deep Learning,Advanced
+889,Statistics,Beginner
+889,Data Visualization,Beginner
+889,Power BI,Beginner
+890,Statistics,Beginner
+890,Java,Advanced
+890,Machine Learning,Beginner
+891,Communication,Beginner
+891,Power BI,Intermediate
+892,Communication,Advanced
+892,Statistics,Beginner
+892,Python,Advanced
+892,Deep Learning,Beginner
+893,Python,Beginner
+893,Statistics,Beginner
+893,SQL,Advanced
+894,Java,Advanced
+894,Communication,Intermediate
+894,Problem Solving,Beginner
+894,SQL,Beginner
+894,Deep Learning,Intermediate
+895,SQL,Beginner
+895,Data Visualization,Intermediate
+895,Problem Solving,Beginner
+896,Statistics,Beginner
+896,Java,Intermediate
+897,Data Visualization,Intermediate
+897,Statistics,Intermediate
+897,Machine Learning,Beginner
+898,Data Visualization,Beginner
+898,Communication,Beginner
+898,Power BI,Advanced
+898,SQL,Advanced
+898,Machine Learning,Beginner
+899,Machine Learning,Intermediate
+899,SQL,Beginner
+899,Statistics,Intermediate
+899,Data Visualization,Beginner
+900,Java,Advanced
+900,Machine Learning,Beginner
+900,Deep Learning,Beginner
+900,Power BI,Intermediate
+901,Data Visualization,Advanced
+901,Statistics,Intermediate
+901,Deep Learning,Advanced
+901,Machine Learning,Beginner
+901,Python,Beginner
+902,Problem Solving,Beginner
+902,Data Visualization,Intermediate
+902,Machine Learning,Beginner
+902,Power BI,Beginner
+903,Deep Learning,Intermediate
+903,Python,Advanced
+903,Problem Solving,Beginner
+903,Power BI,Intermediate
+903,Data Visualization,Intermediate
+904,SQL,Advanced
+904,Deep Learning,Advanced
+904,Python,Intermediate
+905,Machine Learning,Beginner
+905,Communication,Advanced
+905,Power BI,Beginner
+906,Statistics,Beginner
+906,Power BI,Advanced
+907,Java,Advanced
+907,Python,Intermediate
+907,Statistics,Beginner
+907,Data Visualization,Intermediate
+907,SQL,Advanced
+908,Python,Advanced
+908,SQL,Beginner
+908,Problem Solving,Intermediate
+908,Communication,Intermediate
+908,Machine Learning,Intermediate
+909,SQL,Advanced
+909,Communication,Advanced
+909,Python,Intermediate
+910,SQL,Intermediate
+910,Problem Solving,Intermediate
+911,Communication,Beginner
+911,Java,Advanced
+912,Deep Learning,Beginner
+912,Data Visualization,Intermediate
+913,Deep Learning,Advanced
+913,SQL,Advanced
+913,Statistics,Advanced
+914,Data Visualization,Intermediate
+914,Communication,Advanced
+914,Deep Learning,Advanced
+915,Power BI,Intermediate
+915,Python,Intermediate
+915,SQL,Advanced
+915,Machine Learning,Advanced
+915,Problem Solving,Beginner
+916,Deep Learning,Intermediate
+916,Java,Advanced
+916,Power BI,Advanced
+916,Data Visualization,Beginner
+916,Statistics,Beginner
+917,SQL,Beginner
+917,Java,Beginner
+917,Problem Solving,Beginner
+917,Deep Learning,Intermediate
+917,Machine Learning,Beginner
+918,Statistics,Advanced
+918,Machine Learning,Advanced
+918,Data Visualization,Beginner
+919,Problem Solving,Intermediate
+919,Deep Learning,Intermediate
+919,Machine Learning,Intermediate
+919,Data Visualization,Advanced
+920,Power BI,Beginner
+920,Data Visualization,Beginner
+921,Deep Learning,Advanced
+921,Communication,Intermediate
+921,Problem Solving,Advanced
+922,Statistics,Intermediate
+922,Deep Learning,Advanced
+922,Java,Beginner
+922,Data Visualization,Intermediate
+923,Power BI,Intermediate
+923,Data Visualization,Intermediate
+923,Statistics,Beginner
+924,Communication,Beginner
+924,Power BI,Advanced
+924,Statistics,Beginner
+925,Machine Learning,Beginner
+925,Java,Beginner
+925,Deep Learning,Beginner
+925,SQL,Intermediate
+926,Statistics,Beginner
+926,Power BI,Beginner
+926,Communication,Advanced
+927,Communication,Beginner
+927,Java,Intermediate
+928,Deep Learning,Intermediate
+928,Machine Learning,Intermediate
+928,Power BI,Beginner
+928,Python,Intermediate
+928,Problem Solving,Intermediate
+929,Python,Advanced
+929,Deep Learning,Advanced
+929,Communication,Intermediate
+930,Power BI,Beginner
+930,Machine Learning,Advanced
+930,Statistics,Intermediate
+930,Deep Learning,Beginner
+930,Communication,Beginner
+931,Power BI,Intermediate
+931,Python,Advanced
+932,Statistics,Intermediate
+932,Communication,Beginner
+932,SQL,Advanced
+933,Java,Intermediate
+933,Deep Learning,Beginner
+933,Data Visualization,Beginner
+934,Deep Learning,Advanced
+934,Statistics,Advanced
+935,Deep Learning,Beginner
+935,Problem Solving,Intermediate
+936,Java,Intermediate
+936,Deep Learning,Intermediate
+936,Python,Beginner
+936,Communication,Advanced
+937,Communication,Intermediate
+937,Problem Solving,Intermediate
+937,Java,Intermediate
+937,Python,Intermediate
+937,Machine Learning,Advanced
+938,Data Visualization,Advanced
+938,Statistics,Intermediate
+939,Power BI,Beginner
+939,Machine Learning,Advanced
+939,Problem Solving,Advanced
+939,Communication,Beginner
+939,Data Visualization,Beginner
+940,Power BI,Beginner
+940,Statistics,Advanced
+940,Communication,Intermediate
+941,Python,Advanced
+941,Problem Solving,Intermediate
+942,Machine Learning,Beginner
+942,Deep Learning,Beginner
+942,Statistics,Beginner
+942,Communication,Intermediate
+942,Power BI,Intermediate
+943,Python,Advanced
+943,Power BI,Intermediate
+943,Deep Learning,Beginner
+943,Data Visualization,Beginner
+943,Statistics,Beginner
+944,Power BI,Beginner
+944,Java,Advanced
+944,Statistics,Advanced
+945,Problem Solving,Advanced
+945,Machine Learning,Beginner
+945,Statistics,Beginner
+945,Communication,Beginner
+946,Statistics,Intermediate
+946,SQL,Advanced
+946,Communication,Intermediate
+946,Power BI,Intermediate
+947,SQL,Beginner
+947,Communication,Advanced
+947,Python,Beginner
+947,Problem Solving,Beginner
+947,Machine Learning,Intermediate
+948,Machine Learning,Intermediate
+948,Communication,Intermediate
+948,Java,Advanced
+948,Python,Intermediate
+948,Statistics,Beginner
+949,Power BI,Beginner
+949,Deep Learning,Advanced
+949,SQL,Beginner
+949,Java,Beginner
+950,Deep Learning,Advanced
+950,Communication,Intermediate
+950,Java,Intermediate
+951,SQL,Beginner
+951,Deep Learning,Beginner
+951,Communication,Beginner
+951,Problem Solving,Advanced
+952,Communication,Beginner
+952,Statistics,Beginner
+952,Problem Solving,Beginner
+952,Machine Learning,Beginner
+953,Data Visualization,Intermediate
+953,Deep Learning,Intermediate
+953,SQL,Beginner
+954,Machine Learning,Intermediate
+954,Python,Intermediate
+955,Communication,Advanced
+955,Machine Learning,Intermediate
+955,Statistics,Beginner
+955,Power BI,Advanced
+956,Python,Advanced
+956,SQL,Beginner
+956,Data Visualization,Advanced
+956,Deep Learning,Beginner
+957,Machine Learning,Intermediate
+957,Data Visualization,Advanced
+957,Java,Beginner
+957,Python,Beginner
+958,Statistics,Beginner
+958,Problem Solving,Beginner
+959,Python,Advanced
+959,Deep Learning,Beginner
+960,SQL,Advanced
+960,Power BI,Beginner
+960,Python,Beginner
+960,Statistics,Beginner
+960,Machine Learning,Advanced
+961,Java,Advanced
+961,Data Visualization,Intermediate
+961,Machine Learning,Beginner
+962,Machine Learning,Advanced
+962,Power BI,Intermediate
+963,Machine Learning,Advanced
+963,Deep Learning,Beginner
+963,Data Visualization,Beginner
+963,Power BI,Advanced
+964,Deep Learning,Advanced
+964,Data Visualization,Beginner
+965,Machine Learning,Beginner
+965,Deep Learning,Beginner
+965,Python,Advanced
+965,Communication,Advanced
+966,Communication,Beginner
+966,Machine Learning,Intermediate
+966,Statistics,Intermediate
+966,Java,Intermediate
+966,Python,Beginner
+967,Problem Solving,Beginner
+967,SQL,Intermediate
+967,Communication,Beginner
+968,Statistics,Advanced
+968,Communication,Advanced
+968,Power BI,Beginner
+969,Communication,Beginner
+969,Statistics,Intermediate
+970,Statistics,Advanced
+970,Power BI,Intermediate
+970,Java,Intermediate
+970,SQL,Intermediate
+971,SQL,Beginner
+971,Statistics,Beginner
+971,Communication,Advanced
+972,SQL,Advanced
+972,Problem Solving,Beginner
+972,Statistics,Beginner
+972,Power BI,Beginner
+972,Communication,Intermediate
+973,Java,Beginner
+973,SQL,Intermediate
+973,Machine Learning,Beginner
+973,Python,Advanced
+973,Statistics,Intermediate
+974,Data Visualization,Advanced
+974,Problem Solving,Intermediate
+975,Java,Intermediate
+975,Power BI,Advanced
+975,Problem Solving,Advanced
+975,Machine Learning,Intermediate
+976,Deep Learning,Beginner
+976,Power BI,Beginner
+976,Machine Learning,Intermediate
+976,Problem Solving,Intermediate
+976,Data Visualization,Intermediate
+977,Machine Learning,Advanced
+977,Python,Beginner
+977,SQL,Beginner
+978,Python,Intermediate
+978,Machine Learning,Beginner
+978,Problem Solving,Intermediate
+978,Power BI,Advanced
+978,Communication,Advanced
+979,SQL,Intermediate
+979,Deep Learning,Intermediate
+980,Power BI,Advanced
+980,Statistics,Intermediate
+980,Deep Learning,Advanced
+981,Deep Learning,Beginner
+981,Java,Intermediate
+981,Python,Beginner
+981,Problem Solving,Intermediate
+982,Communication,Beginner
+982,Problem Solving,Beginner
+982,Statistics,Advanced
+982,Data Visualization,Advanced
+982,Python,Intermediate
+983,Statistics,Intermediate
+983,Problem Solving,Advanced
+983,Machine Learning,Intermediate
+984,SQL,Beginner
+984,Statistics,Advanced
+984,Deep Learning,Beginner
+984,Data Visualization,Intermediate
+984,Power BI,Intermediate
+985,Java,Intermediate
+985,Problem Solving,Beginner
+985,Communication,Beginner
+985,Deep Learning,Advanced
+985,Machine Learning,Beginner
+986,Communication,Advanced
+986,Java,Intermediate
+986,Python,Intermediate
+987,Problem Solving,Intermediate
+987,Communication,Intermediate
+988,Python,Advanced
+988,Data Visualization,Intermediate
+988,Deep Learning,Advanced
+988,SQL,Beginner
+989,Power BI,Intermediate
+989,SQL,Beginner
+990,Deep Learning,Beginner
+990,Communication,Intermediate
+991,Java,Advanced
+991,Deep Learning,Intermediate
+991,Problem Solving,Advanced
+991,Machine Learning,Beginner
+991,Python,Intermediate
+992,Java,Intermediate
+992,Problem Solving,Beginner
+992,Communication,Advanced
+992,Power BI,Advanced
+992,Python,Beginner
+993,Statistics,Advanced
+993,Deep Learning,Intermediate
+993,Communication,Intermediate
+993,SQL,Intermediate
+994,Statistics,Intermediate
+994,SQL,Intermediate
+994,Data Visualization,Beginner
+995,Java,Advanced
+995,Problem Solving,Beginner
+995,Data Visualization,Advanced
+995,Power BI,Advanced
+996,Java,Intermediate
+996,Communication,Beginner
+997,Problem Solving,Advanced
+997,Data Visualization,Intermediate
+997,Communication,Advanced
+997,Java,Intermediate
+997,Python,Intermediate
+998,Data Visualization,Advanced
+998,Problem Solving,Advanced
+998,Deep Learning,Intermediate
+998,Machine Learning,Advanced
+999,Python,Advanced
+999,Deep Learning,Intermediate
+999,Machine Learning,Beginner
+1000,Power BI,Advanced
+1000,Deep Learning,Beginner
+1000,Problem Solving,Advanced
+1000,Java,Beginner
+1000,Communication,Intermediate
