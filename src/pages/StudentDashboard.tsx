@@ -4,79 +4,104 @@ import { StatCard } from "@/components/StatCard";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
-import { semesterPerformance, skillRadarData, mockNotifications, mockStudents, careerPaths } from "@/lib/mock-data";
-import { GraduationCap, Target, Brain, TrendingUp, BookOpen, Bell } from "lucide-react";
+import { useDataset } from "@/hooks/use-dataset";
+import { mockNotifications, careerPaths } from "@/lib/mock-data";
+import { GraduationCap, Target, Brain, BookOpen, Bell } from "lucide-react";
 import {
-  LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
-  RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, BarChart, Bar,
+  RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar,
+  ResponsiveContainer, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip,
 } from "recharts";
+import { Skeleton } from "@/components/ui/skeleton";
 
 export default function StudentDashboard() {
   const { user } = useAuth();
-  const student = mockStudents[0];
+  const { data, isLoading } = useDataset();
+
+  if (isLoading || !data) {
+    return (
+      <DashboardLayout>
+        <div className="space-y-6">
+          <Skeleton className="h-10 w-64" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[1, 2, 3, 4].map((i) => <Skeleton key={i} className="h-28" />)}
+          </div>
+        </div>
+      </DashboardLayout>
+    );
+  }
+
+  // Use first student as the logged-in student (demo)
+  const student = data.students[0];
   const unreadNotifications = mockNotifications.filter((n) => !n.read).length;
+
+  // Build skill radar from student's actual skills
+  const levelToScore = { Beginner: 33, Intermediate: 66, Advanced: 100 };
+  const skillRadarData = student.skills.map((s) => ({
+    skill: s.name,
+    score: levelToScore[s.level],
+  }));
+
+  // Academic performance bar chart
+  const academicData = [
+    { metric: "Attendance", value: student.attendance },
+    { metric: "Assignment", value: student.assignmentScore },
+    { metric: "Quiz", value: student.quizScore },
+    { metric: "Exam", value: student.examScore },
+  ];
 
   return (
     <DashboardLayout>
       <div className="space-y-6">
-        {/* Header */}
         <div>
           <h1 className="font-display text-3xl font-bold">Welcome, {user?.name}</h1>
           <p className="text-muted-foreground mt-1">Here's your academic & skill performance overview</p>
         </div>
 
-        {/* Stats */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          <StatCard title="Current GPA" value={student.gpa} icon={GraduationCap} trend={{ value: 3.2, positive: true }} />
-          <StatCard title="Job Readiness" value={`${student.jobReadinessScore}%`} icon={Target} trend={{ value: 5, positive: true }} />
+          <StatCard title="Current GPA" value={student.gpa.toFixed(2)} icon={GraduationCap} />
+          <StatCard title="Job Readiness" value={`${student.jobReadyScore.toFixed(0)}%`} icon={Target} />
           <StatCard title="Skills Tracked" value={student.skills.length} icon={Brain} />
-          <StatCard title="Attendance" value={`${student.attendancePercentage}%`} icon={BookOpen} trend={{ value: 2, positive: true }} />
+          <StatCard title="Attendance" value={`${student.attendance.toFixed(0)}%`} icon={BookOpen} />
         </div>
 
         <div className="grid lg:grid-cols-2 gap-6">
-          {/* GPA Trend */}
           <Card>
-            <CardHeader>
-              <CardTitle className="font-display text-lg">Semester Performance</CardTitle>
-            </CardHeader>
+            <CardHeader><CardTitle className="font-display text-lg">Academic Scores</CardTitle></CardHeader>
             <CardContent>
               <ResponsiveContainer width="100%" height={280}>
-                <LineChart data={semesterPerformance}>
+                <BarChart data={academicData}>
                   <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
-                  <XAxis dataKey="semester" tick={{ fontSize: 12 }} stroke="hsl(var(--muted-foreground))" />
-                  <YAxis tick={{ fontSize: 12 }} stroke="hsl(var(--muted-foreground))" />
+                  <XAxis dataKey="metric" tick={{ fontSize: 12 }} stroke="hsl(var(--muted-foreground))" />
+                  <YAxis domain={[0, 100]} tick={{ fontSize: 12 }} stroke="hsl(var(--muted-foreground))" />
                   <Tooltip contentStyle={{ borderRadius: 8, border: "1px solid hsl(var(--border))" }} />
-                  <Line type="monotone" dataKey="gpa" stroke="hsl(var(--primary))" strokeWidth={2} dot={{ r: 4 }} name="GPA" />
-                  <Line type="monotone" dataKey="quizScore" stroke="hsl(var(--accent))" strokeWidth={2} dot={{ r: 4 }} name="Quiz %" />
-                </LineChart>
+                  <Bar dataKey="value" fill="hsl(var(--primary))" radius={[4, 4, 0, 0]} name="Score" />
+                </BarChart>
               </ResponsiveContainer>
             </CardContent>
           </Card>
 
-          {/* Skill Radar */}
           <Card>
-            <CardHeader>
-              <CardTitle className="font-display text-lg">Skill Proficiency</CardTitle>
-            </CardHeader>
+            <CardHeader><CardTitle className="font-display text-lg">Skill Proficiency</CardTitle></CardHeader>
             <CardContent>
-              <ResponsiveContainer width="100%" height={280}>
-                <RadarChart data={skillRadarData}>
-                  <PolarGrid stroke="hsl(var(--border))" />
-                  <PolarAngleAxis dataKey="skill" tick={{ fontSize: 11 }} stroke="hsl(var(--muted-foreground))" />
-                  <PolarRadiusAxis angle={30} domain={[0, 100]} tick={{ fontSize: 10 }} />
-                  <Radar name="Score" dataKey="score" stroke="hsl(var(--primary))" fill="hsl(var(--primary))" fillOpacity={0.2} />
-                </RadarChart>
-              </ResponsiveContainer>
+              {skillRadarData.length > 0 ? (
+                <ResponsiveContainer width="100%" height={280}>
+                  <RadarChart data={skillRadarData}>
+                    <PolarGrid stroke="hsl(var(--border))" />
+                    <PolarAngleAxis dataKey="skill" tick={{ fontSize: 11 }} stroke="hsl(var(--muted-foreground))" />
+                    <PolarRadiusAxis angle={30} domain={[0, 100]} tick={{ fontSize: 10 }} />
+                    <Radar name="Score" dataKey="score" stroke="hsl(var(--primary))" fill="hsl(var(--primary))" fillOpacity={0.2} />
+                  </RadarChart>
+                </ResponsiveContainer>
+              ) : (
+                <p className="text-sm text-muted-foreground">No skills recorded yet.</p>
+              )}
             </CardContent>
           </Card>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-6">
-          {/* Skills */}
           <Card>
-            <CardHeader>
-              <CardTitle className="font-display text-lg">My Skills</CardTitle>
-            </CardHeader>
+            <CardHeader><CardTitle className="font-display text-lg">My Skills</CardTitle></CardHeader>
             <CardContent className="space-y-3">
               {student.skills.map((s) => (
                 <div key={s.name} className="flex items-center justify-between">
@@ -86,14 +111,12 @@ export default function StudentDashboard() {
                   </Badge>
                 </div>
               ))}
+              {student.skills.length === 0 && <p className="text-sm text-muted-foreground">No skills recorded.</p>}
             </CardContent>
           </Card>
 
-          {/* Career Suggestions */}
           <Card>
-            <CardHeader>
-              <CardTitle className="font-display text-lg">Career Paths</CardTitle>
-            </CardHeader>
+            <CardHeader><CardTitle className="font-display text-lg">Career Paths</CardTitle></CardHeader>
             <CardContent className="space-y-4">
               {careerPaths.slice(0, 3).map((c) => (
                 <div key={c.career}>
@@ -107,14 +130,11 @@ export default function StudentDashboard() {
             </CardContent>
           </Card>
 
-          {/* Notifications */}
           <Card>
             <CardHeader>
               <CardTitle className="font-display text-lg flex items-center gap-2">
                 <Bell className="h-4 w-4" /> Notifications
-                {unreadNotifications > 0 && (
-                  <Badge variant="destructive" className="text-xs">{unreadNotifications}</Badge>
-                )}
+                {unreadNotifications > 0 && <Badge variant="destructive" className="text-xs">{unreadNotifications}</Badge>}
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-3">

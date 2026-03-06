@@ -1,14 +1,25 @@
 import { DashboardLayout } from "@/components/DashboardLayout";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { mockStudents, industryRequiredSkills } from "@/lib/mock-data";
+import { useDataset } from "@/hooks/use-dataset";
 import { Target, CheckCircle2, XCircle, ArrowRight } from "lucide-react";
+import { Skeleton } from "@/components/ui/skeleton";
 
 export default function SkillGap() {
-  const student = mockStudents[0];
+  const { data, isLoading } = useDataset();
+
+  if (isLoading || !data) {
+    return (
+      <DashboardLayout>
+        <div className="space-y-6"><Skeleton className="h-10 w-64" /><Skeleton className="h-64" /></div>
+      </DashboardLayout>
+    );
+  }
+
+  const student = data.students[0];
   const studentSkillNames = student.skills.map((s) => s.name);
-  const missingSkills = industryRequiredSkills.filter((s) => !studentSkillNames.includes(s));
-  const matchedSkills = industryRequiredSkills.filter((s) => studentSkillNames.includes(s));
+  const missingSkills = data.skills.filter((s) => !studentSkillNames.includes(s));
+  const matchedSkills = data.skills.filter((s) => studentSkillNames.includes(s));
 
   return (
     <DashboardLayout>
@@ -17,7 +28,7 @@ export default function SkillGap() {
           <Target className="h-6 w-6 text-primary" />
           <div>
             <h1 className="font-display text-2xl font-bold">Skill Gap Analysis</h1>
-            <p className="text-muted-foreground text-sm">Compare your skills with industry requirements</p>
+            <p className="text-muted-foreground text-sm">Compare your {student.skills.length} skills with {data.skills.length} industry-required skills</p>
           </div>
         </div>
 
@@ -25,17 +36,21 @@ export default function SkillGap() {
           <Card>
             <CardHeader>
               <CardTitle className="font-display text-lg flex items-center gap-2">
-                <CheckCircle2 className="h-5 w-5 text-success" /> Skills You Have
+                <CheckCircle2 className="h-5 w-5 text-success" /> Skills You Have ({matchedSkills.length})
               </CardTitle>
             </CardHeader>
             <CardContent>
               <div className="space-y-2">
-                {matchedSkills.map((s) => (
-                  <div key={s} className="flex items-center justify-between p-2 rounded-lg bg-success/5 border border-success/20">
-                    <span className="text-sm font-medium">{s}</span>
-                    <Badge variant="default" className="bg-success text-success-foreground">Matched</Badge>
-                  </div>
-                ))}
+                {matchedSkills.map((s) => {
+                  const skill = student.skills.find((sk) => sk.name === s);
+                  return (
+                    <div key={s} className="flex items-center justify-between p-2 rounded-lg bg-success/5 border border-success/20">
+                      <span className="text-sm font-medium">{s}</span>
+                      <Badge variant="default" className="bg-success text-success-foreground">{skill?.level}</Badge>
+                    </div>
+                  );
+                })}
+                {matchedSkills.length === 0 && <p className="text-sm text-muted-foreground">No matching skills yet.</p>}
               </div>
             </CardContent>
           </Card>
@@ -43,7 +58,7 @@ export default function SkillGap() {
           <Card>
             <CardHeader>
               <CardTitle className="font-display text-lg flex items-center gap-2">
-                <XCircle className="h-5 w-5 text-destructive" /> Missing Skills
+                <XCircle className="h-5 w-5 text-destructive" /> Missing Skills ({missingSkills.length})
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -54,6 +69,7 @@ export default function SkillGap() {
                     <Badge variant="destructive">Gap</Badge>
                   </div>
                 ))}
+                {missingSkills.length === 0 && <p className="text-sm text-muted-foreground">Great! You have all required skills.</p>}
               </div>
             </CardContent>
           </Card>
