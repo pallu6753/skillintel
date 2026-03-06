@@ -36,8 +36,8 @@ export default function QuizPage() {
     }
   };
 
-  const score = answers.filter((a, i) => a === questions[i].correctAnswer).length;
-  const percentage = Math.round((score / questions.length) * 100);
+  const score = submitted ? answers.filter((a, i) => questions[i] && a === questions[i].correctAnswer).length : 0;
+  const percentage = questions.length > 0 ? Math.round((score / questions.length) * 100) : 0;
 
   const reset = () => {
     setCurrentQ(0);
