@@ -12,6 +12,11 @@ import SkillGap from "./pages/SkillGap";
 import CareerPaths from "./pages/CareerPaths";
 import StudyHabits from "./pages/StudyHabits";
 import Notifications from "./pages/Notifications";
+import StudentsPage from "./pages/StudentsPage";
+import AtRiskPage from "./pages/AtRiskPage";
+import AnalyticsPage from "./pages/AnalyticsPage";
+import SkillsDBPage from "./pages/SkillsDBPage";
+import SettingsPage from "./pages/SettingsPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,11 +37,11 @@ const AppRoutes = () => (
     <Route path="/career" element={<ProtectedRoute><CareerPaths /></ProtectedRoute>} />
     <Route path="/study-habits" element={<ProtectedRoute><StudyHabits /></ProtectedRoute>} />
     <Route path="/notifications" element={<ProtectedRoute><Notifications /></ProtectedRoute>} />
-    <Route path="/students" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
-    <Route path="/at-risk" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
-    <Route path="/analytics" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
-    <Route path="/skills-db" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
-    <Route path="/settings" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
+    <Route path="/students" element={<ProtectedRoute><StudentsPage /></ProtectedRoute>} />
+    <Route path="/at-risk" element={<ProtectedRoute><AtRiskPage /></ProtectedRoute>} />
+    <Route path="/analytics" element={<ProtectedRoute><AnalyticsPage /></ProtectedRoute>} />
+    <Route path="/skills-db" element={<ProtectedRoute><SkillsDBPage /></ProtectedRoute>} />
+    <Route path="/settings" element={<ProtectedRoute><SettingsPage /></ProtectedRoute>} />
     <Route path="*" element={<NotFound />} />
   </Routes>
 );

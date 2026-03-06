@@ -40,6 +40,7 @@ const navItems: Record<UserRole, { label: string; path: string; icon: React.Elem
     { label: "Skills DB", path: "/skills-db", icon: Brain },
     { label: "Analytics", path: "/analytics", icon: BarChart3 },
     { label: "Settings", path: "/settings", icon: Settings },
+    { label: "Notifications", path: "/notifications", icon: Bell },
   ],
 };
 
