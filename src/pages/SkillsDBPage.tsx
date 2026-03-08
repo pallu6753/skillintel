@@ -74,6 +74,87 @@ export default function SkillsDBPage() {
           </div>
         </div>
 
+        {/* Quick Skill Chips */}
+        <Card>
+          <CardContent className="p-6 space-y-4">
+            <h2 className="font-display font-bold text-lg">Skills Database</h2>
+            <div className="flex flex-wrap gap-3">
+              {skillStats.map((s) => {
+                const pct = Math.round((s.total / students.length) * 100);
+                const isActive = selectedSkill === s.skill;
+                return (
+                  <button
+                    key={s.skill}
+                    onClick={() => setSelectedSkill(isActive ? null : s.skill)}
+                    className={`px-4 py-2 rounded-full border text-sm font-medium transition-all ${
+                      isActive
+                        ? "bg-primary text-primary-foreground border-primary shadow-md scale-105"
+                        : "bg-muted/50 text-foreground border-border hover:bg-muted hover:border-primary/40"
+                    }`}
+                  >
+                    {s.skill}
+                    {isActive && (
+                      <span className="ml-2 font-bold">{pct}%</span>
+                    )}
+                  </button>
+                );
+              })}
+            </div>
+            <p className="text-sm text-muted-foreground">
+              {skills.length} skills tracked across all departments
+            </p>
+
+            {/* Percentage detail panel */}
+            {selectedSkill && (() => {
+              const s = skillStats.find((x) => x.skill === selectedSkill)!;
+              const pct = Math.round((s.total / students.length) * 100);
+              const begPct = s.total > 0 ? Math.round((s.Beginner / s.total) * 100) : 0;
+              const intPct = s.total > 0 ? Math.round((s.Intermediate / s.total) * 100) : 0;
+              const advPct = s.total > 0 ? Math.round((s.Advanced / s.total) * 100) : 0;
+              return (
+                <div className="mt-4 p-4 rounded-xl border bg-primary/5 border-primary/20 space-y-3 animate-in fade-in slide-in-from-top-2 duration-300">
+                  <div className="flex items-center justify-between">
+                    <h3 className="font-display font-bold text-lg flex items-center gap-2">
+                      <Brain className="h-5 w-5 text-primary" />
+                      {selectedSkill}
+                    </h3>
+                    <Button variant="ghost" size="icon" onClick={() => setSelectedSkill(null)}>
+                      <X className="h-4 w-4" />
+                    </Button>
+                  </div>
+                  <p className="text-2xl font-display font-bold text-primary">{pct}% <span className="text-sm font-normal text-muted-foreground">of students know this skill ({s.total}/{students.length})</span></p>
+                  <div className="grid grid-cols-3 gap-3">
+                    <div className="text-center p-3 rounded-lg bg-background border">
+                      <p className="text-lg font-bold">{begPct}%</p>
+                      <p className="text-xs text-muted-foreground">Beginner ({s.Beginner})</p>
+                    </div>
+                    <div className="text-center p-3 rounded-lg bg-background border">
+                      <p className="text-lg font-bold">{intPct}%</p>
+                      <p className="text-xs text-muted-foreground">Intermediate ({s.Intermediate})</p>
+                    </div>
+                    <div className="text-center p-3 rounded-lg bg-background border">
+                      <p className="text-lg font-bold">{advPct}%</p>
+                      <p className="text-xs text-muted-foreground">Advanced ({s.Advanced})</p>
+                    </div>
+                  </div>
+                  <div className="space-y-2">
+                    {(["Beginner", "Intermediate", "Advanced"] as const).map((level) => {
+                      const val = s.total > 0 ? Math.round((s[level] / s.total) * 100) : 0;
+                      return (
+                        <div key={level} className="flex items-center gap-3">
+                          <span className="text-xs w-24 text-muted-foreground">{level}</span>
+                          <Progress value={val} className="h-2 flex-1" />
+                          <span className="text-xs font-medium w-10 text-right">{val}%</span>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              );
+            })()}
+          </CardContent>
+        </Card>
+
         {/* Search */}
         <div className="relative max-w-sm">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
