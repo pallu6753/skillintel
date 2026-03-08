@@ -7,7 +7,7 @@ import {
   LayoutDashboard, BookOpen, Brain, Users, Bell, Settings,
   LogOut, GraduationCap, BarChart3, FileText, ChevronLeft,
   ChevronRight, Target, TrendingUp, AlertTriangle, Menu, X, Briefcase,
-  Trophy, ClipboardList, Bot,
+  Trophy, ClipboardList, Bot, Code2, Mic,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
