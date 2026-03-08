@@ -10,7 +10,7 @@ import { careerRoles } from "@/lib/career-engine";
 import { Skeleton } from "@/components/ui/skeleton";
 import {
   Brain, ExternalLink, Youtube, BookOpen, Code, Users, X,
-  TrendingUp, Briefcase, Search,
+  TrendingUp, Briefcase, Search, FileText,
 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 
@@ -156,23 +156,18 @@ export default function SkillsDBPage() {
 
               {/* Learning Resources */}
               {resources && (
-                <div className="grid sm:grid-cols-3 gap-4">
+                <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
                   {/* YouTube */}
                   <Card>
                     <CardHeader className="pb-2">
                       <CardTitle className="text-sm flex items-center gap-2">
-                        <Youtube className="h-4 w-4 text-red-500" /> YouTube
+                        <Youtube className="h-4 w-4 text-destructive" /> YouTube
                       </CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-2">
                       {resources.youtube.map((y) => (
-                        <a
-                          key={y.url}
-                          href={y.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="flex items-start gap-2 p-2 rounded-lg hover:bg-muted transition-colors group text-sm"
-                        >
+                        <a key={y.url} href={y.url} target="_blank" rel="noopener noreferrer"
+                          className="flex items-start gap-2 p-2 rounded-lg hover:bg-muted transition-colors group text-sm">
                           <ExternalLink className="h-3 w-3 mt-0.5 shrink-0 text-muted-foreground group-hover:text-primary" />
                           <span className="group-hover:text-primary">{y.title}</span>
                         </a>
@@ -184,18 +179,13 @@ export default function SkillsDBPage() {
                   <Card>
                     <CardHeader className="pb-2">
                       <CardTitle className="text-sm flex items-center gap-2">
-                        <BookOpen className="h-4 w-4 text-blue-500" /> Courses
+                        <BookOpen className="h-4 w-4 text-primary" /> Courses
                       </CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-2">
                       {resources.courses.map((c) => (
-                        <a
-                          key={c.url}
-                          href={c.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="flex items-start gap-2 p-2 rounded-lg hover:bg-muted transition-colors group text-sm"
-                        >
+                        <a key={c.url} href={c.url} target="_blank" rel="noopener noreferrer"
+                          className="flex items-start gap-2 p-2 rounded-lg hover:bg-muted transition-colors group text-sm">
                           <ExternalLink className="h-3 w-3 mt-0.5 shrink-0 text-muted-foreground group-hover:text-primary" />
                           <div>
                             <span className="group-hover:text-primary">{c.title}</span>
@@ -210,20 +200,33 @@ export default function SkillsDBPage() {
                   <Card>
                     <CardHeader className="pb-2">
                       <CardTitle className="text-sm flex items-center gap-2">
-                        <Code className="h-4 w-4 text-green-500" /> Practice
+                        <Code className="h-4 w-4 text-accent-foreground" /> Practice
                       </CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-2">
                       {resources.practice.map((p) => (
-                        <a
-                          key={p.url}
-                          href={p.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="flex items-start gap-2 p-2 rounded-lg hover:bg-muted transition-colors group text-sm"
-                        >
+                        <a key={p.url} href={p.url} target="_blank" rel="noopener noreferrer"
+                          className="flex items-start gap-2 p-2 rounded-lg hover:bg-muted transition-colors group text-sm">
                           <ExternalLink className="h-3 w-3 mt-0.5 shrink-0 text-muted-foreground group-hover:text-primary" />
                           <span className="group-hover:text-primary">{p.title}</span>
+                        </a>
+                      ))}
+                    </CardContent>
+                  </Card>
+
+                  {/* Documentation */}
+                  <Card>
+                    <CardHeader className="pb-2">
+                      <CardTitle className="text-sm flex items-center gap-2">
+                        <FileText className="h-4 w-4 text-muted-foreground" /> Documentation
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent className="space-y-2">
+                      {resources.docs.map((d) => (
+                        <a key={d.url} href={d.url} target="_blank" rel="noopener noreferrer"
+                          className="flex items-start gap-2 p-2 rounded-lg hover:bg-muted transition-colors group text-sm">
+                          <ExternalLink className="h-3 w-3 mt-0.5 shrink-0 text-muted-foreground group-hover:text-primary" />
+                          <span className="group-hover:text-primary">{d.title}</span>
                         </a>
                       ))}
                     </CardContent>

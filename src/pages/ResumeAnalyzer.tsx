@@ -7,7 +7,7 @@ import { Progress } from "@/components/ui/progress";
 import { Textarea } from "@/components/ui/textarea";
 import { useDataset } from "@/hooks/use-dataset";
 import { recommendCareers } from "@/lib/career-engine";
-import { FileText, Upload, Brain, Target, CheckCircle2, XCircle, Briefcase } from "lucide-react";
+import { FileText, Upload, Brain, Target, CheckCircle2, XCircle, Briefcase, Download } from "lucide-react";
 import { toast } from "sonner";
 
 const KNOWN_SKILLS = [
@@ -119,9 +119,11 @@ export default function ResumeAnalyzer() {
               <p className="text-xs text-muted-foreground">
                 {resumeText.split(/\s+/).filter(Boolean).length} words
               </p>
-              <Button onClick={handleAnalyze} disabled={resumeText.trim().length < 50}>
-                <Brain className="h-4 w-4 mr-2" /> Analyze Resume
-              </Button>
+              <div className="flex gap-2">
+                <Button onClick={handleAnalyze} disabled={resumeText.trim().length < 50}>
+                  <Brain className="h-4 w-4 mr-2" /> Analyze Resume
+                </Button>
+              </div>
             </div>
           </CardContent>
         </Card>
@@ -241,6 +243,53 @@ export default function ResumeAnalyzer() {
                 <p className="text-xs text-muted-foreground mt-3">
                   Tip: Include more action words like "developed", "managed", "optimized" to boost your ATS score.
                 </p>
+              </CardContent>
+            </Card>
+
+            {/* Download Report */}
+            <Card>
+              <CardContent className="p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div>
+                  <h3 className="font-display font-semibold">Download Resume Report</h3>
+                  <p className="text-sm text-muted-foreground">Get a detailed feedback report with scores and suggestions</p>
+                </div>
+                <div className="flex gap-2">
+                  <Button variant="outline" onClick={() => {
+                    const report = [
+                      `RESUME ANALYSIS REPORT`,
+                      `======================`,
+                      `Overall Score: ${result.overallScore}%`,
+                      `ATS Score: ${result.atsScore}%`,
+                      `Word Count: ${result.wordCount}`,
+                      ``,
+                      `DETECTED SKILLS: ${result.detectedSkills.join(", ")}`,
+                      ``,
+                      `MISSING SKILLS: ${result.missingSkills.join(", ")}`,
+                      ``,
+                      `ATS KEYWORDS FOUND: ${result.foundKeywords.join(", ")}`,
+                      ``,
+                      `SECTIONS:`,
+                      ...Object.entries(result.sections).map(([k, v]) => `  ${k}: ${v ? "✓ Found" : "✗ Missing"}`),
+                      ``,
+                      `CAREER SUGGESTIONS:`,
+                      ...careers.slice(0, 5).map((c) => `  ${c.role} - ${c.matchScore}% match`),
+                      ``,
+                      `SUGGESTIONS:`,
+                      `- Add action verbs like "developed", "implemented", "optimized"`,
+                      `- Keep resume to 1 page for freshers`,
+                      `- Add measurable achievements`,
+                      `- Include GitHub/LinkedIn links`,
+                    ].join("\n");
+                    const blob = new Blob([report], { type: "text/plain" });
+                    const url = URL.createObjectURL(blob);
+                    const a = document.createElement("a");
+                    a.href = url; a.download = "resume_report.txt"; a.click();
+                    URL.revokeObjectURL(url);
+                    toast.success("Report downloaded!");
+                  }}>
+                    <Download className="h-4 w-4 mr-2" /> Download TXT
+                  </Button>
+                </div>
               </CardContent>
             </Card>
           </>
