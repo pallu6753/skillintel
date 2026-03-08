@@ -9,14 +9,17 @@ import { useDataset } from "@/hooks/use-dataset";
 import { useAuth } from "@/lib/auth-context";
 import { generateResponse, CopilotMessage } from "@/lib/copilot-engine";
 import { Skeleton } from "@/components/ui/skeleton";
-import { Bot, Send, User, Sparkles, Brain, Target, BookOpen, FileText, TrendingUp } from "lucide-react";
+import { Bot, Send, User, Sparkles, Brain, Target, BookOpen, FileText, TrendingUp, Search, Mic, Code2 } from "lucide-react";
 import ReactMarkdown from "react-markdown";
 
 const quickPrompts = [
   { label: "Career guidance", prompt: "What career should I pursue?", icon: Target },
   { label: "Skill gaps", prompt: "What skills am I missing?", icon: Brain },
-  { label: "Study plan", prompt: "Make me a study plan for Data Science", icon: BookOpen },
-  { label: "Placement readiness", prompt: "Am I ready for placement?", icon: TrendingUp },
+  { label: "Find jobs", prompt: "Find jobs for me", icon: Search },
+  { label: "Learning path", prompt: "Make me a personalized learning path", icon: BookOpen },
+  { label: "Readiness check", prompt: "Am I ready for placement?", icon: TrendingUp },
+  { label: "Interview prep", prompt: "Help me prepare for interviews", icon: Mic },
+  { label: "Coding practice", prompt: "Suggest coding challenges for me", icon: Code2 },
   { label: "Resume tips", prompt: "Give me resume improvement tips", icon: FileText },
   { label: "Learn Python", prompt: "Where can I learn Python?", icon: Sparkles },
 ];
