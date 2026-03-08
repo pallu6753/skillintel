@@ -15,6 +15,7 @@ import { toast } from "sonner";
 export default function PlacementDrives() {
   const { user } = useAuth();
   const { drives, addDrive, closeDrive } = usePlacementStore();
+  const { apply, hasApplied } = useApplicationStore();
   const [showForm, setShowForm] = useState(false);
   const [company, setCompany] = useState("");
   const [role, setRole] = useState("");
