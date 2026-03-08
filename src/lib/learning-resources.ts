@@ -3,6 +3,7 @@ export interface LearningResource {
   youtube: { title: string; url: string }[];
   courses: { title: string; url: string; platform: string }[];
   practice: { title: string; url: string }[];
+  docs: { title: string; url: string }[];
 }
 
 export const learningResources: LearningResource[] = [
