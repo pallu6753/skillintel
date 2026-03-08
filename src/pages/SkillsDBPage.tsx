@@ -10,8 +10,9 @@ import { careerRoles } from "@/lib/career-engine";
 import { Skeleton } from "@/components/ui/skeleton";
 import {
   Brain, ExternalLink, Youtube, BookOpen, Code, Users, X,
-  TrendingUp, Briefcase,
+  TrendingUp, Briefcase, Search,
 } from "lucide-react";
+import { Input } from "@/components/ui/input";
 
 export default function SkillsDBPage() {
   const { data, isLoading } = useDataset();
