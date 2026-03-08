@@ -7,7 +7,7 @@ import {
   LayoutDashboard, BookOpen, Brain, Users, Bell, Settings,
   LogOut, GraduationCap, BarChart3, FileText, ChevronLeft,
   ChevronRight, Target, TrendingUp, AlertTriangle, Menu, X, Briefcase,
-  Trophy, ClipboardList, Bot,
+  Trophy, ClipboardList, Bot, Code2, Mic,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -19,6 +19,8 @@ const navItems: Record<UserRole, { label: string; path: string; icon: React.Elem
     { label: "Skills Hub", path: "/skills-db", icon: Brain },
     { label: "Career Intelligence", path: "/career", icon: TrendingUp },
     { label: "Skill Gap", path: "/skill-gap", icon: Target },
+    { label: "Coding Practice", path: "/coding-practice", icon: Code2 },
+    { label: "Interview Prep", path: "/interview-simulator", icon: Mic },
     { label: "Resume Analyzer", path: "/resume-analyzer", icon: FileText },
     { label: "Applications", path: "/applications", icon: ClipboardList },
     { label: "Study Habits", path: "/study-habits", icon: BookOpen },

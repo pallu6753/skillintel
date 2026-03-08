@@ -8,6 +8,8 @@ import Landing from "./pages/Landing";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import QuizPage from "./pages/QuizPage";
+import CodingPractice from "./pages/CodingPractice";
+import InterviewSimulator from "./pages/InterviewSimulator";
 import SkillGap from "./pages/SkillGap";
 import CareerIntelligence from "./pages/CareerIntelligence";
 import StudyHabits from "./pages/StudyHabits";
@@ -40,6 +42,8 @@ const AppRoutes = () => (
     <Route path="/login" element={<Login />} />
     <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
     <Route path="/quiz/:type" element={<ProtectedRoute><QuizPage /></ProtectedRoute>} />
+    <Route path="/coding-practice" element={<ProtectedRoute><CodingPractice /></ProtectedRoute>} />
+    <Route path="/interview-simulator" element={<ProtectedRoute><InterviewSimulator /></ProtectedRoute>} />
     <Route path="/skill-gap" element={<ProtectedRoute><SkillGap /></ProtectedRoute>} />
     <Route path="/career" element={<ProtectedRoute><CareerIntelligence /></ProtectedRoute>} />
     <Route path="/study-habits" element={<ProtectedRoute><StudyHabits /></ProtectedRoute>} />
