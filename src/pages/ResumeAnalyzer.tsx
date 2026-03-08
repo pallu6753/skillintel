@@ -7,8 +7,11 @@ import { Progress } from "@/components/ui/progress";
 import { Textarea } from "@/components/ui/textarea";
 import { useDataset } from "@/hooks/use-dataset";
 import { recommendCareers } from "@/lib/career-engine";
-import { FileText, Upload, Brain, Target, CheckCircle2, XCircle, Briefcase, Download, FileUp } from "lucide-react";
+import { FileText, Upload, Brain, Target, CheckCircle2, XCircle, Briefcase, Download, FileUp, Loader2 } from "lucide-react";
 import { toast } from "sonner";
+import * as pdfjsLib from "pdfjs-dist";
+
+pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js`;
 
 const KNOWN_SKILLS = [
   "Python", "SQL", "Java", "Machine Learning", "Deep Learning", "Statistics",
@@ -77,7 +80,9 @@ export default function ResumeAnalyzer() {
   const [fileName, setFileName] = useState<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
-  const handleFileUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const [isUploading, setIsUploading] = useState(false);
+
+  const handleFileUpload = async (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
     if (!file) return;
 
@@ -86,15 +91,33 @@ export default function ResumeAnalyzer() {
       return;
     }
 
-    const reader = new FileReader();
-    reader.onload = (e) => {
-      const text = e.target?.result as string;
-      setResumeText(text);
-      setFileName(file.name);
-      toast.success(`File "${file.name}" loaded successfully!`);
-    };
-    reader.onerror = () => toast.error("Failed to read file");
-    reader.readAsText(file);
+    setIsUploading(true);
+    setFileName(file.name);
+
+    try {
+      if (file.type === "application/pdf") {
+        const arrayBuffer = await file.arrayBuffer();
+        const typedArray = new Uint8Array(arrayBuffer);
+        const pdf = await pdfjsLib.getDocument(typedArray).promise;
+        let text = "";
+        for (let i = 1; i <= pdf.numPages; i++) {
+          const page = await pdf.getPage(i);
+          const content = await page.getTextContent();
+          text += content.items.map((item: any) => item.str).join(" ") + "\n";
+        }
+        setResumeText(text.trim());
+        toast.success(`PDF "${file.name}" parsed — ${pdf.numPages} page(s) extracted!`);
+      } else {
+        const text = await file.text();
+        setResumeText(text);
+        toast.success(`File "${file.name}" loaded successfully!`);
+      }
+    } catch (err) {
+      console.error("File parse error:", err);
+      toast.error("Failed to parse file. Try pasting the text instead.");
+    } finally {
+      setIsUploading(false);
+    }
   };
 
   const handleAnalyze = () => {
@@ -140,11 +163,14 @@ export default function ResumeAnalyzer() {
                 <FileUp className="h-7 w-7 text-primary" />
               </div>
               <div className="text-center">
-                <p className="font-medium">Upload Resume</p>
+                <p className="font-medium">
+                  {isUploading ? "Parsing file..." : "Upload Resume"}
+                </p>
                 <p className="text-xs text-muted-foreground">
                   {fileName ? `✓ ${fileName}` : "Supports .txt, .doc, .docx, .pdf — click to browse"}
                 </p>
               </div>
+              {isUploading && <Loader2 className="h-5 w-5 animate-spin text-primary" />}
             </div>
 
             <div className="flex items-center gap-3 my-4">
