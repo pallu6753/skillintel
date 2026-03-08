@@ -19,6 +19,8 @@ const navItems: Record<UserRole, { label: string; path: string; icon: React.Elem
     { label: "Skills Hub", path: "/skills-db", icon: Brain },
     { label: "Career Intelligence", path: "/career", icon: TrendingUp },
     { label: "Skill Gap", path: "/skill-gap", icon: Target },
+    { label: "Coding Practice", path: "/coding-practice", icon: Code2 },
+    { label: "Interview Prep", path: "/interview-simulator", icon: Mic },
     { label: "Resume Analyzer", path: "/resume-analyzer", icon: FileText },
     { label: "Applications", path: "/applications", icon: ClipboardList },
     { label: "Study Habits", path: "/study-habits", icon: BookOpen },
