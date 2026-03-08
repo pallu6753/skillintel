@@ -17,6 +17,7 @@ import { Input } from "@/components/ui/input";
 export default function SkillsDBPage() {
   const { data, isLoading } = useDataset();
   const [selectedSkill, setSelectedSkill] = useState<string | null>(null);
+  const [search, setSearch] = useState("");
 
   if (isLoading || !data) {
     return (
