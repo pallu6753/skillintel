@@ -8,12 +8,14 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useAuth } from "@/lib/auth-context";
 import { usePlacementStore } from "@/lib/placement-store";
+import { useApplicationStore } from "@/lib/application-store";
 import { Briefcase, Plus, Building2, Calendar, IndianRupee, Users } from "lucide-react";
 import { toast } from "sonner";
 
 export default function PlacementDrives() {
   const { user } = useAuth();
   const { drives, addDrive, closeDrive } = usePlacementStore();
+  const { apply, hasApplied } = useApplicationStore();
   const [showForm, setShowForm] = useState(false);
   const [company, setCompany] = useState("");
   const [role, setRole] = useState("");
@@ -112,7 +114,16 @@ export default function PlacementDrives() {
                         <Button variant="outline" size="sm" onClick={() => closeDrive(d.id)}>Close</Button>
                       )}
                       {user?.role === "student" && (
-                        <Button size="sm" onClick={() => toast.success(`Applied to ${d.company}!`)}>Apply</Button>
+                        <Button
+                          size="sm"
+                          disabled={hasApplied(d.id)}
+                          onClick={() => {
+                            apply(d.id, d.company, d.role);
+                            toast.success(`Applied to ${d.company}!`);
+                          }}
+                        >
+                          {hasApplied(d.id) ? "Applied ✓" : "Apply"}
+                        </Button>
                       )}
                     </div>
                   </div>

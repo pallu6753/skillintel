@@ -7,6 +7,7 @@ import {
   LayoutDashboard, BookOpen, Brain, Users, Bell, Settings,
   LogOut, GraduationCap, BarChart3, FileText, ChevronLeft,
   ChevronRight, Target, TrendingUp, AlertTriangle, Menu, X, Briefcase,
+  Trophy, ClipboardList,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -18,13 +19,17 @@ const navItems: Record<UserRole, { label: string; path: string; icon: React.Elem
     { label: "Academic Quiz", path: "/quiz/academic", icon: BookOpen },
     { label: "Skill Gap", path: "/skill-gap", icon: Target },
     { label: "Career Paths", path: "/career", icon: TrendingUp },
-    { label: "Study Habits", path: "/study-habits", icon: FileText },
+    { label: "Resume Analyzer", path: "/resume-analyzer", icon: FileText },
+    { label: "Applications", path: "/applications", icon: ClipboardList },
+    { label: "Leaderboard", path: "/leaderboard", icon: Trophy },
+    { label: "Study Habits", path: "/study-habits", icon: BookOpen },
     { label: "Notifications", path: "/notifications", icon: Bell },
   ],
   faculty: [
     { label: "Dashboard", path: "/dashboard", icon: LayoutDashboard },
     { label: "Students", path: "/students", icon: Users },
     { label: "At-Risk Students", path: "/at-risk", icon: AlertTriangle },
+    { label: "Leaderboard", path: "/leaderboard", icon: Trophy },
     { label: "Analytics", path: "/analytics", icon: BarChart3 },
     { label: "Notifications", path: "/notifications", icon: Bell },
   ],
@@ -32,6 +37,7 @@ const navItems: Record<UserRole, { label: string; path: string; icon: React.Elem
     { label: "Dashboard", path: "/dashboard", icon: LayoutDashboard },
     { label: "Students", path: "/students", icon: Users },
     { label: "Placement Drives", path: "/placement-drives", icon: Briefcase },
+    { label: "Leaderboard", path: "/leaderboard", icon: Trophy },
     { label: "Analytics", path: "/analytics", icon: BarChart3 },
     { label: "Notifications", path: "/notifications", icon: Bell },
   ],
@@ -39,6 +45,7 @@ const navItems: Record<UserRole, { label: string; path: string; icon: React.Elem
     { label: "Dashboard", path: "/dashboard", icon: LayoutDashboard },
     { label: "Students", path: "/students", icon: Users },
     { label: "Skills DB", path: "/skills-db", icon: Brain },
+    { label: "Leaderboard", path: "/leaderboard", icon: Trophy },
     { label: "Analytics", path: "/analytics", icon: BarChart3 },
     { label: "Settings", path: "/settings", icon: Settings },
     { label: "Notifications", path: "/notifications", icon: Bell },
