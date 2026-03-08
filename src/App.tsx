@@ -13,10 +13,12 @@ import CareerPaths from "./pages/CareerPaths";
 import StudyHabits from "./pages/StudyHabits";
 import Notifications from "./pages/Notifications";
 import StudentsPage from "./pages/StudentsPage";
+import StudentProfile from "./pages/StudentProfile";
 import AtRiskPage from "./pages/AtRiskPage";
 import AnalyticsPage from "./pages/AnalyticsPage";
 import SkillsDBPage from "./pages/SkillsDBPage";
 import SettingsPage from "./pages/SettingsPage";
+import PlacementDrives from "./pages/PlacementDrives";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -38,10 +40,12 @@ const AppRoutes = () => (
     <Route path="/study-habits" element={<ProtectedRoute><StudyHabits /></ProtectedRoute>} />
     <Route path="/notifications" element={<ProtectedRoute><Notifications /></ProtectedRoute>} />
     <Route path="/students" element={<ProtectedRoute><StudentsPage /></ProtectedRoute>} />
+    <Route path="/student/:id" element={<ProtectedRoute><StudentProfile /></ProtectedRoute>} />
     <Route path="/at-risk" element={<ProtectedRoute><AtRiskPage /></ProtectedRoute>} />
     <Route path="/analytics" element={<ProtectedRoute><AnalyticsPage /></ProtectedRoute>} />
     <Route path="/skills-db" element={<ProtectedRoute><SkillsDBPage /></ProtectedRoute>} />
     <Route path="/settings" element={<ProtectedRoute><SettingsPage /></ProtectedRoute>} />
+    <Route path="/placement-drives" element={<ProtectedRoute><PlacementDrives /></ProtectedRoute>} />
     <Route path="*" element={<NotFound />} />
   </Routes>
 );
