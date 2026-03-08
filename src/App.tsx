@@ -8,6 +8,8 @@ import Landing from "./pages/Landing";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import QuizPage from "./pages/QuizPage";
+import CodingPractice from "./pages/CodingPractice";
+import InterviewSimulator from "./pages/InterviewSimulator";
 import SkillGap from "./pages/SkillGap";
 import CareerIntelligence from "./pages/CareerIntelligence";
 import StudyHabits from "./pages/StudyHabits";
