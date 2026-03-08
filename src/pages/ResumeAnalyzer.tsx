@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { DashboardLayout } from "@/components/DashboardLayout";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -7,7 +7,7 @@ import { Progress } from "@/components/ui/progress";
 import { Textarea } from "@/components/ui/textarea";
 import { useDataset } from "@/hooks/use-dataset";
 import { recommendCareers } from "@/lib/career-engine";
-import { FileText, Upload, Brain, Target, CheckCircle2, XCircle, Briefcase, Download } from "lucide-react";
+import { FileText, Upload, Brain, Target, CheckCircle2, XCircle, Briefcase, Download, FileUp } from "lucide-react";
 import { toast } from "sonner";
 
 const KNOWN_SKILLS = [
@@ -74,6 +74,28 @@ export default function ResumeAnalyzer() {
   const { data } = useDataset();
   const [resumeText, setResumeText] = useState("");
   const [result, setResult] = useState<ReturnType<typeof analyzeResume> | null>(null);
+  const [fileName, setFileName] = useState<string | null>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
+
+  const handleFileUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    if (!file) return;
+
+    if (!file.name.match(/\.(txt|doc|docx|pdf)$/i)) {
+      toast.error("Please upload a .txt, .doc, .docx, or .pdf file");
+      return;
+    }
+
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      const text = e.target?.result as string;
+      setResumeText(text);
+      setFileName(file.name);
+      toast.success(`File "${file.name}" loaded successfully!`);
+    };
+    reader.onerror = () => toast.error("Failed to read file");
+    reader.readAsText(file);
+  };
 
   const handleAnalyze = () => {
     if (resumeText.trim().length < 50) {
@@ -100,30 +122,51 @@ export default function ResumeAnalyzer() {
           </div>
         </div>
 
-        {/* Input */}
-        <Card>
-          <CardHeader>
-            <CardTitle className="font-display text-lg flex items-center gap-2">
-              <Upload className="h-5 w-5" /> Paste Your Resume
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-4">
+        {/* Upload */}
+        <Card className="border-dashed border-2 border-primary/20 bg-primary/[0.02]">
+          <CardContent className="p-6">
+            <input
+              ref={fileInputRef}
+              type="file"
+              accept=".txt,.doc,.docx,.pdf"
+              onChange={handleFileUpload}
+              className="hidden"
+            />
+            <div
+              className="flex flex-col items-center justify-center gap-3 py-6 cursor-pointer rounded-lg hover:bg-primary/5 transition-colors"
+              onClick={() => fileInputRef.current?.click()}
+            >
+              <div className="h-14 w-14 rounded-full bg-primary/10 flex items-center justify-center">
+                <FileUp className="h-7 w-7 text-primary" />
+              </div>
+              <div className="text-center">
+                <p className="font-medium">Upload Resume</p>
+                <p className="text-xs text-muted-foreground">
+                  {fileName ? `✓ ${fileName}` : "Supports .txt, .doc, .docx, .pdf — click to browse"}
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-3 my-4">
+              <div className="flex-1 h-px bg-border" />
+              <span className="text-xs text-muted-foreground font-medium">OR</span>
+              <div className="flex-1 h-px bg-border" />
+            </div>
+
             <Textarea
               value={resumeText}
-              onChange={(e) => setResumeText(e.target.value)}
-              rows={8}
-              placeholder="Paste your resume text here... (copy all text from your PDF/DOCX resume)"
+              onChange={(e) => { setResumeText(e.target.value); setFileName(null); }}
+              rows={6}
+              placeholder="Paste your resume text here..."
               className="font-mono text-sm"
             />
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between mt-3">
               <p className="text-xs text-muted-foreground">
                 {resumeText.split(/\s+/).filter(Boolean).length} words
               </p>
-              <div className="flex gap-2">
-                <Button onClick={handleAnalyze} disabled={resumeText.trim().length < 50}>
-                  <Brain className="h-4 w-4 mr-2" /> Analyze Resume
-                </Button>
-              </div>
+              <Button onClick={handleAnalyze} disabled={resumeText.trim().length < 50}>
+                <Brain className="h-4 w-4 mr-2" /> Analyze Resume
+              </Button>
             </div>
           </CardContent>
         </Card>
