@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 import {
   LayoutDashboard, BookOpen, Brain, Users, Bell, Settings,
   LogOut, GraduationCap, BarChart3, FileText, ChevronLeft,
-  ChevronRight, Target, TrendingUp, AlertTriangle, Menu, X,
+  ChevronRight, Target, TrendingUp, AlertTriangle, Menu, X, Briefcase,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
