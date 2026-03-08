@@ -107,6 +107,19 @@
   body {
     @apply bg-background text-foreground;
     font-family: 'Inter', sans-serif;
+    background-image: 
+      radial-gradient(ellipse at 20% 0%, hsl(235 70% 55% / 0.06) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 100%, hsl(172 66% 50% / 0.05) 0%, transparent 50%),
+      radial-gradient(ellipse at 50% 50%, hsl(235 70% 55% / 0.02) 0%, transparent 70%);
+    background-attachment: fixed;
+  }
+
+  .dark body {
+    background-image: 
+      radial-gradient(ellipse at 20% 0%, hsl(235 70% 60% / 0.08) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 100%, hsl(172 66% 45% / 0.06) 0%, transparent 50%),
+      radial-gradient(ellipse at 50% 50%, hsl(280 65% 60% / 0.04) 0%, transparent 70%);
+    background-attachment: fixed;
   }
 
   h1, h2, h3, h4, h5, h6 {
