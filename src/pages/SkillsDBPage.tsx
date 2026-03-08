@@ -242,7 +242,7 @@ export default function SkillsDBPage() {
 
         {/* Skills Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {skillStats.map((s) => (
+          {filteredStats.map((s) => (
             <Card
               key={s.skill}
               className={`cursor-pointer transition-all hover:shadow-md hover:border-primary/30 ${
@@ -257,7 +257,12 @@ export default function SkillsDBPage() {
                   <h3 className="font-display font-semibold text-lg">
                     {s.skill}
                   </h3>
-                  <TrendingUp className="h-4 w-4 text-muted-foreground" />
+                  <Badge
+                    variant={s.demand === "High" ? "default" : s.demand === "Medium" ? "secondary" : "outline"}
+                    className="text-xs"
+                  >
+                    {s.demand} Demand
+                  </Badge>
                 </div>
                 <p className="text-sm text-muted-foreground mb-3">
                   {s.total} students
@@ -270,6 +275,11 @@ export default function SkillsDBPage() {
               </CardContent>
             </Card>
           ))}
+          {filteredStats.length === 0 && (
+            <p className="text-sm text-muted-foreground col-span-full text-center py-8">
+              No skills match your search.
+            </p>
+          )}
         </div>
       </div>
     </DashboardLayout>
