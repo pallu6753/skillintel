@@ -10,12 +10,14 @@ import { careerRoles } from "@/lib/career-engine";
 import { Skeleton } from "@/components/ui/skeleton";
 import {
   Brain, ExternalLink, Youtube, BookOpen, Code, Users, X,
-  TrendingUp, Briefcase,
+  TrendingUp, Briefcase, Search,
 } from "lucide-react";
+import { Input } from "@/components/ui/input";
 
 export default function SkillsDBPage() {
   const { data, isLoading } = useDataset();
   const [selectedSkill, setSelectedSkill] = useState<string | null>(null);
+  const [search, setSearch] = useState("");
 
   if (isLoading || !data) {
     return (
@@ -39,8 +41,13 @@ export default function SkillsDBPage() {
       const sk = s.skills.find((sk) => sk.name === skill);
       if (sk) levels[sk.level]++;
     });
-    return { skill, total: studentsWithSkill.length, ...levels };
+    const demand = studentsWithSkill.length > 300 ? "High" : studentsWithSkill.length > 150 ? "Medium" : "Low";
+    return { skill, total: studentsWithSkill.length, demand, ...levels };
   });
+
+  const filteredStats = skillStats.filter((s) =>
+    s.skill.toLowerCase().includes(search.toLowerCase())
+  );
 
   const selected = selectedSkill
     ? skillStats.find((s) => s.skill === selectedSkill)
@@ -67,6 +74,16 @@ export default function SkillsDBPage() {
           </div>
         </div>
 
+        {/* Search */}
+        <div className="relative max-w-sm">
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+          <Input
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            placeholder="Search skills..."
+            className="pl-9"
+          />
+        </div>
         {/* Skill Detail Panel */}
         {selected && selectedSkill && (
           <Card className="border-primary/30 bg-primary/5">
@@ -225,7 +242,7 @@ export default function SkillsDBPage() {
 
         {/* Skills Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {skillStats.map((s) => (
+          {filteredStats.map((s) => (
             <Card
               key={s.skill}
               className={`cursor-pointer transition-all hover:shadow-md hover:border-primary/30 ${
@@ -240,7 +257,12 @@ export default function SkillsDBPage() {
                   <h3 className="font-display font-semibold text-lg">
                     {s.skill}
                   </h3>
-                  <TrendingUp className="h-4 w-4 text-muted-foreground" />
+                  <Badge
+                    variant={s.demand === "High" ? "default" : s.demand === "Medium" ? "secondary" : "outline"}
+                    className="text-xs"
+                  >
+                    {s.demand} Demand
+                  </Badge>
                 </div>
                 <p className="text-sm text-muted-foreground mb-3">
                   {s.total} students
@@ -253,6 +275,11 @@ export default function SkillsDBPage() {
               </CardContent>
             </Card>
           ))}
+          {filteredStats.length === 0 && (
+            <p className="text-sm text-muted-foreground col-span-full text-center py-8">
+              No skills match your search.
+            </p>
+          )}
         </div>
       </div>
     </DashboardLayout>
