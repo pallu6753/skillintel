@@ -42,6 +42,8 @@ const AppRoutes = () => (
     <Route path="/login" element={<Login />} />
     <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
     <Route path="/quiz/:type" element={<ProtectedRoute><QuizPage /></ProtectedRoute>} />
+    <Route path="/coding-practice" element={<ProtectedRoute><CodingPractice /></ProtectedRoute>} />
+    <Route path="/interview-simulator" element={<ProtectedRoute><InterviewSimulator /></ProtectedRoute>} />
     <Route path="/skill-gap" element={<ProtectedRoute><SkillGap /></ProtectedRoute>} />
     <Route path="/career" element={<ProtectedRoute><CareerIntelligence /></ProtectedRoute>} />
     <Route path="/study-habits" element={<ProtectedRoute><StudyHabits /></ProtectedRoute>} />
