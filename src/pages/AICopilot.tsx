@@ -9,7 +9,7 @@ import { useDataset } from "@/hooks/use-dataset";
 import { useAuth } from "@/lib/auth-context";
 import { generateResponse, CopilotMessage } from "@/lib/copilot-engine";
 import { Skeleton } from "@/components/ui/skeleton";
-import { Bot, Send, User, Sparkles, Brain, Target, BookOpen, FileText, TrendingUp } from "lucide-react";
+import { Bot, Send, User, Sparkles, Brain, Target, BookOpen, FileText, TrendingUp, Search, Mic, Code2 } from "lucide-react";
 import ReactMarkdown from "react-markdown";
 
 const quickPrompts = [
