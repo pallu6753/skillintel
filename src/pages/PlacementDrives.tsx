@@ -8,6 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useAuth } from "@/lib/auth-context";
 import { usePlacementStore } from "@/lib/placement-store";
+import { useApplicationStore } from "@/lib/application-store";
 import { Briefcase, Plus, Building2, Calendar, IndianRupee, Users } from "lucide-react";
 import { toast } from "sonner";
 
