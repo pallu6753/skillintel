@@ -74,6 +74,16 @@ export default function SkillsDBPage() {
           </div>
         </div>
 
+        {/* Search */}
+        <div className="relative max-w-sm">
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+          <Input
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            placeholder="Search skills..."
+            className="pl-9"
+          />
+        </div>
         {/* Skill Detail Panel */}
         {selected && selectedSkill && (
           <Card className="border-primary/30 bg-primary/5">
