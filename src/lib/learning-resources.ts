@@ -21,6 +21,10 @@ export const learningResources: LearningResource[] = [
       { title: "HackerRank Python", url: "https://www.hackerrank.com/domains/python" },
       { title: "LeetCode Python", url: "https://leetcode.com/problemset/all/?topicSlugs=python" },
     ],
+    docs: [
+      { title: "Python Official Docs", url: "https://docs.python.org/3/" },
+      { title: "Real Python Tutorials", url: "https://realpython.com/" },
+    ],
   },
   {
     skill: "SQL",
@@ -35,6 +39,10 @@ export const learningResources: LearningResource[] = [
     practice: [
       { title: "SQLZoo", url: "https://sqlzoo.net/" },
       { title: "HackerRank SQL", url: "https://www.hackerrank.com/domains/sql" },
+    ],
+    docs: [
+      { title: "PostgreSQL Documentation", url: "https://www.postgresql.org/docs/" },
+      { title: "MySQL Reference Manual", url: "https://dev.mysql.com/doc/" },
     ],
   },
   {
@@ -51,6 +59,10 @@ export const learningResources: LearningResource[] = [
       { title: "Kaggle Competitions", url: "https://www.kaggle.com/competitions" },
       { title: "Scikit-learn Examples", url: "https://scikit-learn.org/stable/auto_examples/" },
     ],
+    docs: [
+      { title: "Scikit-learn Documentation", url: "https://scikit-learn.org/stable/documentation.html" },
+      { title: "Google ML Crash Course", url: "https://developers.google.com/machine-learning/crash-course" },
+    ],
   },
   {
     skill: "Statistics",
@@ -65,6 +77,9 @@ export const learningResources: LearningResource[] = [
     practice: [
       { title: "StatQuest", url: "https://statquest.org/" },
       { title: "Brilliant Statistics", url: "https://brilliant.org/courses/statistics/" },
+    ],
+    docs: [
+      { title: "NIST Statistics Handbook", url: "https://www.itl.nist.gov/div898/handbook/" },
     ],
   },
   {
@@ -81,6 +96,10 @@ export const learningResources: LearningResource[] = [
       { title: "TensorFlow Playground", url: "https://playground.tensorflow.org/" },
       { title: "Kaggle Deep Learning", url: "https://www.kaggle.com/learn/intro-to-deep-learning" },
     ],
+    docs: [
+      { title: "TensorFlow Documentation", url: "https://www.tensorflow.org/api_docs" },
+      { title: "PyTorch Documentation", url: "https://pytorch.org/docs/stable/" },
+    ],
   },
   {
     skill: "Power BI",
@@ -95,6 +114,9 @@ export const learningResources: LearningResource[] = [
     practice: [
       { title: "Power BI Community Gallery", url: "https://community.powerbi.com/t5/Data-Stories-Gallery/bd-p/DataStoriesGallery" },
     ],
+    docs: [
+      { title: "Power BI Documentation", url: "https://learn.microsoft.com/en-us/power-bi/" },
+    ],
   },
   {
     skill: "Data Visualization",
@@ -107,6 +129,10 @@ export const learningResources: LearningResource[] = [
     practice: [
       { title: "Tableau Public Gallery", url: "https://public.tableau.com/en-us/gallery/" },
       { title: "Matplotlib Gallery", url: "https://matplotlib.org/stable/gallery/index.html" },
+    ],
+    docs: [
+      { title: "Matplotlib Documentation", url: "https://matplotlib.org/stable/contents.html" },
+      { title: "Seaborn Documentation", url: "https://seaborn.pydata.org/" },
     ],
   },
   {
@@ -121,6 +147,9 @@ export const learningResources: LearningResource[] = [
       { title: "LeetCode Java", url: "https://leetcode.com/problemset/all/" },
       { title: "HackerRank Java", url: "https://www.hackerrank.com/domains/java" },
     ],
+    docs: [
+      { title: "Java SE Documentation", url: "https://docs.oracle.com/en/java/" },
+    ],
   },
   {
     skill: "Communication",
@@ -132,6 +161,9 @@ export const learningResources: LearningResource[] = [
     ],
     practice: [
       { title: "Toastmasters", url: "https://www.toastmasters.org/" },
+    ],
+    docs: [
+      { title: "Harvard Business Review – Communication", url: "https://hbr.org/topic/communication" },
     ],
   },
   {
@@ -145,6 +177,9 @@ export const learningResources: LearningResource[] = [
     practice: [
       { title: "LeetCode", url: "https://leetcode.com/" },
       { title: "Codeforces", url: "https://codeforces.com/" },
+    ],
+    docs: [
+      { title: "GeeksforGeeks DSA", url: "https://www.geeksforgeeks.org/data-structures/" },
     ],
   },
 ];
