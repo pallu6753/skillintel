@@ -41,8 +41,13 @@ export default function SkillsDBPage() {
       const sk = s.skills.find((sk) => sk.name === skill);
       if (sk) levels[sk.level]++;
     });
-    return { skill, total: studentsWithSkill.length, ...levels };
+    const demand = studentsWithSkill.length > 300 ? "High" : studentsWithSkill.length > 150 ? "Medium" : "Low";
+    return { skill, total: studentsWithSkill.length, demand, ...levels };
   });
+
+  const filteredStats = skillStats.filter((s) =>
+    s.skill.toLowerCase().includes(search.toLowerCase())
+  );
 
   const selected = selectedSkill
     ? skillStats.find((s) => s.skill === selectedSkill)
