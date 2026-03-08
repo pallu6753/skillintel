@@ -19,6 +19,9 @@ import AnalyticsPage from "./pages/AnalyticsPage";
 import SkillsDBPage from "./pages/SkillsDBPage";
 import SettingsPage from "./pages/SettingsPage";
 import PlacementDrives from "./pages/PlacementDrives";
+import LeaderboardPage from "./pages/LeaderboardPage";
+import ApplicationTracker from "./pages/ApplicationTracker";
+import ResumeAnalyzer from "./pages/ResumeAnalyzer";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -46,6 +49,9 @@ const AppRoutes = () => (
     <Route path="/skills-db" element={<ProtectedRoute><SkillsDBPage /></ProtectedRoute>} />
     <Route path="/settings" element={<ProtectedRoute><SettingsPage /></ProtectedRoute>} />
     <Route path="/placement-drives" element={<ProtectedRoute><PlacementDrives /></ProtectedRoute>} />
+    <Route path="/leaderboard" element={<ProtectedRoute><LeaderboardPage /></ProtectedRoute>} />
+    <Route path="/applications" element={<ProtectedRoute><ApplicationTracker /></ProtectedRoute>} />
+    <Route path="/resume-analyzer" element={<ProtectedRoute><ResumeAnalyzer /></ProtectedRoute>} />
     <Route path="*" element={<NotFound />} />
   </Routes>
 );
