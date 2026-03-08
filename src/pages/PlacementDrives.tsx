@@ -114,7 +114,16 @@ export default function PlacementDrives() {
                         <Button variant="outline" size="sm" onClick={() => closeDrive(d.id)}>Close</Button>
                       )}
                       {user?.role === "student" && (
-                        <Button size="sm" onClick={() => toast.success(`Applied to ${d.company}!`)}>Apply</Button>
+                        <Button
+                          size="sm"
+                          disabled={hasApplied(d.id)}
+                          onClick={() => {
+                            apply(d.id, d.company, d.role);
+                            toast.success(`Applied to ${d.company}!`);
+                          }}
+                        >
+                          {hasApplied(d.id) ? "Applied ✓" : "Apply"}
+                        </Button>
                       )}
                     </div>
                   </div>
