@@ -8,7 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useNotificationStore, AppNotification } from "@/lib/notification-store";
 import { useAuth } from "@/lib/auth-context";
-import { Bell, Briefcase, BookOpen, GraduationCap, Brain, AlertTriangle, Send, Plus } from "lucide-react";
+import { Bell, Briefcase, BookOpen, GraduationCap, Brain, AlertTriangle, Send, Plus, Download } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { toast } from "sonner";
 
@@ -34,6 +34,67 @@ const priorityColors: Record<string, string> = {
   high: "bg-destructive/10 text-destructive",
 };
 
+function generateSingleReport(n: AppNotification): string {
+  return `════════════════════════════════════════
+  SKILLINTEL — NOTIFICATION RECEIPT
+════════════════════════════════════════
+
+Title:      ${n.title}
+Type:       ${n.type.toUpperCase()}
+Priority:   ${n.priority.toUpperCase()}
+Date:       ${n.date}
+Sent By:    ${n.senderName} (${n.senderRole})
+Target:     ${n.targetRole === "all" ? "All Roles" : n.targetRole}
+Status:     ${n.read ? "Read" : "Unread"}
+
+────────────────────────────────────────
+MESSAGE
+────────────────────────────────────────
+${n.message}
+
+════════════════════════════════════════
+Generated on ${new Date().toLocaleString()}
+SkillIntel AI Career Intelligence Platform
+════════════════════════════════════════`;
+}
+
+function generateFullReport(notifications: AppNotification[], userName: string, role: string): string {
+  const header = `╔══════════════════════════════════════════════╗
+║   SKILLINTEL — NOTIFICATIONS REPORT          ║
+╚══════════════════════════════════════════════╝
+
+Generated for: ${userName} (${role})
+Date:          ${new Date().toLocaleString()}
+Total:         ${notifications.length} notification(s)
+
+`;
+
+  const body = notifications
+    .map(
+      (n, i) =>
+        `── ${i + 1}. ${n.title} ──
+   Type:     ${n.type} | Priority: ${n.priority} | Date: ${n.date}
+   From:     ${n.senderName} (${n.senderRole})
+   Target:   ${n.targetRole === "all" ? "All" : n.targetRole}
+   Status:   ${n.read ? "Read" : "Unread"}
+   Message:  ${n.message}
+`
+    )
+    .join("\n");
+
+  return header + body + `\n══ End of Report ══`;
+}
+
+function downloadText(content: string, filename: string) {
+  const blob = new Blob([content], { type: "text/plain;charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = filename;
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
 export default function Notifications() {
   const { user } = useAuth();
   const { notifications, addNotification, markRead } = useNotificationStore();
@@ -46,7 +107,6 @@ export default function Notifications() {
 
   const canPost = user?.role === "admin" || user?.role === "faculty" || user?.role === "placement";
 
-  // Filter notifications visible to current user
   const visibleNotifications = notifications.filter(
     (n) => n.targetRole === "all" || n.targetRole === user?.role
   );
@@ -75,10 +135,27 @@ export default function Notifications() {
     toast.success("Notification posted successfully!");
   };
 
+  const handleDownloadSingle = (n: AppNotification, e: React.MouseEvent) => {
+    e.stopPropagation();
+    const report = generateSingleReport(n);
+    downloadText(report, `notification-${n.id}.txt`);
+    toast.success("Receipt downloaded!");
+  };
+
+  const handleDownloadAll = () => {
+    if (visibleNotifications.length === 0) {
+      toast.error("No notifications to download");
+      return;
+    }
+    const report = generateFullReport(visibleNotifications, user?.name || "User", user?.role || "student");
+    downloadText(report, `notifications-report-${new Date().toISOString().split("T")[0]}.txt`);
+    toast.success("Full report downloaded!");
+  };
+
   return (
     <DashboardLayout>
       <div className="max-w-2xl mx-auto space-y-6">
-        <div className="flex items-center justify-between gap-3">
+        <div className="flex items-center justify-between gap-3 flex-wrap">
           <div className="flex items-center gap-3">
             <Bell className="h-6 w-6 text-primary" />
             <div>
@@ -86,12 +163,17 @@ export default function Notifications() {
               <p className="text-muted-foreground text-sm">{unreadCount} unread</p>
             </div>
           </div>
-          {canPost && (
-            <Button onClick={() => setShowForm(!showForm)} variant={showForm ? "secondary" : "default"}>
-              <Plus className="h-4 w-4 mr-2" />
-              {showForm ? "Cancel" : "Create Notification"}
+          <div className="flex items-center gap-2">
+            <Button variant="outline" size="sm" onClick={handleDownloadAll}>
+              <Download className="h-4 w-4 mr-2" /> Download Report
             </Button>
-          )}
+            {canPost && (
+              <Button onClick={() => setShowForm(!showForm)} variant={showForm ? "secondary" : "default"} size="sm">
+                <Plus className="h-4 w-4 mr-2" />
+                {showForm ? "Cancel" : "Create"}
+              </Button>
+            )}
+          </div>
         </div>
 
         {/* Create Notification Form */}
@@ -181,10 +263,18 @@ export default function Notifications() {
                         <Badge className={cn("text-xs", priorityColors[n.priority])}>{n.priority}</Badge>
                       </div>
                       <p className="text-sm text-muted-foreground mt-1">{n.message}</p>
-                      <div className="flex items-center gap-3 mt-2 text-xs text-muted-foreground">
+                      <div className="flex items-center gap-3 mt-2 text-xs text-muted-foreground flex-wrap">
                         <span>{n.date}</span>
                         <span>by {n.senderName} ({n.senderRole})</span>
                         <Badge variant="outline" className="text-xs">{n.targetRole === "all" ? "Everyone" : n.targetRole}</Badge>
+                        <Button
+                          variant="ghost"
+                          size="sm"
+                          className="h-6 text-xs gap-1 ml-auto"
+                          onClick={(e) => handleDownloadSingle(n, e)}
+                        >
+                          <Download className="h-3 w-3" /> Receipt
+                        </Button>
                       </div>
                     </div>
                   </CardContent>
