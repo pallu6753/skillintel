@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { DashboardLayout } from "@/components/DashboardLayout";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -11,6 +12,7 @@ export default function StudentsPage() {
   const { data, isLoading } = useDataset();
   const [search, setSearch] = useState("");
   const [page, setPage] = useState(0);
+  const navigate = useNavigate();
   const perPage = 20;
 
   if (isLoading || !data) {
@@ -38,7 +40,7 @@ export default function StudentsPage() {
           <Users className="h-6 w-6 text-primary" />
           <div>
             <h1 className="font-display text-2xl font-bold">Students</h1>
-            <p className="text-muted-foreground text-sm">{students.length} students in the system</p>
+            <p className="text-muted-foreground text-sm">{students.length} students in the system · Click a row to view profile</p>
           </div>
         </div>
 
@@ -68,9 +70,13 @@ export default function StudentsPage() {
                 </thead>
                 <tbody>
                   {paged.map((s) => (
-                    <tr key={s.id} className="border-b last:border-0 hover:bg-muted/50">
+                    <tr
+                      key={s.id}
+                      onClick={() => navigate(`/student/${s.id}`)}
+                      className="border-b last:border-0 hover:bg-muted/50 cursor-pointer transition-colors"
+                    >
                       <td className="p-3 text-muted-foreground">{s.id}</td>
-                      <td className="p-3 font-medium">{s.name}</td>
+                      <td className="p-3 font-medium text-primary">{s.name}</td>
                       <td className="p-3 text-muted-foreground">{s.department}</td>
                       <td className="p-3">{s.gpa}</td>
                       <td className="p-3">{s.attendance.toFixed(0)}%</td>

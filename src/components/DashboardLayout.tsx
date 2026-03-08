@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 import {
   LayoutDashboard, BookOpen, Brain, Users, Bell, Settings,
   LogOut, GraduationCap, BarChart3, FileText, ChevronLeft,
-  ChevronRight, Target, TrendingUp, AlertTriangle, Menu, X,
+  ChevronRight, Target, TrendingUp, AlertTriangle, Menu, X, Briefcase,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -31,6 +31,7 @@ const navItems: Record<UserRole, { label: string; path: string; icon: React.Elem
   placement: [
     { label: "Dashboard", path: "/dashboard", icon: LayoutDashboard },
     { label: "Students", path: "/students", icon: Users },
+    { label: "Placement Drives", path: "/placement-drives", icon: Briefcase },
     { label: "Analytics", path: "/analytics", icon: BarChart3 },
     { label: "Notifications", path: "/notifications", icon: Bell },
   ],
