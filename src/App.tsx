@@ -53,6 +53,7 @@ const AppRoutes = () => (
     <Route path="/leaderboard" element={<ProtectedRoute><LeaderboardPage /></ProtectedRoute>} />
     <Route path="/applications" element={<ProtectedRoute><ApplicationTracker /></ProtectedRoute>} />
     <Route path="/resume-analyzer" element={<ProtectedRoute><ResumeAnalyzer /></ProtectedRoute>} />
+    <Route path="/ai-copilot" element={<ProtectedRoute><AICopilot /></ProtectedRoute>} />
     <Route path="*" element={<NotFound />} />
   </Routes>
 );
