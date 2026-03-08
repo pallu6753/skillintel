@@ -22,6 +22,7 @@ import PlacementDrives from "./pages/PlacementDrives";
 import LeaderboardPage from "./pages/LeaderboardPage";
 import ApplicationTracker from "./pages/ApplicationTracker";
 import ResumeAnalyzer from "./pages/ResumeAnalyzer";
+import AICopilot from "./pages/AICopilot";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
