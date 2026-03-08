@@ -119,9 +119,11 @@ export default function ResumeAnalyzer() {
               <p className="text-xs text-muted-foreground">
                 {resumeText.split(/\s+/).filter(Boolean).length} words
               </p>
-              <Button onClick={handleAnalyze} disabled={resumeText.trim().length < 50}>
-                <Brain className="h-4 w-4 mr-2" /> Analyze Resume
-              </Button>
+              <div className="flex gap-2">
+                <Button onClick={handleAnalyze} disabled={resumeText.trim().length < 50}>
+                  <Brain className="h-4 w-4 mr-2" /> Analyze Resume
+                </Button>
+              </div>
             </div>
           </CardContent>
         </Card>
