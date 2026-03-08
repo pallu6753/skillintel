@@ -7,8 +7,11 @@ import { Progress } from "@/components/ui/progress";
 import { Textarea } from "@/components/ui/textarea";
 import { useDataset } from "@/hooks/use-dataset";
 import { recommendCareers } from "@/lib/career-engine";
-import { FileText, Upload, Brain, Target, CheckCircle2, XCircle, Briefcase, Download, FileUp } from "lucide-react";
+import { FileText, Upload, Brain, Target, CheckCircle2, XCircle, Briefcase, Download, FileUp, Loader2 } from "lucide-react";
 import { toast } from "sonner";
+import * as pdfjsLib from "pdfjs-dist";
+
+pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js`;
 
 const KNOWN_SKILLS = [
   "Python", "SQL", "Java", "Machine Learning", "Deep Learning", "Statistics",
