@@ -9,7 +9,7 @@ import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import QuizPage from "./pages/QuizPage";
 import SkillGap from "./pages/SkillGap";
-import CareerPaths from "./pages/CareerPaths";
+import CareerIntelligence from "./pages/CareerIntelligence";
 import StudyHabits from "./pages/StudyHabits";
 import Notifications from "./pages/Notifications";
 import StudentsPage from "./pages/StudentsPage";
@@ -23,6 +23,7 @@ import LeaderboardPage from "./pages/LeaderboardPage";
 import ApplicationTracker from "./pages/ApplicationTracker";
 import ResumeAnalyzer from "./pages/ResumeAnalyzer";
 import AICopilot from "./pages/AICopilot";
+import PlacementIntelligence from "./pages/PlacementIntelligence";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -40,7 +41,7 @@ const AppRoutes = () => (
     <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
     <Route path="/quiz/:type" element={<ProtectedRoute><QuizPage /></ProtectedRoute>} />
     <Route path="/skill-gap" element={<ProtectedRoute><SkillGap /></ProtectedRoute>} />
-    <Route path="/career" element={<ProtectedRoute><CareerPaths /></ProtectedRoute>} />
+    <Route path="/career" element={<ProtectedRoute><CareerIntelligence /></ProtectedRoute>} />
     <Route path="/study-habits" element={<ProtectedRoute><StudyHabits /></ProtectedRoute>} />
     <Route path="/notifications" element={<ProtectedRoute><Notifications /></ProtectedRoute>} />
     <Route path="/students" element={<ProtectedRoute><StudentsPage /></ProtectedRoute>} />
@@ -50,6 +51,7 @@ const AppRoutes = () => (
     <Route path="/skills-db" element={<ProtectedRoute><SkillsDBPage /></ProtectedRoute>} />
     <Route path="/settings" element={<ProtectedRoute><SettingsPage /></ProtectedRoute>} />
     <Route path="/placement-drives" element={<ProtectedRoute><PlacementDrives /></ProtectedRoute>} />
+    <Route path="/placement-intelligence" element={<ProtectedRoute><PlacementIntelligence /></ProtectedRoute>} />
     <Route path="/leaderboard" element={<ProtectedRoute><LeaderboardPage /></ProtectedRoute>} />
     <Route path="/applications" element={<ProtectedRoute><ApplicationTracker /></ProtectedRoute>} />
     <Route path="/resume-analyzer" element={<ProtectedRoute><ResumeAnalyzer /></ProtectedRoute>} />

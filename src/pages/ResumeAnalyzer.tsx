@@ -245,6 +245,53 @@ export default function ResumeAnalyzer() {
                 </p>
               </CardContent>
             </Card>
+
+            {/* Download Report */}
+            <Card>
+              <CardContent className="p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div>
+                  <h3 className="font-display font-semibold">Download Resume Report</h3>
+                  <p className="text-sm text-muted-foreground">Get a detailed feedback report with scores and suggestions</p>
+                </div>
+                <div className="flex gap-2">
+                  <Button variant="outline" onClick={() => {
+                    const report = [
+                      `RESUME ANALYSIS REPORT`,
+                      `======================`,
+                      `Overall Score: ${result.overallScore}%`,
+                      `ATS Score: ${result.atsScore}%`,
+                      `Word Count: ${result.wordCount}`,
+                      ``,
+                      `DETECTED SKILLS: ${result.detectedSkills.join(", ")}`,
+                      ``,
+                      `MISSING SKILLS: ${result.missingSkills.join(", ")}`,
+                      ``,
+                      `ATS KEYWORDS FOUND: ${result.foundKeywords.join(", ")}`,
+                      ``,
+                      `SECTIONS:`,
+                      ...Object.entries(result.sections).map(([k, v]) => `  ${k}: ${v ? "✓ Found" : "✗ Missing"}`),
+                      ``,
+                      `CAREER SUGGESTIONS:`,
+                      ...careers.slice(0, 5).map((c) => `  ${c.role} - ${c.matchScore}% match`),
+                      ``,
+                      `SUGGESTIONS:`,
+                      `- Add action verbs like "developed", "implemented", "optimized"`,
+                      `- Keep resume to 1 page for freshers`,
+                      `- Add measurable achievements`,
+                      `- Include GitHub/LinkedIn links`,
+                    ].join("\n");
+                    const blob = new Blob([report], { type: "text/plain" });
+                    const url = URL.createObjectURL(blob);
+                    const a = document.createElement("a");
+                    a.href = url; a.download = "resume_report.txt"; a.click();
+                    URL.revokeObjectURL(url);
+                    toast.success("Report downloaded!");
+                  }}>
+                    <Download className="h-4 w-4 mr-2" /> Download TXT
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
           </>
         )}
       </div>
