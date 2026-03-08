@@ -20,14 +20,22 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<AuthUser | null>(null);
 
   const login = useCallback((email: string, _password: string, role: UserRole) => {
-    // Mock authentication
-    const names: Record<UserRole, string> = {
+    const defaultNames: Record<UserRole, string> = {
       student: "Aarav Sharma",
       faculty: "Dr. Meera Iyer",
       placement: "Placement Officer",
       admin: "Admin User",
     };
-    setUser({ name: names[role], email, role });
+
+    let name = defaultNames[role];
+    if (email && email !== "demo@college.edu") {
+      const localPart = email.split("@")[0];
+      name = localPart
+        .replace(/[._-]/g, " ")
+        .replace(/\b\w/g, (c) => c.toUpperCase());
+    }
+
+    setUser({ name, email: email || "demo@college.edu", role });
     return true;
   }, []);
 
