@@ -163,11 +163,14 @@ export default function ResumeAnalyzer() {
                 <FileUp className="h-7 w-7 text-primary" />
               </div>
               <div className="text-center">
-                <p className="font-medium">Upload Resume</p>
+                <p className="font-medium">
+                  {isUploading ? "Parsing file..." : "Upload Resume"}
+                </p>
                 <p className="text-xs text-muted-foreground">
                   {fileName ? `✓ ${fileName}` : "Supports .txt, .doc, .docx, .pdf — click to browse"}
                 </p>
               </div>
+              {isUploading && <Loader2 className="h-5 w-5 animate-spin text-primary" />}
             </div>
 
             <div className="flex items-center gap-3 my-4">
