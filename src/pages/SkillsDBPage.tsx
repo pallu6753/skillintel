@@ -10,7 +10,7 @@ import { careerRoles } from "@/lib/career-engine";
 import { Skeleton } from "@/components/ui/skeleton";
 import {
   Brain, ExternalLink, Youtube, BookOpen, Code, Users, X,
-  TrendingUp, Briefcase, Search,
+  TrendingUp, Briefcase, Search, FileText,
 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 
