@@ -7,7 +7,7 @@ import {
   LayoutDashboard, BookOpen, Brain, Users, Bell, Settings,
   LogOut, GraduationCap, BarChart3, FileText, ChevronLeft,
   ChevronRight, Target, TrendingUp, AlertTriangle, Menu, X, Briefcase,
-  Trophy, ClipboardList,
+  Trophy, ClipboardList, Bot,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -22,6 +22,7 @@ const navItems: Record<UserRole, { label: string; path: string; icon: React.Elem
     { label: "Resume Analyzer", path: "/resume-analyzer", icon: FileText },
     { label: "Applications", path: "/applications", icon: ClipboardList },
     { label: "Leaderboard", path: "/leaderboard", icon: Trophy },
+    { label: "AI Copilot", path: "/ai-copilot", icon: Bot },
     { label: "Study Habits", path: "/study-habits", icon: BookOpen },
     { label: "Notifications", path: "/notifications", icon: Bell },
   ],
