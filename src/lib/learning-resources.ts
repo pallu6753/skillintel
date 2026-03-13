@@ -29,92 +29,73 @@ export const learningResources: LearningResource[] = [
   {
     skill: "SQL",
     youtube: [
-      { title: "SQL Full Course – freeCodeCamp", url: "https://www.youtube.com/watch?v=HXV3zeQKqGY" },
-      { title: "SQL Tutorial for Beginners", url: "https://www.youtube.com/watch?v=7S_tz1z_5bA" },
+      { title: "SQL Full Course", url: "https://www.youtube.com/watch?v=HXV3zeQKqGY" },
     ],
     courses: [
       { title: "SQL for Data Science", url: "https://www.coursera.org/learn/sql-for-data-science", platform: "Coursera" },
-      { title: "W3Schools SQL", url: "https://www.w3schools.com/sql/", platform: "W3Schools" },
     ],
     practice: [
-      { title: "SQLZoo", url: "https://sqlzoo.net/" },
       { title: "HackerRank SQL", url: "https://www.hackerrank.com/domains/sql" },
     ],
     docs: [
-      { title: "PostgreSQL Documentation", url: "https://www.postgresql.org/docs/" },
       { title: "MySQL Reference Manual", url: "https://dev.mysql.com/doc/" },
     ],
   },
   {
     skill: "Machine Learning",
     youtube: [
-      { title: "Machine Learning by Andrew Ng (Stanford)", url: "https://www.youtube.com/playlist?list=PLLssT5z_DsK-h9vYZkQkYNWcItqhlRJLN" },
-      { title: "ML Full Course – Simplilearn", url: "https://www.youtube.com/watch?v=GwIo3gDZCVQ" },
+      { title: "Machine Learning Full Course", url: "https://www.youtube.com/watch?v=GwIo3gDZCVQ" },
     ],
     courses: [
-      { title: "Machine Learning Specialization", url: "https://www.coursera.org/specializations/machine-learning-introduction", platform: "Coursera" },
-      { title: "Intro to ML – Kaggle", url: "https://www.kaggle.com/learn/intro-to-machine-learning", platform: "Kaggle" },
+      { title: "Machine Learning", url: "https://www.coursera.org/learn/machine-learning", platform: "Coursera" },
     ],
     practice: [
-      { title: "Kaggle Competitions", url: "https://www.kaggle.com/competitions" },
-      { title: "Scikit-learn Examples", url: "https://scikit-learn.org/stable/auto_examples/" },
+      { title: "Kaggle Learn", url: "https://www.kaggle.com/learn" },
     ],
     docs: [
-      { title: "Scikit-learn Documentation", url: "https://scikit-learn.org/stable/documentation.html" },
-      { title: "Google ML Crash Course", url: "https://developers.google.com/machine-learning/crash-course" },
+      { title: "Scikit-learn Documentation", url: "https://scikit-learn.org/stable/" },
     ],
   },
   {
     skill: "Statistics",
     youtube: [
-      { title: "Statistics Full Course – MarinStatsLectures", url: "https://www.youtube.com/playlist?list=PLqzoL9-eJTNBZDG8jaNuhap1C9q6VHyVa" },
-      { title: "Khan Academy Statistics", url: "https://www.youtube.com/playlist?list=PL1328115D3D8A2566" },
       { title: "Statistics for Data Science", url: "https://www.youtube.com/watch?v=xxpc-HPKN28" },
     ],
     courses: [
-      { title: "Statistics with Python", url: "https://www.coursera.org/specializations/statistics-with-python", platform: "Coursera" },
-      { title: "Khan Academy Stats", url: "https://www.khanacademy.org/math/statistics-probability", platform: "Khan Academy" },
+      { title: "Statistics", url: "https://www.coursera.org/learn/statistics", platform: "Coursera" },
     ],
     practice: [
-      { title: "StatQuest", url: "https://statquest.org/" },
-      { title: "Brilliant Statistics", url: "https://brilliant.org/courses/statistics/" },
+      { title: "Khan Academy Statistics", url: "https://www.khanacademy.org/math/statistics-probability" },
     ],
     docs: [
-      { title: "NIST Statistics Handbook", url: "https://www.itl.nist.gov/div898/handbook/" },
+      { title: "Statlect", url: "https://www.statlect.com/" },
     ],
   },
   {
     skill: "Deep Learning",
     youtube: [
-      { title: "Deep Learning Specialization – Andrew Ng", url: "https://www.youtube.com/playlist?list=PLkDaE6sCZn6Ec-XTbcX1uRg2_u4xOEky" },
-      { title: "Neural Networks – 3Blue1Brown", url: "https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi" },
       { title: "Deep Learning Tutorial", url: "https://www.youtube.com/watch?v=aircAruvnKk" },
     ],
     courses: [
       { title: "Deep Learning Specialization", url: "https://www.coursera.org/specializations/deep-learning", platform: "Coursera" },
-      { title: "Fast.ai Practical DL", url: "https://course.fast.ai/", platform: "Fast.ai" },
     ],
     practice: [
-      { title: "TensorFlow Playground", url: "https://playground.tensorflow.org/" },
-      { title: "Kaggle Deep Learning", url: "https://www.kaggle.com/learn/intro-to-deep-learning" },
+      { title: "Kaggle Deep Learning", url: "https://www.kaggle.com/learn/deep-learning" },
     ],
     docs: [
-      { title: "TensorFlow Documentation", url: "https://www.tensorflow.org/api_docs" },
-      { title: "PyTorch Documentation", url: "https://pytorch.org/docs/stable/" },
+      { title: "PyTorch Documentation", url: "https://pytorch.org/docs/stable/index.html" },
     ],
   },
   {
     skill: "Power BI",
     youtube: [
-      { title: "Power BI Full Course – Edureka", url: "https://www.youtube.com/watch?v=3u7MQz1EyPY" },
-      { title: "Power BI Tutorial for Beginners", url: "https://www.youtube.com/watch?v=AGrl-H87pRU" },
+      { title: "Power BI Full Course", url: "https://www.youtube.com/watch?v=AGrl-H87pRU" },
     ],
     courses: [
-      { title: "Microsoft Power BI Data Analyst", url: "https://www.coursera.org/professional-certificates/microsoft-power-bi-data-analyst", platform: "Coursera" },
-      { title: "Power BI Guided Learning", url: "https://learn.microsoft.com/en-us/power-bi/guided-learning/", platform: "Microsoft" },
+      { title: "Power BI", url: "https://www.coursera.org/learn/power-bi", platform: "Coursera" },
     ],
     practice: [
-      { title: "Power BI Community Gallery", url: "https://community.powerbi.com/t5/Data-Stories-Gallery/bd-p/DataStoriesGallery" },
+      { title: "Microsoft Power BI Training", url: "https://learn.microsoft.com/en-us/training/powerplatform/power-bi" },
     ],
     docs: [
       { title: "Power BI Documentation", url: "https://learn.microsoft.com/en-us/power-bi/" },
@@ -123,32 +104,27 @@ export const learningResources: LearningResource[] = [
   {
     skill: "Data Visualization",
     youtube: [
-      { title: "Data Visualization with Python – freeCodeCamp", url: "https://www.youtube.com/watch?v=a9UrKTVEhZM" },
       { title: "Data Visualization Tutorial", url: "https://www.youtube.com/watch?v=Gp2m8ZuXoPg" },
     ],
     courses: [
-      { title: "Data Visualization with Tableau", url: "https://www.coursera.org/learn/data-visualization-tableau", platform: "Coursera" },
+      { title: "Data Visualization", url: "https://www.coursera.org/learn/data-visualization", platform: "Coursera" },
     ],
     practice: [
-      { title: "Tableau Public Gallery", url: "https://public.tableau.com/en-us/gallery/" },
-      { title: "Matplotlib Gallery", url: "https://matplotlib.org/stable/gallery/index.html" },
+      { title: "Kaggle Datasets", url: "https://www.kaggle.com/datasets" },
     ],
     docs: [
-      { title: "Matplotlib Documentation", url: "https://matplotlib.org/stable/contents.html" },
-      { title: "Seaborn Documentation", url: "https://seaborn.pydata.org/" },
+      { title: "Matplotlib Documentation", url: "https://matplotlib.org/stable/" },
     ],
   },
   {
     skill: "Java",
     youtube: [
-      { title: "Java Full Course – Bro Code", url: "https://www.youtube.com/watch?v=xk4_1vDrzzo" },
       { title: "Java Programming Full Course", url: "https://www.youtube.com/watch?v=eIrMbAQSU34" },
     ],
     courses: [
-      { title: "Java Programming – MOOC.fi", url: "https://java-programming.mooc.fi/", platform: "MOOC.fi" },
+      { title: "Java Programming", url: "https://www.coursera.org/learn/java-programming", platform: "Coursera" },
     ],
     practice: [
-      { title: "LeetCode Java", url: "https://leetcode.com/problemset/all/" },
       { title: "HackerRank Java", url: "https://www.hackerrank.com/domains/java" },
     ],
     docs: [
@@ -158,33 +134,31 @@ export const learningResources: LearningResource[] = [
   {
     skill: "Communication",
     youtube: [
-      { title: "Communication Skills Course", url: "https://www.youtube.com/watch?v=HAnw168huqA" },
+      { title: "Communication Skills Training", url: "https://www.youtube.com/watch?v=HAnw168huqA" },
     ],
     courses: [
-      { title: "Improving Communication Skills", url: "https://www.coursera.org/learn/wharton-communication-skills", platform: "Coursera" },
+      { title: "Communication Skills", url: "https://www.coursera.org/learn/communication-skills", platform: "Coursera" },
     ],
     practice: [
-      { title: "Toastmasters", url: "https://www.toastmasters.org/" },
+      { title: "Toastmasters", url: "https://www.toastmasters.org" },
     ],
     docs: [
-      { title: "Harvard Business Review – Communication", url: "https://hbr.org/topic/communication" },
+      { title: "Mind Tools – Communication", url: "https://www.mindtools.com/communication-skills" },
     ],
   },
   {
     skill: "Problem Solving",
     youtube: [
-      { title: "DSA Full Course – Abdul Bari", url: "https://www.youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O" },
       { title: "Problem Solving Techniques", url: "https://www.youtube.com/watch?v=E8dYoF-2yU4" },
     ],
     courses: [
-      { title: "Algorithmic Toolbox", url: "https://www.coursera.org/learn/algorithmic-toolbox", platform: "Coursera" },
+      { title: "Problem Solving", url: "https://www.coursera.org/learn/problem-solving", platform: "Coursera" },
     ],
     practice: [
-      { title: "LeetCode", url: "https://leetcode.com/" },
-      { title: "Codeforces", url: "https://codeforces.com/" },
+      { title: "LeetCode", url: "https://leetcode.com/problemset" },
     ],
     docs: [
-      { title: "GeeksforGeeks DSA", url: "https://www.geeksforgeeks.org/data-structures/" },
+      { title: "GeeksforGeeks Problem Solving", url: "https://www.geeksforgeeks.org/problem-solving-techniques/" },
     ],
   },
 ];
