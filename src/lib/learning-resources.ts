@@ -174,6 +174,7 @@ export const learningResources: LearningResource[] = [
     skill: "Problem Solving",
     youtube: [
       { title: "DSA Full Course – Abdul Bari", url: "https://www.youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O" },
+      { title: "Problem Solving Techniques", url: "https://www.youtube.com/watch?v=E8dYoF-2yU4" },
     ],
     courses: [
       { title: "Algorithmic Toolbox", url: "https://www.coursera.org/learn/algorithmic-toolbox", platform: "Coursera" },
