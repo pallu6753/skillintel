@@ -89,15 +89,13 @@ export const learningResources: LearningResource[] = [
   {
     skill: "Power BI",
     youtube: [
-      { title: "Power BI Full Course – Edureka", url: "https://www.youtube.com/watch?v=3u7MQz1EyPY" },
-      { title: "Power BI Tutorial for Beginners", url: "https://www.youtube.com/watch?v=AGrl-H87pRU" },
+      { title: "Power BI Full Course", url: "https://www.youtube.com/watch?v=AGrl-H87pRU" },
     ],
     courses: [
-      { title: "Microsoft Power BI Data Analyst", url: "https://www.coursera.org/professional-certificates/microsoft-power-bi-data-analyst", platform: "Coursera" },
-      { title: "Power BI Guided Learning", url: "https://learn.microsoft.com/en-us/power-bi/guided-learning/", platform: "Microsoft" },
+      { title: "Power BI", url: "https://www.coursera.org/learn/power-bi", platform: "Coursera" },
     ],
     practice: [
-      { title: "Power BI Community Gallery", url: "https://community.powerbi.com/t5/Data-Stories-Gallery/bd-p/DataStoriesGallery" },
+      { title: "Microsoft Power BI Training", url: "https://learn.microsoft.com/en-us/training/powerplatform/power-bi" },
     ],
     docs: [
       { title: "Power BI Documentation", url: "https://learn.microsoft.com/en-us/power-bi/" },
