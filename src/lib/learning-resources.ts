@@ -104,19 +104,16 @@ export const learningResources: LearningResource[] = [
   {
     skill: "Data Visualization",
     youtube: [
-      { title: "Data Visualization with Python – freeCodeCamp", url: "https://www.youtube.com/watch?v=a9UrKTVEhZM" },
       { title: "Data Visualization Tutorial", url: "https://www.youtube.com/watch?v=Gp2m8ZuXoPg" },
     ],
     courses: [
-      { title: "Data Visualization with Tableau", url: "https://www.coursera.org/learn/data-visualization-tableau", platform: "Coursera" },
+      { title: "Data Visualization", url: "https://www.coursera.org/learn/data-visualization", platform: "Coursera" },
     ],
     practice: [
-      { title: "Tableau Public Gallery", url: "https://public.tableau.com/en-us/gallery/" },
-      { title: "Matplotlib Gallery", url: "https://matplotlib.org/stable/gallery/index.html" },
+      { title: "Kaggle Datasets", url: "https://www.kaggle.com/datasets" },
     ],
     docs: [
-      { title: "Matplotlib Documentation", url: "https://matplotlib.org/stable/contents.html" },
-      { title: "Seaborn Documentation", url: "https://seaborn.pydata.org/" },
+      { title: "Matplotlib Documentation", url: "https://matplotlib.org/stable/" },
     ],
   },
   {
