@@ -29,19 +29,15 @@ export const learningResources: LearningResource[] = [
   {
     skill: "SQL",
     youtube: [
-      { title: "SQL Full Course – freeCodeCamp", url: "https://www.youtube.com/watch?v=HXV3zeQKqGY" },
-      { title: "SQL Tutorial for Beginners", url: "https://www.youtube.com/watch?v=7S_tz1z_5bA" },
+      { title: "SQL Full Course", url: "https://www.youtube.com/watch?v=HXV3zeQKqGY" },
     ],
     courses: [
       { title: "SQL for Data Science", url: "https://www.coursera.org/learn/sql-for-data-science", platform: "Coursera" },
-      { title: "W3Schools SQL", url: "https://www.w3schools.com/sql/", platform: "W3Schools" },
     ],
     practice: [
-      { title: "SQLZoo", url: "https://sqlzoo.net/" },
       { title: "HackerRank SQL", url: "https://www.hackerrank.com/domains/sql" },
     ],
     docs: [
-      { title: "PostgreSQL Documentation", url: "https://www.postgresql.org/docs/" },
       { title: "MySQL Reference Manual", url: "https://dev.mysql.com/doc/" },
     ],
   },
