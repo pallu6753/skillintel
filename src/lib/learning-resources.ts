@@ -122,6 +122,7 @@ export const learningResources: LearningResource[] = [
     skill: "Data Visualization",
     youtube: [
       { title: "Data Visualization with Python – freeCodeCamp", url: "https://www.youtube.com/watch?v=a9UrKTVEhZM" },
+      { title: "Data Visualization Tutorial", url: "https://www.youtube.com/watch?v=Gp2m8ZuXoPg" },
     ],
     courses: [
       { title: "Data Visualization with Tableau", url: "https://www.coursera.org/learn/data-visualization-tableau", platform: "Coursera" },
