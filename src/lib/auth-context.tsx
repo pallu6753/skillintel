@@ -35,15 +35,24 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       admin: "Admin User",
     };
 
+    const normalizedEmail = email?.toLowerCase() || "demo@college.edu";
+    const demoStudent = DEMO_STUDENTS[normalizedEmail];
+
     let name = defaultNames[role];
-    if (email && email !== "demo@college.edu") {
+    let studentId: string | undefined;
+
+    if (demoStudent) {
+      name = demoStudent.name;
+      studentId = demoStudent.studentId;
+      role = "student"; // force student role for demo accounts
+    } else if (email && email !== "demo@college.edu") {
       const localPart = email.split("@")[0];
       name = localPart
         .replace(/[._-]/g, " ")
         .replace(/\b\w/g, (c) => c.toUpperCase());
     }
 
-    setUser({ name, email: email || "demo@college.edu", role });
+    setUser({ name, email: normalizedEmail, role, studentId });
     return true;
   }, []);
 
