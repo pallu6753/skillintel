@@ -149,18 +149,16 @@ export const learningResources: LearningResource[] = [
   {
     skill: "Problem Solving",
     youtube: [
-      { title: "DSA Full Course – Abdul Bari", url: "https://www.youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O" },
       { title: "Problem Solving Techniques", url: "https://www.youtube.com/watch?v=E8dYoF-2yU4" },
     ],
     courses: [
-      { title: "Algorithmic Toolbox", url: "https://www.coursera.org/learn/algorithmic-toolbox", platform: "Coursera" },
+      { title: "Problem Solving", url: "https://www.coursera.org/learn/problem-solving", platform: "Coursera" },
     ],
     practice: [
-      { title: "LeetCode", url: "https://leetcode.com/" },
-      { title: "Codeforces", url: "https://codeforces.com/" },
+      { title: "LeetCode", url: "https://leetcode.com/problemset" },
     ],
     docs: [
-      { title: "GeeksforGeeks DSA", url: "https://www.geeksforgeeks.org/data-structures/" },
+      { title: "GeeksforGeeks Problem Solving", url: "https://www.geeksforgeeks.org/problem-solving-techniques/" },
     ],
   },
 ];
