@@ -88,6 +88,7 @@ export const learningResources: LearningResource[] = [
     youtube: [
       { title: "Deep Learning Specialization – Andrew Ng", url: "https://www.youtube.com/playlist?list=PLkDaE6sCZn6Ec-XTbcX1uRg2_u4xOEky" },
       { title: "Neural Networks – 3Blue1Brown", url: "https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi" },
+      { title: "Deep Learning Tutorial", url: "https://www.youtube.com/watch?v=aircAruvnKk" },
     ],
     courses: [
       { title: "Deep Learning Specialization", url: "https://www.coursera.org/specializations/deep-learning", platform: "Coursera" },
