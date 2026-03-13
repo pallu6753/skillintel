@@ -142,6 +142,7 @@ export const learningResources: LearningResource[] = [
     skill: "Java",
     youtube: [
       { title: "Java Full Course – Bro Code", url: "https://www.youtube.com/watch?v=xk4_1vDrzzo" },
+      { title: "Java Programming Full Course", url: "https://www.youtube.com/watch?v=eIrMbAQSU34" },
     ],
     courses: [
       { title: "Java Programming – MOOC.fi", url: "https://java-programming.mooc.fi/", platform: "MOOC.fi" },
