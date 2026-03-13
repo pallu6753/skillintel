@@ -69,6 +69,7 @@ export const learningResources: LearningResource[] = [
     youtube: [
       { title: "Statistics Full Course – MarinStatsLectures", url: "https://www.youtube.com/playlist?list=PLqzoL9-eJTNBZDG8jaNuhap1C9q6VHyVa" },
       { title: "Khan Academy Statistics", url: "https://www.youtube.com/playlist?list=PL1328115D3D8A2566" },
+      { title: "Statistics for Data Science", url: "https://www.youtube.com/watch?v=xxpc-HPKN28" },
     ],
     courses: [
       { title: "Statistics with Python", url: "https://www.coursera.org/specializations/statistics-with-python", platform: "Coursera" },
@@ -87,6 +88,7 @@ export const learningResources: LearningResource[] = [
     youtube: [
       { title: "Deep Learning Specialization – Andrew Ng", url: "https://www.youtube.com/playlist?list=PLkDaE6sCZn6Ec-XTbcX1uRg2_u4xOEky" },
       { title: "Neural Networks – 3Blue1Brown", url: "https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi" },
+      { title: "Deep Learning Tutorial", url: "https://www.youtube.com/watch?v=aircAruvnKk" },
     ],
     courses: [
       { title: "Deep Learning Specialization", url: "https://www.coursera.org/specializations/deep-learning", platform: "Coursera" },
@@ -122,6 +124,7 @@ export const learningResources: LearningResource[] = [
     skill: "Data Visualization",
     youtube: [
       { title: "Data Visualization with Python – freeCodeCamp", url: "https://www.youtube.com/watch?v=a9UrKTVEhZM" },
+      { title: "Data Visualization Tutorial", url: "https://www.youtube.com/watch?v=Gp2m8ZuXoPg" },
     ],
     courses: [
       { title: "Data Visualization with Tableau", url: "https://www.coursera.org/learn/data-visualization-tableau", platform: "Coursera" },
@@ -139,6 +142,7 @@ export const learningResources: LearningResource[] = [
     skill: "Java",
     youtube: [
       { title: "Java Full Course – Bro Code", url: "https://www.youtube.com/watch?v=xk4_1vDrzzo" },
+      { title: "Java Programming Full Course", url: "https://www.youtube.com/watch?v=eIrMbAQSU34" },
     ],
     courses: [
       { title: "Java Programming – MOOC.fi", url: "https://java-programming.mooc.fi/", platform: "MOOC.fi" },
@@ -170,6 +174,7 @@ export const learningResources: LearningResource[] = [
     skill: "Problem Solving",
     youtube: [
       { title: "DSA Full Course – Abdul Bari", url: "https://www.youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O" },
+      { title: "Problem Solving Techniques", url: "https://www.youtube.com/watch?v=E8dYoF-2yU4" },
     ],
     courses: [
       { title: "Algorithmic Toolbox", url: "https://www.coursera.org/learn/algorithmic-toolbox", platform: "Coursera" },
