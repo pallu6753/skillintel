@@ -69,6 +69,7 @@ export const learningResources: LearningResource[] = [
     youtube: [
       { title: "Statistics Full Course – MarinStatsLectures", url: "https://www.youtube.com/playlist?list=PLqzoL9-eJTNBZDG8jaNuhap1C9q6VHyVa" },
       { title: "Khan Academy Statistics", url: "https://www.youtube.com/playlist?list=PL1328115D3D8A2566" },
+      { title: "Statistics for Data Science", url: "https://www.youtube.com/watch?v=xxpc-HPKN28" },
     ],
     courses: [
       { title: "Statistics with Python", url: "https://www.coursera.org/specializations/statistics-with-python", platform: "Coursera" },
