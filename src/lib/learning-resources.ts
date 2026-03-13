@@ -44,20 +44,16 @@ export const learningResources: LearningResource[] = [
   {
     skill: "Machine Learning",
     youtube: [
-      { title: "Machine Learning by Andrew Ng (Stanford)", url: "https://www.youtube.com/playlist?list=PLLssT5z_DsK-h9vYZkQkYNWcItqhlRJLN" },
-      { title: "ML Full Course – Simplilearn", url: "https://www.youtube.com/watch?v=GwIo3gDZCVQ" },
+      { title: "Machine Learning Full Course", url: "https://www.youtube.com/watch?v=GwIo3gDZCVQ" },
     ],
     courses: [
-      { title: "Machine Learning Specialization", url: "https://www.coursera.org/specializations/machine-learning-introduction", platform: "Coursera" },
-      { title: "Intro to ML – Kaggle", url: "https://www.kaggle.com/learn/intro-to-machine-learning", platform: "Kaggle" },
+      { title: "Machine Learning", url: "https://www.coursera.org/learn/machine-learning", platform: "Coursera" },
     ],
     practice: [
-      { title: "Kaggle Competitions", url: "https://www.kaggle.com/competitions" },
-      { title: "Scikit-learn Examples", url: "https://scikit-learn.org/stable/auto_examples/" },
+      { title: "Kaggle Learn", url: "https://www.kaggle.com/learn" },
     ],
     docs: [
-      { title: "Scikit-learn Documentation", url: "https://scikit-learn.org/stable/documentation.html" },
-      { title: "Google ML Crash Course", url: "https://developers.google.com/machine-learning/crash-course" },
+      { title: "Scikit-learn Documentation", url: "https://scikit-learn.org/stable/" },
     ],
   },
   {
