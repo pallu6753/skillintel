@@ -74,21 +74,16 @@ export const learningResources: LearningResource[] = [
   {
     skill: "Deep Learning",
     youtube: [
-      { title: "Deep Learning Specialization – Andrew Ng", url: "https://www.youtube.com/playlist?list=PLkDaE6sCZn6Ec-XTbcX1uRg2_u4xOEky" },
-      { title: "Neural Networks – 3Blue1Brown", url: "https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi" },
       { title: "Deep Learning Tutorial", url: "https://www.youtube.com/watch?v=aircAruvnKk" },
     ],
     courses: [
       { title: "Deep Learning Specialization", url: "https://www.coursera.org/specializations/deep-learning", platform: "Coursera" },
-      { title: "Fast.ai Practical DL", url: "https://course.fast.ai/", platform: "Fast.ai" },
     ],
     practice: [
-      { title: "TensorFlow Playground", url: "https://playground.tensorflow.org/" },
-      { title: "Kaggle Deep Learning", url: "https://www.kaggle.com/learn/intro-to-deep-learning" },
+      { title: "Kaggle Deep Learning", url: "https://www.kaggle.com/learn/deep-learning" },
     ],
     docs: [
-      { title: "TensorFlow Documentation", url: "https://www.tensorflow.org/api_docs" },
-      { title: "PyTorch Documentation", url: "https://pytorch.org/docs/stable/" },
+      { title: "PyTorch Documentation", url: "https://pytorch.org/docs/stable/index.html" },
     ],
   },
   {
