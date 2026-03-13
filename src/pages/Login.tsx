@@ -152,9 +152,28 @@ export default function Login() {
             </Button>
           </form>
 
-          <p className="text-[10px] text-center text-[hsl(210,15%,40%)] mt-4">
-            Demo mode — any credentials will work
-          </p>
+          {/* Demo Accounts */}
+          <div className="mt-5 border-t border-[hsl(210,30%,14%)] pt-4">
+            <p className="text-[10px] text-center text-[hsl(210,15%,45%)] mb-3">Quick Demo Logins</p>
+            <div className="grid grid-cols-3 gap-2">
+              {[
+                { email: "topper@skillintel.com", pass: "Topper123", label: "🏆 Topper", color: "from-emerald-500/20 to-emerald-600/10 border-emerald-500/30" },
+                { email: "intermediate@skillintel.com", pass: "Inter123", label: "📊 Mid", color: "from-amber-500/20 to-amber-600/10 border-amber-500/30" },
+                { email: "lowstudent@skillintel.com", pass: "Low123", label: "⚠️ At-Risk", color: "from-red-500/20 to-red-600/10 border-red-500/30" },
+              ].map((demo) => (
+                <button
+                  key={demo.email}
+                  type="button"
+                  onClick={() => {
+                    if (login(demo.email, demo.pass, "student")) navigate("/dashboard");
+                  }}
+                  className={`px-2 py-2 rounded-lg border bg-gradient-to-b ${demo.color} text-[10px] font-medium hover:scale-[1.03] transition-all`}
+                >
+                  {demo.label}
+                </button>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </div>
