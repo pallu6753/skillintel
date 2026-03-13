@@ -59,20 +59,16 @@ export const learningResources: LearningResource[] = [
   {
     skill: "Statistics",
     youtube: [
-      { title: "Statistics Full Course – MarinStatsLectures", url: "https://www.youtube.com/playlist?list=PLqzoL9-eJTNBZDG8jaNuhap1C9q6VHyVa" },
-      { title: "Khan Academy Statistics", url: "https://www.youtube.com/playlist?list=PL1328115D3D8A2566" },
       { title: "Statistics for Data Science", url: "https://www.youtube.com/watch?v=xxpc-HPKN28" },
     ],
     courses: [
-      { title: "Statistics with Python", url: "https://www.coursera.org/specializations/statistics-with-python", platform: "Coursera" },
-      { title: "Khan Academy Stats", url: "https://www.khanacademy.org/math/statistics-probability", platform: "Khan Academy" },
+      { title: "Statistics", url: "https://www.coursera.org/learn/statistics", platform: "Coursera" },
     ],
     practice: [
-      { title: "StatQuest", url: "https://statquest.org/" },
-      { title: "Brilliant Statistics", url: "https://brilliant.org/courses/statistics/" },
+      { title: "Khan Academy Statistics", url: "https://www.khanacademy.org/math/statistics-probability" },
     ],
     docs: [
-      { title: "NIST Statistics Handbook", url: "https://www.itl.nist.gov/div898/handbook/" },
+      { title: "Statlect", url: "https://www.statlect.com/" },
     ],
   },
   {
