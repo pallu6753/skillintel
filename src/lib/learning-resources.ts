@@ -134,16 +134,16 @@ export const learningResources: LearningResource[] = [
   {
     skill: "Communication",
     youtube: [
-      { title: "Communication Skills Course", url: "https://www.youtube.com/watch?v=HAnw168huqA" },
+      { title: "Communication Skills Training", url: "https://www.youtube.com/watch?v=HAnw168huqA" },
     ],
     courses: [
-      { title: "Improving Communication Skills", url: "https://www.coursera.org/learn/wharton-communication-skills", platform: "Coursera" },
+      { title: "Communication Skills", url: "https://www.coursera.org/learn/communication-skills", platform: "Coursera" },
     ],
     practice: [
-      { title: "Toastmasters", url: "https://www.toastmasters.org/" },
+      { title: "Toastmasters", url: "https://www.toastmasters.org" },
     ],
     docs: [
-      { title: "Harvard Business Review – Communication", url: "https://hbr.org/topic/communication" },
+      { title: "Mind Tools – Communication", url: "https://www.mindtools.com/communication-skills" },
     ],
   },
   {
