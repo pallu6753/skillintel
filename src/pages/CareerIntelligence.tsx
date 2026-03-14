@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useAuth } from "@/lib/auth-context";
 import { DashboardLayout } from "@/components/DashboardLayout";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -27,7 +28,10 @@ export default function CareerIntelligence() {
     );
   }
 
-  const student = data.students[0];
+  const { user } = useAuth();
+  const student = user?.studentId
+    ? data.students.find((s) => s.id === user.studentId) ?? data.students[0]
+    : data.students[0];
   const studentSkillNames = student.skills.map((s) => s.name);
   const careers = recommendCareers(studentSkillNames);
   const prediction = predictJobReadiness(student);

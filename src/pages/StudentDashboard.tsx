@@ -1,6 +1,7 @@
 import { useAuth } from "@/lib/auth-context";
 import { DashboardLayout } from "@/components/DashboardLayout";
 import { StatCard } from "@/components/StatCard";
+import { ExternalIntegrations } from "@/components/ExternalIntegrations";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
@@ -175,6 +176,9 @@ export default function StudentDashboard() {
             </CardContent>
           </Card>
         </div>
+
+        {/* External Platform Integrations */}
+        <ExternalIntegrations />
       </div>
     </DashboardLayout>
   );
