@@ -176,6 +176,9 @@ export default function StudentDashboard() {
             </CardContent>
           </Card>
         </div>
+
+        {/* External Platform Integrations */}
+        <ExternalIntegrations />
       </div>
     </DashboardLayout>
   );
