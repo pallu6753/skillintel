@@ -248,7 +248,8 @@ export default function SkillsDBPage() {
                     <CardContent className="space-y-2">
                       {resources.youtube.map((y) => (
                         <a key={y.url} href={y.url} target="_blank" rel="noopener noreferrer"
-                          className="flex items-start gap-2 p-2 rounded-lg hover:bg-muted transition-colors group text-sm">
+                          onClick={(e) => { e.preventDefault(); e.stopPropagation(); window.open(y.url, "_blank", "noopener,noreferrer"); }}
+                          className="flex items-start gap-2 p-2 rounded-lg hover:bg-muted transition-colors group text-sm cursor-pointer">
                           <ExternalLink className="h-3 w-3 mt-0.5 shrink-0 text-muted-foreground group-hover:text-primary" />
                           <span className="group-hover:text-primary">{y.title}</span>
                         </a>
@@ -266,7 +267,8 @@ export default function SkillsDBPage() {
                     <CardContent className="space-y-2">
                       {resources.courses.map((c) => (
                         <a key={c.url} href={c.url} target="_blank" rel="noopener noreferrer"
-                          className="flex items-start gap-2 p-2 rounded-lg hover:bg-muted transition-colors group text-sm">
+                          onClick={(e) => { e.preventDefault(); e.stopPropagation(); window.open(c.url, "_blank", "noopener,noreferrer"); }}
+                          className="flex items-start gap-2 p-2 rounded-lg hover:bg-muted transition-colors group text-sm cursor-pointer">
                           <ExternalLink className="h-3 w-3 mt-0.5 shrink-0 text-muted-foreground group-hover:text-primary" />
                           <div>
                             <span className="group-hover:text-primary">{c.title}</span>
@@ -287,7 +289,8 @@ export default function SkillsDBPage() {
                     <CardContent className="space-y-2">
                       {resources.practice.map((p) => (
                         <a key={p.url} href={p.url} target="_blank" rel="noopener noreferrer"
-                          className="flex items-start gap-2 p-2 rounded-lg hover:bg-muted transition-colors group text-sm">
+                          onClick={(e) => { e.preventDefault(); e.stopPropagation(); window.open(p.url, "_blank", "noopener,noreferrer"); }}
+                          className="flex items-start gap-2 p-2 rounded-lg hover:bg-muted transition-colors group text-sm cursor-pointer">
                           <ExternalLink className="h-3 w-3 mt-0.5 shrink-0 text-muted-foreground group-hover:text-primary" />
                           <span className="group-hover:text-primary">{p.title}</span>
                         </a>
@@ -305,7 +308,8 @@ export default function SkillsDBPage() {
                     <CardContent className="space-y-2">
                       {resources.docs.map((d) => (
                         <a key={d.url} href={d.url} target="_blank" rel="noopener noreferrer"
-                          className="flex items-start gap-2 p-2 rounded-lg hover:bg-muted transition-colors group text-sm">
+                          onClick={(e) => { e.preventDefault(); e.stopPropagation(); window.open(d.url, "_blank", "noopener,noreferrer"); }}
+                          className="flex items-start gap-2 p-2 rounded-lg hover:bg-muted transition-colors group text-sm cursor-pointer">
                           <ExternalLink className="h-3 w-3 mt-0.5 shrink-0 text-muted-foreground group-hover:text-primary" />
                           <span className="group-hover:text-primary">{d.title}</span>
                         </a>

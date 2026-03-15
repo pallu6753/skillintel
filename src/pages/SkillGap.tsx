@@ -139,7 +139,8 @@ export default function SkillGap() {
                             </p>
                             {res.youtube.slice(0, 1).map((y) => (
                               <a key={y.url} href={y.url} target="_blank" rel="noopener noreferrer"
-                                className="text-sm text-primary hover:underline flex items-center gap-1">
+                                onClick={(e) => { e.preventDefault(); e.stopPropagation(); window.open(y.url, "_blank", "noopener,noreferrer"); }}
+                                className="text-sm text-primary hover:underline flex items-center gap-1 cursor-pointer">
                                 <ExternalLink className="h-3 w-3 shrink-0" /> {y.title}
                               </a>
                             ))}
@@ -152,7 +153,8 @@ export default function SkillGap() {
                             </p>
                             {res.courses.slice(0, 1).map((co) => (
                               <a key={co.url} href={co.url} target="_blank" rel="noopener noreferrer"
-                                className="text-sm text-primary hover:underline flex items-center gap-1">
+                                onClick={(e) => { e.preventDefault(); e.stopPropagation(); window.open(co.url, "_blank", "noopener,noreferrer"); }}
+                                className="text-sm text-primary hover:underline flex items-center gap-1 cursor-pointer">
                                 <ExternalLink className="h-3 w-3 shrink-0" /> {co.title}
                               </a>
                             ))}
@@ -165,7 +167,8 @@ export default function SkillGap() {
                             </p>
                             {res.practice.slice(0, 1).map((p) => (
                               <a key={p.url} href={p.url} target="_blank" rel="noopener noreferrer"
-                                className="text-sm text-primary hover:underline flex items-center gap-1">
+                                onClick={(e) => { e.preventDefault(); e.stopPropagation(); window.open(p.url, "_blank", "noopener,noreferrer"); }}
+                                className="text-sm text-primary hover:underline flex items-center gap-1 cursor-pointer">
                                 <ExternalLink className="h-3 w-3 shrink-0" /> {p.title}
                               </a>
                             ))}
@@ -178,7 +181,8 @@ export default function SkillGap() {
                             </p>
                             {res.docs.slice(0, 1).map((d) => (
                               <a key={d.url} href={d.url} target="_blank" rel="noopener noreferrer"
-                                className="text-sm text-primary hover:underline flex items-center gap-1">
+                                onClick={(e) => { e.preventDefault(); e.stopPropagation(); window.open(d.url, "_blank", "noopener,noreferrer"); }}
+                                className="text-sm text-primary hover:underline flex items-center gap-1 cursor-pointer">
                                 <ExternalLink className="h-3 w-3 shrink-0" /> {d.title}
                               </a>
                             ))}
