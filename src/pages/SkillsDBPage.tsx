@@ -308,7 +308,8 @@ export default function SkillsDBPage() {
                     <CardContent className="space-y-2">
                       {resources.docs.map((d) => (
                         <a key={d.url} href={d.url} target="_blank" rel="noopener noreferrer"
-                          className="flex items-start gap-2 p-2 rounded-lg hover:bg-muted transition-colors group text-sm">
+                          onClick={(e) => { e.preventDefault(); e.stopPropagation(); window.open(d.url, "_blank", "noopener,noreferrer"); }}
+                          className="flex items-start gap-2 p-2 rounded-lg hover:bg-muted transition-colors group text-sm cursor-pointer">
                           <ExternalLink className="h-3 w-3 mt-0.5 shrink-0 text-muted-foreground group-hover:text-primary" />
                           <span className="group-hover:text-primary">{d.title}</span>
                         </a>
