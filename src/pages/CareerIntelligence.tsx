@@ -189,7 +189,9 @@ export default function CareerIntelligence() {
                                         <div>
                                           <p className="text-xs font-medium text-muted-foreground flex items-center gap-1 mb-1"><FileText className="h-3 w-3" /> Docs</p>
                                           {res.docs.slice(0, 1).map((d) => (
-                                            <a key={d.url} href={d.url} target="_blank" rel="noopener noreferrer" className="text-sm text-primary hover:underline flex items-center gap-1">
+                                            <a key={d.url} href={d.url} target="_blank" rel="noopener noreferrer"
+                                              onClick={(e) => { e.preventDefault(); e.stopPropagation(); window.open(d.url, "_blank", "noopener,noreferrer"); }}
+                                              className="text-sm text-primary hover:underline flex items-center gap-1 cursor-pointer">
                                               <ExternalLink className="h-3 w-3 shrink-0" /> {d.title}
                                             </a>
                                           ))}
