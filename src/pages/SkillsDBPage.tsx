@@ -248,7 +248,8 @@ export default function SkillsDBPage() {
                     <CardContent className="space-y-2">
                       {resources.youtube.map((y) => (
                         <a key={y.url} href={y.url} target="_blank" rel="noopener noreferrer"
-                          className="flex items-start gap-2 p-2 rounded-lg hover:bg-muted transition-colors group text-sm">
+                          onClick={(e) => { e.preventDefault(); e.stopPropagation(); window.open(y.url, "_blank", "noopener,noreferrer"); }}
+                          className="flex items-start gap-2 p-2 rounded-lg hover:bg-muted transition-colors group text-sm cursor-pointer">
                           <ExternalLink className="h-3 w-3 mt-0.5 shrink-0 text-muted-foreground group-hover:text-primary" />
                           <span className="group-hover:text-primary">{y.title}</span>
                         </a>
