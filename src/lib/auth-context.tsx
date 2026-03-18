@@ -10,9 +10,9 @@ interface AuthUser {
 
 // Demo student accounts mapped to dataset student_ids
 const DEMO_STUDENTS: Record<string, { name: string; studentId: string }> = {
-  "topper@skillintel.com": { name: "Aditi Sharma", studentId: "3" },       // GPA 4.8, high performer
-  "intermediate@skillintel.com": { name: "Rahul Verma", studentId: "9" },  // GPA 3.05, moderate
-  "lowstudent@skillintel.com": { name: "Karan Patel", studentId: "13" },   // GPA 2.09, at-risk
+  "topper@skillintel.com": { name: "Aarav Chatterjee", studentId: "3" },
+  "intermediate@skillintel.com": { name: "Aarav Mehta", studentId: "9" },
+  "lowstudent@skillintel.com": { name: "Aarav Sharma", studentId: "13" },
 };
 
 interface AuthContextType {
