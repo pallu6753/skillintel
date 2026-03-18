@@ -1,1001 +1,1001 @@
 student_id,name,email,department,semester,year_of_study
-1,Student_1,student1@college.edu,AI,6,3
-2,Student_2,student2@college.edu,Information Technology,7,4
-3,Student_3,student3@college.edu,Data Science,1,2
-4,Student_4,student4@college.edu,AI,1,4
-5,Student_5,student5@college.edu,AI,1,4
-6,Student_6,student6@college.edu,Information Technology,5,3
-7,Student_7,student7@college.edu,Data Science,4,4
-8,Student_8,student8@college.edu,Data Science,5,3
-9,Student_9,student9@college.edu,AI,4,1
-10,Student_10,student10@college.edu,Computer Science,8,1
-11,Student_11,student11@college.edu,AI,5,3
-12,Student_12,student12@college.edu,AI,5,1
-13,Student_13,student13@college.edu,AI,6,2
-14,Student_14,student14@college.edu,AI,3,4
-15,Student_15,student15@college.edu,Information Technology,5,2
-16,Student_16,student16@college.edu,Data Science,6,4
-17,Student_17,student17@college.edu,Information Technology,2,1
-18,Student_18,student18@college.edu,Information Technology,3,2
-19,Student_19,student19@college.edu,Information Technology,8,1
-20,Student_20,student20@college.edu,AI,5,4
-21,Student_21,student21@college.edu,Computer Science,7,3
-22,Student_22,student22@college.edu,Data Science,1,3
-23,Student_23,student23@college.edu,Computer Science,2,2
-24,Student_24,student24@college.edu,Information Technology,2,1
-25,Student_25,student25@college.edu,Information Technology,8,1
-26,Student_26,student26@college.edu,Computer Science,6,2
-27,Student_27,student27@college.edu,Computer Science,2,3
-28,Student_28,student28@college.edu,Computer Science,3,4
-29,Student_29,student29@college.edu,Information Technology,5,2
-30,Student_30,student30@college.edu,Information Technology,5,4
-31,Student_31,student31@college.edu,Data Science,7,3
-32,Student_32,student32@college.edu,Data Science,8,1
-33,Student_33,student33@college.edu,Information Technology,1,3
-34,Student_34,student34@college.edu,Computer Science,6,2
-35,Student_35,student35@college.edu,Computer Science,1,1
-36,Student_36,student36@college.edu,Data Science,2,2
-37,Student_37,student37@college.edu,Information Technology,8,2
-38,Student_38,student38@college.edu,Data Science,7,3
-39,Student_39,student39@college.edu,Data Science,1,2
-40,Student_40,student40@college.edu,AI,3,3
-41,Student_41,student41@college.edu,AI,5,1
-42,Student_42,student42@college.edu,AI,2,3
-43,Student_43,student43@college.edu,Computer Science,7,1
-44,Student_44,student44@college.edu,Information Technology,1,3
-45,Student_45,student45@college.edu,Information Technology,6,4
-46,Student_46,student46@college.edu,Information Technology,3,4
-47,Student_47,student47@college.edu,Information Technology,3,2
-48,Student_48,student48@college.edu,AI,1,3
-49,Student_49,student49@college.edu,Computer Science,5,3
-50,Student_50,student50@college.edu,Computer Science,1,1
-51,Student_51,student51@college.edu,AI,2,2
-52,Student_52,student52@college.edu,Computer Science,1,3
-53,Student_53,student53@college.edu,AI,3,2
-54,Student_54,student54@college.edu,Information Technology,7,4
-55,Student_55,student55@college.edu,AI,1,3
-56,Student_56,student56@college.edu,Information Technology,5,3
-57,Student_57,student57@college.edu,Information Technology,8,2
-58,Student_58,student58@college.edu,Data Science,7,3
-59,Student_59,student59@college.edu,AI,6,2
-60,Student_60,student60@college.edu,Data Science,4,3
-61,Student_61,student61@college.edu,AI,1,1
-62,Student_62,student62@college.edu,AI,5,2
-63,Student_63,student63@college.edu,Data Science,7,3
-64,Student_64,student64@college.edu,Data Science,5,4
-65,Student_65,student65@college.edu,AI,6,3
-66,Student_66,student66@college.edu,Computer Science,3,4
-67,Student_67,student67@college.edu,Information Technology,5,4
-68,Student_68,student68@college.edu,Data Science,7,1
-69,Student_69,student69@college.edu,Information Technology,5,2
-70,Student_70,student70@college.edu,Computer Science,5,3
-71,Student_71,student71@college.edu,Computer Science,5,1
-72,Student_72,student72@college.edu,Computer Science,2,3
-73,Student_73,student73@college.edu,Data Science,2,4
-74,Student_74,student74@college.edu,Computer Science,3,2
-75,Student_75,student75@college.edu,Data Science,1,3
-76,Student_76,student76@college.edu,Computer Science,5,3
-77,Student_77,student77@college.edu,Information Technology,6,4
-78,Student_78,student78@college.edu,Information Technology,1,3
-79,Student_79,student79@college.edu,AI,6,3
-80,Student_80,student80@college.edu,Information Technology,1,4
-81,Student_81,student81@college.edu,AI,3,1
-82,Student_82,student82@college.edu,Information Technology,5,4
-83,Student_83,student83@college.edu,Data Science,5,1
-84,Student_84,student84@college.edu,Information Technology,4,2
-85,Student_85,student85@college.edu,AI,6,1
-86,Student_86,student86@college.edu,AI,1,1
-87,Student_87,student87@college.edu,Computer Science,1,2
-88,Student_88,student88@college.edu,Data Science,8,1
-89,Student_89,student89@college.edu,Information Technology,8,4
-90,Student_90,student90@college.edu,Computer Science,2,1
-91,Student_91,student91@college.edu,Information Technology,4,2
-92,Student_92,student92@college.edu,Information Technology,7,4
-93,Student_93,student93@college.edu,Computer Science,8,2
-94,Student_94,student94@college.edu,Computer Science,7,2
-95,Student_95,student95@college.edu,Computer Science,2,3
-96,Student_96,student96@college.edu,Computer Science,2,3
-97,Student_97,student97@college.edu,Computer Science,2,2
-98,Student_98,student98@college.edu,Information Technology,6,2
-99,Student_99,student99@college.edu,Computer Science,6,2
-100,Student_100,student100@college.edu,Data Science,3,3
-101,Student_101,student101@college.edu,AI,3,3
-102,Student_102,student102@college.edu,Computer Science,2,1
-103,Student_103,student103@college.edu,Computer Science,4,1
-104,Student_104,student104@college.edu,Information Technology,1,2
-105,Student_105,student105@college.edu,Computer Science,6,4
-106,Student_106,student106@college.edu,Computer Science,4,4
-107,Student_107,student107@college.edu,Computer Science,5,3
-108,Student_108,student108@college.edu,Information Technology,6,3
-109,Student_109,student109@college.edu,Computer Science,6,3
-110,Student_110,student110@college.edu,AI,3,2
-111,Student_111,student111@college.edu,Information Technology,1,4
-112,Student_112,student112@college.edu,AI,1,1
-113,Student_113,student113@college.edu,Information Technology,8,2
-114,Student_114,student114@college.edu,Computer Science,7,1
-115,Student_115,student115@college.edu,AI,7,1
-116,Student_116,student116@college.edu,Information Technology,7,2
-117,Student_117,student117@college.edu,Data Science,7,1
-118,Student_118,student118@college.edu,Computer Science,5,4
-119,Student_119,student119@college.edu,Information Technology,5,1
-120,Student_120,student120@college.edu,Data Science,6,4
-121,Student_121,student121@college.edu,Information Technology,2,4
-122,Student_122,student122@college.edu,Data Science,3,4
-123,Student_123,student123@college.edu,Computer Science,3,3
-124,Student_124,student124@college.edu,AI,7,1
-125,Student_125,student125@college.edu,Data Science,6,2
-126,Student_126,student126@college.edu,Information Technology,8,2
-127,Student_127,student127@college.edu,Computer Science,4,1
-128,Student_128,student128@college.edu,Data Science,2,3
-129,Student_129,student129@college.edu,Information Technology,6,3
-130,Student_130,student130@college.edu,Information Technology,2,4
-131,Student_131,student131@college.edu,Information Technology,2,1
-132,Student_132,student132@college.edu,Data Science,2,1
-133,Student_133,student133@college.edu,Data Science,6,2
-134,Student_134,student134@college.edu,Data Science,7,1
-135,Student_135,student135@college.edu,AI,3,3
-136,Student_136,student136@college.edu,Data Science,3,1
-137,Student_137,student137@college.edu,Data Science,7,2
-138,Student_138,student138@college.edu,Data Science,2,4
-139,Student_139,student139@college.edu,AI,4,2
-140,Student_140,student140@college.edu,Data Science,1,2
-141,Student_141,student141@college.edu,Information Technology,6,4
-142,Student_142,student142@college.edu,Data Science,1,2
-143,Student_143,student143@college.edu,Information Technology,8,2
-144,Student_144,student144@college.edu,Information Technology,7,1
-145,Student_145,student145@college.edu,Information Technology,4,1
-146,Student_146,student146@college.edu,AI,6,4
-147,Student_147,student147@college.edu,AI,7,1
-148,Student_148,student148@college.edu,AI,2,1
-149,Student_149,student149@college.edu,Data Science,3,2
-150,Student_150,student150@college.edu,Information Technology,1,3
-151,Student_151,student151@college.edu,AI,5,1
-152,Student_152,student152@college.edu,AI,5,3
-153,Student_153,student153@college.edu,Data Science,4,1
-154,Student_154,student154@college.edu,AI,2,1
-155,Student_155,student155@college.edu,Data Science,8,4
-156,Student_156,student156@college.edu,Computer Science,1,4
-157,Student_157,student157@college.edu,AI,2,4
-158,Student_158,student158@college.edu,Computer Science,1,3
-159,Student_159,student159@college.edu,Data Science,4,2
-160,Student_160,student160@college.edu,Information Technology,4,1
-161,Student_161,student161@college.edu,AI,8,1
-162,Student_162,student162@college.edu,Data Science,5,1
-163,Student_163,student163@college.edu,Information Technology,2,3
-164,Student_164,student164@college.edu,Information Technology,6,4
-165,Student_165,student165@college.edu,Computer Science,5,2
-166,Student_166,student166@college.edu,Data Science,2,3
-167,Student_167,student167@college.edu,Information Technology,5,4
-168,Student_168,student168@college.edu,AI,6,3
-169,Student_169,student169@college.edu,AI,3,2
-170,Student_170,student170@college.edu,Computer Science,3,4
-171,Student_171,student171@college.edu,Information Technology,8,3
-172,Student_172,student172@college.edu,Data Science,3,2
-173,Student_173,student173@college.edu,AI,3,1
-174,Student_174,student174@college.edu,Information Technology,7,2
-175,Student_175,student175@college.edu,Information Technology,1,1
-176,Student_176,student176@college.edu,Computer Science,7,3
-177,Student_177,student177@college.edu,AI,7,4
-178,Student_178,student178@college.edu,AI,8,4
-179,Student_179,student179@college.edu,Data Science,7,3
-180,Student_180,student180@college.edu,AI,3,4
-181,Student_181,student181@college.edu,Data Science,6,4
-182,Student_182,student182@college.edu,AI,8,1
-183,Student_183,student183@college.edu,Computer Science,8,3
-184,Student_184,student184@college.edu,AI,4,2
-185,Student_185,student185@college.edu,Data Science,8,1
-186,Student_186,student186@college.edu,Data Science,4,3
-187,Student_187,student187@college.edu,Computer Science,8,1
-188,Student_188,student188@college.edu,AI,1,2
-189,Student_189,student189@college.edu,AI,3,2
-190,Student_190,student190@college.edu,Computer Science,8,3
-191,Student_191,student191@college.edu,AI,3,2
-192,Student_192,student192@college.edu,AI,3,1
-193,Student_193,student193@college.edu,Data Science,5,2
-194,Student_194,student194@college.edu,AI,8,1
-195,Student_195,student195@college.edu,AI,2,1
-196,Student_196,student196@college.edu,Computer Science,5,2
-197,Student_197,student197@college.edu,Computer Science,2,3
-198,Student_198,student198@college.edu,Information Technology,3,4
-199,Student_199,student199@college.edu,Data Science,3,2
-200,Student_200,student200@college.edu,AI,5,1
-201,Student_201,student201@college.edu,AI,5,1
-202,Student_202,student202@college.edu,Information Technology,2,2
-203,Student_203,student203@college.edu,AI,4,3
-204,Student_204,student204@college.edu,Data Science,2,3
-205,Student_205,student205@college.edu,Information Technology,5,1
-206,Student_206,student206@college.edu,Data Science,6,1
-207,Student_207,student207@college.edu,Information Technology,5,3
-208,Student_208,student208@college.edu,Information Technology,6,4
-209,Student_209,student209@college.edu,Computer Science,1,2
-210,Student_210,student210@college.edu,Data Science,5,1
-211,Student_211,student211@college.edu,AI,1,1
-212,Student_212,student212@college.edu,AI,4,3
-213,Student_213,student213@college.edu,Data Science,2,2
-214,Student_214,student214@college.edu,AI,6,3
-215,Student_215,student215@college.edu,AI,2,2
-216,Student_216,student216@college.edu,Data Science,1,2
-217,Student_217,student217@college.edu,Information Technology,6,2
-218,Student_218,student218@college.edu,Data Science,2,1
-219,Student_219,student219@college.edu,Information Technology,5,4
-220,Student_220,student220@college.edu,AI,3,3
-221,Student_221,student221@college.edu,AI,1,4
-222,Student_222,student222@college.edu,AI,2,3
-223,Student_223,student223@college.edu,Computer Science,1,2
-224,Student_224,student224@college.edu,Information Technology,7,1
-225,Student_225,student225@college.edu,Computer Science,1,4
-226,Student_226,student226@college.edu,Computer Science,6,1
-227,Student_227,student227@college.edu,Data Science,7,3
-228,Student_228,student228@college.edu,Computer Science,8,1
-229,Student_229,student229@college.edu,Data Science,6,1
-230,Student_230,student230@college.edu,Data Science,3,4
-231,Student_231,student231@college.edu,Computer Science,7,2
-232,Student_232,student232@college.edu,Information Technology,8,1
-233,Student_233,student233@college.edu,Information Technology,5,2
-234,Student_234,student234@college.edu,Information Technology,1,3
-235,Student_235,student235@college.edu,Information Technology,2,1
-236,Student_236,student236@college.edu,Information Technology,4,4
-237,Student_237,student237@college.edu,Computer Science,1,3
-238,Student_238,student238@college.edu,Computer Science,8,3
-239,Student_239,student239@college.edu,AI,1,4
-240,Student_240,student240@college.edu,Information Technology,3,1
-241,Student_241,student241@college.edu,Computer Science,5,1
-242,Student_242,student242@college.edu,AI,4,3
-243,Student_243,student243@college.edu,Information Technology,7,1
-244,Student_244,student244@college.edu,Data Science,7,2
-245,Student_245,student245@college.edu,AI,7,4
-246,Student_246,student246@college.edu,Computer Science,8,2
-247,Student_247,student247@college.edu,Data Science,6,1
-248,Student_248,student248@college.edu,Data Science,6,3
-249,Student_249,student249@college.edu,Data Science,2,4
-250,Student_250,student250@college.edu,AI,4,1
-251,Student_251,student251@college.edu,Computer Science,7,1
-252,Student_252,student252@college.edu,Data Science,6,3
-253,Student_253,student253@college.edu,Information Technology,8,3
-254,Student_254,student254@college.edu,Data Science,2,2
-255,Student_255,student255@college.edu,Data Science,5,4
-256,Student_256,student256@college.edu,AI,2,4
-257,Student_257,student257@college.edu,AI,6,3
-258,Student_258,student258@college.edu,Computer Science,3,2
-259,Student_259,student259@college.edu,Information Technology,8,4
-260,Student_260,student260@college.edu,AI,3,3
-261,Student_261,student261@college.edu,Data Science,7,1
-262,Student_262,student262@college.edu,Computer Science,3,4
-263,Student_263,student263@college.edu,Data Science,7,2
-264,Student_264,student264@college.edu,Data Science,7,2
-265,Student_265,student265@college.edu,AI,6,2
-266,Student_266,student266@college.edu,Computer Science,3,1
-267,Student_267,student267@college.edu,Information Technology,7,4
-268,Student_268,student268@college.edu,Information Technology,4,4
-269,Student_269,student269@college.edu,AI,5,1
-270,Student_270,student270@college.edu,AI,2,4
-271,Student_271,student271@college.edu,Computer Science,2,1
-272,Student_272,student272@college.edu,Information Technology,6,1
-273,Student_273,student273@college.edu,Information Technology,3,1
-274,Student_274,student274@college.edu,Information Technology,3,2
-275,Student_275,student275@college.edu,Data Science,7,4
-276,Student_276,student276@college.edu,Information Technology,8,1
-277,Student_277,student277@college.edu,Data Science,1,4
-278,Student_278,student278@college.edu,Computer Science,7,2
-279,Student_279,student279@college.edu,Data Science,5,1
-280,Student_280,student280@college.edu,Computer Science,4,3
-281,Student_281,student281@college.edu,Information Technology,2,2
-282,Student_282,student282@college.edu,Information Technology,7,3
-283,Student_283,student283@college.edu,Computer Science,1,4
-284,Student_284,student284@college.edu,AI,1,4
-285,Student_285,student285@college.edu,Computer Science,7,2
-286,Student_286,student286@college.edu,AI,6,4
-287,Student_287,student287@college.edu,Data Science,2,3
-288,Student_288,student288@college.edu,Data Science,6,1
-289,Student_289,student289@college.edu,Data Science,4,1
-290,Student_290,student290@college.edu,Information Technology,1,1
-291,Student_291,student291@college.edu,Data Science,1,2
-292,Student_292,student292@college.edu,AI,5,4
-293,Student_293,student293@college.edu,Data Science,4,3
-294,Student_294,student294@college.edu,Computer Science,1,4
-295,Student_295,student295@college.edu,Computer Science,4,4
-296,Student_296,student296@college.edu,Information Technology,2,4
-297,Student_297,student297@college.edu,Computer Science,3,1
-298,Student_298,student298@college.edu,AI,1,3
-299,Student_299,student299@college.edu,Data Science,5,3
-300,Student_300,student300@college.edu,Information Technology,2,4
-301,Student_301,student301@college.edu,Data Science,7,1
-302,Student_302,student302@college.edu,Data Science,4,1
-303,Student_303,student303@college.edu,AI,7,3
-304,Student_304,student304@college.edu,Computer Science,6,1
-305,Student_305,student305@college.edu,Computer Science,2,1
-306,Student_306,student306@college.edu,Data Science,7,1
-307,Student_307,student307@college.edu,Information Technology,8,2
-308,Student_308,student308@college.edu,Computer Science,8,4
-309,Student_309,student309@college.edu,Information Technology,1,3
-310,Student_310,student310@college.edu,Computer Science,4,3
-311,Student_311,student311@college.edu,Information Technology,3,2
-312,Student_312,student312@college.edu,AI,2,4
-313,Student_313,student313@college.edu,Information Technology,1,3
-314,Student_314,student314@college.edu,AI,5,1
-315,Student_315,student315@college.edu,AI,6,3
-316,Student_316,student316@college.edu,Information Technology,4,1
-317,Student_317,student317@college.edu,AI,2,2
-318,Student_318,student318@college.edu,Data Science,8,1
-319,Student_319,student319@college.edu,AI,2,3
-320,Student_320,student320@college.edu,Computer Science,3,3
-321,Student_321,student321@college.edu,Information Technology,8,3
-322,Student_322,student322@college.edu,Data Science,3,2
-323,Student_323,student323@college.edu,Information Technology,5,2
-324,Student_324,student324@college.edu,Computer Science,6,4
-325,Student_325,student325@college.edu,Computer Science,5,3
-326,Student_326,student326@college.edu,Computer Science,1,1
-327,Student_327,student327@college.edu,AI,1,2
-328,Student_328,student328@college.edu,AI,5,3
-329,Student_329,student329@college.edu,Information Technology,6,3
-330,Student_330,student330@college.edu,Information Technology,5,2
-331,Student_331,student331@college.edu,Data Science,6,4
-332,Student_332,student332@college.edu,Data Science,6,2
-333,Student_333,student333@college.edu,Information Technology,7,2
-334,Student_334,student334@college.edu,AI,8,1
-335,Student_335,student335@college.edu,Computer Science,4,1
-336,Student_336,student336@college.edu,Information Technology,6,4
-337,Student_337,student337@college.edu,Data Science,3,3
-338,Student_338,student338@college.edu,AI,6,2
-339,Student_339,student339@college.edu,Information Technology,6,4
-340,Student_340,student340@college.edu,Information Technology,6,1
-341,Student_341,student341@college.edu,AI,7,2
-342,Student_342,student342@college.edu,Information Technology,8,3
-343,Student_343,student343@college.edu,AI,7,1
-344,Student_344,student344@college.edu,Computer Science,1,1
-345,Student_345,student345@college.edu,AI,7,1
-346,Student_346,student346@college.edu,AI,3,4
-347,Student_347,student347@college.edu,AI,3,3
-348,Student_348,student348@college.edu,Information Technology,7,2
-349,Student_349,student349@college.edu,Information Technology,8,4
-350,Student_350,student350@college.edu,AI,5,4
-351,Student_351,student351@college.edu,Information Technology,4,4
-352,Student_352,student352@college.edu,Data Science,8,1
-353,Student_353,student353@college.edu,Data Science,7,3
-354,Student_354,student354@college.edu,Information Technology,6,4
-355,Student_355,student355@college.edu,Information Technology,2,2
-356,Student_356,student356@college.edu,AI,4,3
-357,Student_357,student357@college.edu,Computer Science,4,2
-358,Student_358,student358@college.edu,Information Technology,3,3
-359,Student_359,student359@college.edu,Data Science,4,2
-360,Student_360,student360@college.edu,AI,7,1
-361,Student_361,student361@college.edu,Information Technology,6,4
-362,Student_362,student362@college.edu,Data Science,6,2
-363,Student_363,student363@college.edu,Data Science,1,3
-364,Student_364,student364@college.edu,Computer Science,6,4
-365,Student_365,student365@college.edu,AI,8,4
-366,Student_366,student366@college.edu,AI,6,3
-367,Student_367,student367@college.edu,Computer Science,3,2
-368,Student_368,student368@college.edu,Computer Science,6,1
-369,Student_369,student369@college.edu,AI,1,1
-370,Student_370,student370@college.edu,AI,2,2
-371,Student_371,student371@college.edu,Information Technology,7,4
-372,Student_372,student372@college.edu,Information Technology,3,4
-373,Student_373,student373@college.edu,Computer Science,8,4
-374,Student_374,student374@college.edu,Information Technology,2,4
-375,Student_375,student375@college.edu,Data Science,3,2
-376,Student_376,student376@college.edu,Information Technology,5,4
-377,Student_377,student377@college.edu,Information Technology,4,3
-378,Student_378,student378@college.edu,Data Science,5,4
-379,Student_379,student379@college.edu,Computer Science,6,1
-380,Student_380,student380@college.edu,Data Science,2,4
-381,Student_381,student381@college.edu,Information Technology,6,2
-382,Student_382,student382@college.edu,Computer Science,4,1
-383,Student_383,student383@college.edu,Information Technology,3,2
-384,Student_384,student384@college.edu,Data Science,4,2
-385,Student_385,student385@college.edu,Data Science,1,1
-386,Student_386,student386@college.edu,Information Technology,4,2
-387,Student_387,student387@college.edu,AI,1,2
-388,Student_388,student388@college.edu,AI,4,4
-389,Student_389,student389@college.edu,Data Science,7,3
-390,Student_390,student390@college.edu,Data Science,1,2
-391,Student_391,student391@college.edu,AI,2,2
-392,Student_392,student392@college.edu,AI,6,2
-393,Student_393,student393@college.edu,Information Technology,8,4
-394,Student_394,student394@college.edu,Information Technology,6,3
-395,Student_395,student395@college.edu,AI,5,1
-396,Student_396,student396@college.edu,Information Technology,6,4
-397,Student_397,student397@college.edu,Information Technology,3,4
-398,Student_398,student398@college.edu,Computer Science,7,3
-399,Student_399,student399@college.edu,Information Technology,4,3
-400,Student_400,student400@college.edu,Data Science,5,4
-401,Student_401,student401@college.edu,Information Technology,3,1
-402,Student_402,student402@college.edu,Information Technology,3,4
-403,Student_403,student403@college.edu,AI,1,3
-404,Student_404,student404@college.edu,Data Science,6,1
-405,Student_405,student405@college.edu,Information Technology,2,3
-406,Student_406,student406@college.edu,Information Technology,8,1
-407,Student_407,student407@college.edu,Computer Science,2,2
-408,Student_408,student408@college.edu,Information Technology,5,3
-409,Student_409,student409@college.edu,Information Technology,7,3
-410,Student_410,student410@college.edu,Computer Science,2,4
-411,Student_411,student411@college.edu,AI,4,3
-412,Student_412,student412@college.edu,Information Technology,2,3
-413,Student_413,student413@college.edu,Computer Science,5,2
-414,Student_414,student414@college.edu,Data Science,8,3
-415,Student_415,student415@college.edu,AI,2,2
-416,Student_416,student416@college.edu,Data Science,4,2
-417,Student_417,student417@college.edu,Data Science,1,2
-418,Student_418,student418@college.edu,Computer Science,7,2
-419,Student_419,student419@college.edu,Information Technology,5,1
-420,Student_420,student420@college.edu,Computer Science,1,4
-421,Student_421,student421@college.edu,Computer Science,1,1
-422,Student_422,student422@college.edu,Computer Science,1,3
-423,Student_423,student423@college.edu,Computer Science,3,1
-424,Student_424,student424@college.edu,AI,7,1
-425,Student_425,student425@college.edu,Information Technology,8,3
-426,Student_426,student426@college.edu,Data Science,6,3
-427,Student_427,student427@college.edu,Data Science,7,3
-428,Student_428,student428@college.edu,Information Technology,3,1
-429,Student_429,student429@college.edu,Data Science,6,1
-430,Student_430,student430@college.edu,Information Technology,7,3
-431,Student_431,student431@college.edu,Data Science,1,4
-432,Student_432,student432@college.edu,Computer Science,5,4
-433,Student_433,student433@college.edu,Data Science,6,2
-434,Student_434,student434@college.edu,Information Technology,4,3
-435,Student_435,student435@college.edu,Information Technology,4,2
-436,Student_436,student436@college.edu,Information Technology,2,4
-437,Student_437,student437@college.edu,Information Technology,6,2
-438,Student_438,student438@college.edu,Information Technology,5,3
-439,Student_439,student439@college.edu,AI,8,3
-440,Student_440,student440@college.edu,AI,3,3
-441,Student_441,student441@college.edu,Data Science,1,1
-442,Student_442,student442@college.edu,Information Technology,2,2
-443,Student_443,student443@college.edu,Data Science,4,4
-444,Student_444,student444@college.edu,Information Technology,3,4
-445,Student_445,student445@college.edu,Information Technology,3,4
-446,Student_446,student446@college.edu,AI,1,1
-447,Student_447,student447@college.edu,AI,8,1
-448,Student_448,student448@college.edu,Computer Science,8,3
-449,Student_449,student449@college.edu,AI,6,4
-450,Student_450,student450@college.edu,Computer Science,4,1
-451,Student_451,student451@college.edu,Computer Science,8,3
-452,Student_452,student452@college.edu,Computer Science,5,4
-453,Student_453,student453@college.edu,Computer Science,8,2
-454,Student_454,student454@college.edu,Computer Science,3,3
-455,Student_455,student455@college.edu,Data Science,1,1
-456,Student_456,student456@college.edu,AI,5,1
-457,Student_457,student457@college.edu,Computer Science,6,3
-458,Student_458,student458@college.edu,Information Technology,4,3
-459,Student_459,student459@college.edu,AI,6,1
-460,Student_460,student460@college.edu,AI,3,2
-461,Student_461,student461@college.edu,Computer Science,5,4
-462,Student_462,student462@college.edu,Data Science,5,2
-463,Student_463,student463@college.edu,Computer Science,5,3
-464,Student_464,student464@college.edu,Data Science,3,2
-465,Student_465,student465@college.edu,Information Technology,3,1
-466,Student_466,student466@college.edu,AI,6,3
-467,Student_467,student467@college.edu,Information Technology,2,4
-468,Student_468,student468@college.edu,Data Science,6,1
-469,Student_469,student469@college.edu,Data Science,4,1
-470,Student_470,student470@college.edu,Information Technology,1,4
-471,Student_471,student471@college.edu,Data Science,5,4
-472,Student_472,student472@college.edu,Information Technology,2,2
-473,Student_473,student473@college.edu,AI,1,3
-474,Student_474,student474@college.edu,Information Technology,2,4
-475,Student_475,student475@college.edu,AI,8,4
-476,Student_476,student476@college.edu,Information Technology,8,3
-477,Student_477,student477@college.edu,Data Science,7,4
-478,Student_478,student478@college.edu,Information Technology,8,4
-479,Student_479,student479@college.edu,Data Science,6,2
-480,Student_480,student480@college.edu,Information Technology,8,1
-481,Student_481,student481@college.edu,Information Technology,3,1
-482,Student_482,student482@college.edu,Computer Science,5,1
-483,Student_483,student483@college.edu,Data Science,6,1
-484,Student_484,student484@college.edu,Computer Science,1,4
-485,Student_485,student485@college.edu,Data Science,7,3
-486,Student_486,student486@college.edu,Computer Science,7,3
-487,Student_487,student487@college.edu,AI,7,2
-488,Student_488,student488@college.edu,Information Technology,1,2
-489,Student_489,student489@college.edu,Data Science,1,4
-490,Student_490,student490@college.edu,Data Science,1,3
-491,Student_491,student491@college.edu,Information Technology,1,3
-492,Student_492,student492@college.edu,Data Science,7,1
-493,Student_493,student493@college.edu,Data Science,7,4
-494,Student_494,student494@college.edu,Computer Science,2,4
-495,Student_495,student495@college.edu,Data Science,6,1
-496,Student_496,student496@college.edu,AI,5,4
-497,Student_497,student497@college.edu,AI,8,4
-498,Student_498,student498@college.edu,Information Technology,8,2
-499,Student_499,student499@college.edu,Data Science,3,3
-500,Student_500,student500@college.edu,Information Technology,7,4
-501,Student_501,student501@college.edu,AI,3,2
-502,Student_502,student502@college.edu,Data Science,6,3
-503,Student_503,student503@college.edu,Data Science,6,1
-504,Student_504,student504@college.edu,Information Technology,3,2
-505,Student_505,student505@college.edu,AI,7,2
-506,Student_506,student506@college.edu,Data Science,3,3
-507,Student_507,student507@college.edu,Information Technology,8,1
-508,Student_508,student508@college.edu,AI,2,2
-509,Student_509,student509@college.edu,Information Technology,8,4
-510,Student_510,student510@college.edu,Computer Science,4,4
-511,Student_511,student511@college.edu,Data Science,7,4
-512,Student_512,student512@college.edu,Computer Science,7,1
-513,Student_513,student513@college.edu,AI,5,2
-514,Student_514,student514@college.edu,Computer Science,1,4
-515,Student_515,student515@college.edu,Computer Science,4,1
-516,Student_516,student516@college.edu,AI,6,4
-517,Student_517,student517@college.edu,Information Technology,7,3
-518,Student_518,student518@college.edu,Computer Science,3,2
-519,Student_519,student519@college.edu,Information Technology,4,2
-520,Student_520,student520@college.edu,Computer Science,5,1
-521,Student_521,student521@college.edu,Information Technology,6,1
-522,Student_522,student522@college.edu,AI,1,2
-523,Student_523,student523@college.edu,Computer Science,1,4
-524,Student_524,student524@college.edu,AI,5,4
-525,Student_525,student525@college.edu,Computer Science,5,3
-526,Student_526,student526@college.edu,AI,3,4
-527,Student_527,student527@college.edu,AI,7,1
-528,Student_528,student528@college.edu,Computer Science,1,1
-529,Student_529,student529@college.edu,Computer Science,6,4
-530,Student_530,student530@college.edu,Computer Science,4,1
-531,Student_531,student531@college.edu,Data Science,6,2
-532,Student_532,student532@college.edu,Information Technology,2,2
-533,Student_533,student533@college.edu,Data Science,2,4
-534,Student_534,student534@college.edu,Data Science,5,2
-535,Student_535,student535@college.edu,AI,3,2
-536,Student_536,student536@college.edu,Computer Science,2,3
-537,Student_537,student537@college.edu,Information Technology,1,3
-538,Student_538,student538@college.edu,AI,6,2
-539,Student_539,student539@college.edu,Data Science,6,4
-540,Student_540,student540@college.edu,Computer Science,5,3
-541,Student_541,student541@college.edu,AI,7,1
-542,Student_542,student542@college.edu,Computer Science,7,1
-543,Student_543,student543@college.edu,AI,4,1
-544,Student_544,student544@college.edu,Computer Science,5,4
-545,Student_545,student545@college.edu,Data Science,8,2
-546,Student_546,student546@college.edu,Information Technology,4,1
-547,Student_547,student547@college.edu,Data Science,8,4
-548,Student_548,student548@college.edu,Information Technology,7,3
-549,Student_549,student549@college.edu,Computer Science,5,2
-550,Student_550,student550@college.edu,AI,8,3
-551,Student_551,student551@college.edu,Data Science,5,4
-552,Student_552,student552@college.edu,Information Technology,5,1
-553,Student_553,student553@college.edu,Data Science,7,1
-554,Student_554,student554@college.edu,Information Technology,4,4
-555,Student_555,student555@college.edu,Data Science,4,1
-556,Student_556,student556@college.edu,Information Technology,5,2
-557,Student_557,student557@college.edu,Information Technology,2,4
-558,Student_558,student558@college.edu,Computer Science,3,3
-559,Student_559,student559@college.edu,Information Technology,7,4
-560,Student_560,student560@college.edu,Computer Science,3,2
-561,Student_561,student561@college.edu,Information Technology,3,2
-562,Student_562,student562@college.edu,AI,4,4
-563,Student_563,student563@college.edu,AI,4,4
-564,Student_564,student564@college.edu,AI,2,1
-565,Student_565,student565@college.edu,Information Technology,3,2
-566,Student_566,student566@college.edu,Computer Science,3,4
-567,Student_567,student567@college.edu,Computer Science,5,4
-568,Student_568,student568@college.edu,Information Technology,4,2
-569,Student_569,student569@college.edu,AI,3,4
-570,Student_570,student570@college.edu,AI,6,1
-571,Student_571,student571@college.edu,Computer Science,2,2
-572,Student_572,student572@college.edu,AI,8,1
-573,Student_573,student573@college.edu,Data Science,6,1
-574,Student_574,student574@college.edu,Computer Science,6,1
-575,Student_575,student575@college.edu,AI,8,1
-576,Student_576,student576@college.edu,Computer Science,7,2
-577,Student_577,student577@college.edu,Data Science,7,1
-578,Student_578,student578@college.edu,Computer Science,2,1
-579,Student_579,student579@college.edu,Computer Science,6,4
-580,Student_580,student580@college.edu,Computer Science,3,2
-581,Student_581,student581@college.edu,Computer Science,4,2
-582,Student_582,student582@college.edu,Data Science,2,3
-583,Student_583,student583@college.edu,Information Technology,5,2
-584,Student_584,student584@college.edu,Computer Science,8,2
-585,Student_585,student585@college.edu,Computer Science,6,3
-586,Student_586,student586@college.edu,AI,2,2
-587,Student_587,student587@college.edu,Computer Science,1,2
-588,Student_588,student588@college.edu,AI,1,2
-589,Student_589,student589@college.edu,Information Technology,7,2
-590,Student_590,student590@college.edu,Data Science,8,3
-591,Student_591,student591@college.edu,Data Science,4,2
-592,Student_592,student592@college.edu,Information Technology,3,2
-593,Student_593,student593@college.edu,Data Science,4,3
-594,Student_594,student594@college.edu,Information Technology,4,4
-595,Student_595,student595@college.edu,Information Technology,4,1
-596,Student_596,student596@college.edu,Information Technology,8,4
-597,Student_597,student597@college.edu,Data Science,4,3
-598,Student_598,student598@college.edu,AI,5,1
-599,Student_599,student599@college.edu,Information Technology,8,3
-600,Student_600,student600@college.edu,Computer Science,5,3
-601,Student_601,student601@college.edu,Data Science,8,2
-602,Student_602,student602@college.edu,Information Technology,7,1
-603,Student_603,student603@college.edu,Information Technology,2,2
-604,Student_604,student604@college.edu,Computer Science,1,1
-605,Student_605,student605@college.edu,AI,4,3
-606,Student_606,student606@college.edu,AI,7,3
-607,Student_607,student607@college.edu,AI,2,4
-608,Student_608,student608@college.edu,Information Technology,1,1
-609,Student_609,student609@college.edu,Information Technology,6,2
-610,Student_610,student610@college.edu,Information Technology,3,4
-611,Student_611,student611@college.edu,Data Science,5,4
-612,Student_612,student612@college.edu,Computer Science,6,4
-613,Student_613,student613@college.edu,Information Technology,8,2
-614,Student_614,student614@college.edu,Computer Science,1,4
-615,Student_615,student615@college.edu,Computer Science,6,2
-616,Student_616,student616@college.edu,AI,3,4
-617,Student_617,student617@college.edu,Data Science,7,2
-618,Student_618,student618@college.edu,Information Technology,1,3
-619,Student_619,student619@college.edu,AI,6,3
-620,Student_620,student620@college.edu,AI,5,3
-621,Student_621,student621@college.edu,Information Technology,5,3
-622,Student_622,student622@college.edu,Computer Science,2,3
-623,Student_623,student623@college.edu,AI,6,4
-624,Student_624,student624@college.edu,Computer Science,4,4
-625,Student_625,student625@college.edu,Data Science,6,4
-626,Student_626,student626@college.edu,Computer Science,7,2
-627,Student_627,student627@college.edu,Data Science,1,2
-628,Student_628,student628@college.edu,Computer Science,1,2
-629,Student_629,student629@college.edu,AI,7,2
-630,Student_630,student630@college.edu,AI,6,3
-631,Student_631,student631@college.edu,Data Science,7,3
-632,Student_632,student632@college.edu,Information Technology,3,3
-633,Student_633,student633@college.edu,Data Science,8,1
-634,Student_634,student634@college.edu,Data Science,7,4
-635,Student_635,student635@college.edu,Computer Science,5,2
-636,Student_636,student636@college.edu,Computer Science,7,2
-637,Student_637,student637@college.edu,Data Science,1,3
-638,Student_638,student638@college.edu,AI,5,2
-639,Student_639,student639@college.edu,Computer Science,1,2
-640,Student_640,student640@college.edu,Information Technology,2,4
-641,Student_641,student641@college.edu,Computer Science,4,3
-642,Student_642,student642@college.edu,Computer Science,1,4
-643,Student_643,student643@college.edu,Information Technology,5,1
-644,Student_644,student644@college.edu,Data Science,2,1
-645,Student_645,student645@college.edu,Information Technology,1,1
-646,Student_646,student646@college.edu,Data Science,3,3
-647,Student_647,student647@college.edu,Data Science,7,2
-648,Student_648,student648@college.edu,Data Science,4,3
-649,Student_649,student649@college.edu,Information Technology,1,3
-650,Student_650,student650@college.edu,Data Science,2,2
-651,Student_651,student651@college.edu,AI,3,4
-652,Student_652,student652@college.edu,Information Technology,6,1
-653,Student_653,student653@college.edu,AI,2,4
-654,Student_654,student654@college.edu,Data Science,7,1
-655,Student_655,student655@college.edu,Computer Science,2,3
-656,Student_656,student656@college.edu,Data Science,3,1
-657,Student_657,student657@college.edu,AI,2,3
-658,Student_658,student658@college.edu,AI,3,4
-659,Student_659,student659@college.edu,Information Technology,1,3
-660,Student_660,student660@college.edu,Computer Science,8,4
-661,Student_661,student661@college.edu,Information Technology,3,2
-662,Student_662,student662@college.edu,AI,3,2
-663,Student_663,student663@college.edu,Data Science,4,2
-664,Student_664,student664@college.edu,Computer Science,3,3
-665,Student_665,student665@college.edu,Data Science,3,2
-666,Student_666,student666@college.edu,Data Science,6,1
-667,Student_667,student667@college.edu,Computer Science,8,4
-668,Student_668,student668@college.edu,Information Technology,1,4
-669,Student_669,student669@college.edu,Data Science,7,1
-670,Student_670,student670@college.edu,AI,4,3
-671,Student_671,student671@college.edu,Data Science,6,3
-672,Student_672,student672@college.edu,Computer Science,5,4
-673,Student_673,student673@college.edu,Computer Science,8,2
-674,Student_674,student674@college.edu,Computer Science,1,3
-675,Student_675,student675@college.edu,Information Technology,1,3
-676,Student_676,student676@college.edu,Data Science,5,1
-677,Student_677,student677@college.edu,Information Technology,7,1
-678,Student_678,student678@college.edu,Information Technology,3,2
-679,Student_679,student679@college.edu,Computer Science,6,3
-680,Student_680,student680@college.edu,Computer Science,2,3
-681,Student_681,student681@college.edu,Information Technology,4,1
-682,Student_682,student682@college.edu,Data Science,2,3
-683,Student_683,student683@college.edu,AI,5,4
-684,Student_684,student684@college.edu,Information Technology,1,1
-685,Student_685,student685@college.edu,Data Science,7,2
-686,Student_686,student686@college.edu,Computer Science,1,1
-687,Student_687,student687@college.edu,Computer Science,4,3
-688,Student_688,student688@college.edu,Data Science,1,2
-689,Student_689,student689@college.edu,AI,1,1
-690,Student_690,student690@college.edu,Computer Science,4,4
-691,Student_691,student691@college.edu,Computer Science,6,4
-692,Student_692,student692@college.edu,Computer Science,6,1
-693,Student_693,student693@college.edu,Data Science,4,4
-694,Student_694,student694@college.edu,Information Technology,7,4
-695,Student_695,student695@college.edu,Computer Science,5,4
-696,Student_696,student696@college.edu,Information Technology,8,2
-697,Student_697,student697@college.edu,AI,1,4
-698,Student_698,student698@college.edu,Computer Science,7,4
-699,Student_699,student699@college.edu,Computer Science,1,4
-700,Student_700,student700@college.edu,AI,8,2
-701,Student_701,student701@college.edu,Computer Science,5,1
-702,Student_702,student702@college.edu,Information Technology,6,3
-703,Student_703,student703@college.edu,Data Science,7,4
-704,Student_704,student704@college.edu,Information Technology,3,1
-705,Student_705,student705@college.edu,Data Science,3,4
-706,Student_706,student706@college.edu,Data Science,8,2
-707,Student_707,student707@college.edu,Information Technology,3,1
-708,Student_708,student708@college.edu,Information Technology,6,2
-709,Student_709,student709@college.edu,Information Technology,8,4
-710,Student_710,student710@college.edu,Information Technology,6,4
-711,Student_711,student711@college.edu,AI,5,2
-712,Student_712,student712@college.edu,Computer Science,1,3
-713,Student_713,student713@college.edu,Data Science,5,2
-714,Student_714,student714@college.edu,Information Technology,5,4
-715,Student_715,student715@college.edu,Information Technology,6,2
-716,Student_716,student716@college.edu,Information Technology,8,3
-717,Student_717,student717@college.edu,AI,8,2
-718,Student_718,student718@college.edu,Information Technology,3,3
-719,Student_719,student719@college.edu,Information Technology,2,3
-720,Student_720,student720@college.edu,Information Technology,1,2
-721,Student_721,student721@college.edu,Computer Science,6,2
-722,Student_722,student722@college.edu,AI,3,1
-723,Student_723,student723@college.edu,Information Technology,7,4
-724,Student_724,student724@college.edu,Data Science,2,3
-725,Student_725,student725@college.edu,Data Science,2,1
-726,Student_726,student726@college.edu,Data Science,6,2
-727,Student_727,student727@college.edu,AI,4,4
-728,Student_728,student728@college.edu,AI,1,1
-729,Student_729,student729@college.edu,Data Science,2,3
-730,Student_730,student730@college.edu,Information Technology,6,1
-731,Student_731,student731@college.edu,AI,6,3
-732,Student_732,student732@college.edu,Data Science,3,2
-733,Student_733,student733@college.edu,Data Science,7,4
-734,Student_734,student734@college.edu,Information Technology,4,4
-735,Student_735,student735@college.edu,Computer Science,1,4
-736,Student_736,student736@college.edu,AI,8,2
-737,Student_737,student737@college.edu,Information Technology,5,3
-738,Student_738,student738@college.edu,Data Science,7,2
-739,Student_739,student739@college.edu,Data Science,7,4
-740,Student_740,student740@college.edu,Information Technology,3,2
-741,Student_741,student741@college.edu,AI,8,2
-742,Student_742,student742@college.edu,Computer Science,2,2
-743,Student_743,student743@college.edu,Computer Science,2,3
-744,Student_744,student744@college.edu,Data Science,3,1
-745,Student_745,student745@college.edu,AI,6,1
-746,Student_746,student746@college.edu,Computer Science,2,2
-747,Student_747,student747@college.edu,AI,4,1
-748,Student_748,student748@college.edu,AI,1,1
-749,Student_749,student749@college.edu,Data Science,7,2
-750,Student_750,student750@college.edu,Computer Science,7,2
-751,Student_751,student751@college.edu,Information Technology,4,4
-752,Student_752,student752@college.edu,Data Science,8,1
-753,Student_753,student753@college.edu,Computer Science,2,3
-754,Student_754,student754@college.edu,Computer Science,7,2
-755,Student_755,student755@college.edu,Computer Science,5,4
-756,Student_756,student756@college.edu,Computer Science,8,3
-757,Student_757,student757@college.edu,Computer Science,1,1
-758,Student_758,student758@college.edu,AI,1,4
-759,Student_759,student759@college.edu,Data Science,7,2
-760,Student_760,student760@college.edu,AI,3,3
-761,Student_761,student761@college.edu,Information Technology,8,2
-762,Student_762,student762@college.edu,Computer Science,7,1
-763,Student_763,student763@college.edu,Data Science,3,3
-764,Student_764,student764@college.edu,Computer Science,7,1
-765,Student_765,student765@college.edu,Data Science,5,1
-766,Student_766,student766@college.edu,AI,8,4
-767,Student_767,student767@college.edu,Data Science,6,2
-768,Student_768,student768@college.edu,Information Technology,1,3
-769,Student_769,student769@college.edu,Information Technology,7,1
-770,Student_770,student770@college.edu,Data Science,5,1
-771,Student_771,student771@college.edu,Data Science,3,3
-772,Student_772,student772@college.edu,Data Science,3,1
-773,Student_773,student773@college.edu,Data Science,1,4
-774,Student_774,student774@college.edu,Information Technology,4,4
-775,Student_775,student775@college.edu,Computer Science,7,4
-776,Student_776,student776@college.edu,Data Science,8,4
-777,Student_777,student777@college.edu,Data Science,2,1
-778,Student_778,student778@college.edu,Information Technology,3,3
-779,Student_779,student779@college.edu,Information Technology,8,3
-780,Student_780,student780@college.edu,AI,8,3
-781,Student_781,student781@college.edu,Data Science,6,3
-782,Student_782,student782@college.edu,AI,8,2
-783,Student_783,student783@college.edu,Information Technology,8,3
-784,Student_784,student784@college.edu,Information Technology,6,2
-785,Student_785,student785@college.edu,Computer Science,3,2
-786,Student_786,student786@college.edu,Data Science,8,4
-787,Student_787,student787@college.edu,AI,4,2
-788,Student_788,student788@college.edu,Information Technology,4,1
-789,Student_789,student789@college.edu,Information Technology,5,2
-790,Student_790,student790@college.edu,AI,6,4
-791,Student_791,student791@college.edu,Computer Science,5,2
-792,Student_792,student792@college.edu,Information Technology,6,1
-793,Student_793,student793@college.edu,Data Science,7,1
-794,Student_794,student794@college.edu,Information Technology,7,1
-795,Student_795,student795@college.edu,Data Science,8,4
-796,Student_796,student796@college.edu,AI,2,4
-797,Student_797,student797@college.edu,Data Science,7,3
-798,Student_798,student798@college.edu,AI,2,4
-799,Student_799,student799@college.edu,Data Science,7,1
-800,Student_800,student800@college.edu,AI,1,1
-801,Student_801,student801@college.edu,Data Science,7,4
-802,Student_802,student802@college.edu,Computer Science,5,2
-803,Student_803,student803@college.edu,Data Science,3,4
-804,Student_804,student804@college.edu,Data Science,8,4
-805,Student_805,student805@college.edu,Computer Science,5,1
-806,Student_806,student806@college.edu,Information Technology,3,3
-807,Student_807,student807@college.edu,Information Technology,4,1
-808,Student_808,student808@college.edu,Data Science,5,3
-809,Student_809,student809@college.edu,Computer Science,4,1
-810,Student_810,student810@college.edu,Data Science,2,4
-811,Student_811,student811@college.edu,AI,2,1
-812,Student_812,student812@college.edu,AI,1,1
-813,Student_813,student813@college.edu,Data Science,7,1
-814,Student_814,student814@college.edu,Information Technology,5,4
-815,Student_815,student815@college.edu,Information Technology,4,4
-816,Student_816,student816@college.edu,Data Science,3,4
-817,Student_817,student817@college.edu,Data Science,2,4
-818,Student_818,student818@college.edu,AI,7,3
-819,Student_819,student819@college.edu,Information Technology,2,3
-820,Student_820,student820@college.edu,Data Science,3,2
-821,Student_821,student821@college.edu,AI,7,4
-822,Student_822,student822@college.edu,Information Technology,7,3
-823,Student_823,student823@college.edu,Computer Science,4,1
-824,Student_824,student824@college.edu,AI,4,4
-825,Student_825,student825@college.edu,Information Technology,5,2
-826,Student_826,student826@college.edu,Information Technology,5,2
-827,Student_827,student827@college.edu,AI,6,2
-828,Student_828,student828@college.edu,Computer Science,8,1
-829,Student_829,student829@college.edu,AI,6,3
-830,Student_830,student830@college.edu,Information Technology,1,1
-831,Student_831,student831@college.edu,Data Science,2,4
-832,Student_832,student832@college.edu,Data Science,5,2
-833,Student_833,student833@college.edu,AI,4,1
-834,Student_834,student834@college.edu,Information Technology,3,1
-835,Student_835,student835@college.edu,Data Science,4,3
-836,Student_836,student836@college.edu,Information Technology,2,3
-837,Student_837,student837@college.edu,AI,6,2
-838,Student_838,student838@college.edu,Data Science,4,1
-839,Student_839,student839@college.edu,Information Technology,8,1
-840,Student_840,student840@college.edu,Data Science,1,3
-841,Student_841,student841@college.edu,AI,2,1
-842,Student_842,student842@college.edu,Information Technology,6,1
-843,Student_843,student843@college.edu,Data Science,8,1
-844,Student_844,student844@college.edu,AI,3,3
-845,Student_845,student845@college.edu,Data Science,6,2
-846,Student_846,student846@college.edu,Data Science,7,4
-847,Student_847,student847@college.edu,Computer Science,8,2
-848,Student_848,student848@college.edu,Computer Science,8,4
-849,Student_849,student849@college.edu,AI,1,1
-850,Student_850,student850@college.edu,Computer Science,2,2
-851,Student_851,student851@college.edu,AI,3,4
-852,Student_852,student852@college.edu,Computer Science,1,3
-853,Student_853,student853@college.edu,Data Science,6,3
-854,Student_854,student854@college.edu,AI,1,2
-855,Student_855,student855@college.edu,AI,8,2
-856,Student_856,student856@college.edu,Data Science,2,1
-857,Student_857,student857@college.edu,AI,5,2
-858,Student_858,student858@college.edu,AI,1,1
-859,Student_859,student859@college.edu,Computer Science,7,1
-860,Student_860,student860@college.edu,AI,1,3
-861,Student_861,student861@college.edu,Information Technology,6,3
-862,Student_862,student862@college.edu,Data Science,6,4
-863,Student_863,student863@college.edu,Computer Science,3,3
-864,Student_864,student864@college.edu,Computer Science,6,3
-865,Student_865,student865@college.edu,Information Technology,4,2
-866,Student_866,student866@college.edu,Data Science,2,3
-867,Student_867,student867@college.edu,Data Science,2,4
-868,Student_868,student868@college.edu,Computer Science,5,2
-869,Student_869,student869@college.edu,AI,5,4
-870,Student_870,student870@college.edu,Computer Science,2,3
-871,Student_871,student871@college.edu,Data Science,7,4
-872,Student_872,student872@college.edu,Information Technology,5,2
-873,Student_873,student873@college.edu,Computer Science,3,1
-874,Student_874,student874@college.edu,Data Science,6,4
-875,Student_875,student875@college.edu,Computer Science,2,4
-876,Student_876,student876@college.edu,AI,8,2
-877,Student_877,student877@college.edu,Computer Science,5,2
-878,Student_878,student878@college.edu,Computer Science,2,4
-879,Student_879,student879@college.edu,Data Science,4,3
-880,Student_880,student880@college.edu,Data Science,1,4
-881,Student_881,student881@college.edu,Data Science,6,2
-882,Student_882,student882@college.edu,Computer Science,2,1
-883,Student_883,student883@college.edu,AI,1,1
-884,Student_884,student884@college.edu,Information Technology,5,3
-885,Student_885,student885@college.edu,Information Technology,1,4
-886,Student_886,student886@college.edu,Data Science,6,1
-887,Student_887,student887@college.edu,Data Science,2,4
-888,Student_888,student888@college.edu,Computer Science,4,2
-889,Student_889,student889@college.edu,Information Technology,7,1
-890,Student_890,student890@college.edu,Data Science,5,3
-891,Student_891,student891@college.edu,AI,2,2
-892,Student_892,student892@college.edu,AI,6,3
-893,Student_893,student893@college.edu,Data Science,5,2
-894,Student_894,student894@college.edu,Data Science,3,1
-895,Student_895,student895@college.edu,Information Technology,1,3
-896,Student_896,student896@college.edu,Information Technology,7,3
-897,Student_897,student897@college.edu,Computer Science,6,2
-898,Student_898,student898@college.edu,Information Technology,3,3
-899,Student_899,student899@college.edu,AI,8,2
-900,Student_900,student900@college.edu,AI,2,2
-901,Student_901,student901@college.edu,Data Science,4,2
-902,Student_902,student902@college.edu,Information Technology,5,2
-903,Student_903,student903@college.edu,Computer Science,1,1
-904,Student_904,student904@college.edu,AI,5,2
-905,Student_905,student905@college.edu,AI,7,4
-906,Student_906,student906@college.edu,Computer Science,2,3
-907,Student_907,student907@college.edu,Computer Science,5,4
-908,Student_908,student908@college.edu,AI,1,1
-909,Student_909,student909@college.edu,AI,2,4
-910,Student_910,student910@college.edu,Computer Science,5,3
-911,Student_911,student911@college.edu,AI,4,4
-912,Student_912,student912@college.edu,Data Science,6,1
-913,Student_913,student913@college.edu,Data Science,2,2
-914,Student_914,student914@college.edu,Computer Science,6,4
-915,Student_915,student915@college.edu,Information Technology,8,1
-916,Student_916,student916@college.edu,Computer Science,2,1
-917,Student_917,student917@college.edu,Computer Science,4,3
-918,Student_918,student918@college.edu,Information Technology,6,3
-919,Student_919,student919@college.edu,Information Technology,3,4
-920,Student_920,student920@college.edu,Information Technology,1,2
-921,Student_921,student921@college.edu,Data Science,3,1
-922,Student_922,student922@college.edu,AI,5,4
-923,Student_923,student923@college.edu,Data Science,4,1
-924,Student_924,student924@college.edu,AI,3,1
-925,Student_925,student925@college.edu,Data Science,2,2
-926,Student_926,student926@college.edu,AI,5,2
-927,Student_927,student927@college.edu,Data Science,5,4
-928,Student_928,student928@college.edu,Information Technology,3,2
-929,Student_929,student929@college.edu,Computer Science,8,2
-930,Student_930,student930@college.edu,Data Science,3,4
-931,Student_931,student931@college.edu,AI,8,2
-932,Student_932,student932@college.edu,Information Technology,4,3
-933,Student_933,student933@college.edu,Data Science,1,1
-934,Student_934,student934@college.edu,Data Science,3,1
-935,Student_935,student935@college.edu,Information Technology,7,1
-936,Student_936,student936@college.edu,Data Science,8,1
-937,Student_937,student937@college.edu,Computer Science,3,4
-938,Student_938,student938@college.edu,Data Science,6,1
-939,Student_939,student939@college.edu,Computer Science,2,1
-940,Student_940,student940@college.edu,Computer Science,7,1
-941,Student_941,student941@college.edu,Information Technology,7,1
-942,Student_942,student942@college.edu,Data Science,8,3
-943,Student_943,student943@college.edu,Information Technology,6,1
-944,Student_944,student944@college.edu,Data Science,6,3
-945,Student_945,student945@college.edu,Data Science,5,4
-946,Student_946,student946@college.edu,AI,8,2
-947,Student_947,student947@college.edu,Data Science,1,1
-948,Student_948,student948@college.edu,Information Technology,2,2
-949,Student_949,student949@college.edu,Computer Science,4,2
-950,Student_950,student950@college.edu,Data Science,7,4
-951,Student_951,student951@college.edu,AI,4,2
-952,Student_952,student952@college.edu,Information Technology,3,3
-953,Student_953,student953@college.edu,Data Science,3,2
-954,Student_954,student954@college.edu,Information Technology,4,2
-955,Student_955,student955@college.edu,AI,3,2
-956,Student_956,student956@college.edu,AI,1,1
-957,Student_957,student957@college.edu,Information Technology,6,1
-958,Student_958,student958@college.edu,Data Science,3,3
-959,Student_959,student959@college.edu,Computer Science,5,3
-960,Student_960,student960@college.edu,AI,3,1
-961,Student_961,student961@college.edu,Data Science,2,3
-962,Student_962,student962@college.edu,Data Science,1,1
-963,Student_963,student963@college.edu,Computer Science,2,4
-964,Student_964,student964@college.edu,AI,2,2
-965,Student_965,student965@college.edu,AI,5,2
-966,Student_966,student966@college.edu,Data Science,1,3
-967,Student_967,student967@college.edu,Data Science,1,1
-968,Student_968,student968@college.edu,Computer Science,8,1
-969,Student_969,student969@college.edu,Computer Science,1,3
-970,Student_970,student970@college.edu,AI,1,1
-971,Student_971,student971@college.edu,Information Technology,1,4
-972,Student_972,student972@college.edu,AI,5,2
-973,Student_973,student973@college.edu,Data Science,3,3
-974,Student_974,student974@college.edu,AI,8,3
-975,Student_975,student975@college.edu,Information Technology,2,1
-976,Student_976,student976@college.edu,Computer Science,1,3
-977,Student_977,student977@college.edu,Information Technology,7,4
-978,Student_978,student978@college.edu,Information Technology,3,1
-979,Student_979,student979@college.edu,Information Technology,3,1
-980,Student_980,student980@college.edu,Computer Science,2,1
-981,Student_981,student981@college.edu,Information Technology,5,1
-982,Student_982,student982@college.edu,Information Technology,4,4
-983,Student_983,student983@college.edu,Information Technology,4,1
-984,Student_984,student984@college.edu,Data Science,3,3
-985,Student_985,student985@college.edu,Information Technology,6,4
-986,Student_986,student986@college.edu,Computer Science,6,2
-987,Student_987,student987@college.edu,Information Technology,2,2
-988,Student_988,student988@college.edu,Information Technology,4,3
-989,Student_989,student989@college.edu,Computer Science,3,3
-990,Student_990,student990@college.edu,Information Technology,5,4
-991,Student_991,student991@college.edu,Computer Science,4,2
-992,Student_992,student992@college.edu,Information Technology,3,2
-993,Student_993,student993@college.edu,Computer Science,3,2
-994,Student_994,student994@college.edu,Information Technology,1,2
-995,Student_995,student995@college.edu,Information Technology,5,2
-996,Student_996,student996@college.edu,Data Science,1,1
-997,Student_997,student997@college.edu,Data Science,2,3
-998,Student_998,student998@college.edu,Information Technology,1,1
-999,Student_999,student999@college.edu,Information Technology,7,2
-1000,Student_1000,student1000@college.edu,AI,1,4
+1,Aarav Banerjee,aarav.banerjee@college.edu,AI,6,3
+2,Aarav Bose,aarav.bose@college.edu,Information Technology,7,4
+3,Aarav Chatterjee,aarav.chatterjee@college.edu,Data Science,1,2
+4,Aarav Gill,aarav.gill@college.edu,AI,1,4
+5,Aarav Iyer,aarav.iyer@college.edu,AI,1,4
+6,Aarav Jain,aarav.jain@college.edu,Information Technology,5,3
+7,Aarav Joshi,aarav.joshi@college.edu,Data Science,4,4
+8,Aarav Kulkarni,aarav.kulkarni@college.edu,Data Science,5,3
+9,Aarav Mehta,aarav.mehta@college.edu,AI,4,1
+10,Aarav Menon,aarav.menon@college.edu,Computer Science,8,1
+11,Aarav Reddy,aarav.reddy@college.edu,AI,5,3
+12,Aarav Roy,aarav.roy@college.edu,AI,5,1
+13,Aarav Sharma,aarav.sharma@college.edu,AI,6,2
+14,Aarohi Bajaj,aarohi.bajaj@college.edu,AI,3,4
+15,Aarohi Banerjee,aarohi.banerjee@college.edu,Information Technology,5,2
+16,Aarohi Bhatt,aarohi.bhatt@college.edu,Data Science,6,4
+17,Aarohi Chauhan,aarohi.chauhan@college.edu,Information Technology,2,1
+18,Aarohi Dubey,aarohi.dubey@college.edu,Information Technology,3,2
+19,Aarohi Gill,aarohi.gill@college.edu,Information Technology,8,1
+20,Aarohi Iyer,aarohi.iyer@college.edu,AI,5,4
+21,Aarohi Jain,aarohi.jain@college.edu,Computer Science,7,3
+22,Aarohi Khanna,aarohi.khanna@college.edu,Data Science,1,3
+23,Aarohi Kulkarni,aarohi.kulkarni@college.edu,Computer Science,2,2
+24,Aarohi Pillai,aarohi.pillai@college.edu,Information Technology,2,1
+25,Aarohi Singh,aarohi.singh@college.edu,Information Technology,8,1
+26,Abhinav Chauhan,abhinav.chauhan@college.edu,Computer Science,6,2
+27,Abhinav Kapoor,abhinav.kapoor@college.edu,Computer Science,2,3
+28,Abhinav Mehta,abhinav.mehta@college.edu,Computer Science,3,4
+29,Abhinav Menon,abhinav.menon@college.edu,Information Technology,5,2
+30,Abhinav Mukherjee,abhinav.mukherjee@college.edu,Information Technology,5,4
+31,Abhinav Patel,abhinav.patel@college.edu,Data Science,7,3
+32,Abhinav Patil,abhinav.patil@college.edu,Data Science,8,1
+33,Abhinav Sen,abhinav.sen@college.edu,Information Technology,1,3
+34,Aditi Bhatt,aditi.bhatt@college.edu,Computer Science,6,2
+35,Aditi Bose,aditi.bose@college.edu,Computer Science,1,1
+36,Aditi Das,aditi.das@college.edu,Data Science,2,2
+37,Aditi Khanna,aditi.khanna@college.edu,Information Technology,8,2
+38,Aditi Roy,aditi.roy@college.edu,Data Science,7,3
+39,Aditi Saxena,aditi.saxena@college.edu,Data Science,1,2
+40,Aditi Verma,aditi.verma@college.edu,AI,3,3
+41,Aditya Banerjee,aditya.banerjee@college.edu,AI,5,1
+42,Aditya Bhatt,aditya.bhatt@college.edu,AI,2,3
+43,Aditya Bose,aditya.bose@college.edu,Computer Science,7,1
+44,Aditya Chauhan,aditya.chauhan@college.edu,Information Technology,1,3
+45,Aditya Das,aditya.das@college.edu,Information Technology,6,4
+46,Aditya Ghosh,aditya.ghosh@college.edu,Information Technology,3,4
+47,Aditya Kulkarni,aditya.kulkarni@college.edu,Information Technology,3,2
+48,Aditya Shah,aditya.shah@college.edu,AI,1,3
+49,Aditya Sharma,aditya.sharma@college.edu,Computer Science,5,3
+50,Aditya Thakur,aditya.thakur@college.edu,Computer Science,1,1
+51,Aditya Tiwari,aditya.tiwari@college.edu,AI,2,2
+52,Aishwarya Bhatt,aishwarya.bhatt@college.edu,Computer Science,1,3
+53,Aishwarya Chauhan,aishwarya.chauhan@college.edu,AI,3,2
+54,Aishwarya Iyer,aishwarya.iyer@college.edu,Information Technology,7,4
+55,Aishwarya Malhotra,aishwarya.malhotra@college.edu,AI,1,3
+56,Aishwarya Mishra,aishwarya.mishra@college.edu,Information Technology,5,3
+57,Aishwarya Mukherjee,aishwarya.mukherjee@college.edu,Information Technology,8,2
+58,Aishwarya Patil,aishwarya.patil@college.edu,Data Science,7,3
+59,Aishwarya Reddy,aishwarya.reddy@college.edu,AI,6,2
+60,Aishwarya Roy,aishwarya.roy@college.edu,Data Science,4,3
+61,Aishwarya Verma,aishwarya.verma@college.edu,AI,1,1
+62,Akash Bhatt,akash.bhatt@college.edu,AI,5,2
+63,Akash Chauhan,akash.chauhan@college.edu,Data Science,7,3
+64,Akash Chopra,akash.chopra@college.edu,Data Science,5,4
+65,Akash Desai,akash.desai@college.edu,AI,6,3
+66,Akash Ghosh,akash.ghosh@college.edu,Computer Science,3,4
+67,Akash Joshi,akash.joshi@college.edu,Information Technology,5,4
+68,Akash Khanna,akash.khanna@college.edu,Data Science,7,1
+69,Akash Kulkarni,akash.kulkarni@college.edu,Information Technology,5,2
+70,Akash Nair,akash.nair@college.edu,Computer Science,5,3
+71,Akash Patil,akash.patil@college.edu,Computer Science,5,1
+72,Akash Tiwari,akash.tiwari@college.edu,Computer Science,2,3
+73,Aman Agarwal,aman.agarwal@college.edu,Data Science,2,4
+74,Aman Bhatt,aman.bhatt@college.edu,Computer Science,3,2
+75,Aman Chopra,aman.chopra@college.edu,Data Science,1,3
+76,Aman Das,aman.das@college.edu,Computer Science,5,3
+77,Aman Desai,aman.desai@college.edu,Information Technology,6,4
+78,Aman Iyer,aman.iyer@college.edu,Information Technology,1,3
+79,Aman Joshi,aman.joshi@college.edu,AI,6,3
+80,Aman Khanna,aman.khanna@college.edu,Information Technology,1,4
+81,Aman Kumar,aman.kumar@college.edu,AI,3,1
+82,Aman Mukherjee,aman.mukherjee@college.edu,Information Technology,5,4
+83,Aman Rao,aman.rao@college.edu,Data Science,5,1
+84,Aman Roy,aman.roy@college.edu,Information Technology,4,2
+85,Aman Shah,aman.shah@college.edu,AI,6,1
+86,Aman Sharma,aman.sharma@college.edu,AI,1,1
+87,Aman Singh,aman.singh@college.edu,Computer Science,1,2
+88,Aman Verma,aman.verma@college.edu,Data Science,8,1
+89,Ananya Bhat,ananya.bhat@college.edu,Information Technology,8,4
+90,Ananya Chatterjee,ananya.chatterjee@college.edu,Computer Science,2,1
+91,Ananya Das,ananya.das@college.edu,Information Technology,4,2
+92,Ananya Ghosh,ananya.ghosh@college.edu,Information Technology,7,4
+93,Ananya Gupta,ananya.gupta@college.edu,Computer Science,8,2
+94,Ananya Saxena,ananya.saxena@college.edu,Computer Science,7,2
+95,Ananya Thakur,ananya.thakur@college.edu,Computer Science,2,3
+96,Ananya Tiwari,ananya.tiwari@college.edu,Computer Science,2,3
+97,Anil Nair,anil.nair@college.edu,Computer Science,2,2
+98,Anil Patil,anil.patil@college.edu,Information Technology,6,2
+99,Anil Rao,anil.rao@college.edu,Computer Science,6,2
+100,Anil Reddy,anil.reddy@college.edu,Data Science,3,3
+101,Anjali Agarwal,anjali.agarwal@college.edu,AI,3,3
+102,Anjali Chatterjee,anjali.chatterjee@college.edu,Computer Science,2,1
+103,Anjali Das,anjali.das@college.edu,Computer Science,4,1
+104,Anjali Ghosh,anjali.ghosh@college.edu,Information Technology,1,2
+105,Anjali Gill,anjali.gill@college.edu,Computer Science,6,4
+106,Anjali Kapoor,anjali.kapoor@college.edu,Computer Science,4,4
+107,Anjali Malhotra,anjali.malhotra@college.edu,Computer Science,5,3
+108,Anjali Mehta,anjali.mehta@college.edu,Information Technology,6,3
+109,Anjali Nair,anjali.nair@college.edu,Computer Science,6,3
+110,Anjali Pillai,anjali.pillai@college.edu,AI,3,2
+111,Anjali Rao,anjali.rao@college.edu,Information Technology,1,4
+112,Anjali Sen,anjali.sen@college.edu,AI,1,1
+113,Anjali Shah,anjali.shah@college.edu,Information Technology,8,2
+114,Anjali Sharma,anjali.sharma@college.edu,Computer Science,7,1
+115,Anjali Singh,anjali.singh@college.edu,AI,7,1
+116,Ankit Desai,ankit.desai@college.edu,Information Technology,7,2
+117,Ankit Ghosh,ankit.ghosh@college.edu,Data Science,7,1
+118,Ankit Gill,ankit.gill@college.edu,Computer Science,5,4
+119,Ankit Iyer,ankit.iyer@college.edu,Information Technology,5,1
+120,Ankit Kapoor,ankit.kapoor@college.edu,Data Science,6,4
+121,Ankit Pandey,ankit.pandey@college.edu,Information Technology,2,4
+122,Ankit Saxena,ankit.saxena@college.edu,Data Science,3,4
+123,Ankit Singh,ankit.singh@college.edu,Computer Science,3,3
+124,Ankit Thakur,ankit.thakur@college.edu,AI,7,1
+125,Ankit Tiwari,ankit.tiwari@college.edu,Data Science,6,2
+126,Arjun Arora,arjun.arora@college.edu,Information Technology,8,2
+127,Arjun Hegde,arjun.hegde@college.edu,Computer Science,4,1
+128,Arjun Iyer,arjun.iyer@college.edu,Data Science,2,3
+129,Arjun Mukherjee,arjun.mukherjee@college.edu,Information Technology,6,3
+130,Arjun Pandey,arjun.pandey@college.edu,Information Technology,2,4
+131,Arjun Patil,arjun.patil@college.edu,Information Technology,2,1
+132,Ayush Chopra,ayush.chopra@college.edu,Data Science,2,1
+133,Ayush Gill,ayush.gill@college.edu,Data Science,6,2
+134,Ayush Kulkarni,ayush.kulkarni@college.edu,Data Science,7,1
+135,Ayush Menon,ayush.menon@college.edu,AI,3,3
+136,Ayush Patel,ayush.patel@college.edu,Data Science,3,1
+137,Ayush Patil,ayush.patil@college.edu,Data Science,7,2
+138,Ayush Singh,ayush.singh@college.edu,Data Science,2,4
+139,Bhavana Bajaj,bhavana.bajaj@college.edu,AI,4,2
+140,Bhavana Bose,bhavana.bose@college.edu,Data Science,1,2
+141,Bhavana Chauhan,bhavana.chauhan@college.edu,Information Technology,6,4
+142,Bhavana Chopra,bhavana.chopra@college.edu,Data Science,1,2
+143,Bhavana Joshi,bhavana.joshi@college.edu,Information Technology,8,2
+144,Bhavana Malhotra,bhavana.malhotra@college.edu,Information Technology,7,1
+145,Bhavana Saxena,bhavana.saxena@college.edu,Information Technology,4,1
+146,Bhavana Singh,bhavana.singh@college.edu,AI,6,4
+147,Bhavana Verma,bhavana.verma@college.edu,AI,7,1
+148,Chirag Bajaj,chirag.bajaj@college.edu,AI,2,1
+149,Chirag Bhatt,chirag.bhatt@college.edu,Data Science,3,2
+150,Chirag Bose,chirag.bose@college.edu,Information Technology,1,3
+151,Chirag Das,chirag.das@college.edu,AI,5,1
+152,Chirag Ghosh,chirag.ghosh@college.edu,AI,5,3
+153,Chirag Mehta,chirag.mehta@college.edu,Data Science,4,1
+154,Chirag Mukherjee,chirag.mukherjee@college.edu,AI,2,1
+155,Chirag Patel,chirag.patel@college.edu,Data Science,8,4
+156,Chirag Patil,chirag.patil@college.edu,Computer Science,1,4
+157,Chirag Saxena,chirag.saxena@college.edu,AI,2,4
+158,Deepak Bajaj,deepak.bajaj@college.edu,Computer Science,1,3
+159,Deepak Bhatt,deepak.bhatt@college.edu,Data Science,4,2
+160,Deepak Chatterjee,deepak.chatterjee@college.edu,Information Technology,4,1
+161,Deepak Dutta,deepak.dutta@college.edu,AI,8,1
+162,Deepak Joshi,deepak.joshi@college.edu,Data Science,5,1
+163,Deepak Kapoor,deepak.kapoor@college.edu,Information Technology,2,3
+164,Deepak Malhotra,deepak.malhotra@college.edu,Information Technology,6,4
+165,Deepak Nair,deepak.nair@college.edu,Computer Science,5,2
+166,Deepak Patil,deepak.patil@college.edu,Data Science,2,3
+167,Deepak Thakur,deepak.thakur@college.edu,Information Technology,5,4
+168,Deepika Agarwal,deepika.agarwal@college.edu,AI,6,3
+169,Deepika Chauhan,deepika.chauhan@college.edu,AI,3,2
+170,Deepika Das,deepika.das@college.edu,Computer Science,3,4
+171,Deepika Ghosh,deepika.ghosh@college.edu,Information Technology,8,3
+172,Deepika Jain,deepika.jain@college.edu,Data Science,3,2
+173,Deepika Nair,deepika.nair@college.edu,AI,3,1
+174,Deepika Pandey,deepika.pandey@college.edu,Information Technology,7,2
+175,Deepika Patil,deepika.patil@college.edu,Information Technology,1,1
+176,Deepika Roy,deepika.roy@college.edu,Computer Science,7,3
+177,Deepika Sen,deepika.sen@college.edu,AI,7,4
+178,Dev Desai,dev.desai@college.edu,AI,8,4
+179,Dev Dubey,dev.dubey@college.edu,Data Science,7,3
+180,Dev Gill,dev.gill@college.edu,AI,3,4
+181,Dev Hegde,dev.hegde@college.edu,Data Science,6,4
+182,Dev Kapoor,dev.kapoor@college.edu,AI,8,1
+183,Dev Khanna,dev.khanna@college.edu,Computer Science,8,3
+184,Dev Kulkarni,dev.kulkarni@college.edu,AI,4,2
+185,Dev Malhotra,dev.malhotra@college.edu,Data Science,8,1
+186,Dev Mehta,dev.mehta@college.edu,Data Science,4,3
+187,Dev Patel,dev.patel@college.edu,Computer Science,8,1
+188,Dev Thakur,dev.thakur@college.edu,AI,1,2
+189,Dhruv Bose,dhruv.bose@college.edu,AI,3,2
+190,Dhruv Dutta,dhruv.dutta@college.edu,Computer Science,8,3
+191,Dhruv Jain,dhruv.jain@college.edu,AI,3,2
+192,Dhruv Joshi,dhruv.joshi@college.edu,AI,3,1
+193,Dhruv Kulkarni,dhruv.kulkarni@college.edu,Data Science,5,2
+194,Dhruv Mehta,dhruv.mehta@college.edu,AI,8,1
+195,Dhruv Mishra,dhruv.mishra@college.edu,AI,2,1
+196,Dhruv Nair,dhruv.nair@college.edu,Computer Science,5,2
+197,Dhruv Pillai,dhruv.pillai@college.edu,Computer Science,2,3
+198,Dhruv Trivedi,dhruv.trivedi@college.edu,Information Technology,3,4
+199,Divya Agarwal,divya.agarwal@college.edu,Data Science,3,2
+200,Divya Banerjee,divya.banerjee@college.edu,AI,5,1
+201,Divya Bose,divya.bose@college.edu,AI,5,1
+202,Divya Ghosh,divya.ghosh@college.edu,Information Technology,2,2
+203,Divya Kapoor,divya.kapoor@college.edu,AI,4,3
+204,Divya Kaur,divya.kaur@college.edu,Data Science,2,3
+205,Divya Khanna,divya.khanna@college.edu,Information Technology,5,1
+206,Divya Mishra,divya.mishra@college.edu,Data Science,6,1
+207,Divya Patil,divya.patil@college.edu,Information Technology,5,3
+208,Divya Rao,divya.rao@college.edu,Information Technology,6,4
+209,Divya Roy,divya.roy@college.edu,Computer Science,1,2
+210,Divya Shetty,divya.shetty@college.edu,Data Science,5,1
+211,Divya Verma,divya.verma@college.edu,AI,1,1
+212,Diya Banerjee,diya.banerjee@college.edu,AI,4,3
+213,Diya Bhat,diya.bhat@college.edu,Data Science,2,2
+214,Diya Dutta,diya.dutta@college.edu,AI,6,3
+215,Diya Joshi,diya.joshi@college.edu,AI,2,2
+216,Diya Menon,diya.menon@college.edu,Data Science,1,2
+217,Diya Patil,diya.patil@college.edu,Information Technology,6,2
+218,Diya Sharma,diya.sharma@college.edu,Data Science,2,1
+219,Diya Thakur,diya.thakur@college.edu,Information Technology,5,4
+220,Gaurav Bhat,gaurav.bhat@college.edu,AI,3,3
+221,Gaurav Bose,gaurav.bose@college.edu,AI,1,4
+222,Gaurav Chopra,gaurav.chopra@college.edu,AI,2,3
+223,Gaurav Kaur,gaurav.kaur@college.edu,Computer Science,1,2
+224,Gaurav Pandey,gaurav.pandey@college.edu,Information Technology,7,1
+225,Gaurav Patil,gaurav.patil@college.edu,Computer Science,1,4
+226,Gaurav Sethi,gaurav.sethi@college.edu,Computer Science,6,1
+227,Gaurav Singh,gaurav.singh@college.edu,Data Science,7,3
+228,Gaurav Trivedi,gaurav.trivedi@college.edu,Computer Science,8,1
+229,Harsh Arora,harsh.arora@college.edu,Data Science,6,1
+230,Harsh Bajaj,harsh.bajaj@college.edu,Data Science,3,4
+231,Harsh Banerjee,harsh.banerjee@college.edu,Computer Science,7,2
+232,Harsh Chopra,harsh.chopra@college.edu,Information Technology,8,1
+233,Harsh Iyer,harsh.iyer@college.edu,Information Technology,5,2
+234,Harsh Joshi,harsh.joshi@college.edu,Information Technology,1,3
+235,Harsh Mehta,harsh.mehta@college.edu,Information Technology,2,1
+236,Himanshu Bhat,himanshu.bhat@college.edu,Information Technology,4,4
+237,Himanshu Bhatt,himanshu.bhatt@college.edu,Computer Science,1,3
+238,Himanshu Bose,himanshu.bose@college.edu,Computer Science,8,3
+239,Himanshu Desai,himanshu.desai@college.edu,AI,1,4
+240,Himanshu Ghosh,himanshu.ghosh@college.edu,Information Technology,3,1
+241,Himanshu Jain,himanshu.jain@college.edu,Computer Science,5,1
+242,Himanshu Menon,himanshu.menon@college.edu,AI,4,3
+243,Himanshu Patil,himanshu.patil@college.edu,Information Technology,7,1
+244,Himanshu Shah,himanshu.shah@college.edu,Data Science,7,2
+245,Himanshu Shetty,himanshu.shetty@college.edu,AI,7,4
+246,Isha Bhatt,isha.bhatt@college.edu,Computer Science,8,2
+247,Isha Bose,isha.bose@college.edu,Data Science,6,1
+248,Isha Gupta,isha.gupta@college.edu,Data Science,6,3
+249,Isha Hegde,isha.hegde@college.edu,Data Science,2,4
+250,Isha Jain,isha.jain@college.edu,AI,4,1
+251,Isha Malhotra,isha.malhotra@college.edu,Computer Science,7,1
+252,Isha Menon,isha.menon@college.edu,Data Science,6,3
+253,Isha Mishra,isha.mishra@college.edu,Information Technology,8,3
+254,Isha Nair,isha.nair@college.edu,Data Science,2,2
+255,Isha Patel,isha.patel@college.edu,Data Science,5,4
+256,Isha Patil,isha.patil@college.edu,AI,2,4
+257,Isha Rao,isha.rao@college.edu,AI,6,3
+258,Isha Reddy,isha.reddy@college.edu,Computer Science,3,2
+259,Isha Trivedi,isha.trivedi@college.edu,Information Technology,8,4
+260,Ishaan Dubey,ishaan.dubey@college.edu,AI,3,3
+261,Ishaan Dutta,ishaan.dutta@college.edu,Data Science,7,1
+262,Ishaan Ghosh,ishaan.ghosh@college.edu,Computer Science,3,4
+263,Ishaan Iyer,ishaan.iyer@college.edu,Data Science,7,2
+264,Ishaan Pandey,ishaan.pandey@college.edu,Data Science,7,2
+265,Ishaan Patil,ishaan.patil@college.edu,AI,6,2
+266,Ishaan Pillai,ishaan.pillai@college.edu,Computer Science,3,1
+267,Ishaan Reddy,ishaan.reddy@college.edu,Information Technology,7,4
+268,Ishaan Shetty,ishaan.shetty@college.edu,Information Technology,4,4
+269,Ishaan Thakur,ishaan.thakur@college.edu,AI,5,1
+270,Ishaan Verma,ishaan.verma@college.edu,AI,2,4
+271,Ishita Bajaj,ishita.bajaj@college.edu,Computer Science,2,1
+272,Ishita Hegde,ishita.hegde@college.edu,Information Technology,6,1
+273,Ishita Iyer,ishita.iyer@college.edu,Information Technology,3,1
+274,Ishita Joshi,ishita.joshi@college.edu,Information Technology,3,2
+275,Ishita Mehta,ishita.mehta@college.edu,Data Science,7,4
+276,Ishita Sen,ishita.sen@college.edu,Information Technology,8,1
+277,Ishita Verma,ishita.verma@college.edu,Data Science,1,4
+278,Jyoti Banerjee,jyoti.banerjee@college.edu,Computer Science,7,2
+279,Jyoti Bhatt,jyoti.bhatt@college.edu,Data Science,5,1
+280,Jyoti Hegde,jyoti.hegde@college.edu,Computer Science,4,3
+281,Jyoti Iyer,jyoti.iyer@college.edu,Information Technology,2,2
+282,Jyoti Jain,jyoti.jain@college.edu,Information Technology,7,3
+283,Jyoti Khanna,jyoti.khanna@college.edu,Computer Science,1,4
+284,Jyoti Kumar,jyoti.kumar@college.edu,AI,1,4
+285,Jyoti Mehta,jyoti.mehta@college.edu,Computer Science,7,2
+286,Jyoti Mishra,jyoti.mishra@college.edu,AI,6,4
+287,Jyoti Mukherjee,jyoti.mukherjee@college.edu,Data Science,2,3
+288,Jyoti Shah,jyoti.shah@college.edu,Data Science,6,1
+289,Jyoti Thakur,jyoti.thakur@college.edu,Data Science,4,1
+290,Karan Arora,karan.arora@college.edu,Information Technology,1,1
+291,Karan Bajaj,karan.bajaj@college.edu,Data Science,1,2
+292,Karan Chatterjee,karan.chatterjee@college.edu,AI,5,4
+293,Karan Chauhan,karan.chauhan@college.edu,Data Science,4,3
+294,Karan Dutta,karan.dutta@college.edu,Computer Science,1,4
+295,Karan Gupta,karan.gupta@college.edu,Computer Science,4,4
+296,Karan Khanna,karan.khanna@college.edu,Information Technology,2,4
+297,Karan Kulkarni,karan.kulkarni@college.edu,Computer Science,3,1
+298,Karan Rao,karan.rao@college.edu,AI,1,3
+299,Karan Singh,karan.singh@college.edu,Data Science,5,3
+300,Kartik Bhat,kartik.bhat@college.edu,Information Technology,2,4
+301,Kartik Bose,kartik.bose@college.edu,Data Science,7,1
+302,Kartik Das,kartik.das@college.edu,Data Science,4,1
+303,Kartik Gill,kartik.gill@college.edu,AI,7,3
+304,Kartik Jain,kartik.jain@college.edu,Computer Science,6,1
+305,Kartik Malhotra,kartik.malhotra@college.edu,Computer Science,2,1
+306,Kartik Mehta,kartik.mehta@college.edu,Data Science,7,1
+307,Kartik Saxena,kartik.saxena@college.edu,Information Technology,8,2
+308,Kartik Sharma,kartik.sharma@college.edu,Computer Science,8,4
+309,Kartik Thakur,kartik.thakur@college.edu,Information Technology,1,3
+310,Kartik Tiwari,kartik.tiwari@college.edu,Computer Science,4,3
+311,Kartik Trivedi,kartik.trivedi@college.edu,Information Technology,3,2
+312,Kavya Banerjee,kavya.banerjee@college.edu,AI,2,4
+313,Kavya Chopra,kavya.chopra@college.edu,Information Technology,1,3
+314,Kavya Ghosh,kavya.ghosh@college.edu,AI,5,1
+315,Kavya Mehta,kavya.mehta@college.edu,AI,6,3
+316,Kavya Pandey,kavya.pandey@college.edu,Information Technology,4,1
+317,Kavya Singh,kavya.singh@college.edu,AI,2,2
+318,Kavya Thakur,kavya.thakur@college.edu,Data Science,8,1
+319,Kavya Tiwari,kavya.tiwari@college.edu,AI,2,3
+320,Kiara Arora,kiara.arora@college.edu,Computer Science,3,3
+321,Kiara Bajaj,kiara.bajaj@college.edu,Information Technology,8,3
+322,Kiara Bhat,kiara.bhat@college.edu,Data Science,3,2
+323,Kiara Bose,kiara.bose@college.edu,Information Technology,5,2
+324,Kiara Gupta,kiara.gupta@college.edu,Computer Science,6,4
+325,Kiara Hegde,kiara.hegde@college.edu,Computer Science,5,3
+326,Kiara Malhotra,kiara.malhotra@college.edu,Computer Science,1,1
+327,Kiara Rao,kiara.rao@college.edu,AI,1,2
+328,Kiara Sethi,kiara.sethi@college.edu,AI,5,3
+329,Kiara Singh,kiara.singh@college.edu,Information Technology,6,3
+330,Komal Arora,komal.arora@college.edu,Information Technology,5,2
+331,Komal Chatterjee,komal.chatterjee@college.edu,Data Science,6,4
+332,Komal Ghosh,komal.ghosh@college.edu,Data Science,6,2
+333,Komal Gill,komal.gill@college.edu,Information Technology,7,2
+334,Komal Gupta,komal.gupta@college.edu,AI,8,1
+335,Komal Iyer,komal.iyer@college.edu,Computer Science,4,1
+336,Komal Malhotra,komal.malhotra@college.edu,Information Technology,6,4
+337,Komal Menon,komal.menon@college.edu,Data Science,3,3
+338,Komal Mishra,komal.mishra@college.edu,AI,6,2
+339,Komal Pandey,komal.pandey@college.edu,Information Technology,6,4
+340,Komal Patel,komal.patel@college.edu,Information Technology,6,1
+341,Komal Shah,komal.shah@college.edu,AI,7,2
+342,Komal Tiwari,komal.tiwari@college.edu,Information Technology,8,3
+343,Kriti Banerjee,kriti.banerjee@college.edu,AI,7,1
+344,Kriti Chopra,kriti.chopra@college.edu,Computer Science,1,1
+345,Kriti Kaur,kriti.kaur@college.edu,AI,7,1
+346,Kriti Khanna,kriti.khanna@college.edu,AI,3,4
+347,Kriti Kumar,kriti.kumar@college.edu,AI,3,3
+348,Kriti Mishra,kriti.mishra@college.edu,Information Technology,7,2
+349,Kriti Nair,kriti.nair@college.edu,Information Technology,8,4
+350,Kriti Singh,kriti.singh@college.edu,AI,5,4
+351,Kunal Agarwal,kunal.agarwal@college.edu,Information Technology,4,4
+352,Kunal Bhat,kunal.bhat@college.edu,Data Science,8,1
+353,Kunal Das,kunal.das@college.edu,Data Science,7,3
+354,Kunal Desai,kunal.desai@college.edu,Information Technology,6,4
+355,Kunal Gill,kunal.gill@college.edu,Information Technology,2,2
+356,Kunal Jain,kunal.jain@college.edu,AI,4,3
+357,Kunal Malhotra,kunal.malhotra@college.edu,Computer Science,4,2
+358,Kunal Nair,kunal.nair@college.edu,Information Technology,3,3
+359,Kunal Sen,kunal.sen@college.edu,Data Science,4,2
+360,Lakshmi Bhatt,lakshmi.bhatt@college.edu,AI,7,1
+361,Lakshmi Hegde,lakshmi.hegde@college.edu,Information Technology,6,4
+362,Lakshmi Khanna,lakshmi.khanna@college.edu,Data Science,6,2
+363,Lakshmi Patil,lakshmi.patil@college.edu,Data Science,1,3
+364,Lakshmi Roy,lakshmi.roy@college.edu,Computer Science,6,4
+365,Lakshmi Sethi,lakshmi.sethi@college.edu,AI,8,4
+366,Lakshmi Shah,lakshmi.shah@college.edu,AI,6,3
+367,Lakshmi Thakur,lakshmi.thakur@college.edu,Computer Science,3,2
+368,Madhavi Bajaj,madhavi.bajaj@college.edu,Computer Science,6,1
+369,Madhavi Bose,madhavi.bose@college.edu,AI,1,1
+370,Madhavi Hegde,madhavi.hegde@college.edu,AI,2,2
+371,Madhavi Khanna,madhavi.khanna@college.edu,Information Technology,7,4
+372,Madhavi Mehta,madhavi.mehta@college.edu,Information Technology,3,4
+373,Madhavi Patel,madhavi.patel@college.edu,Computer Science,8,4
+374,Madhavi Shetty,madhavi.shetty@college.edu,Information Technology,2,4
+375,Madhavi Singh,madhavi.singh@college.edu,Data Science,3,2
+376,Madhavi Verma,madhavi.verma@college.edu,Information Technology,5,4
+377,Manish Banerjee,manish.banerjee@college.edu,Information Technology,4,3
+378,Manish Dubey,manish.dubey@college.edu,Data Science,5,4
+379,Manish Iyer,manish.iyer@college.edu,Computer Science,6,1
+380,Manish Menon,manish.menon@college.edu,Data Science,2,4
+381,Manish Mukherjee,manish.mukherjee@college.edu,Information Technology,6,2
+382,Manish Sethi,manish.sethi@college.edu,Computer Science,4,1
+383,Manish Shah,manish.shah@college.edu,Information Technology,3,2
+384,Manish Trivedi,manish.trivedi@college.edu,Data Science,4,2
+385,Manoj Agarwal,manoj.agarwal@college.edu,Data Science,1,1
+386,Manoj Chopra,manoj.chopra@college.edu,Information Technology,4,2
+387,Manoj Dutta,manoj.dutta@college.edu,AI,1,2
+388,Manoj Iyer,manoj.iyer@college.edu,AI,4,4
+389,Manoj Kapoor,manoj.kapoor@college.edu,Data Science,7,3
+390,Manoj Kaur,manoj.kaur@college.edu,Data Science,1,2
+391,Manoj Mehta,manoj.mehta@college.edu,AI,2,2
+392,Manoj Mishra,manoj.mishra@college.edu,AI,6,2
+393,Manoj Pandey,manoj.pandey@college.edu,Information Technology,8,4
+394,Manoj Patel,manoj.patel@college.edu,Information Technology,6,3
+395,Manoj Saxena,manoj.saxena@college.edu,AI,5,1
+396,Manoj Sen,manoj.sen@college.edu,Information Technology,6,4
+397,Manoj Thakur,manoj.thakur@college.edu,Information Technology,3,4
+398,Mansi Ghosh,mansi.ghosh@college.edu,Computer Science,7,3
+399,Mansi Joshi,mansi.joshi@college.edu,Information Technology,4,3
+400,Mansi Kumar,mansi.kumar@college.edu,Data Science,5,4
+401,Mansi Malhotra,mansi.malhotra@college.edu,Information Technology,3,1
+402,Mansi Patel,mansi.patel@college.edu,Information Technology,3,4
+403,Mansi Rao,mansi.rao@college.edu,AI,1,3
+404,Mansi Saxena,mansi.saxena@college.edu,Data Science,6,1
+405,Mansi Singh,mansi.singh@college.edu,Information Technology,2,3
+406,Mansi Trivedi,mansi.trivedi@college.edu,Information Technology,8,1
+407,Mansi Verma,mansi.verma@college.edu,Computer Science,2,2
+408,Meera Bhat,meera.bhat@college.edu,Information Technology,5,3
+409,Meera Chauhan,meera.chauhan@college.edu,Information Technology,7,3
+410,Meera Dubey,meera.dubey@college.edu,Computer Science,2,4
+411,Meera Iyer,meera.iyer@college.edu,AI,4,3
+412,Meera Kapoor,meera.kapoor@college.edu,Information Technology,2,3
+413,Meera Khanna,meera.khanna@college.edu,Computer Science,5,2
+414,Meera Pillai,meera.pillai@college.edu,Data Science,8,3
+415,Mira Arora,mira.arora@college.edu,AI,2,2
+416,Mira Bose,mira.bose@college.edu,Data Science,4,2
+417,Mira Chopra,mira.chopra@college.edu,Data Science,1,2
+418,Mira Hegde,mira.hegde@college.edu,Computer Science,7,2
+419,Mira Khanna,mira.khanna@college.edu,Information Technology,5,1
+420,Mira Mishra,mira.mishra@college.edu,Computer Science,1,4
+421,Mira Pillai,mira.pillai@college.edu,Computer Science,1,1
+422,Mira Sethi,mira.sethi@college.edu,Computer Science,1,3
+423,Mira Singh,mira.singh@college.edu,Computer Science,3,1
+424,Mohit Desai,mohit.desai@college.edu,AI,7,1
+425,Mohit Dubey,mohit.dubey@college.edu,Information Technology,8,3
+426,Mohit Ghosh,mohit.ghosh@college.edu,Data Science,6,3
+427,Mohit Mehta,mohit.mehta@college.edu,Data Science,7,3
+428,Mohit Menon,mohit.menon@college.edu,Information Technology,3,1
+429,Mohit Mishra,mohit.mishra@college.edu,Data Science,6,1
+430,Mohit Pillai,mohit.pillai@college.edu,Information Technology,7,3
+431,Mohit Tiwari,mohit.tiwari@college.edu,Data Science,1,4
+432,Naveen Banerjee,naveen.banerjee@college.edu,Computer Science,5,4
+433,Naveen Gupta,naveen.gupta@college.edu,Data Science,6,2
+434,Naveen Jain,naveen.jain@college.edu,Information Technology,4,3
+435,Naveen Kumar,naveen.kumar@college.edu,Information Technology,4,2
+436,Naveen Malhotra,naveen.malhotra@college.edu,Information Technology,2,4
+437,Naveen Mishra,naveen.mishra@college.edu,Information Technology,6,2
+438,Naveen Rao,naveen.rao@college.edu,Information Technology,5,3
+439,Neeraj Arora,neeraj.arora@college.edu,AI,8,3
+440,Neeraj Chauhan,neeraj.chauhan@college.edu,AI,3,3
+441,Neeraj Ghosh,neeraj.ghosh@college.edu,Data Science,1,1
+442,Neeraj Kaur,neeraj.kaur@college.edu,Information Technology,2,2
+443,Neeraj Khanna,neeraj.khanna@college.edu,Data Science,4,4
+444,Neeraj Pillai,neeraj.pillai@college.edu,Information Technology,3,4
+445,Neeraj Rao,neeraj.rao@college.edu,Information Technology,3,4
+446,Neeraj Singh,neeraj.singh@college.edu,AI,1,1
+447,Neeraj Verma,neeraj.verma@college.edu,AI,8,1
+448,Neha Arora,neha.arora@college.edu,Computer Science,8,3
+449,Neha Chatterjee,neha.chatterjee@college.edu,AI,6,4
+450,Neha Chauhan,neha.chauhan@college.edu,Computer Science,4,1
+451,Neha Dubey,neha.dubey@college.edu,Computer Science,8,3
+452,Neha Gupta,neha.gupta@college.edu,Computer Science,5,4
+453,Neha Iyer,neha.iyer@college.edu,Computer Science,8,2
+454,Neha Khanna,neha.khanna@college.edu,Computer Science,3,3
+455,Neha Kumar,neha.kumar@college.edu,Data Science,1,1
+456,Neha Nair,neha.nair@college.edu,AI,5,1
+457,Neha Roy,neha.roy@college.edu,Computer Science,6,3
+458,Nikhil Agarwal,nikhil.agarwal@college.edu,Information Technology,4,3
+459,Nikhil Das,nikhil.das@college.edu,AI,6,1
+460,Nikhil Ghosh,nikhil.ghosh@college.edu,AI,3,2
+461,Nikhil Jain,nikhil.jain@college.edu,Computer Science,5,4
+462,Nikhil Kapoor,nikhil.kapoor@college.edu,Data Science,5,2
+463,Nikhil Khanna,nikhil.khanna@college.edu,Computer Science,5,3
+464,Nikhil Patel,nikhil.patel@college.edu,Data Science,3,2
+465,Nikhil Pillai,nikhil.pillai@college.edu,Information Technology,3,1
+466,Nikhil Sethi,nikhil.sethi@college.edu,AI,6,3
+467,Nikhil Shetty,nikhil.shetty@college.edu,Information Technology,2,4
+468,Nikhil Trivedi,nikhil.trivedi@college.edu,Data Science,6,1
+469,Nikita Banerjee,nikita.banerjee@college.edu,Data Science,4,1
+470,Nikita Chatterjee,nikita.chatterjee@college.edu,Information Technology,1,4
+471,Nikita Chauhan,nikita.chauhan@college.edu,Data Science,5,4
+472,Nikita Das,nikita.das@college.edu,Information Technology,2,2
+473,Nikita Desai,nikita.desai@college.edu,AI,1,3
+474,Nikita Patel,nikita.patel@college.edu,Information Technology,2,4
+475,Nikita Rao,nikita.rao@college.edu,AI,8,4
+476,Nikita Saxena,nikita.saxena@college.edu,Information Technology,8,3
+477,Nikita Shah,nikita.shah@college.edu,Data Science,7,4
+478,Nikita Singh,nikita.singh@college.edu,Information Technology,8,4
+479,Nikita Thakur,nikita.thakur@college.edu,Data Science,6,2
+480,Nisha Chatterjee,nisha.chatterjee@college.edu,Information Technology,8,1
+481,Nisha Joshi,nisha.joshi@college.edu,Information Technology,3,1
+482,Nisha Kaur,nisha.kaur@college.edu,Computer Science,5,1
+483,Nisha Mehta,nisha.mehta@college.edu,Data Science,6,1
+484,Nisha Menon,nisha.menon@college.edu,Computer Science,1,4
+485,Nisha Patel,nisha.patel@college.edu,Data Science,7,3
+486,Nisha Reddy,nisha.reddy@college.edu,Computer Science,7,3
+487,Nisha Sen,nisha.sen@college.edu,AI,7,2
+488,Nisha Shetty,nisha.shetty@college.edu,Information Technology,1,2
+489,Nisha Tiwari,nisha.tiwari@college.edu,Data Science,1,4
+490,Nisha Verma,nisha.verma@college.edu,Data Science,1,3
+491,Pallavi Iyer,pallavi.iyer@college.edu,Information Technology,1,3
+492,Pallavi Kaur,pallavi.kaur@college.edu,Data Science,7,1
+493,Pallavi Khanna,pallavi.khanna@college.edu,Data Science,7,4
+494,Pallavi Nair,pallavi.nair@college.edu,Computer Science,2,4
+495,Pallavi Pillai,pallavi.pillai@college.edu,Data Science,6,1
+496,Pallavi Roy,pallavi.roy@college.edu,AI,5,4
+497,Pallavi Saxena,pallavi.saxena@college.edu,AI,8,4
+498,Pallavi Sethi,pallavi.sethi@college.edu,Information Technology,8,2
+499,Pallavi Sharma,pallavi.sharma@college.edu,Data Science,3,3
+500,Pallavi Singh,pallavi.singh@college.edu,Information Technology,7,4
+501,Pallavi Thakur,pallavi.thakur@college.edu,AI,3,2
+502,Pallavi Verma,pallavi.verma@college.edu,Data Science,6,3
+503,Parth Chatterjee,parth.chatterjee@college.edu,Data Science,6,1
+504,Parth Chauhan,parth.chauhan@college.edu,Information Technology,3,2
+505,Parth Jain,parth.jain@college.edu,AI,7,2
+506,Parth Joshi,parth.joshi@college.edu,Data Science,3,3
+507,Parth Roy,parth.roy@college.edu,Information Technology,8,1
+508,Parth Sen,parth.sen@college.edu,AI,2,2
+509,Parth Thakur,parth.thakur@college.edu,Information Technology,8,4
+510,Parth Tiwari,parth.tiwari@college.edu,Computer Science,4,4
+511,Payal Gill,payal.gill@college.edu,Data Science,7,4
+512,Payal Hegde,payal.hegde@college.edu,Computer Science,7,1
+513,Payal Khanna,payal.khanna@college.edu,AI,5,2
+514,Payal Menon,payal.menon@college.edu,Computer Science,1,4
+515,Payal Nair,payal.nair@college.edu,Computer Science,4,1
+516,Payal Pillai,payal.pillai@college.edu,AI,6,4
+517,Payal Reddy,payal.reddy@college.edu,Information Technology,7,3
+518,Payal Sethi,payal.sethi@college.edu,Computer Science,3,2
+519,Payal Shah,payal.shah@college.edu,Information Technology,4,2
+520,Pooja Chatterjee,pooja.chatterjee@college.edu,Computer Science,5,1
+521,Pooja Desai,pooja.desai@college.edu,Information Technology,6,1
+522,Pooja Dutta,pooja.dutta@college.edu,AI,1,2
+523,Pooja Hegde,pooja.hegde@college.edu,Computer Science,1,4
+524,Pooja Jain,pooja.jain@college.edu,AI,5,4
+525,Pooja Kapoor,pooja.kapoor@college.edu,Computer Science,5,3
+526,Pooja Kaur,pooja.kaur@college.edu,AI,3,4
+527,Pooja Mehta,pooja.mehta@college.edu,AI,7,1
+528,Pooja Mukherjee,pooja.mukherjee@college.edu,Computer Science,1,1
+529,Pooja Pandey,pooja.pandey@college.edu,Computer Science,6,4
+530,Pooja Reddy,pooja.reddy@college.edu,Computer Science,4,1
+531,Pradeep Agarwal,pradeep.agarwal@college.edu,Data Science,6,2
+532,Pradeep Arora,pradeep.arora@college.edu,Information Technology,2,2
+533,Pradeep Dubey,pradeep.dubey@college.edu,Data Science,2,4
+534,Pradeep Hegde,pradeep.hegde@college.edu,Data Science,5,2
+535,Pradeep Kaur,pradeep.kaur@college.edu,AI,3,2
+536,Pradeep Kumar,pradeep.kumar@college.edu,Computer Science,2,3
+537,Pradeep Mukherjee,pradeep.mukherjee@college.edu,Information Technology,1,3
+538,Pradeep Pillai,pradeep.pillai@college.edu,AI,6,2
+539,Pradeep Reddy,pradeep.reddy@college.edu,Data Science,6,4
+540,Pradeep Shah,pradeep.shah@college.edu,Computer Science,5,3
+541,Pradeep Shetty,pradeep.shetty@college.edu,AI,7,1
+542,Pradeep Tiwari,pradeep.tiwari@college.edu,Computer Science,7,1
+543,Pradeep Verma,pradeep.verma@college.edu,AI,4,1
+544,Pranav Agarwal,pranav.agarwal@college.edu,Computer Science,5,4
+545,Pranav Bose,pranav.bose@college.edu,Data Science,8,2
+546,Pranav Chauhan,pranav.chauhan@college.edu,Information Technology,4,1
+547,Pranav Ghosh,pranav.ghosh@college.edu,Data Science,8,4
+548,Pranav Mehta,pranav.mehta@college.edu,Information Technology,7,3
+549,Pranav Patel,pranav.patel@college.edu,Computer Science,5,2
+550,Pranav Singh,pranav.singh@college.edu,AI,8,3
+551,Pranav Verma,pranav.verma@college.edu,Data Science,5,4
+552,Priya Agarwal,priya.agarwal@college.edu,Information Technology,5,1
+553,Priya Bhatt,priya.bhatt@college.edu,Data Science,7,1
+554,Priya Chatterjee,priya.chatterjee@college.edu,Information Technology,4,4
+555,Priya Khanna,priya.khanna@college.edu,Data Science,4,1
+556,Priya Malhotra,priya.malhotra@college.edu,Information Technology,5,2
+557,Priya Mishra,priya.mishra@college.edu,Information Technology,2,4
+558,Priya Patel,priya.patel@college.edu,Computer Science,3,3
+559,Priya Patil,priya.patil@college.edu,Information Technology,7,4
+560,Priya Roy,priya.roy@college.edu,Computer Science,3,2
+561,Priya Sen,priya.sen@college.edu,Information Technology,3,2
+562,Priya Tiwari,priya.tiwari@college.edu,AI,4,4
+563,Priya Trivedi,priya.trivedi@college.edu,AI,4,4
+564,Rahul Bhatt,rahul.bhatt@college.edu,AI,2,1
+565,Rahul Dubey,rahul.dubey@college.edu,Information Technology,3,2
+566,Rahul Mehta,rahul.mehta@college.edu,Computer Science,3,4
+567,Rahul Mukherjee,rahul.mukherjee@college.edu,Computer Science,5,4
+568,Rahul Nair,rahul.nair@college.edu,Information Technology,4,2
+569,Rahul Saxena,rahul.saxena@college.edu,AI,3,4
+570,Rahul Shah,rahul.shah@college.edu,AI,6,1
+571,Rajesh Agarwal,rajesh.agarwal@college.edu,Computer Science,2,2
+572,Rajesh Arora,rajesh.arora@college.edu,AI,8,1
+573,Rajesh Desai,rajesh.desai@college.edu,Data Science,6,1
+574,Rajesh Gupta,rajesh.gupta@college.edu,Computer Science,6,1
+575,Rajesh Kulkarni,rajesh.kulkarni@college.edu,AI,8,1
+576,Rajesh Malhotra,rajesh.malhotra@college.edu,Computer Science,7,2
+577,Rajesh Sethi,rajesh.sethi@college.edu,Data Science,7,1
+578,Rajesh Singh,rajesh.singh@college.edu,Computer Science,2,1
+579,Rajesh Tiwari,rajesh.tiwari@college.edu,Computer Science,6,4
+580,Rajesh Verma,rajesh.verma@college.edu,Computer Science,3,2
+581,Ramesh Chatterjee,ramesh.chatterjee@college.edu,Computer Science,4,2
+582,Ramesh Chauhan,ramesh.chauhan@college.edu,Data Science,2,3
+583,Ramesh Dubey,ramesh.dubey@college.edu,Information Technology,5,2
+584,Ramesh Gupta,ramesh.gupta@college.edu,Computer Science,8,2
+585,Ramesh Iyer,ramesh.iyer@college.edu,Computer Science,6,3
+586,Ramesh Khanna,ramesh.khanna@college.edu,AI,2,2
+587,Ramesh Menon,ramesh.menon@college.edu,Computer Science,1,2
+588,Ramesh Mishra,ramesh.mishra@college.edu,AI,1,2
+589,Ramesh Patil,ramesh.patil@college.edu,Information Technology,7,2
+590,Ramesh Rao,ramesh.rao@college.edu,Data Science,8,3
+591,Ramesh Singh,ramesh.singh@college.edu,Data Science,4,2
+592,Ramesh Thakur,ramesh.thakur@college.edu,Information Technology,3,2
+593,Ramesh Tiwari,ramesh.tiwari@college.edu,Data Science,4,3
+594,Ravi Chatterjee,ravi.chatterjee@college.edu,Information Technology,4,4
+595,Ravi Chopra,ravi.chopra@college.edu,Information Technology,4,1
+596,Ravi Dubey,ravi.dubey@college.edu,Information Technology,8,4
+597,Ravi Gupta,ravi.gupta@college.edu,Data Science,4,3
+598,Ravi Patil,ravi.patil@college.edu,AI,5,1
+599,Ravi Reddy,ravi.reddy@college.edu,Information Technology,8,3
+600,Ravi Thakur,ravi.thakur@college.edu,Computer Science,5,3
+601,Rekha Banerjee,rekha.banerjee@college.edu,Data Science,8,2
+602,Rekha Chatterjee,rekha.chatterjee@college.edu,Information Technology,7,1
+603,Rekha Ghosh,rekha.ghosh@college.edu,Information Technology,2,2
+604,Rekha Gill,rekha.gill@college.edu,Computer Science,1,1
+605,Rekha Iyer,rekha.iyer@college.edu,AI,4,3
+606,Rekha Kulkarni,rekha.kulkarni@college.edu,AI,7,3
+607,Rekha Mukherjee,rekha.mukherjee@college.edu,AI,2,4
+608,Rekha Nair,rekha.nair@college.edu,Information Technology,1,1
+609,Rekha Reddy,rekha.reddy@college.edu,Information Technology,6,2
+610,Rekha Shah,rekha.shah@college.edu,Information Technology,3,4
+611,Rekha Shetty,rekha.shetty@college.edu,Data Science,5,4
+612,Rhea Agarwal,rhea.agarwal@college.edu,Computer Science,6,4
+613,Rhea Bose,rhea.bose@college.edu,Information Technology,8,2
+614,Rhea Chatterjee,rhea.chatterjee@college.edu,Computer Science,1,4
+615,Rhea Gupta,rhea.gupta@college.edu,Computer Science,6,2
+616,Rhea Mukherjee,rhea.mukherjee@college.edu,AI,3,4
+617,Rhea Nair,rhea.nair@college.edu,Data Science,7,2
+618,Rhea Sen,rhea.sen@college.edu,Information Technology,1,3
+619,Rhea Shah,rhea.shah@college.edu,AI,6,3
+620,Rhea Trivedi,rhea.trivedi@college.edu,AI,5,3
+621,Rishi Banerjee,rishi.banerjee@college.edu,Information Technology,5,3
+622,Rishi Das,rishi.das@college.edu,Computer Science,2,3
+623,Rishi Jain,rishi.jain@college.edu,AI,6,4
+624,Rishi Kaur,rishi.kaur@college.edu,Computer Science,4,4
+625,Rishi Nair,rishi.nair@college.edu,Data Science,6,4
+626,Rishi Pandey,rishi.pandey@college.edu,Computer Science,7,2
+627,Rishi Patil,rishi.patil@college.edu,Data Science,1,2
+628,Ritika Banerjee,ritika.banerjee@college.edu,Computer Science,1,2
+629,Ritika Chatterjee,ritika.chatterjee@college.edu,AI,7,2
+630,Ritika Chopra,ritika.chopra@college.edu,AI,6,3
+631,Ritika Desai,ritika.desai@college.edu,Data Science,7,3
+632,Ritika Hegde,ritika.hegde@college.edu,Information Technology,3,3
+633,Ritika Malhotra,ritika.malhotra@college.edu,Data Science,8,1
+634,Ritika Menon,ritika.menon@college.edu,Data Science,7,4
+635,Ritika Sen,ritika.sen@college.edu,Computer Science,5,2
+636,Ritika Singh,ritika.singh@college.edu,Computer Science,7,2
+637,Ritika Trivedi,ritika.trivedi@college.edu,Data Science,1,3
+638,Ritu Arora,ritu.arora@college.edu,AI,5,2
+639,Ritu Bhat,ritu.bhat@college.edu,Computer Science,1,2
+640,Ritu Joshi,ritu.joshi@college.edu,Information Technology,2,4
+641,Ritu Khanna,ritu.khanna@college.edu,Computer Science,4,3
+642,Ritu Patel,ritu.patel@college.edu,Computer Science,1,4
+643,Ritu Pillai,ritu.pillai@college.edu,Information Technology,5,1
+644,Ritu Sharma,ritu.sharma@college.edu,Data Science,2,1
+645,Ritu Tiwari,ritu.tiwari@college.edu,Information Technology,1,1
+646,Ritu Verma,ritu.verma@college.edu,Data Science,3,3
+647,Rohan Bhat,rohan.bhat@college.edu,Data Science,7,2
+648,Rohan Bhatt,rohan.bhatt@college.edu,Data Science,4,3
+649,Rohan Dutta,rohan.dutta@college.edu,Information Technology,1,3
+650,Rohan Joshi,rohan.joshi@college.edu,Data Science,2,2
+651,Rohan Kumar,rohan.kumar@college.edu,AI,3,4
+652,Rohan Malhotra,rohan.malhotra@college.edu,Information Technology,6,1
+653,Rohan Pillai,rohan.pillai@college.edu,AI,2,4
+654,Rohan Sen,rohan.sen@college.edu,Data Science,7,1
+655,Rohan Singh,rohan.singh@college.edu,Computer Science,2,3
+656,Rohan Thakur,rohan.thakur@college.edu,Data Science,3,1
+657,Rohan Tiwari,rohan.tiwari@college.edu,AI,2,3
+658,Roshni Agarwal,roshni.agarwal@college.edu,AI,3,4
+659,Roshni Bhat,roshni.bhat@college.edu,Information Technology,1,3
+660,Roshni Chauhan,roshni.chauhan@college.edu,Computer Science,8,4
+661,Roshni Desai,roshni.desai@college.edu,Information Technology,3,2
+662,Roshni Iyer,roshni.iyer@college.edu,AI,3,2
+663,Roshni Khanna,roshni.khanna@college.edu,Data Science,4,2
+664,Roshni Nair,roshni.nair@college.edu,Computer Science,3,3
+665,Roshni Rao,roshni.rao@college.edu,Data Science,3,2
+666,Roshni Reddy,roshni.reddy@college.edu,Data Science,6,1
+667,Saanvi Arora,saanvi.arora@college.edu,Computer Science,8,4
+668,Saanvi Bhat,saanvi.bhat@college.edu,Information Technology,1,4
+669,Saanvi Desai,saanvi.desai@college.edu,Data Science,7,1
+670,Saanvi Ghosh,saanvi.ghosh@college.edu,AI,4,3
+671,Saanvi Gill,saanvi.gill@college.edu,Data Science,6,3
+672,Saanvi Iyer,saanvi.iyer@college.edu,Computer Science,5,4
+673,Saanvi Kumar,saanvi.kumar@college.edu,Computer Science,8,2
+674,Saanvi Pandey,saanvi.pandey@college.edu,Computer Science,1,3
+675,Saanvi Patel,saanvi.patel@college.edu,Information Technology,1,3
+676,Saanvi Rao,saanvi.rao@college.edu,Data Science,5,1
+677,Saanvi Saxena,saanvi.saxena@college.edu,Information Technology,7,1
+678,Saanvi Sen,saanvi.sen@college.edu,Information Technology,3,2
+679,Saanvi Thakur,saanvi.thakur@college.edu,Computer Science,6,3
+680,Sachin Banerjee,sachin.banerjee@college.edu,Computer Science,2,3
+681,Sachin Desai,sachin.desai@college.edu,Information Technology,4,1
+682,Sachin Hegde,sachin.hegde@college.edu,Data Science,2,3
+683,Sachin Jain,sachin.jain@college.edu,AI,5,4
+684,Sachin Joshi,sachin.joshi@college.edu,Information Technology,1,1
+685,Sachin Kulkarni,sachin.kulkarni@college.edu,Data Science,7,2
+686,Sachin Pandey,sachin.pandey@college.edu,Computer Science,1,1
+687,Sachin Patel,sachin.patel@college.edu,Computer Science,4,3
+688,Sachin Reddy,sachin.reddy@college.edu,Data Science,1,2
+689,Sachin Singh,sachin.singh@college.edu,AI,1,1
+690,Sahil Chauhan,sahil.chauhan@college.edu,Computer Science,4,4
+691,Sahil Das,sahil.das@college.edu,Computer Science,6,4
+692,Sahil Gupta,sahil.gupta@college.edu,Computer Science,6,1
+693,Sahil Kaur,sahil.kaur@college.edu,Data Science,4,4
+694,Sahil Kumar,sahil.kumar@college.edu,Information Technology,7,4
+695,Sahil Malhotra,sahil.malhotra@college.edu,Computer Science,5,4
+696,Sahil Nair,sahil.nair@college.edu,Information Technology,8,2
+697,Sahil Patil,sahil.patil@college.edu,AI,1,4
+698,Sahil Pillai,sahil.pillai@college.edu,Computer Science,7,4
+699,Sahil Shetty,sahil.shetty@college.edu,Computer Science,1,4
+700,Sahil Singh,sahil.singh@college.edu,AI,8,2
+701,Sahil Trivedi,sahil.trivedi@college.edu,Computer Science,5,1
+702,Sandeep Dubey,sandeep.dubey@college.edu,Information Technology,6,3
+703,Sandeep Ghosh,sandeep.ghosh@college.edu,Data Science,7,4
+704,Sandeep Mukherjee,sandeep.mukherjee@college.edu,Information Technology,3,1
+705,Sandeep Patel,sandeep.patel@college.edu,Data Science,3,4
+706,Sandeep Rao,sandeep.rao@college.edu,Data Science,8,2
+707,Sandeep Roy,sandeep.roy@college.edu,Information Technology,3,1
+708,Sandeep Sharma,sandeep.sharma@college.edu,Information Technology,6,2
+709,Sanya Arora,sanya.arora@college.edu,Information Technology,8,4
+710,Sanya Bajaj,sanya.bajaj@college.edu,Information Technology,6,4
+711,Sanya Bose,sanya.bose@college.edu,AI,5,2
+712,Sanya Das,sanya.das@college.edu,Computer Science,1,3
+713,Sanya Dutta,sanya.dutta@college.edu,Data Science,5,2
+714,Sanya Iyer,sanya.iyer@college.edu,Information Technology,5,4
+715,Sanya Joshi,sanya.joshi@college.edu,Information Technology,6,2
+716,Sanya Kulkarni,sanya.kulkarni@college.edu,Information Technology,8,3
+717,Sanya Mukherjee,sanya.mukherjee@college.edu,AI,8,2
+718,Sanya Patil,sanya.patil@college.edu,Information Technology,3,3
+719,Sanya Pillai,sanya.pillai@college.edu,Information Technology,2,3
+720,Sanya Sethi,sanya.sethi@college.edu,Information Technology,1,2
+721,Shalini Agarwal,shalini.agarwal@college.edu,Computer Science,6,2
+722,Shalini Bajaj,shalini.bajaj@college.edu,AI,3,1
+723,Shalini Bhatt,shalini.bhatt@college.edu,Information Technology,7,4
+724,Shalini Das,shalini.das@college.edu,Data Science,2,3
+725,Shalini Dutta,shalini.dutta@college.edu,Data Science,2,1
+726,Shalini Ghosh,shalini.ghosh@college.edu,Data Science,6,2
+727,Shalini Gill,shalini.gill@college.edu,AI,4,4
+728,Shalini Iyer,shalini.iyer@college.edu,AI,1,1
+729,Shalini Menon,shalini.menon@college.edu,Data Science,2,3
+730,Shalini Mishra,shalini.mishra@college.edu,Information Technology,6,1
+731,Shalini Pandey,shalini.pandey@college.edu,AI,6,3
+732,Shalini Patel,shalini.patel@college.edu,Data Science,3,2
+733,Shalini Rao,shalini.rao@college.edu,Data Science,7,4
+734,Shalini Reddy,shalini.reddy@college.edu,Information Technology,4,4
+735,Shalini Shah,shalini.shah@college.edu,Computer Science,1,4
+736,Shalini Verma,shalini.verma@college.edu,AI,8,2
+737,Shreya Chopra,shreya.chopra@college.edu,Information Technology,5,3
+738,Shreya Das,shreya.das@college.edu,Data Science,7,2
+739,Shreya Kaur,shreya.kaur@college.edu,Data Science,7,4
+740,Shreya Kulkarni,shreya.kulkarni@college.edu,Information Technology,3,2
+741,Shreya Mukherjee,shreya.mukherjee@college.edu,AI,8,2
+742,Shreya Tiwari,shreya.tiwari@college.edu,Computer Science,2,2
+743,Shreya Verma,shreya.verma@college.edu,Computer Science,2,3
+744,Shweta Bhatt,shweta.bhatt@college.edu,Data Science,3,1
+745,Shweta Dutta,shweta.dutta@college.edu,AI,6,1
+746,Shweta Gupta,shweta.gupta@college.edu,Computer Science,2,2
+747,Shweta Iyer,shweta.iyer@college.edu,AI,4,1
+748,Shweta Kaur,shweta.kaur@college.edu,AI,1,1
+749,Shweta Malhotra,shweta.malhotra@college.edu,Data Science,7,2
+750,Shweta Mishra,shweta.mishra@college.edu,Computer Science,7,2
+751,Shweta Nair,shweta.nair@college.edu,Information Technology,4,4
+752,Shweta Patel,shweta.patel@college.edu,Data Science,8,1
+753,Shweta Patil,shweta.patil@college.edu,Computer Science,2,3
+754,Shweta Rao,shweta.rao@college.edu,Computer Science,7,2
+755,Shweta Sharma,shweta.sharma@college.edu,Computer Science,5,4
+756,Siddharth Arora,siddharth.arora@college.edu,Computer Science,8,3
+757,Siddharth Bajaj,siddharth.bajaj@college.edu,Computer Science,1,1
+758,Siddharth Banerjee,siddharth.banerjee@college.edu,AI,1,4
+759,Siddharth Chauhan,siddharth.chauhan@college.edu,Data Science,7,2
+760,Siddharth Chopra,siddharth.chopra@college.edu,AI,3,3
+761,Siddharth Ghosh,siddharth.ghosh@college.edu,Information Technology,8,2
+762,Siddharth Iyer,siddharth.iyer@college.edu,Computer Science,7,1
+763,Siddharth Joshi,siddharth.joshi@college.edu,Data Science,3,3
+764,Siddharth Kapoor,siddharth.kapoor@college.edu,Computer Science,7,1
+765,Siddharth Kulkarni,siddharth.kulkarni@college.edu,Data Science,5,1
+766,Siddharth Malhotra,siddharth.malhotra@college.edu,AI,8,4
+767,Siddharth Menon,siddharth.menon@college.edu,Data Science,6,2
+768,Siddharth Saxena,siddharth.saxena@college.edu,Information Technology,1,3
+769,Siddharth Sen,siddharth.sen@college.edu,Information Technology,7,1
+770,Siddharth Verma,siddharth.verma@college.edu,Data Science,5,1
+771,Simran Banerjee,simran.banerjee@college.edu,Data Science,3,3
+772,Simran Chatterjee,simran.chatterjee@college.edu,Data Science,3,1
+773,Simran Chopra,simran.chopra@college.edu,Data Science,1,4
+774,Simran Das,simran.das@college.edu,Information Technology,4,4
+775,Simran Dutta,simran.dutta@college.edu,Computer Science,7,4
+776,Simran Joshi,simran.joshi@college.edu,Data Science,8,4
+777,Simran Kumar,simran.kumar@college.edu,Data Science,2,1
+778,Simran Malhotra,simran.malhotra@college.edu,Information Technology,3,3
+779,Simran Pandey,simran.pandey@college.edu,Information Technology,8,3
+780,Simran Patil,simran.patil@college.edu,AI,8,3
+781,Simran Saxena,simran.saxena@college.edu,Data Science,6,3
+782,Sneha Bhatt,sneha.bhatt@college.edu,AI,8,2
+783,Sneha Dubey,sneha.dubey@college.edu,Information Technology,8,3
+784,Sneha Dutta,sneha.dutta@college.edu,Information Technology,6,2
+785,Sneha Iyer,sneha.iyer@college.edu,Computer Science,3,2
+786,Sneha Kumar,sneha.kumar@college.edu,Data Science,8,4
+787,Sneha Malhotra,sneha.malhotra@college.edu,AI,4,2
+788,Sneha Nair,sneha.nair@college.edu,Information Technology,4,1
+789,Sneha Patel,sneha.patel@college.edu,Information Technology,5,2
+790,Sneha Patil,sneha.patil@college.edu,AI,6,4
+791,Sneha Roy,sneha.roy@college.edu,Computer Science,5,2
+792,Sneha Sharma,sneha.sharma@college.edu,Information Technology,6,1
+793,Sneha Thakur,sneha.thakur@college.edu,Data Science,7,1
+794,Sneha Tiwari,sneha.tiwari@college.edu,Information Technology,7,1
+795,Sonali Gill,sonali.gill@college.edu,Data Science,8,4
+796,Sonali Kaur,sonali.kaur@college.edu,AI,2,4
+797,Sonali Kumar,sonali.kumar@college.edu,Data Science,7,3
+798,Sonali Malhotra,sonali.malhotra@college.edu,AI,2,4
+799,Sonali Pandey,sonali.pandey@college.edu,Data Science,7,1
+800,Sonali Patel,sonali.patel@college.edu,AI,1,1
+801,Sonali Sethi,sonali.sethi@college.edu,Data Science,7,4
+802,Sonali Sharma,sonali.sharma@college.edu,Computer Science,5,2
+803,Sonali Tiwari,sonali.tiwari@college.edu,Data Science,3,4
+804,Sonali Verma,sonali.verma@college.edu,Data Science,8,4
+805,Suhani Bajaj,suhani.bajaj@college.edu,Computer Science,5,1
+806,Suhani Chatterjee,suhani.chatterjee@college.edu,Information Technology,3,3
+807,Suhani Chauhan,suhani.chauhan@college.edu,Information Technology,4,1
+808,Suhani Dubey,suhani.dubey@college.edu,Data Science,5,3
+809,Suhani Gupta,suhani.gupta@college.edu,Computer Science,4,1
+810,Suhani Hegde,suhani.hegde@college.edu,Data Science,2,4
+811,Suhani Khanna,suhani.khanna@college.edu,AI,2,1
+812,Suhani Kumar,suhani.kumar@college.edu,AI,1,1
+813,Suhani Pandey,suhani.pandey@college.edu,Data Science,7,1
+814,Suhani Patil,suhani.patil@college.edu,Information Technology,5,4
+815,Suhani Sethi,suhani.sethi@college.edu,Information Technology,4,4
+816,Sunil Chatterjee,sunil.chatterjee@college.edu,Data Science,3,4
+817,Sunil Chopra,sunil.chopra@college.edu,Data Science,2,4
+818,Sunil Desai,sunil.desai@college.edu,AI,7,3
+819,Sunil Dubey,sunil.dubey@college.edu,Information Technology,2,3
+820,Sunil Gill,sunil.gill@college.edu,Data Science,3,2
+821,Sunil Kapoor,sunil.kapoor@college.edu,AI,7,4
+822,Sunil Malhotra,sunil.malhotra@college.edu,Information Technology,7,3
+823,Sunil Nair,sunil.nair@college.edu,Computer Science,4,1
+824,Sunil Pillai,sunil.pillai@college.edu,AI,4,4
+825,Sunil Roy,sunil.roy@college.edu,Information Technology,5,2
+826,Suresh Bajaj,suresh.bajaj@college.edu,Information Technology,5,2
+827,Suresh Dubey,suresh.dubey@college.edu,AI,6,2
+828,Suresh Gupta,suresh.gupta@college.edu,Computer Science,8,1
+829,Suresh Kaur,suresh.kaur@college.edu,AI,6,3
+830,Suresh Mukherjee,suresh.mukherjee@college.edu,Information Technology,1,1
+831,Suresh Patel,suresh.patel@college.edu,Data Science,2,4
+832,Suresh Sharma,suresh.sharma@college.edu,Data Science,5,2
+833,Suresh Thakur,suresh.thakur@college.edu,AI,4,1
+834,Suresh Tiwari,suresh.tiwari@college.edu,Information Technology,3,1
+835,Swati Agarwal,swati.agarwal@college.edu,Data Science,4,3
+836,Swati Arora,swati.arora@college.edu,Information Technology,2,3
+837,Swati Banerjee,swati.banerjee@college.edu,AI,6,2
+838,Swati Bose,swati.bose@college.edu,Data Science,4,1
+839,Swati Das,swati.das@college.edu,Information Technology,8,1
+840,Swati Dubey,swati.dubey@college.edu,Data Science,1,3
+841,Swati Iyer,swati.iyer@college.edu,AI,2,1
+842,Swati Joshi,swati.joshi@college.edu,Information Technology,6,1
+843,Swati Khanna,swati.khanna@college.edu,Data Science,8,1
+844,Swati Mishra,swati.mishra@college.edu,AI,3,3
+845,Swati Patel,swati.patel@college.edu,Data Science,6,2
+846,Swati Patil,swati.patil@college.edu,Data Science,7,4
+847,Swati Shah,swati.shah@college.edu,Computer Science,8,2
+848,Swati Sharma,swati.sharma@college.edu,Computer Science,8,4
+849,Swati Thakur,swati.thakur@college.edu,AI,1,1
+850,Tanvi Bhat,tanvi.bhat@college.edu,Computer Science,2,2
+851,Tanvi Desai,tanvi.desai@college.edu,AI,3,4
+852,Tanvi Ghosh,tanvi.ghosh@college.edu,Computer Science,1,3
+853,Tanvi Gill,tanvi.gill@college.edu,Data Science,6,3
+854,Tanvi Hegde,tanvi.hegde@college.edu,AI,1,2
+855,Tanvi Kaur,tanvi.kaur@college.edu,AI,8,2
+856,Tanvi Tiwari,tanvi.tiwari@college.edu,Data Science,2,1
+857,Tanya Bajaj,tanya.bajaj@college.edu,AI,5,2
+858,Tanya Desai,tanya.desai@college.edu,AI,1,1
+859,Tanya Dubey,tanya.dubey@college.edu,Computer Science,7,1
+860,Tanya Kaur,tanya.kaur@college.edu,AI,1,3
+861,Tanya Mishra,tanya.mishra@college.edu,Information Technology,6,3
+862,Tanya Pandey,tanya.pandey@college.edu,Data Science,6,4
+863,Tanya Rao,tanya.rao@college.edu,Computer Science,3,3
+864,Tanya Sethi,tanya.sethi@college.edu,Computer Science,6,3
+865,Tanya Thakur,tanya.thakur@college.edu,Information Technology,4,2
+866,Tarun Banerjee,tarun.banerjee@college.edu,Data Science,2,3
+867,Tarun Desai,tarun.desai@college.edu,Data Science,2,4
+868,Tarun Patel,tarun.patel@college.edu,Computer Science,5,2
+869,Tarun Sharma,tarun.sharma@college.edu,AI,5,4
+870,Tarun Shetty,tarun.shetty@college.edu,Computer Science,2,3
+871,Tarun Verma,tarun.verma@college.edu,Data Science,7,4
+872,Trisha Jain,trisha.jain@college.edu,Information Technology,5,2
+873,Trisha Khanna,trisha.khanna@college.edu,Computer Science,3,1
+874,Trisha Kulkarni,trisha.kulkarni@college.edu,Data Science,6,4
+875,Trisha Pandey,trisha.pandey@college.edu,Computer Science,2,4
+876,Trisha Pillai,trisha.pillai@college.edu,AI,8,2
+877,Trisha Rao,trisha.rao@college.edu,Computer Science,5,2
+878,Trisha Shetty,trisha.shetty@college.edu,Computer Science,2,4
+879,Trisha Tiwari,trisha.tiwari@college.edu,Data Science,4,3
+880,Tushar Bajaj,tushar.bajaj@college.edu,Data Science,1,4
+881,Tushar Bhat,tushar.bhat@college.edu,Data Science,6,2
+882,Tushar Hegde,tushar.hegde@college.edu,Computer Science,2,1
+883,Tushar Joshi,tushar.joshi@college.edu,AI,1,1
+884,Tushar Kumar,tushar.kumar@college.edu,Information Technology,5,3
+885,Tushar Patil,tushar.patil@college.edu,Information Technology,1,4
+886,Tushar Rao,tushar.rao@college.edu,Data Science,6,1
+887,Tushar Reddy,tushar.reddy@college.edu,Data Science,2,4
+888,Tushar Saxena,tushar.saxena@college.edu,Computer Science,4,2
+889,Tushar Sen,tushar.sen@college.edu,Information Technology,7,1
+890,Tushar Shetty,tushar.shetty@college.edu,Data Science,5,3
+891,Uma Dutta,uma.dutta@college.edu,AI,2,2
+892,Uma Gill,uma.gill@college.edu,AI,6,3
+893,Uma Gupta,uma.gupta@college.edu,Data Science,5,2
+894,Uma Khanna,uma.khanna@college.edu,Data Science,3,1
+895,Uma Pandey,uma.pandey@college.edu,Information Technology,1,3
+896,Uma Saxena,uma.saxena@college.edu,Information Technology,7,3
+897,Uma Shah,uma.shah@college.edu,Computer Science,6,2
+898,Uma Sharma,uma.sharma@college.edu,Information Technology,3,3
+899,Uma Shetty,uma.shetty@college.edu,AI,8,2
+900,Uma Singh,uma.singh@college.edu,AI,2,2
+901,Varsha Agarwal,varsha.agarwal@college.edu,Data Science,4,2
+902,Varsha Bhat,varsha.bhat@college.edu,Information Technology,5,2
+903,Varsha Chatterjee,varsha.chatterjee@college.edu,Computer Science,1,1
+904,Varsha Das,varsha.das@college.edu,AI,5,2
+905,Varsha Dubey,varsha.dubey@college.edu,AI,7,4
+906,Varsha Kapoor,varsha.kapoor@college.edu,Computer Science,2,3
+907,Varsha Khanna,varsha.khanna@college.edu,Computer Science,5,4
+908,Varsha Singh,varsha.singh@college.edu,AI,1,1
+909,Varsha Thakur,varsha.thakur@college.edu,AI,2,4
+910,Varun Bhatt,varun.bhatt@college.edu,Computer Science,5,3
+911,Varun Bose,varun.bose@college.edu,AI,4,4
+912,Varun Chatterjee,varun.chatterjee@college.edu,Data Science,6,1
+913,Varun Chopra,varun.chopra@college.edu,Data Science,2,2
+914,Varun Dutta,varun.dutta@college.edu,Computer Science,6,4
+915,Varun Ghosh,varun.ghosh@college.edu,Information Technology,8,1
+916,Varun Gupta,varun.gupta@college.edu,Computer Science,2,1
+917,Varun Iyer,varun.iyer@college.edu,Computer Science,4,3
+918,Varun Joshi,varun.joshi@college.edu,Information Technology,6,3
+919,Varun Kaur,varun.kaur@college.edu,Information Technology,3,4
+920,Varun Shetty,varun.shetty@college.edu,Information Technology,1,2
+921,Vijay Arora,vijay.arora@college.edu,Data Science,3,1
+922,Vijay Bajaj,vijay.bajaj@college.edu,AI,5,4
+923,Vijay Bhatt,vijay.bhatt@college.edu,Data Science,4,1
+924,Vijay Ghosh,vijay.ghosh@college.edu,AI,3,1
+925,Vijay Iyer,vijay.iyer@college.edu,Data Science,2,2
+926,Vijay Joshi,vijay.joshi@college.edu,AI,5,2
+927,Vijay Kapoor,vijay.kapoor@college.edu,Data Science,5,4
+928,Vijay Mukherjee,vijay.mukherjee@college.edu,Information Technology,3,2
+929,Vijay Nair,vijay.nair@college.edu,Computer Science,8,2
+930,Vijay Pillai,vijay.pillai@college.edu,Data Science,3,4
+931,Vijay Reddy,vijay.reddy@college.edu,AI,8,2
+932,Vijay Saxena,vijay.saxena@college.edu,Information Technology,4,3
+933,Vijay Tiwari,vijay.tiwari@college.edu,Data Science,1,1
+934,Vijay Trivedi,vijay.trivedi@college.edu,Data Science,3,1
+935,Vikram Arora,vikram.arora@college.edu,Information Technology,7,1
+936,Vikram Banerjee,vikram.banerjee@college.edu,Data Science,8,1
+937,Vikram Desai,vikram.desai@college.edu,Computer Science,3,4
+938,Vikram Gupta,vikram.gupta@college.edu,Data Science,6,1
+939,Vikram Kapoor,vikram.kapoor@college.edu,Computer Science,2,1
+940,Vikram Kumar,vikram.kumar@college.edu,Computer Science,7,1
+941,Vikram Mukherjee,vikram.mukherjee@college.edu,Information Technology,7,1
+942,Vikram Roy,vikram.roy@college.edu,Data Science,8,3
+943,Vikram Shetty,vikram.shetty@college.edu,Information Technology,6,1
+944,Vikram Singh,vikram.singh@college.edu,Data Science,6,3
+945,Vinay Das,vinay.das@college.edu,Data Science,5,4
+946,Vinay Iyer,vinay.iyer@college.edu,AI,8,2
+947,Vinay Pandey,vinay.pandey@college.edu,Data Science,1,1
+948,Vinay Shah,vinay.shah@college.edu,Information Technology,2,2
+949,Vishal Banerjee,vishal.banerjee@college.edu,Computer Science,4,2
+950,Vishal Dutta,vishal.dutta@college.edu,Data Science,7,4
+951,Vishal Kapoor,vishal.kapoor@college.edu,AI,4,2
+952,Vishal Kaur,vishal.kaur@college.edu,Information Technology,3,3
+953,Vishal Kulkarni,vishal.kulkarni@college.edu,Data Science,3,2
+954,Vishal Malhotra,vishal.malhotra@college.edu,Information Technology,4,2
+955,Vishal Mehta,vishal.mehta@college.edu,AI,3,2
+956,Vishal Pillai,vishal.pillai@college.edu,AI,1,1
+957,Vishal Roy,vishal.roy@college.edu,Information Technology,6,1
+958,Vishal Sen,vishal.sen@college.edu,Data Science,3,3
+959,Vishal Verma,vishal.verma@college.edu,Computer Science,5,3
+960,Vivek Bhat,vivek.bhat@college.edu,AI,3,1
+961,Vivek Bhatt,vivek.bhatt@college.edu,Data Science,2,3
+962,Vivek Das,vivek.das@college.edu,Data Science,1,1
+963,Vivek Ghosh,vivek.ghosh@college.edu,Computer Science,2,4
+964,Vivek Gill,vivek.gill@college.edu,AI,2,2
+965,Vivek Hegde,vivek.hegde@college.edu,AI,5,2
+966,Vivek Kapoor,vivek.kapoor@college.edu,Data Science,1,3
+967,Vivek Malhotra,vivek.malhotra@college.edu,Data Science,1,1
+968,Vivek Shah,vivek.shah@college.edu,Computer Science,8,1
+969,Vivek Shetty,vivek.shetty@college.edu,Computer Science,1,3
+970,Vivek Tiwari,vivek.tiwari@college.edu,AI,1,1
+971,Yamini Banerjee,yamini.banerjee@college.edu,Information Technology,1,4
+972,Yamini Bose,yamini.bose@college.edu,AI,5,2
+973,Yamini Desai,yamini.desai@college.edu,Data Science,3,3
+974,Yamini Ghosh,yamini.ghosh@college.edu,AI,8,3
+975,Yamini Joshi,yamini.joshi@college.edu,Information Technology,2,1
+976,Yamini Kulkarni,yamini.kulkarni@college.edu,Computer Science,1,3
+977,Yamini Malhotra,yamini.malhotra@college.edu,Information Technology,7,4
+978,Yamini Mishra,yamini.mishra@college.edu,Information Technology,3,1
+979,Yamini Pillai,yamini.pillai@college.edu,Information Technology,3,1
+980,Yamini Trivedi,yamini.trivedi@college.edu,Computer Science,2,1
+981,Yash Arora,yash.arora@college.edu,Information Technology,5,1
+982,Yash Banerjee,yash.banerjee@college.edu,Information Technology,4,4
+983,Yash Ghosh,yash.ghosh@college.edu,Information Technology,4,1
+984,Yash Gill,yash.gill@college.edu,Data Science,3,3
+985,Yash Iyer,yash.iyer@college.edu,Information Technology,6,4
+986,Yash Khanna,yash.khanna@college.edu,Computer Science,6,2
+987,Yash Menon,yash.menon@college.edu,Information Technology,2,2
+988,Yash Pandey,yash.pandey@college.edu,Information Technology,4,3
+989,Yash Trivedi,yash.trivedi@college.edu,Computer Science,3,3
+990,Zara Agarwal,zara.agarwal@college.edu,Information Technology,5,4
+991,Zara Bajaj,zara.bajaj@college.edu,Computer Science,4,2
+992,Zara Dubey,zara.dubey@college.edu,Information Technology,3,2
+993,Zara Gupta,zara.gupta@college.edu,Computer Science,3,2
+994,Zara Iyer,zara.iyer@college.edu,Information Technology,1,2
+995,Zara Kulkarni,zara.kulkarni@college.edu,Information Technology,5,2
+996,Zara Mishra,zara.mishra@college.edu,Data Science,1,1
+997,Zara Pandey,zara.pandey@college.edu,Data Science,2,3
+998,Zara Pillai,zara.pillai@college.edu,Information Technology,1,1
+999,Zara Rao,zara.rao@college.edu,Information Technology,7,2
+1000,Zara Reddy,zara.reddy@college.edu,AI,1,4
