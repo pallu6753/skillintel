@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { useAuth } from "@/lib/auth-context";
-import { UserRole } from "@/lib/mock-data";
+import { useAuth, UserRole } from "@/lib/auth-context";
 import { cn } from "@/lib/utils";
 import {
   LayoutDashboard, BookOpen, Brain, Users, Bell, Settings,

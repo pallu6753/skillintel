@@ -23,8 +23,8 @@ export default function SkillGap() {
     );
   }
 
-  const student = user?.studentId
-    ? data.students.find((s) => s.id === user.studentId) ?? data.students[0]
+  const student = user?.profileId
+    ? data.students.find((s) => s.id === user.profileId) ?? data.students[0]
     : data.students[0];
 
   const studentSkillNames = student.skills.map((s) => s.name);

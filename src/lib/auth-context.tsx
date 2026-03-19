@@ -1,65 +1,125 @@
-import React, { createContext, useContext, useState, useCallback } from "react";
-import { UserRole } from "./mock-data";
+import React, { createContext, useContext, useState, useEffect, useCallback } from "react";
+import { supabase } from "@/integrations/supabase/client";
+import type { User, Session } from "@supabase/supabase-js";
+
+export type UserRole = "student" | "faculty" | "placement" | "admin";
 
 interface AuthUser {
+  id: string;
   name: string;
   email: string;
   role: UserRole;
-  studentId?: string;
+  profileId?: string;
 }
-
-// Demo student accounts mapped to dataset student_ids
-const DEMO_STUDENTS: Record<string, { name: string; studentId: string }> = {
-  "topper@skillintel.com": { name: "Aarav Chatterjee", studentId: "3" },
-  "intermediate@skillintel.com": { name: "Aarav Mehta", studentId: "9" },
-  "lowstudent@skillintel.com": { name: "Aarav Sharma", studentId: "13" },
-};
 
 interface AuthContextType {
   user: AuthUser | null;
-  login: (email: string, password: string, role: UserRole) => boolean;
-  logout: () => void;
+  session: Session | null;
+  login: (email: string, password: string, role: UserRole) => Promise<{ error: string | null }>;
+  signup: (email: string, password: string, fullName: string, role: UserRole) => Promise<{ error: string | null }>;
+  logout: () => Promise<void>;
   isAuthenticated: boolean;
+  loading: boolean;
 }
 
 const AuthContext = createContext<AuthContextType | null>(null);
 
+async function fetchUserRole(userId: string): Promise<UserRole> {
+  const { data } = await supabase
+    .from("user_roles")
+    .select("role")
+    .eq("user_id", userId)
+    .maybeSingle();
+  return (data?.role as UserRole) ?? "student";
+}
+
+async function fetchProfile(userId: string) {
+  const { data } = await supabase
+    .from("profiles")
+    .select("id, full_name, email")
+    .eq("user_id", userId)
+    .maybeSingle();
+  return data;
+}
+
+async function buildAuthUser(supaUser: User): Promise<AuthUser> {
+  const [role, profile] = await Promise.all([
+    fetchUserRole(supaUser.id),
+    fetchProfile(supaUser.id),
+  ]);
+  return {
+    id: supaUser.id,
+    name: profile?.full_name ?? supaUser.email?.split("@")[0] ?? "User",
+    email: supaUser.email ?? "",
+    role,
+    profileId: profile?.id,
+  };
+}
+
 export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<AuthUser | null>(null);
+  const [session, setSession] = useState<Session | null>(null);
+  const [loading, setLoading] = useState(true);
 
-  const login = useCallback((email: string, _password: string, role: UserRole) => {
-    const defaultNames: Record<UserRole, string> = {
-      student: "Aarav Sharma",
-      faculty: "Dr. Meera Iyer",
-      placement: "Placement Officer",
-      admin: "Admin User",
-    };
+  useEffect(() => {
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(
+      async (_event, newSession) => {
+        setSession(newSession);
+        if (newSession?.user) {
+          const authUser = await buildAuthUser(newSession.user);
+          setUser(authUser);
+        } else {
+          setUser(null);
+        }
+        setLoading(false);
+      }
+    );
 
-    const normalizedEmail = email?.toLowerCase() || "demo@college.edu";
-    const demoStudent = DEMO_STUDENTS[normalizedEmail];
+    supabase.auth.getSession().then(async ({ data: { session: s } }) => {
+      setSession(s);
+      if (s?.user) {
+        const authUser = await buildAuthUser(s.user);
+        setUser(authUser);
+      }
+      setLoading(false);
+    });
 
-    let name = defaultNames[role];
-    let studentId: string | undefined;
-
-    if (demoStudent) {
-      name = demoStudent.name;
-      studentId = demoStudent.studentId;
-      role = "student"; // force student role for demo accounts
-    } else if (email && email !== "demo@college.edu") {
-      const localPart = email.split("@")[0];
-      name = localPart
-        .replace(/[._-]/g, " ")
-        .replace(/\b\w/g, (c) => c.toUpperCase());
-    }
-
-    setUser({ name, email: normalizedEmail, role, studentId });
-    return true;
+    return () => subscription.unsubscribe();
   }, []);
 
-  const logout = useCallback(() => setUser(null), []);
+  const login = useCallback(async (email: string, password: string, _role: UserRole) => {
+    const { error } = await supabase.auth.signInWithPassword({ email, password });
+    if (error) return { error: error.message };
+    return { error: null };
+  }, []);
+
+  const signup = useCallback(async (email: string, password: string, fullName: string, role: UserRole) => {
+    const { data, error } = await supabase.auth.signUp({
+      email,
+      password,
+      options: { data: { full_name: fullName } },
+    });
+    if (error) return { error: error.message };
+
+    // Assign role
+    if (data.user) {
+      await supabase.rpc("assign_role_on_signup" as any, {
+        _user_id: data.user.id,
+        _role: role,
+      });
+    }
+
+    return { error: null };
+  }, []);
+
+  const logout = useCallback(async () => {
+    await supabase.auth.signOut();
+    setUser(null);
+    setSession(null);
+  }, []);
 
   return (
-    <AuthContext.Provider value={{ user, login, logout, isAuthenticated: !!user }}>
+    <AuthContext.Provider value={{ user, session, login, signup, logout, isAuthenticated: !!user, loading }}>
       {children}
     </AuthContext.Provider>
   );
