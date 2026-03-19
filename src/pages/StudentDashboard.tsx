@@ -34,8 +34,8 @@ export default function StudentDashboard() {
   }
 
   // Match logged-in demo student by studentId, fallback to first student
-  const student = user?.studentId
-    ? data.students.find((s) => s.id === user.studentId) ?? data.students[0]
+  const student = user?.profileId
+    ? data.students.find((s) => s.id === user.profileId) ?? data.students[0]
     : data.students[0];
   const visibleNotifications = notifications.filter(
     (n) => n.targetRole === "all" || n.targetRole === "student"
