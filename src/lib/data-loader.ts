@@ -1,15 +1,5 @@
-import { parseCSV } from "./csv-parser";
+import { supabase } from "@/integrations/supabase/client";
 
-// Raw CSV row types
-interface RawStudent { student_id: string; name: string; email: string; department: string; semester: string; year_of_study: string; }
-interface RawAcademic { student_id: string; attendance: string; assignment_score: string; quiz_score: string; exam_score: string; gpa: string; }
-interface RawSkill { skill_id: string; skill_name: string; }
-interface RawStudentSkill { student_id: string; skill_name: string; skill_level: string; }
-interface RawProject { student_id: string; projects_completed: string; }
-interface RawInternship { student_id: string; internships_completed: string; }
-interface RawJobReadiness { student_id: string; coding_score: string; communication_score: string; resume_score: string; job_ready_score: string; }
-
-// Merged types
 export interface StudentFull {
   id: string;
   name: string;
@@ -39,89 +29,88 @@ export interface DataSet {
   departmentStats: { department: string; avgGpa: number; totalStudents: number; avgReadiness: number; atRiskCount: number }[];
 }
 
-async function fetchCSV(path: string): Promise<string> {
-  const res = await fetch(path);
-  return res.text();
-}
-
 export async function loadDataset(): Promise<DataSet> {
-  const [studentsCSV, academicCSV, skillsCSV, studentSkillsCSV, projectsCSV, internshipsCSV, jobReadinessCSV] =
+  // Fetch all data from Supabase in parallel
+  const [profilesRes, academicRes, skillsRes, studentSkillsRes, projectsRes, internshipsRes, jobReadinessRes] =
     await Promise.all([
-      fetchCSV("/data/students.csv"),
-      fetchCSV("/data/academic_performance.csv"),
-      fetchCSV("/data/skills.csv"),
-      fetchCSV("/data/student_skills.csv"),
-      fetchCSV("/data/projects.csv"),
-      fetchCSV("/data/internships.csv"),
-      fetchCSV("/data/job_readiness.csv"),
+      supabase.from("profiles").select("*").limit(500),
+      supabase.from("academic_performance").select("*").limit(500),
+      supabase.from("skills").select("*"),
+      supabase.from("student_skills").select("*, skills(name)").limit(2000),
+      supabase.from("projects").select("*").limit(500),
+      supabase.from("internships").select("*").limit(500),
+      supabase.from("job_readiness").select("*").limit(500),
     ]);
 
-  const rawStudents = parseCSV<RawStudent>(studentsCSV);
-  const rawAcademic = parseCSV<RawAcademic>(academicCSV);
-  const rawSkills = parseCSV<RawSkill>(skillsCSV);
-  const rawStudentSkills = parseCSV<RawStudentSkill>(studentSkillsCSV);
-  const rawProjects = parseCSV<RawProject>(projectsCSV);
-  const rawInternships = parseCSV<RawInternship>(internshipsCSV);
-  const rawJobReadiness = parseCSV<RawJobReadiness>(jobReadinessCSV);
+  const profiles = profilesRes.data ?? [];
+  const academic = academicRes.data ?? [];
+  const allSkills = skillsRes.data ?? [];
+  const studentSkills = studentSkillsRes.data ?? [];
+  const projects = projectsRes.data ?? [];
+  const internships = internshipsRes.data ?? [];
+  const jobReadiness = jobReadinessRes.data ?? [];
 
-  // Index by student_id
-  const academicMap = new Map(rawAcademic.map((r) => [r.student_id, r]));
-  const projectMap = new Map(rawProjects.map((r) => [r.student_id, r]));
-  const internshipMap = new Map(rawInternships.map((r) => [r.student_id, r]));
-  const jobMap = new Map(rawJobReadiness.map((r) => [r.student_id, r]));
+  // Index by student_id (profile id)
+  const academicMap = new Map(academic.map((r) => [r.student_id, r]));
+  const projectMap = new Map(projects.map((r) => [r.student_id, r]));
+  const internshipMap = new Map(internships.map((r) => [r.student_id, r]));
+  const jobMap = new Map(jobReadiness.map((r) => [r.student_id, r]));
 
   // Group skills by student
   const skillsByStudent = new Map<string, { name: string; level: "Beginner" | "Intermediate" | "Advanced" }[]>();
-  rawStudentSkills.forEach((r) => {
-    if (!skillsByStudent.has(r.student_id)) skillsByStudent.set(r.student_id, []);
-    skillsByStudent.get(r.student_id)!.push({ name: r.skill_name, level: r.skill_level as any });
+  studentSkills.forEach((r: any) => {
+    const sid = r.student_id;
+    if (!skillsByStudent.has(sid)) skillsByStudent.set(sid, []);
+    const skillName = r.skills?.name ?? "Unknown";
+    skillsByStudent.get(sid)!.push({ name: skillName, level: (r.proficiency ?? "Beginner") as any });
   });
 
-  const students: StudentFull[] = rawStudents.map((s) => {
-    const a = academicMap.get(s.student_id);
-    const p = projectMap.get(s.student_id);
-    const i = internshipMap.get(s.student_id);
-    const j = jobMap.get(s.student_id);
-    const attendance = parseFloat(a?.attendance ?? "0");
-    const gpa = parseFloat(a?.gpa ?? "0");
+  const students: StudentFull[] = profiles.map((p) => {
+    const a = academicMap.get(p.id);
+    const pr = projectMap.get(p.id);
+    const i = internshipMap.get(p.id);
+    const j = jobMap.get(p.id);
+    const attendance = Number(a?.attendance ?? 0);
+    const gpa = Number(a?.gpa ?? 0);
 
     let riskStatus: "safe" | "moderate" | "at-risk" = "safe";
     if (attendance < 60 && gpa < 2.5) riskStatus = "at-risk";
     else if (attendance < 70 || gpa < 3.0) riskStatus = "moderate";
 
     return {
-      id: s.student_id,
-      name: s.name,
-      email: s.email,
-      department: s.department,
-      semester: parseInt(s.semester) || 0,
-      yearOfStudy: parseInt(s.year_of_study) || 0,
+      id: p.id,
+      name: p.full_name,
+      email: p.email ?? "",
+      department: p.department ?? "Unknown",
+      semester: p.semester ?? 1,
+      yearOfStudy: p.year_of_study ?? 1,
       attendance,
-      assignmentScore: parseFloat(a?.assignment_score ?? "0"),
-      quizScore: parseFloat(a?.quiz_score ?? "0"),
-      examScore: parseFloat(a?.exam_score ?? "0"),
+      assignmentScore: Number(a?.assignment_score ?? 0),
+      quizScore: Number(a?.quiz_score ?? 0),
+      examScore: Number(a?.exam_score ?? 0),
       gpa,
-      skills: skillsByStudent.get(s.student_id) ?? [],
-      projectsCompleted: parseInt(p?.projects_completed ?? "0"),
-      internshipsCompleted: parseInt(i?.internships_completed ?? "0"),
-      codingScore: parseFloat(j?.coding_score ?? "0"),
-      communicationScore: parseFloat(j?.communication_score ?? "0"),
-      resumeScore: parseFloat(j?.resume_score ?? "0"),
-      jobReadyScore: parseFloat(j?.job_ready_score ?? "0"),
+      skills: skillsByStudent.get(p.id) ?? [],
+      projectsCompleted: pr?.projects_completed ?? 0,
+      internshipsCompleted: i?.internships_completed ?? 0,
+      codingScore: Number(j?.coding_score ?? 0),
+      communicationScore: Number(j?.communication_score ?? 0),
+      resumeScore: Number(j?.resume_score ?? 0),
+      jobReadyScore: Number(j?.job_ready_score ?? 0),
       riskStatus,
     };
   });
 
-  const skills = rawSkills.map((s) => s.skill_name);
+  const skills = allSkills.map((s) => s.name);
   const departments = [...new Set(students.map((s) => s.department))];
 
   const departmentStats = departments.map((dept) => {
     const deptStudents = students.filter((s) => s.department === dept);
+    const len = deptStudents.length || 1;
     return {
       department: dept,
-      avgGpa: parseFloat((deptStudents.reduce((a, s) => a + s.gpa, 0) / deptStudents.length).toFixed(2)),
+      avgGpa: parseFloat((deptStudents.reduce((a, s) => a + s.gpa, 0) / len).toFixed(2)),
       totalStudents: deptStudents.length,
-      avgReadiness: parseFloat((deptStudents.reduce((a, s) => a + s.jobReadyScore, 0) / deptStudents.length).toFixed(1)),
+      avgReadiness: parseFloat((deptStudents.reduce((a, s) => a + s.jobReadyScore, 0) / len).toFixed(1)),
       atRiskCount: deptStudents.filter((s) => s.riskStatus === "at-risk").length,
     };
   });
