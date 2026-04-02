@@ -26,6 +26,8 @@ export default function Login() {
   const { login, signup } = useAuth();
   const navigate = useNavigate();
 
+  const getRoleDashboard = (role: UserRole) => `/${role}-dashboard`;
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email || !password) {
@@ -40,14 +42,15 @@ export default function Login() {
         toast.error(error);
       } else {
         toast.success("Account created! Signing in...");
-        navigate("/dashboard");
+        navigate(getRoleDashboard(selectedRole));
       }
     } else {
       const { error } = await login(email, password, selectedRole);
       if (error) {
         toast.error(error);
       } else {
-        navigate("/dashboard");
+        console.log("Logged Role:", selectedRole);
+        navigate(getRoleDashboard(selectedRole));
       }
     }
     setSubmitting(false);

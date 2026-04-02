@@ -29,7 +29,7 @@ function isSection(entry: NavEntry): entry is NavSection {
 }
 
 const studentNav: NavEntry[] = [
-  { label: "Dashboard", path: "/dashboard", icon: LayoutDashboard },
+  { label: "Dashboard", path: "/student-dashboard", icon: LayoutDashboard },
   {
     label: "AI Assistant",
     icon: Bot,
@@ -69,7 +69,7 @@ const studentNav: NavEntry[] = [
 ];
 
 const facultyNav: NavEntry[] = [
-  { label: "Dashboard", path: "/dashboard", icon: LayoutDashboard },
+  { label: "Dashboard", path: "/faculty-dashboard", icon: LayoutDashboard },
   { label: "Students", path: "/students", icon: Users },
   { label: "At-Risk Students", path: "/at-risk", icon: AlertTriangle },
   { label: "Placement Intelligence", path: "/placement-intelligence", icon: Briefcase },
@@ -80,7 +80,7 @@ const facultyNav: NavEntry[] = [
 ];
 
 const placementNav: NavEntry[] = [
-  { label: "Dashboard", path: "/dashboard", icon: LayoutDashboard },
+  { label: "Dashboard", path: "/placement-dashboard", icon: LayoutDashboard },
   { label: "Students", path: "/students", icon: Users },
   { label: "Placement Drives", path: "/placement-drives", icon: Briefcase },
   { label: "Placement Intelligence", path: "/placement-intelligence", icon: Target },
@@ -91,7 +91,7 @@ const placementNav: NavEntry[] = [
 ];
 
 const adminNav: NavEntry[] = [
-  { label: "Dashboard", path: "/dashboard", icon: LayoutDashboard },
+  { label: "Dashboard", path: "/admin-dashboard", icon: LayoutDashboard },
   { label: "Students", path: "/students", icon: Users },
   { label: "Skills Hub", path: "/skills-db", icon: Brain },
   { label: "Placement Intelligence", path: "/placement-intelligence", icon: Target },
