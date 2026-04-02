@@ -37,11 +37,23 @@ function ProtectedRoute({ children }: { children: React.ReactNode }) {
   return <>{children}</>;
 }
 
+function RoleRoute({ role, children }: { role: string; children: React.ReactNode }) {
+  const { user } = useAuth();
+  if (user && user.role !== role) return <Navigate to={`/${user.role}-dashboard`} replace />;
+  return <>{children}</>;
+}
+
 const AppRoutes = () => (
   <Routes>
     <Route path="/" element={<Landing />} />
     <Route path="/login" element={<Login />} />
+    {/* Legacy /dashboard redirects to role-specific */}
     <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
+    {/* Role-specific dashboard routes */}
+    <Route path="/student-dashboard" element={<ProtectedRoute><RoleRoute role="student"><StudentDashboard /></RoleRoute></ProtectedRoute>} />
+    <Route path="/faculty-dashboard" element={<ProtectedRoute><RoleRoute role="faculty"><FacultyDashboard /></RoleRoute></ProtectedRoute>} />
+    <Route path="/placement-dashboard" element={<ProtectedRoute><RoleRoute role="placement"><PlacementDashboard /></RoleRoute></ProtectedRoute>} />
+    <Route path="/admin-dashboard" element={<ProtectedRoute><RoleRoute role="admin"><AdminDashboard /></RoleRoute></ProtectedRoute>} />
     <Route path="/quiz/:type" element={<ProtectedRoute><QuizPage /></ProtectedRoute>} />
     <Route path="/coding-practice" element={<ProtectedRoute><CodingPractice /></ProtectedRoute>} />
     <Route path="/interview-simulator" element={<ProtectedRoute><InterviewSimulator /></ProtectedRoute>} />
