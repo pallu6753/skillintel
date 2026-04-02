@@ -69,7 +69,7 @@ const studentNav: NavEntry[] = [
 ];
 
 const facultyNav: NavEntry[] = [
-  { label: "Dashboard", path: "/dashboard", icon: LayoutDashboard },
+  { label: "Dashboard", path: "/faculty-dashboard", icon: LayoutDashboard },
   { label: "Students", path: "/students", icon: Users },
   { label: "At-Risk Students", path: "/at-risk", icon: AlertTriangle },
   { label: "Placement Intelligence", path: "/placement-intelligence", icon: Briefcase },
