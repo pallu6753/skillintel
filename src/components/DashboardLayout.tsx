@@ -80,7 +80,7 @@ const facultyNav: NavEntry[] = [
 ];
 
 const placementNav: NavEntry[] = [
-  { label: "Dashboard", path: "/dashboard", icon: LayoutDashboard },
+  { label: "Dashboard", path: "/placement-dashboard", icon: LayoutDashboard },
   { label: "Students", path: "/students", icon: Users },
   { label: "Placement Drives", path: "/placement-drives", icon: Briefcase },
   { label: "Placement Intelligence", path: "/placement-intelligence", icon: Target },
