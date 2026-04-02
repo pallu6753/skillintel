@@ -20,6 +20,9 @@ export default function StudentDashboard() {
   const { data, isLoading } = useDataset();
   const { notifications } = useNotificationStore();
 
+  console.log("User Role:", user?.role);
+  console.log("Profile ID:", user?.profileId);
+
   if (isLoading || !data) {
     return (
       <DashboardLayout>
@@ -33,10 +36,37 @@ export default function StudentDashboard() {
     );
   }
 
-  // Match logged-in demo student by studentId, fallback to first student
+  // ONLY show logged-in student's own data — filter by profileId
   const student = user?.profileId
-    ? data.students.find((s) => s.id === user.profileId) ?? data.students[0]
-    : data.students[0];
+    ? data.students.find((s) => s.id === user.profileId)
+    : null;
+
+  console.log("Student Data Loaded:", student ? student.name : "No matching student found");
+
+  // If no matching student profile found, show a message
+  if (!student) {
+    return (
+      <DashboardLayout>
+        <div className="space-y-6">
+          <div>
+            <h1 className="font-display text-3xl font-bold">Welcome, {user?.name}</h1>
+            <p className="text-muted-foreground mt-1">Your student profile is being set up. Data will appear once your academic records are added.</p>
+          </div>
+          <Card>
+            <CardContent className="p-8 text-center">
+              <GraduationCap className="h-12 w-12 mx-auto text-muted-foreground mb-4" />
+              <h3 className="font-display text-lg font-semibold">Profile Setup in Progress</h3>
+              <p className="text-sm text-muted-foreground mt-2">
+                Your academic performance, skills, and job readiness data will appear here once recorded by your institution.
+              </p>
+            </CardContent>
+          </Card>
+          <ExternalIntegrations />
+        </div>
+      </DashboardLayout>
+    );
+  }
+
   const visibleNotifications = notifications.filter(
     (n) => n.targetRole === "all" || n.targetRole === "student"
   );
@@ -52,7 +82,6 @@ export default function StudentDashboard() {
     { metric: "Exam", value: student.examScore },
   ];
 
-  // Real career recommendations
   const studentSkillNames = student.skills.map((s) => s.name);
   const careers = recommendCareers(studentSkillNames).slice(0, 3);
   const prediction = predictJobReadiness(student);
@@ -62,14 +91,14 @@ export default function StudentDashboard() {
       <div className="space-y-6">
         <div>
           <h1 className="font-display text-3xl font-bold">Welcome, {user?.name}</h1>
-          <p className="text-muted-foreground mt-1">Here's your academic & skill performance overview</p>
+          <p className="text-muted-foreground mt-1">Your personal academic & career overview</p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          <StatCard title="Current GPA" value={student.gpa.toFixed(2)} icon={GraduationCap} />
+          <StatCard title="My GPA" value={student.gpa.toFixed(2)} icon={GraduationCap} />
           <StatCard title="AI Readiness" value={`${prediction.score}%`} icon={TrendingUp} />
-          <StatCard title="Skills Tracked" value={student.skills.length} icon={Brain} />
-          <StatCard title="Attendance" value={`${student.attendance.toFixed(0)}%`} icon={BookOpen} />
+          <StatCard title="My Skills" value={student.skills.length} icon={Brain} />
+          <StatCard title="My Attendance" value={`${student.attendance.toFixed(0)}%`} icon={BookOpen} />
         </div>
 
         {/* ML Prediction Card */}
@@ -95,7 +124,7 @@ export default function StudentDashboard() {
 
         <div className="grid lg:grid-cols-2 gap-6">
           <Card>
-            <CardHeader><CardTitle className="font-display text-lg">Academic Scores</CardTitle></CardHeader>
+            <CardHeader><CardTitle className="font-display text-lg">My Academic Scores</CardTitle></CardHeader>
             <CardContent>
               <ResponsiveContainer width="100%" height={280}>
                 <BarChart data={academicData}>
@@ -110,7 +139,7 @@ export default function StudentDashboard() {
           </Card>
 
           <Card>
-            <CardHeader><CardTitle className="font-display text-lg">Skill Proficiency</CardTitle></CardHeader>
+            <CardHeader><CardTitle className="font-display text-lg">My Skill Proficiency</CardTitle></CardHeader>
             <CardContent>
               {skillRadarData.length > 0 ? (
                 <ResponsiveContainer width="100%" height={280}>
@@ -177,7 +206,6 @@ export default function StudentDashboard() {
           </Card>
         </div>
 
-        {/* External Platform Integrations */}
         <ExternalIntegrations />
       </div>
     </DashboardLayout>
