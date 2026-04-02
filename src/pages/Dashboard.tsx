@@ -1,19 +1,18 @@
 import { useAuth } from "@/lib/auth-context";
 import { Navigate } from "react-router-dom";
-import StudentDashboard from "@/pages/StudentDashboard";
-import FacultyDashboard from "@/pages/FacultyDashboard";
-import PlacementDashboard from "@/pages/PlacementDashboard";
-import AdminDashboard from "@/pages/AdminDashboard";
 
 export default function Dashboard() {
   const { user, isAuthenticated } = useAuth();
   if (!isAuthenticated || !user) return <Navigate to="/login" replace />;
 
+  console.log("Logged Role:", user.role);
+
+  // Redirect to role-specific dashboard
   switch (user.role) {
-    case "student": return <StudentDashboard />;
-    case "faculty": return <FacultyDashboard />;
-    case "placement": return <PlacementDashboard />;
-    case "admin": return <AdminDashboard />;
+    case "student": return <Navigate to="/student-dashboard" replace />;
+    case "faculty": return <Navigate to="/faculty-dashboard" replace />;
+    case "placement": return <Navigate to="/placement-dashboard" replace />;
+    case "admin": return <Navigate to="/admin-dashboard" replace />;
     default: return <Navigate to="/login" replace />;
   }
 }

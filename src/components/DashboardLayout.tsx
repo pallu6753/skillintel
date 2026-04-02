@@ -91,7 +91,7 @@ const placementNav: NavEntry[] = [
 ];
 
 const adminNav: NavEntry[] = [
-  { label: "Dashboard", path: "/dashboard", icon: LayoutDashboard },
+  { label: "Dashboard", path: "/admin-dashboard", icon: LayoutDashboard },
   { label: "Students", path: "/students", icon: Users },
   { label: "Skills Hub", path: "/skills-db", icon: Brain },
   { label: "Placement Intelligence", path: "/placement-intelligence", icon: Target },
