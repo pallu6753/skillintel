@@ -29,7 +29,7 @@ function isSection(entry: NavEntry): entry is NavSection {
 }
 
 const studentNav: NavEntry[] = [
-  { label: "Dashboard", path: "/dashboard", icon: LayoutDashboard },
+  { label: "Dashboard", path: "/student-dashboard", icon: LayoutDashboard },
   {
     label: "AI Assistant",
     icon: Bot,
