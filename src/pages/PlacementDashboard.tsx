@@ -152,7 +152,7 @@ export default function PlacementDashboard() {
                     <div key={app.id} className="flex items-center justify-between p-3 rounded-lg border">
                       <div>
                         <p className="text-sm font-medium">{app.company} — {app.role}</p>
-                        <p className="text-xs text-muted-foreground">{app.appliedAt}</p>
+                        <p className="text-xs text-muted-foreground">{app.appliedDate}</p>
                       </div>
                       <Badge variant={app.status === "applied" ? "default" : app.status === "shortlisted" ? "secondary" : "outline"}>
                         {app.status}
