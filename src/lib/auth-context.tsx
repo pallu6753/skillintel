@@ -101,12 +101,16 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     });
     if (error) return { error: error.message };
 
-    // Assign role
+    // Assign role (fire-and-forget, don't block signup)
     if (data.user) {
-      await supabase.rpc("assign_role_on_signup" as any, {
-        _user_id: data.user.id,
-        _role: role,
-      });
+      try {
+        await supabase.rpc("assign_role_on_signup" as any, {
+          _user_id: data.user.id,
+          _role: role,
+        });
+      } catch (err) {
+        console.warn("Role assignment warning:", err);
+      }
     }
 
     return { error: null };
