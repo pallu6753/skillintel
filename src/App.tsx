@@ -30,6 +30,10 @@ import ApplicationTracker from "./pages/ApplicationTracker";
 import ResumeAnalyzer from "./pages/ResumeAnalyzer";
 import AICopilot from "./pages/AICopilot";
 import PlacementIntelligence from "./pages/PlacementIntelligence";
+import SystemArchitecture from "./pages/SystemArchitecture";
+import ModelMetrics from "./pages/ModelMetrics";
+import ActivityLog from "./pages/ActivityLog";
+import Documentation from "./pages/Documentation";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();

@@ -266,11 +266,12 @@ export function DashboardLayout({ children }: { children: React.ReactNode }) {
           <GraduationCap className="h-5 w-5 text-sidebar-primary-foreground" />
         </div>
         {!collapsed && (
-          <div className="overflow-hidden">
+          <div className="overflow-hidden flex-1">
             <h2 className="text-sm font-display font-bold text-sidebar-foreground truncate">SkillIntel</h2>
             <p className="text-xs text-sidebar-foreground/60">{roleLabels[user.role]}</p>
           </div>
         )}
+        {!collapsed && <ThemeToggle />}
       </div>
 
       {/* Navigation */}
