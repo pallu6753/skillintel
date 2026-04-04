@@ -97,8 +97,12 @@ const adminNav: NavEntry[] = [
   { label: "Students", path: "/students", icon: Users },
   { label: "Skills Hub", path: "/skills-db", icon: Brain },
   { label: "Placement Intelligence", path: "/placement-intelligence", icon: Target },
+  { label: "Model Metrics", path: "/model-metrics", icon: Activity },
+  { label: "System Architecture", path: "/system-architecture", icon: Server },
   { label: "Leaderboard", path: "/leaderboard", icon: Trophy },
   { label: "Analytics", path: "/analytics", icon: BarChart3 },
+  { label: "Access Logs", path: "/activity", icon: Clock },
+  { label: "Documentation", path: "/documentation", icon: BookOpen },
   { label: "Notifications", path: "/notifications", icon: Bell },
   { label: "Settings", path: "/settings", icon: Settings },
 ];
