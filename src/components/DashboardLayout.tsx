@@ -67,6 +67,7 @@ const studentNav: NavEntry[] = [
       { label: "Notifications", path: "/notifications", icon: Bell },
     ],
   },
+  { label: "Activity", path: "/activity", icon: Clock },
   { label: "Settings", path: "/settings", icon: Settings },
 ];
 
