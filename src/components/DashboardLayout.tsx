@@ -6,8 +6,10 @@ import {
   LayoutDashboard, BookOpen, Brain, Users, Bell, Settings,
   LogOut, GraduationCap, BarChart3, FileText, ChevronLeft,
   ChevronRight, Target, TrendingUp, AlertTriangle, Menu, X, Briefcase,
-  Trophy, ClipboardList, Bot, Code2, Mic, ChevronDown,
+  Trophy, ClipboardList, Bot, Code2, Mic, ChevronDown, Server, Clock,
+  Activity, Download,
 } from "lucide-react";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { Button } from "@/components/ui/button";
 
 interface NavSection {
