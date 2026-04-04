@@ -6,8 +6,10 @@ import {
   LayoutDashboard, BookOpen, Brain, Users, Bell, Settings,
   LogOut, GraduationCap, BarChart3, FileText, ChevronLeft,
   ChevronRight, Target, TrendingUp, AlertTriangle, Menu, X, Briefcase,
-  Trophy, ClipboardList, Bot, Code2, Mic, ChevronDown,
+  Trophy, ClipboardList, Bot, Code2, Mic, ChevronDown, Server, Clock,
+  Activity, Download,
 } from "lucide-react";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { Button } from "@/components/ui/button";
 
 interface NavSection {
@@ -65,6 +67,7 @@ const studentNav: NavEntry[] = [
       { label: "Notifications", path: "/notifications", icon: Bell },
     ],
   },
+  { label: "Activity", path: "/activity", icon: Clock },
   { label: "Settings", path: "/settings", icon: Settings },
 ];
 
@@ -95,8 +98,12 @@ const adminNav: NavEntry[] = [
   { label: "Students", path: "/students", icon: Users },
   { label: "Skills Hub", path: "/skills-db", icon: Brain },
   { label: "Placement Intelligence", path: "/placement-intelligence", icon: Target },
+  { label: "Model Metrics", path: "/model-metrics", icon: Activity },
+  { label: "System Architecture", path: "/system-architecture", icon: Server },
   { label: "Leaderboard", path: "/leaderboard", icon: Trophy },
   { label: "Analytics", path: "/analytics", icon: BarChart3 },
+  { label: "Access Logs", path: "/activity", icon: Clock },
+  { label: "Documentation", path: "/documentation", icon: BookOpen },
   { label: "Notifications", path: "/notifications", icon: Bell },
   { label: "Settings", path: "/settings", icon: Settings },
 ];
@@ -259,11 +266,12 @@ export function DashboardLayout({ children }: { children: React.ReactNode }) {
           <GraduationCap className="h-5 w-5 text-sidebar-primary-foreground" />
         </div>
         {!collapsed && (
-          <div className="overflow-hidden">
+          <div className="overflow-hidden flex-1">
             <h2 className="text-sm font-display font-bold text-sidebar-foreground truncate">SkillIntel</h2>
             <p className="text-xs text-sidebar-foreground/60">{roleLabels[user.role]}</p>
           </div>
         )}
+        {!collapsed && <ThemeToggle />}
       </div>
 
       {/* Navigation */}

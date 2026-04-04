@@ -30,6 +30,10 @@ import ApplicationTracker from "./pages/ApplicationTracker";
 import ResumeAnalyzer from "./pages/ResumeAnalyzer";
 import AICopilot from "./pages/AICopilot";
 import PlacementIntelligence from "./pages/PlacementIntelligence";
+import SystemArchitecture from "./pages/SystemArchitecture";
+import ModelMetrics from "./pages/ModelMetrics";
+import ActivityLog from "./pages/ActivityLog";
+import Documentation from "./pages/Documentation";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -77,6 +81,10 @@ const AppRoutes = () => (
     <Route path="/applications" element={<ProtectedRoute><ApplicationTracker /></ProtectedRoute>} />
     <Route path="/resume-analyzer" element={<ProtectedRoute><ResumeAnalyzer /></ProtectedRoute>} />
     <Route path="/ai-copilot" element={<ProtectedRoute><AICopilot /></ProtectedRoute>} />
+    <Route path="/system-architecture" element={<ProtectedRoute><SystemArchitecture /></ProtectedRoute>} />
+    <Route path="/model-metrics" element={<ProtectedRoute><ModelMetrics /></ProtectedRoute>} />
+    <Route path="/activity" element={<ProtectedRoute><ActivityLog /></ProtectedRoute>} />
+    <Route path="/documentation" element={<ProtectedRoute><Documentation /></ProtectedRoute>} />
     <Route path="*" element={<NotFound />} />
   </Routes>
 );
