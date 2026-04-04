@@ -81,6 +81,10 @@ const AppRoutes = () => (
     <Route path="/applications" element={<ProtectedRoute><ApplicationTracker /></ProtectedRoute>} />
     <Route path="/resume-analyzer" element={<ProtectedRoute><ResumeAnalyzer /></ProtectedRoute>} />
     <Route path="/ai-copilot" element={<ProtectedRoute><AICopilot /></ProtectedRoute>} />
+    <Route path="/system-architecture" element={<ProtectedRoute><SystemArchitecture /></ProtectedRoute>} />
+    <Route path="/model-metrics" element={<ProtectedRoute><ModelMetrics /></ProtectedRoute>} />
+    <Route path="/activity" element={<ProtectedRoute><ActivityLog /></ProtectedRoute>} />
+    <Route path="/documentation" element={<ProtectedRoute><Documentation /></ProtectedRoute>} />
     <Route path="*" element={<NotFound />} />
   </Routes>
 );
