@@ -8,6 +8,7 @@ import { useDataset } from "@/hooks/use-dataset";
 import { usePlacementStore } from "@/lib/placement-store";
 import { useApplicationStore } from "@/lib/application-store";
 import { useAuth } from "@/lib/auth-context";
+import { DashboardBanner } from "@/components/DashboardBanner";
 import { Briefcase, Target, TrendingUp, Building2, Users, Calendar, CheckCircle } from "lucide-react";
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, BarChart, Bar, XAxis, YAxis, CartesianGrid } from "recharts";
 import { Skeleton } from "@/components/ui/skeleton";

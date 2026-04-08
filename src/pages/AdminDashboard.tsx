@@ -10,6 +10,7 @@ import { useDataset } from "@/hooks/use-dataset";
 import { useAuth } from "@/lib/auth-context";
 import { supabase } from "@/integrations/supabase/client";
 import { Users, Database, BarChart3, Brain, Shield, Search, Building2, TrendingUp } from "lucide-react";
+import { DashboardBanner } from "@/components/DashboardBanner";
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
   PieChart, Pie, Cell, Legend,
@@ -105,12 +106,11 @@ export default function AdminDashboard() {
   return (
     <DashboardLayout>
       <div className="space-y-6">
-        <div>
-          <h1 className="font-display text-3xl font-bold">Admin Dashboard</h1>
-          <p className="text-muted-foreground mt-1">
-            System administration — {allUsers.length} users, {departmentStats.length} departments, {skills.length} skills
-          </p>
-        </div>
+        <DashboardBanner
+          icon={Shield}
+          title="Admin Dashboard"
+          description="Full system control — manage users, monitor platform health, and access all analytics."
+        />
 
         {/* Admin-specific stats: all users across roles */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">

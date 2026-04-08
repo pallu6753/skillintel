@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Progress } from "@/components/ui/progress";
 import { useDataset } from "@/hooks/use-dataset";
 import { useAuth } from "@/lib/auth-context";
+import { DashboardBanner } from "@/components/DashboardBanner";
 import { Users, AlertTriangle, TrendingUp, BookOpen, Search, GraduationCap, FileText } from "lucide-react";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -50,10 +51,11 @@ export default function FacultyDashboard() {
   return (
     <DashboardLayout>
       <div className="space-y-6">
-        <div>
-          <h1 className="font-display text-3xl font-bold">Faculty Dashboard</h1>
-          <p className="text-muted-foreground mt-1">Monitor all {students.length} students across {departmentStats.length} departments</p>
-        </div>
+        <DashboardBanner
+          icon={Users}
+          title="Faculty Dashboard"
+          description="Monitor student performance, identify at-risk students, and track academic trends across departments."
+        />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           <StatCard title="Total Students" value={students.length} icon={Users} />
