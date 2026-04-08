@@ -7,7 +7,7 @@ import {
   LogOut, GraduationCap, BarChart3, FileText, ChevronLeft,
   ChevronRight, Target, TrendingUp, AlertTriangle, Menu, X, Briefcase,
   Trophy, ClipboardList, Bot, Code2, Mic, ChevronDown, Server, Clock,
-  Activity, Download,
+  Activity, Download, Eye,
 } from "lucide-react";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { Button } from "@/components/ui/button";
@@ -95,6 +95,7 @@ const placementNav: NavEntry[] = [
 
 const adminNav: NavEntry[] = [
   { label: "Dashboard", path: "/admin-dashboard", icon: LayoutDashboard },
+  { label: "System Overview", path: "/system-overview", icon: Eye },
   { label: "Students", path: "/students", icon: Users },
   { label: "Skills Hub", path: "/skills-db", icon: Brain },
   { label: "Placement Intelligence", path: "/placement-intelligence", icon: Target },

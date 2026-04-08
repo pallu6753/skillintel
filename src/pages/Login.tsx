@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { useNavigate, Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useNavigate, Link, useSearchParams } from "react-router-dom";
 import { useAuth, UserRole } from "@/lib/auth-context";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -33,6 +33,17 @@ export default function Login() {
   const [demoLoading, setDemoLoading] = useState<string | null>(null);
   const { login, signup } = useAuth();
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
+
+  // Auto-trigger demo login from landing page
+  useEffect(() => {
+    const demoRole = searchParams.get("demo") as UserRole | null;
+    if (demoRole && DEMO_ACCOUNTS.find(d => d.role === demoRole)) {
+      const demo = DEMO_ACCOUNTS.find(d => d.role === demoRole)!;
+      handleDemoLogin(demo);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const getRoleDashboard = (role: UserRole) => `/${role}-dashboard`;
 

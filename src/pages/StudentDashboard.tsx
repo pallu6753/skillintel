@@ -1,4 +1,5 @@
 import { useAuth } from "@/lib/auth-context";
+import { DashboardBanner } from "@/components/DashboardBanner";
 import { DashboardLayout } from "@/components/DashboardLayout";
 import { StatCard } from "@/components/StatCard";
 import { ExternalIntegrations } from "@/components/ExternalIntegrations";
@@ -89,10 +90,11 @@ export default function StudentDashboard() {
   return (
     <DashboardLayout>
       <div className="space-y-6">
-        <div>
-          <h1 className="font-display text-3xl font-bold">Welcome, {user?.name}</h1>
-          <p className="text-muted-foreground mt-1">Your personal academic & career overview</p>
-        </div>
+        <DashboardBanner
+          icon={GraduationCap}
+          title={`Welcome, ${user?.name}`}
+          description="Track your skills, readiness score, and career applications — all in one place."
+        />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           <StatCard title="My GPA" value={student.gpa.toFixed(2)} icon={GraduationCap} />
