@@ -35,18 +35,17 @@ export default function SystemOverview() {
 
   const totalStudents = data.students.length;
   const avgGPA = totalStudents > 0
-    ? (data.academic.reduce((s, a) => s + (a.gpa ?? 0), 0) / Math.max(data.academic.length, 1)).toFixed(2)
+    ? (data.students.reduce((s, st) => s + (st.gpa ?? 0), 0) / totalStudents).toFixed(2)
     : "0.00";
 
-  const readyCount = data.jobReadiness.filter(j => (j.job_ready_score ?? 0) >= 70).length;
+  const readyCount = data.students.filter(s => s.jobReadyScore >= 70).length;
   const readyPct = totalStudents > 0 ? Math.round((readyCount / totalStudents) * 100) : 0;
 
-  // Skill distribution
+  // Skill frequency
   const skillMap: Record<string, number> = {};
-  data.studentSkills.forEach(ss => {
-    const skill = data.skills.find(s => s.id === ss.skill_id);
-    if (skill) skillMap[skill.name] = (skillMap[skill.name] || 0) + 1;
-  });
+  data.students.forEach(st => st.skills.forEach(sk => {
+    skillMap[sk.name] = (skillMap[sk.name] || 0) + 1;
+  }));
   const topSkills = Object.entries(skillMap)
     .sort((a, b) => b[1] - a[1])
     .slice(0, 8)
@@ -54,9 +53,9 @@ export default function SystemOverview() {
 
   // Readiness distribution
   const readinessBuckets = [
-    { name: "High (≥80)", value: data.jobReadiness.filter(j => (j.job_ready_score ?? 0) >= 80).length },
-    { name: "Medium (60-79)", value: data.jobReadiness.filter(j => (j.job_ready_score ?? 0) >= 60 && (j.job_ready_score ?? 0) < 80).length },
-    { name: "Low (<60)", value: data.jobReadiness.filter(j => (j.job_ready_score ?? 0) < 60).length },
+    { name: "High (≥80)", value: data.students.filter(s => s.jobReadyScore >= 80).length },
+    { name: "Medium (60-79)", value: data.students.filter(s => s.jobReadyScore >= 60 && s.jobReadyScore < 80).length },
+    { name: "Low (<60)", value: data.students.filter(s => s.jobReadyScore < 60).length },
   ];
 
   return (
@@ -114,7 +113,7 @@ export default function SystemOverview() {
                   <m.icon className="h-5 w-5 text-primary" />
                   <div>
                     <p className="text-sm font-medium">{m.name}</p>
-                    <p className="text-xs text-green-500">{m.status}</p>
+                    <p className="text-xs text-primary">{m.status}</p>
                   </div>
                 </div>
               ))}
