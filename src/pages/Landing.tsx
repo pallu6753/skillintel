@@ -169,6 +169,49 @@ export default function Landing() {
         </div>
       </section>
 
+      {/* Quick Demo Access */}
+      <section id="demo" className="relative z-10 container pb-16">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="rounded-2xl border border-[hsl(45,90%,55%/0.2)] bg-gradient-to-br from-[hsl(210,45%,7%)] to-[hsl(210,50%,5%)] p-10 md:p-14 relative overflow-hidden"
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-[hsl(45,90%,55%/0.03)] to-[hsl(192,80%,50%/0.03)]" />
+          <div className="relative z-10 text-center">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[hsl(45,90%,55%/0.1)] border border-[hsl(45,90%,55%/0.2)] text-[hsl(45,90%,60%)] text-xs font-medium mb-4">
+              <Zap className="h-3 w-3" /> QUICK DEMO ACCESS
+            </div>
+            <h2 className="font-display text-3xl font-bold mb-2">Try Every Role Instantly</h2>
+            <p className="text-[hsl(210,15%,50%)] max-w-md mx-auto mb-8">
+              Experience role-based dashboards without signing up. Click any role below.
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
+              {[
+                { role: "student", icon: GraduationCap, label: "Student", desc: "Skills & career tracking" },
+                { role: "faculty", icon: BookOpen, label: "Faculty", desc: "Student monitoring" },
+                { role: "admin", icon: Shield, label: "Admin", desc: "System management" },
+                { role: "placement", icon: BarChart3, label: "Placement", desc: "Recruitment analytics" },
+              ].map((d) => (
+                <Link key={d.role} to={`/login?demo=${d.role}`}>
+                  <motion.div
+                    whileHover={{ scale: 1.04 }}
+                    whileTap={{ scale: 0.97 }}
+                    className="flex flex-col items-center gap-2 p-5 rounded-xl border border-[hsl(210,30%,14%)] bg-[hsl(210,45%,8%/0.6)] hover:border-[hsl(192,80%,50%/0.4)] hover:shadow-[0_0_25px_hsl(192,80%,50%/0.1)] transition-all cursor-pointer"
+                  >
+                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-[hsl(192,80%,50%/0.15)] to-[hsl(172,66%,45%/0.1)]">
+                      <d.icon className="h-6 w-6 text-[hsl(192,80%,55%)]" />
+                    </div>
+                    <span className="font-display font-semibold text-sm">{d.label}</span>
+                    <span className="text-[10px] text-[hsl(210,15%,45%)]">{d.desc}</span>
+                  </motion.div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </motion.div>
+      </section>
+
       {/* CTA */}
       <section className="relative z-10 container pb-24">
         <motion.div
