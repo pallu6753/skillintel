@@ -57,10 +57,11 @@ export default function PlacementDashboard() {
     <DashboardLayout>
       <div className="space-y-6">
         <div className="flex flex-wrap items-center justify-between gap-4">
-          <div>
-            <h1 className="font-display text-3xl font-bold">Placement Dashboard</h1>
-            <p className="text-muted-foreground mt-1">Manage drives, track applications & monitor placement readiness</p>
-          </div>
+          <DashboardBanner
+            icon={Briefcase}
+            title="Placement Dashboard"
+            description="Manage recruitment drives, track student applications, and monitor placement readiness metrics."
+          />
           <Link to="/placement-drives">
             <Button><Briefcase className="h-4 w-4 mr-2" /> Manage Drives</Button>
           </Link>
