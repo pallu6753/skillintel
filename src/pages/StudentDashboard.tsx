@@ -6,23 +6,40 @@ import { ExternalIntegrations } from "@/components/ExternalIntegrations";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
+import { Button } from "@/components/ui/button";
 import { useDataset } from "@/hooks/use-dataset";
 import { useNotificationStore } from "@/lib/notification-store";
+import { useApplicationStore } from "@/lib/application-store";
 import { recommendCareers, predictJobReadiness } from "@/lib/career-engine";
-import { GraduationCap, Target, Brain, BookOpen, Bell, TrendingUp } from "lucide-react";
+import { GraduationCap, Target, Brain, BookOpen, Bell, TrendingUp, Briefcase, CheckCircle, XCircle, Clock, Send } from "lucide-react";
 import {
   RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar,
   ResponsiveContainer, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip,
 } from "recharts";
 import { Skeleton } from "@/components/ui/skeleton";
+import { Link } from "react-router-dom";
+
+const statusIcons: Record<string, React.ElementType> = {
+  applied: Send,
+  shortlisted: Clock,
+  interview: Target,
+  selected: CheckCircle,
+  rejected: XCircle,
+};
+
+const statusColors: Record<string, string> = {
+  applied: "default",
+  shortlisted: "secondary",
+  interview: "outline",
+  selected: "default",
+  rejected: "destructive",
+};
 
 export default function StudentDashboard() {
   const { user } = useAuth();
   const { data, isLoading } = useDataset();
   const { notifications } = useNotificationStore();
-
-  console.log("User Role:", user?.role);
-  console.log("Profile ID:", user?.profileId);
+  const { applications } = useApplicationStore();
 
   if (isLoading || !data) {
     return (
@@ -37,32 +54,32 @@ export default function StudentDashboard() {
     );
   }
 
-  // ONLY show logged-in student's own data — filter by profileId
   const student = user?.profileId
     ? data.students.find((s) => s.id === user.profileId)
     : null;
 
-  console.log("Student Data Loaded:", student ? student.name : "No matching student found");
-
-  // If no matching student profile found, show a message
+  // If no matching student profile found, show empty state with add data option
   if (!student) {
     return (
       <DashboardLayout>
         <div className="space-y-6">
-          <div>
-            <h1 className="font-display text-3xl font-bold">Welcome, {user?.name}</h1>
-            <p className="text-muted-foreground mt-1">Your student profile is being set up. Data will appear once your academic records are added.</p>
-          </div>
+          <DashboardBanner
+            icon={GraduationCap}
+            title={`Welcome, ${user?.name}`}
+            description="Your profile is being set up. Add your data to get started."
+          />
           <Card>
             <CardContent className="p-8 text-center">
               <GraduationCap className="h-12 w-12 mx-auto text-muted-foreground mb-4" />
-              <h3 className="font-display text-lg font-semibold">Profile Setup in Progress</h3>
-              <p className="text-sm text-muted-foreground mt-2">
-                Your academic performance, skills, and job readiness data will appear here once recorded by your institution.
+              <h3 className="font-display text-lg font-semibold">No Data Available</h3>
+              <p className="text-sm text-muted-foreground mt-2 mb-4">
+                Your academic performance, skills, and job readiness data will appear here once recorded.
               </p>
+              <Link to="/settings">
+                <Button>Add Profile Data</Button>
+              </Link>
             </CardContent>
           </Card>
-          <ExternalIntegrations />
         </div>
       </DashboardLayout>
     );
@@ -92,8 +109,8 @@ export default function StudentDashboard() {
       <div className="space-y-6">
         <DashboardBanner
           icon={GraduationCap}
-          title={`Welcome, ${user?.name}`}
-          description="Track your skills, readiness score, and career applications — all in one place."
+          title={`Welcome back, ${student.name}`}
+          description="Your profile is up to date — track your skills, readiness score, and career applications."
         />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -190,6 +207,44 @@ export default function StudentDashboard() {
             </CardContent>
           </Card>
 
+          {/* Job Applications instead of just notifications */}
+          <Card>
+            <CardHeader>
+              <CardTitle className="font-display text-lg flex items-center gap-2">
+                <Briefcase className="h-4 w-4" /> My Applications
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-3">
+              {applications.length === 0 ? (
+                <p className="text-sm text-muted-foreground">No applications yet.</p>
+              ) : (
+                applications.slice(0, 4).map((app) => {
+                  const Icon = statusIcons[app.status] || Send;
+                  return (
+                    <div key={app.id} className="flex items-center justify-between p-3 rounded-lg border">
+                      <div className="flex items-center gap-2">
+                        <Icon className="h-4 w-4 text-muted-foreground" />
+                        <div>
+                          <p className="text-sm font-medium">{app.company}</p>
+                          <p className="text-xs text-muted-foreground">{app.role}</p>
+                        </div>
+                      </div>
+                      <Badge variant={statusColors[app.status] as any}>{app.status}</Badge>
+                    </div>
+                  );
+                })
+              )}
+              {applications.length > 0 && (
+                <Link to="/applications" className="block">
+                  <Button variant="ghost" size="sm" className="w-full text-xs">View All Applications</Button>
+                </Link>
+              )}
+            </CardContent>
+          </Card>
+        </div>
+
+        {/* Notifications row */}
+        {visibleNotifications.length > 0 && (
           <Card>
             <CardHeader>
               <CardTitle className="font-display text-lg flex items-center gap-2">
@@ -197,16 +252,18 @@ export default function StudentDashboard() {
                 {unreadCount > 0 && <Badge variant="destructive" className="text-xs">{unreadCount}</Badge>}
               </CardTitle>
             </CardHeader>
-            <CardContent className="space-y-3">
-              {visibleNotifications.slice(0, 4).map((n) => (
-                <div key={n.id} className={`p-3 rounded-lg border text-sm ${!n.read ? "bg-primary/5 border-primary/20" : ""}`}>
-                  <p className="font-medium">{n.title}</p>
-                  <p className="text-muted-foreground text-xs mt-1">{n.date}</p>
-                </div>
-              ))}
+            <CardContent>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
+                {visibleNotifications.slice(0, 4).map((n) => (
+                  <div key={n.id} className={`p-3 rounded-lg border text-sm ${!n.read ? "bg-primary/5 border-primary/20" : ""}`}>
+                    <p className="font-medium">{n.title}</p>
+                    <p className="text-muted-foreground text-xs mt-1">{n.date}</p>
+                  </div>
+                ))}
+              </div>
             </CardContent>
           </Card>
-        </div>
+        )}
 
         <ExternalIntegrations />
       </div>
