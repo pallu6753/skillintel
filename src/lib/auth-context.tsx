@@ -63,15 +63,19 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     const { data: { subscription } } = supabase.auth.onAuthStateChange(
-      async (_event, newSession) => {
+      (_event, newSession) => {
         setSession(newSession);
         if (newSession?.user) {
-          const authUser = await buildAuthUser(newSession.user);
-          setUser(authUser);
+          // Defer Supabase calls to avoid deadlock with auth lock
+          setTimeout(async () => {
+            const authUser = await buildAuthUser(newSession.user);
+            setUser(authUser);
+            setLoading(false);
+          }, 0);
         } else {
           setUser(null);
+          setLoading(false);
         }
-        setLoading(false);
       }
     );
 
