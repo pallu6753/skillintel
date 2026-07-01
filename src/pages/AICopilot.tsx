@@ -50,7 +50,21 @@ export default function AICopilot() {
     );
   }
 
-  const student = data.students[0]; // Demo: use first student
+  const student = data.students[0];
+
+  if (!student) {
+    return (
+      <DashboardLayout>
+        <div className="flex flex-col items-center justify-center h-[60vh] text-center space-y-3">
+          <Bot className="h-10 w-10 text-primary" />
+          <h2 className="font-display text-xl font-semibold">No student profile available</h2>
+          <p className="text-muted-foreground text-sm max-w-md">
+            AI Copilot needs a student profile to analyze. Sign in as a student or add student data to get started.
+          </p>
+        </div>
+      </DashboardLayout>
+    );
+  }
 
   const handleSend = (text?: string) => {
     const msg = (text || input).trim();
