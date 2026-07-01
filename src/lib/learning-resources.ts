@@ -149,7 +149,7 @@ export const learningResources: LearningResource[] = [
   {
     skill: "Problem Solving",
     youtube: [
-      { title: "Problem Solving Techniques", url: "https://www.youtube.com/watch?v=E8dYoF-2yU4" },
+      { title: "Problem Solving Techniques", url: "https://www.youtube.com/watch?v=UFc-RPbq8kg" },
     ],
     courses: [
       { title: "Problem Solving", url: "https://www.coursera.org/learn/problem-solving", platform: "Coursera" },
