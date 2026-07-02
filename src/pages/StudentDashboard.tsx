@@ -35,6 +35,40 @@ const statusColors: Record<string, string> = {
   rejected: "destructive",
 };
 
+const RESUME_PROFILE = {
+  headline: "Data Science Student | AI & ML Enthusiast | Full-Stack Developer",
+  about:
+    "Data Science student (CGPA 8.5) with hands-on experience in AI/ML, data analysis, and full-stack development. Built multiple AI apps — chatbots, recommendation systems, and dashboards — using Python, SQL, Power BI, and OpenAI APIs.",
+  education: [
+    { school: "T John Institute of Technology", degree: "B.E. – Data Science", years: "2024 – 2027" },
+    { school: "AMC PU College", degree: "PCMC – PUC", years: "2021 – 2023" },
+  ],
+  internships: [
+    { role: "Data Analyst Trainee", org: "Excelerate", year: "2025" },
+    { role: "Data Visualization Intern", org: "Tata Forage", year: "2025" },
+    { role: "Azure Fundamentals Intern", org: "IN-BIOT", year: "2024" },
+  ],
+  projects: [
+    "Smart Hostel Management System",
+    "Skill Intel — AI Career Recommendation Platform",
+    "AI Resume Analyzer & Job Recommendation System",
+  ],
+  achievements: [
+    "🏆 Winner – COMEDKARES Hackathon (2024)",
+    "🏆 Winner – Web Weaving Competition (2023)",
+    "🎤 Recognized Speaker – TRIPLE IT Public Speaking",
+  ],
+  certifications: [
+    "Certified AI Specialist – AI Masterclass (2025)",
+    "Data Visualization – Tata Forage (2025)",
+    "Mastering MySQL – Udemy (2025)",
+    "Microsoft Azure Fundamentals – IN-BIOT (2024)",
+    "Infosys Springboard – Programming Foundations (2024)",
+  ],
+  contact: { phone: "7975582202", location: "Bangalore, India", email: "pallavirpallavir20@gmail.com" },
+  linkedin: "https://www.linkedin.com/in/pallavi-r-pallavi-r-14a678292",
+};
+
 export default function StudentDashboard() {
   const { user } = useAuth();
   const { data, isLoading } = useDataset();
