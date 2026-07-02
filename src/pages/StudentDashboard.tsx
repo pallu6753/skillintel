@@ -11,7 +11,7 @@ import { useDataset } from "@/hooks/use-dataset";
 import { useNotificationStore } from "@/lib/notification-store";
 import { useApplicationStore } from "@/lib/application-store";
 import { recommendCareers, predictJobReadiness } from "@/lib/career-engine";
-import { GraduationCap, Target, Brain, BookOpen, Bell, TrendingUp, Briefcase, CheckCircle, XCircle, Clock, Send } from "lucide-react";
+import { GraduationCap, Target, Brain, BookOpen, Bell, TrendingUp, Briefcase, CheckCircle, XCircle, Clock, Send, Award, Mail, Phone, MapPin, Linkedin, FileBadge, Rocket } from "lucide-react";
 import {
   RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar,
   ResponsiveContainer, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip,
@@ -33,6 +33,40 @@ const statusColors: Record<string, string> = {
   interview: "outline",
   selected: "default",
   rejected: "destructive",
+};
+
+const RESUME_PROFILE = {
+  headline: "Data Science Student | AI & ML Enthusiast | Full-Stack Developer",
+  about:
+    "Data Science student (CGPA 8.5) with hands-on experience in AI/ML, data analysis, and full-stack development. Built multiple AI apps — chatbots, recommendation systems, and dashboards — using Python, SQL, Power BI, and OpenAI APIs.",
+  education: [
+    { school: "T John Institute of Technology", degree: "B.E. – Data Science", years: "2024 – 2027" },
+    { school: "AMC PU College", degree: "PCMC – PUC", years: "2021 – 2023" },
+  ],
+  internships: [
+    { role: "Data Analyst Trainee", org: "Excelerate", year: "2025" },
+    { role: "Data Visualization Intern", org: "Tata Forage", year: "2025" },
+    { role: "Azure Fundamentals Intern", org: "IN-BIOT", year: "2024" },
+  ],
+  projects: [
+    "Smart Hostel Management System",
+    "Skill Intel — AI Career Recommendation Platform",
+    "AI Resume Analyzer & Job Recommendation System",
+  ],
+  achievements: [
+    "🏆 Winner – COMEDKARES Hackathon (2024)",
+    "🏆 Winner – Web Weaving Competition (2023)",
+    "🎤 Recognized Speaker – TRIPLE IT Public Speaking",
+  ],
+  certifications: [
+    "Certified AI Specialist – AI Masterclass (2025)",
+    "Data Visualization – Tata Forage (2025)",
+    "Mastering MySQL – Udemy (2025)",
+    "Microsoft Azure Fundamentals – IN-BIOT (2024)",
+    "Infosys Springboard – Programming Foundations (2024)",
+  ],
+  contact: { phone: "7975582202", location: "Bangalore, India", email: "pallavirpallavir20@gmail.com" },
+  linkedin: "https://www.linkedin.com/in/pallavi-r-pallavi-r-14a678292",
 };
 
 export default function StudentDashboard() {
@@ -264,6 +298,82 @@ export default function StudentDashboard() {
             </CardContent>
           </Card>
         )}
+
+        {/* Resume-derived profile details */}
+        <Card>
+          <CardHeader>
+            <CardTitle className="font-display text-lg flex items-center gap-2">
+              <FileBadge className="h-4 w-4" /> Profile & Resume Highlights
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-6">
+            <div>
+              <p className="text-sm font-medium text-primary">{RESUME_PROFILE.headline}</p>
+              <p className="text-sm text-muted-foreground mt-2">{RESUME_PROFILE.about}</p>
+              <div className="flex flex-wrap gap-3 mt-3 text-xs text-muted-foreground">
+                <span className="flex items-center gap-1"><Phone className="h-3 w-3" />{RESUME_PROFILE.contact.phone}</span>
+                <span className="flex items-center gap-1"><Mail className="h-3 w-3" />{RESUME_PROFILE.contact.email}</span>
+                <span className="flex items-center gap-1"><MapPin className="h-3 w-3" />{RESUME_PROFILE.contact.location}</span>
+                <a href={RESUME_PROFILE.linkedin} target="_blank" rel="noreferrer" className="flex items-center gap-1 hover:text-primary">
+                  <Linkedin className="h-3 w-3" />LinkedIn
+                </a>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <h4 className="text-sm font-semibold mb-2 flex items-center gap-2"><GraduationCap className="h-4 w-4" /> Education</h4>
+                <div className="space-y-2">
+                  {RESUME_PROFILE.education.map((e) => (
+                    <div key={e.school} className="text-sm border-l-2 border-primary/40 pl-3">
+                      <p className="font-medium">{e.school}</p>
+                      <p className="text-xs text-muted-foreground">{e.degree} • {e.years}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <h4 className="text-sm font-semibold mb-2 flex items-center gap-2"><Briefcase className="h-4 w-4" /> Internships</h4>
+                <div className="space-y-2">
+                  {RESUME_PROFILE.internships.map((i) => (
+                    <div key={i.role} className="text-sm border-l-2 border-primary/40 pl-3">
+                      <p className="font-medium">{i.role}</p>
+                      <p className="text-xs text-muted-foreground">{i.org} • {i.year}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <h4 className="text-sm font-semibold mb-2 flex items-center gap-2"><Rocket className="h-4 w-4" /> Key Projects</h4>
+                <ul className="space-y-1 text-sm">
+                  {RESUME_PROFILE.projects.map((p) => (
+                    <li key={p} className="text-muted-foreground">• {p}</li>
+                  ))}
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="text-sm font-semibold mb-2 flex items-center gap-2"><Award className="h-4 w-4" /> Achievements</h4>
+                <ul className="space-y-1 text-sm">
+                  {RESUME_PROFILE.achievements.map((a) => (
+                    <li key={a} className="text-muted-foreground">{a}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            <div>
+              <h4 className="text-sm font-semibold mb-2 flex items-center gap-2"><FileBadge className="h-4 w-4" /> Certifications</h4>
+              <div className="flex flex-wrap gap-2">
+                {RESUME_PROFILE.certifications.map((c) => (
+                  <Badge key={c} variant="secondary" className="text-xs">{c}</Badge>
+                ))}
+              </div>
+            </div>
+          </CardContent>
+        </Card>
 
         <ExternalIntegrations />
       </div>
