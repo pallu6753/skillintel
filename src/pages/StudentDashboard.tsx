@@ -299,6 +299,82 @@ export default function StudentDashboard() {
           </Card>
         )}
 
+        {/* Resume-derived profile details */}
+        <Card>
+          <CardHeader>
+            <CardTitle className="font-display text-lg flex items-center gap-2">
+              <FileBadge className="h-4 w-4" /> Profile & Resume Highlights
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-6">
+            <div>
+              <p className="text-sm font-medium text-primary">{RESUME_PROFILE.headline}</p>
+              <p className="text-sm text-muted-foreground mt-2">{RESUME_PROFILE.about}</p>
+              <div className="flex flex-wrap gap-3 mt-3 text-xs text-muted-foreground">
+                <span className="flex items-center gap-1"><Phone className="h-3 w-3" />{RESUME_PROFILE.contact.phone}</span>
+                <span className="flex items-center gap-1"><Mail className="h-3 w-3" />{RESUME_PROFILE.contact.email}</span>
+                <span className="flex items-center gap-1"><MapPin className="h-3 w-3" />{RESUME_PROFILE.contact.location}</span>
+                <a href={RESUME_PROFILE.linkedin} target="_blank" rel="noreferrer" className="flex items-center gap-1 hover:text-primary">
+                  <Linkedin className="h-3 w-3" />LinkedIn
+                </a>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <h4 className="text-sm font-semibold mb-2 flex items-center gap-2"><GraduationCap className="h-4 w-4" /> Education</h4>
+                <div className="space-y-2">
+                  {RESUME_PROFILE.education.map((e) => (
+                    <div key={e.school} className="text-sm border-l-2 border-primary/40 pl-3">
+                      <p className="font-medium">{e.school}</p>
+                      <p className="text-xs text-muted-foreground">{e.degree} • {e.years}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <h4 className="text-sm font-semibold mb-2 flex items-center gap-2"><Briefcase className="h-4 w-4" /> Internships</h4>
+                <div className="space-y-2">
+                  {RESUME_PROFILE.internships.map((i) => (
+                    <div key={i.role} className="text-sm border-l-2 border-primary/40 pl-3">
+                      <p className="font-medium">{i.role}</p>
+                      <p className="text-xs text-muted-foreground">{i.org} • {i.year}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <h4 className="text-sm font-semibold mb-2 flex items-center gap-2"><Rocket className="h-4 w-4" /> Key Projects</h4>
+                <ul className="space-y-1 text-sm">
+                  {RESUME_PROFILE.projects.map((p) => (
+                    <li key={p} className="text-muted-foreground">• {p}</li>
+                  ))}
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="text-sm font-semibold mb-2 flex items-center gap-2"><Award className="h-4 w-4" /> Achievements</h4>
+                <ul className="space-y-1 text-sm">
+                  {RESUME_PROFILE.achievements.map((a) => (
+                    <li key={a} className="text-muted-foreground">{a}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            <div>
+              <h4 className="text-sm font-semibold mb-2 flex items-center gap-2"><FileBadge className="h-4 w-4" /> Certifications</h4>
+              <div className="flex flex-wrap gap-2">
+                {RESUME_PROFILE.certifications.map((c) => (
+                  <Badge key={c} variant="secondary" className="text-xs">{c}</Badge>
+                ))}
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
         <ExternalIntegrations />
       </div>
     </DashboardLayout>
