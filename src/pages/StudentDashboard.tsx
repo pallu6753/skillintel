@@ -11,7 +11,7 @@ import { useDataset } from "@/hooks/use-dataset";
 import { useNotificationStore } from "@/lib/notification-store";
 import { useApplicationStore } from "@/lib/application-store";
 import { recommendCareers, predictJobReadiness } from "@/lib/career-engine";
-import { GraduationCap, Target, Brain, BookOpen, Bell, TrendingUp, Briefcase, CheckCircle, XCircle, Clock, Send } from "lucide-react";
+import { GraduationCap, Target, Brain, BookOpen, Bell, TrendingUp, Briefcase, CheckCircle, XCircle, Clock, Send, Award, Mail, Phone, MapPin, Linkedin, FileBadge, Rocket } from "lucide-react";
 import {
   RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar,
   ResponsiveContainer, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip,
