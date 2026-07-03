@@ -340,6 +340,50 @@ export default function StudentDashboard() {
           </Card>
         )}
 
+        {/* Recent Activity & Upcoming Events */}
+        <div className="grid lg:grid-cols-2 gap-6">
+          <Card>
+            <CardHeader>
+              <CardTitle className="font-display text-lg flex items-center gap-2">
+                <Clock className="h-4 w-4" /> Recent Activity
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-3">
+              {recentActivity.map((a) => {
+                const Icon = a.icon;
+                return (
+                  <div key={a.text} className="flex items-start gap-3 p-2 rounded-lg hover:bg-muted/40">
+                    <Icon className="h-4 w-4 text-primary mt-0.5" />
+                    <div className="flex-1">
+                      <p className="text-sm">{a.text}</p>
+                      <p className="text-xs text-muted-foreground">{a.time}</p>
+                    </div>
+                  </div>
+                );
+              })}
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="font-display text-lg flex items-center gap-2">
+                <Target className="h-4 w-4" /> Upcoming Events
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-3">
+              {upcomingEvents.map((e) => (
+                <div key={e.title} className="flex items-center justify-between p-3 rounded-lg border">
+                  <div>
+                    <p className="text-sm font-medium">{e.title}</p>
+                    <p className="text-xs text-muted-foreground">{e.date}</p>
+                  </div>
+                  <Badge variant="outline">{e.type}</Badge>
+                </div>
+              ))}
+            </CardContent>
+          </Card>
+        </div>
+
         {/* Resume-derived profile details */}
         <Card>
           <CardHeader>
