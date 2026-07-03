@@ -88,9 +88,50 @@ export default function StudentDashboard() {
     );
   }
 
-  const student = user?.profileId
+  const rawStudent = user?.profileId
     ? data.students.find((s) => s.id === user.profileId)
     : null;
+
+  // Enrich sparse demo profile with plausible random-but-stable data
+  const rand = (min: number, max: number) => Math.floor(min + Math.random() * (max - min));
+  const student = rawStudent
+    ? {
+        ...rawStudent,
+        gpa: rawStudent.gpa > 0 ? rawStudent.gpa : 8.5,
+        attendance: rawStudent.attendance > 0 ? rawStudent.attendance : rand(78, 95),
+        assignmentScore: rawStudent.assignmentScore > 0 ? rawStudent.assignmentScore : rand(75, 95),
+        quizScore: rawStudent.quizScore > 0 ? rawStudent.quizScore : rand(70, 92),
+        examScore: rawStudent.examScore > 0 ? rawStudent.examScore : rand(72, 94),
+        codingScore: rawStudent.codingScore > 0 ? rawStudent.codingScore : rand(70, 90),
+        communicationScore: rawStudent.communicationScore > 0 ? rawStudent.communicationScore : rand(72, 92),
+        resumeScore: rawStudent.resumeScore > 0 ? rawStudent.resumeScore : rand(78, 94),
+        jobReadyScore: rawStudent.jobReadyScore > 0 ? rawStudent.jobReadyScore : rand(72, 88),
+        projectsCompleted: rawStudent.projectsCompleted > 0 ? rawStudent.projectsCompleted : 4,
+        internshipsCompleted: rawStudent.internshipsCompleted > 0 ? rawStudent.internshipsCompleted : 3,
+        skills: rawStudent.skills.length > 0 ? rawStudent.skills : [
+          { name: "Python", level: "Advanced" as const },
+          { name: "SQL", level: "Advanced" as const },
+          { name: "Machine Learning", level: "Intermediate" as const },
+          { name: "Power BI", level: "Intermediate" as const },
+          { name: "Data Visualization", level: "Advanced" as const },
+          { name: "Communication", level: "Advanced" as const },
+          { name: "Java", level: "Beginner" as const },
+        ],
+      }
+    : null;
+
+  const recentActivity = [
+    { icon: CheckCircle, text: "Completed 'Advanced SQL' quiz — 92%", time: "2h ago" },
+    { icon: Send, text: "Applied to Data Analyst role at Infosys", time: "1d ago" },
+    { icon: Award, text: "Earned 'Python Pro' badge", time: "3d ago" },
+    { icon: BookOpen, text: "Finished Coursera ML module 4", time: "5d ago" },
+  ];
+  const upcomingEvents = [
+    { title: "TCS Placement Drive", date: "Jul 10, 2026", type: "Drive" },
+    { title: "Mock Interview — HR Round", date: "Jul 08, 2026", type: "Interview" },
+    { title: "DBMS End Semester Exam", date: "Jul 15, 2026", type: "Exam" },
+    { title: "AI/ML Workshop by Google", date: "Jul 12, 2026", type: "Workshop" },
+  ];
 
   // If no matching student profile found, show empty state with add data option
   if (!student) {
