@@ -141,7 +141,7 @@ async function loadDbStudents(): Promise<StudentFull[]> {
     return {
       id: p.id,
       name: p.full_name,
-      email: p.email ?? "",
+      email: "",
       department: p.department ?? "Unknown",
       semester: p.semester ?? 1,
       yearOfStudy: p.year_of_study ?? 1,
