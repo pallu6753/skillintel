@@ -47,7 +47,7 @@ export default function AdminDashboard() {
       setUsersLoading(true);
       const { data: profiles } = await supabase
         .from("profiles")
-        .select("id, full_name, email, department, user_id");
+        .select("id, full_name, department, user_id");
 
       const { data: roles } = await supabase
         .from("user_roles")
@@ -58,7 +58,7 @@ export default function AdminDashboard() {
       const users: UserWithRole[] = (profiles ?? []).map((p) => ({
         id: p.id,
         full_name: p.full_name,
-        email: p.email ?? "",
+        email: "",
         department: p.department,
         role: roleMap.get(p.user_id) ?? "student",
       }));
