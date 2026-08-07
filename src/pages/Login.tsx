@@ -31,7 +31,7 @@ export default function Login() {
   const [fullName, setFullName] = useState("");
   const [submitting, setSubmitting] = useState(false);
   const [demoLoading, setDemoLoading] = useState<string | null>(null);
-  const { login, signup } = useAuth();
+  const { login, signup, user } = useAuth();
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
 
@@ -44,6 +44,11 @@ export default function Login() {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  // Once the authenticated user (with role) is resolved, go to their dashboard
+  useEffect(() => {
+    if (user) navigate(`/${user.role}-dashboard`, { replace: true });
+  }, [user, navigate]);
 
   const getRoleDashboard = (role: UserRole) => `/${role}-dashboard`;
 

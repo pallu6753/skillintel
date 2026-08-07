@@ -66,11 +66,15 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       (_event, newSession) => {
         setSession(newSession);
         if (newSession?.user) {
+          setLoading(true);
           // Defer Supabase calls to avoid deadlock with auth lock
           setTimeout(async () => {
-            const authUser = await buildAuthUser(newSession.user);
-            setUser(authUser);
-            setLoading(false);
+            try {
+              const authUser = await buildAuthUser(newSession.user);
+              setUser(authUser);
+            } finally {
+              setLoading(false);
+            }
           }, 0);
         } else {
           setUser(null);
