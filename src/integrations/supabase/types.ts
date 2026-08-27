@@ -10,7 +10,7 @@ export type Database = {
   // Allows to automatically instantiate createClient with right options
   // instead of createClient<Database, { PostgrestVersion: 'XX' }>(URL, KEY)
   __InternalSupabase: {
-    PostgrestVersion: "14.4"
+    PostgrestVersion: "14.17"
   }
   public: {
     Tables: {
@@ -296,6 +296,62 @@ export type Database = {
           },
         ]
       }
+      resume_analyses: {
+        Row: {
+          ats_score: number
+          created_at: string
+          detected_skills: string[]
+          file_name: string | null
+          id: string
+          keywords: string[]
+          missing_skills: string[]
+          overall_score: number
+          recommendations: string[]
+          sections: Json
+          student_id: string
+          user_id: string
+          word_count: number
+        }
+        Insert: {
+          ats_score?: number
+          created_at?: string
+          detected_skills?: string[]
+          file_name?: string | null
+          id?: string
+          keywords?: string[]
+          missing_skills?: string[]
+          overall_score?: number
+          recommendations?: string[]
+          sections?: Json
+          student_id: string
+          user_id: string
+          word_count?: number
+        }
+        Update: {
+          ats_score?: number
+          created_at?: string
+          detected_skills?: string[]
+          file_name?: string | null
+          id?: string
+          keywords?: string[]
+          missing_skills?: string[]
+          overall_score?: number
+          recommendations?: string[]
+          sections?: Json
+          student_id?: string
+          user_id?: string
+          word_count?: number
+        }
+        Relationships: [
+          {
+            foreignKeyName: "resume_analyses_student_id_fkey"
+            columns: ["student_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       resume_scores: {
         Row: {
           ats_score: number | null
@@ -330,6 +386,93 @@ export type Database = {
         Relationships: [
           {
             foreignKeyName: "resume_scores_student_id_fkey"
+            columns: ["student_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      security_audit_log: {
+        Row: {
+          action: string
+          actor_role: string | null
+          created_at: string
+          id: string
+          metadata: Json
+          resource: string | null
+          user_id: string | null
+        }
+        Insert: {
+          action: string
+          actor_role?: string | null
+          created_at?: string
+          id?: string
+          metadata?: Json
+          resource?: string | null
+          user_id?: string | null
+        }
+        Update: {
+          action?: string
+          actor_role?: string | null
+          created_at?: string
+          id?: string
+          metadata?: Json
+          resource?: string | null
+          user_id?: string | null
+        }
+        Relationships: []
+      }
+      skill_progress: {
+        Row: {
+          action_type: string
+          analysis_id: string | null
+          completed_at: string | null
+          created_at: string
+          id: string
+          notes: string | null
+          skill: string
+          status: string
+          student_id: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          action_type?: string
+          analysis_id?: string | null
+          completed_at?: string | null
+          created_at?: string
+          id?: string
+          notes?: string | null
+          skill: string
+          status?: string
+          student_id: string
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          action_type?: string
+          analysis_id?: string | null
+          completed_at?: string | null
+          created_at?: string
+          id?: string
+          notes?: string | null
+          skill?: string
+          status?: string
+          student_id?: string
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "skill_progress_analysis_id_fkey"
+            columns: ["analysis_id"]
+            isOneToOne: false
+            referencedRelation: "resume_analyses"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "skill_progress_student_id_fkey"
             columns: ["student_id"]
             isOneToOne: false
             referencedRelation: "profiles"
