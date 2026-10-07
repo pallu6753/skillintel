@@ -1,4 +1,5 @@
 import { useState, useRef } from "react";
+import { useQueryClient } from "@tanstack/react-query";
 import { DashboardLayout } from "@/components/DashboardLayout";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -11,7 +12,7 @@ import { useAuth } from "@/lib/auth-context";
 import { useResumeTracking, type ResumeAnalysisRecord } from "@/hooks/use-resume-tracking";
 import { measure, measureSync } from "@/lib/perf";
 import { logAudit } from "@/lib/audit";
-import { queryClient } from "@/lib/query-client";
+import { supabase } from "@/integrations/supabase/client";
 import { FileText, Upload, Brain, Target, CheckCircle2, XCircle, Briefcase, Download, FileUp, Loader2, History, TrendingUp, RefreshCw } from "lucide-react";
 import { toast } from "sonner";
 import * as pdfjsLib from "pdfjs-dist";
@@ -81,6 +82,7 @@ function analyzeResume(text: string) {
 }
 
 export default function ResumeAnalyzer() {
+  const queryClient = useQueryClient();
   const { data } = useDataset();
   const { user } = useAuth();
   const { analyses, progress, canRead, isStudent } = useResumeTracking();
@@ -221,6 +223,20 @@ export default function ResumeAnalyzer() {
   };
 
   const careers = result ? recommendCareers(result.detectedSkills) : [];
+  const history = analyses.data ?? [];
+  const latestAnalysis = history[0];
+  const previousAnalysis = history[1];
+  const resolvedGaps = previousAnalysis
+    ? previousAnalysis.missing_skills.filter((skill) => !latestAnalysis?.missing_skills.includes(skill))
+    : [];
+  const nextActions = latestAnalysis?.recommendations ?? (latestAnalysis ? suggestionsFor(latestAnalysis.missing_skills) : []);
+  const actionLabels: Record<string, string> = {
+    learn_skill: "Learn a skill",
+    complete_course: "Complete a course",
+    practice: "Practice",
+    resume_update: "Improve resume",
+    profile_update: "Update profile",
+  };
 
   return (
     <DashboardLayout>
@@ -280,8 +296,8 @@ export default function ResumeAnalyzer() {
               <p className="text-xs text-muted-foreground">
                 {resumeText.split(/\s+/).filter(Boolean).length} words
               </p>
-              <Button onClick={handleAnalyze} disabled={resumeText.trim().length < 50}>
-                <Brain className="h-4 w-4 mr-2" /> Analyze Resume
+              <Button onClick={handleAnalyze} disabled={resumeText.trim().length < 50 || isSaving}>
+                {isSaving ? <Loader2 className="h-4 w-4 mr-2 animate-spin" /> : <Brain className="h-4 w-4 mr-2" />} {isSaving ? "Saving analysis…" : "Analyze Resume"}
               </Button>
             </div>
           </CardContent>
@@ -452,6 +468,88 @@ export default function ResumeAnalyzer() {
               </CardContent>
             </Card>
           </>
+        )}
+
+        {isStudent && user?.profileId && (
+          <section aria-labelledby="progress-title" className="space-y-4">
+            <div className="flex items-center gap-3">
+              <TrendingUp className="h-5 w-5 text-primary" />
+              <div>
+                <h2 id="progress-title" className="font-display text-xl font-semibold">Resume progress</h2>
+                <p className="text-sm text-muted-foreground">Your saved analysis history and actions stay private to your account.</p>
+              </div>
+            </div>
+
+            {latestAnalysis && previousAnalysis && (
+              <Card>
+                <CardHeader><CardTitle className="font-display text-lg flex items-center gap-2"><RefreshCw className="h-4 w-4" /> Since your previous analysis</CardTitle></CardHeader>
+                <CardContent className="grid gap-4 sm:grid-cols-3">
+                  <div><p className="text-xs text-muted-foreground">Overall score</p><p className="font-semibold">{previousAnalysis.overall_score}% → {latestAnalysis.overall_score}% <span className="text-muted-foreground">({latestAnalysis.overall_score - previousAnalysis.overall_score > 0 ? "+" : ""}{latestAnalysis.overall_score - previousAnalysis.overall_score})</span></p></div>
+                  <div><p className="text-xs text-muted-foreground">ATS score</p><p className="font-semibold">{previousAnalysis.ats_score}% → {latestAnalysis.ats_score}% <span className="text-muted-foreground">({latestAnalysis.ats_score - previousAnalysis.ats_score > 0 ? "+" : ""}{latestAnalysis.ats_score - previousAnalysis.ats_score})</span></p></div>
+                  <div><p className="text-xs text-muted-foreground">Previously missing skills now detected</p><p className="font-semibold">{resolvedGaps.length ? resolvedGaps.join(", ") : "No previous gaps resolved yet"}</p></div>
+                </CardContent>
+              </Card>
+            )}
+
+            {latestAnalysis && (
+              <Card>
+                <CardHeader><CardTitle className="font-display text-lg">Recommended next actions</CardTitle></CardHeader>
+                <CardContent className="space-y-2">
+                  {nextActions.map((action, index) => <p key={`${index}-${action}`} className="text-sm">{index + 1}. {action}</p>)}
+                  {latestAnalysis.missing_skills.length > 0 && <div className="flex flex-wrap gap-2 pt-2">{latestAnalysis.missing_skills.map((skill) => <Badge key={skill} variant="outline">{skill}</Badge>)}</div>}
+                </CardContent>
+              </Card>
+            )}
+
+            <Card>
+              <CardHeader><CardTitle className="font-display text-lg">Track a learning milestone</CardTitle></CardHeader>
+              <CardContent className="grid gap-3 sm:grid-cols-[minmax(0,1fr)_200px_auto]">
+                <Input value={milestoneSkill} onChange={(event) => setMilestoneSkill(event.target.value.slice(0, 80))} maxLength={80} placeholder="Skill or goal" aria-label="Skill or goal" />
+                <Select value={milestoneType} onValueChange={setMilestoneType}>
+                  <SelectTrigger aria-label="Milestone type"><SelectValue /></SelectTrigger>
+                  <SelectContent>{Object.entries(actionLabels).map(([value, label]) => <SelectItem key={value} value={value}>{label}</SelectItem>)}</SelectContent>
+                </Select>
+                <Button onClick={addMilestone} disabled={!milestoneSkill.trim()}>Add milestone</Button>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader><CardTitle className="font-display text-lg">Your progress timeline</CardTitle></CardHeader>
+              <CardContent className="space-y-3">
+                {progress.isLoading && <p className="text-sm text-muted-foreground">Loading progress…</p>}
+                {progress.error && <p className="text-sm text-destructive">Progress could not be loaded. Please retry shortly.</p>}
+                {!progress.isLoading && !progress.error && (progress.data?.length ?? 0) === 0 && <p className="text-sm text-muted-foreground">No milestones yet. Add a learning action to start tracking progress.</p>}
+                {(progress.data ?? []).map((item) => (
+                  <div key={item.id} className="flex flex-wrap items-center justify-between gap-3 border-b border-border pb-3 last:border-0">
+                    <div><p className="font-medium">{item.skill}</p><p className="text-xs text-muted-foreground">{actionLabels[item.action_type] ?? item.action_type} · {new Date(item.updated_at).toLocaleDateString()}</p></div>
+                    <div className="flex items-center gap-2"><Badge variant={item.status === "completed" ? "default" : "secondary"}>{item.status.replace("_", " ")}</Badge>{item.status !== "completed" && <Button size="sm" variant="outline" onClick={() => updateMilestone(item.id, item.status === "pending" ? "in_progress" : "completed")}>{item.status === "pending" ? "Start" : "Complete"}</Button>}</div>
+                  </div>
+                ))}
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader><CardTitle className="font-display text-lg flex items-center gap-2"><History className="h-4 w-4" /> Analysis history</CardTitle></CardHeader>
+              <CardContent className="space-y-3">
+                {analyses.isLoading && <p className="text-sm text-muted-foreground">Loading history…</p>}
+                {analyses.error && <p className="text-sm text-destructive">Analysis history could not be loaded. Please retry shortly.</p>}
+                {!analyses.isLoading && !analyses.error && history.length === 0 && <p className="text-sm text-muted-foreground">Your saved results will appear here after your first analysis.</p>}
+                {history.map((item: ResumeAnalysisRecord) => <div key={item.id} className="flex flex-wrap items-center justify-between gap-3 border-b border-border pb-3 last:border-0"><div><p className="font-medium">{item.file_name ?? "Resume analysis"}</p><p className="text-xs text-muted-foreground">{new Date(item.created_at).toLocaleString()} · {item.detected_skills.length} skills · {item.missing_skills.length} gaps</p></div><div className="text-right text-sm"><p>Overall <strong>{item.overall_score}%</strong></p><p className="text-muted-foreground">ATS {item.ats_score}%</p></div></div>)}
+              </CardContent>
+            </Card>
+          </section>
+        )}
+
+        {!isStudent && user && user.role !== "student" && (
+          <section aria-labelledby="staff-progress-title" className="space-y-4">
+            <h2 id="staff-progress-title" className="font-display text-xl font-semibold">Student resume progress</h2>
+            <p className="text-sm text-muted-foreground">Authorized student analyses and milestones only. Resume contents are not stored or shown here.</p>
+            {analyses.isLoading && <p className="text-sm text-muted-foreground">Loading authorized records…</p>}
+            {analyses.error && <p className="text-sm text-destructive">Progress records could not be loaded.</p>}
+            <div className="space-y-3">{history.map((item) => <Card key={item.id}><CardContent className="flex flex-wrap items-center justify-between gap-3 p-4"><div><p className="font-medium">Student record · {item.student_id.slice(0, 8)}</p><p className="text-xs text-muted-foreground">{new Date(item.created_at).toLocaleDateString()} · {item.detected_skills.length} skills · {item.missing_skills.length} gaps</p></div><div className="text-right text-sm"><p>Overall <strong>{item.overall_score}%</strong></p><p>ATS {item.ats_score}%</p></div></CardContent></Card>)}</div>
+            {!analyses.isLoading && !analyses.error && history.length === 0 && <p className="text-sm text-muted-foreground">No authorized resume analyses are available.</p>}
+            <div className="space-y-2">{(progress.data ?? []).map((item) => <div key={item.id} className="flex items-center justify-between gap-2 border-b border-border py-2 text-sm"><span>Student · {item.student_id.slice(0, 8)} · {item.skill}</span><Badge variant={item.status === "completed" ? "default" : "secondary"}>{item.status.replace("_", " ")}</Badge></div>)}</div>
+          </section>
         )}
       </div>
     </DashboardLayout>
