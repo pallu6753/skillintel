@@ -7,9 +7,16 @@ import { Progress } from "@/components/ui/progress";
 import { Textarea } from "@/components/ui/textarea";
 import { useDataset } from "@/hooks/use-dataset";
 import { recommendCareers } from "@/lib/career-engine";
-import { FileText, Upload, Brain, Target, CheckCircle2, XCircle, Briefcase, Download, FileUp, Loader2 } from "lucide-react";
+import { useAuth } from "@/lib/auth-context";
+import { useResumeTracking, type ResumeAnalysisRecord } from "@/hooks/use-resume-tracking";
+import { measure, measureSync } from "@/lib/perf";
+import { logAudit } from "@/lib/audit";
+import { queryClient } from "@/lib/query-client";
+import { FileText, Upload, Brain, Target, CheckCircle2, XCircle, Briefcase, Download, FileUp, Loader2, History, TrendingUp, RefreshCw } from "lucide-react";
 import { toast } from "sonner";
 import * as pdfjsLib from "pdfjs-dist";
+import { Input } from "@/components/ui/input";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js`;
 
@@ -75,17 +82,32 @@ function analyzeResume(text: string) {
 
 export default function ResumeAnalyzer() {
   const { data } = useDataset();
+  const { user } = useAuth();
+  const { analyses, progress, canRead, isStudent } = useResumeTracking();
   const [resumeText, setResumeText] = useState("");
   const [result, setResult] = useState<ReturnType<typeof analyzeResume> | null>(null);
   const [fileName, setFileName] = useState<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
-
   const [isUploading, setIsUploading] = useState(false);
+  const [isSaving, setIsSaving] = useState(false);
+  const [milestoneSkill, setMilestoneSkill] = useState("");
+  const [milestoneType, setMilestoneType] = useState("learn_skill");
+
+  const suggestionsFor = (skills: string[]) => [
+    ...skills.slice(0, 4).map((skill) => `Build evidence of ${skill} through a course or project.`),
+    "Strengthen experience bullets with measurable outcomes.",
+    "Review resume sections and refresh your profile details.",
+  ];
 
   const handleFileUpload = async (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
     if (!file) return;
 
+    if (file.size > 20 * 1024 * 1024) {
+      toast.error("Please choose a file smaller than 20 MB.");
+      event.target.value = "";
+      return;
+    }
     if (!file.name.match(/\.(txt|doc|docx|pdf)$/i)) {
       toast.error("Please upload a .txt, .doc, .docx, or .pdf file");
       return;
@@ -105,11 +127,11 @@ export default function ResumeAnalyzer() {
           const content = await page.getTextContent();
           text += content.items.map((item: any) => item.str).join(" ") + "\n";
         }
-        setResumeText(text.trim());
+        setResumeText(text.trim().slice(0, 1_000_000));
         toast.success(`PDF "${file.name}" parsed — ${pdf.numPages} page(s) extracted!`);
       } else {
         const text = await file.text();
-        setResumeText(text);
+        setResumeText(text.slice(0, 1_000_000));
         toast.success(`File "${file.name}" loaded successfully!`);
       }
     } catch (err) {
@@ -120,14 +142,82 @@ export default function ResumeAnalyzer() {
     }
   };
 
-  const handleAnalyze = () => {
+  const handleAnalyze = async () => {
     if (resumeText.trim().length < 50) {
       toast.error("Please paste at least 50 characters of resume content");
       return;
     }
-    const analysis = analyzeResume(resumeText);
+    const analysis = measureSync("Resume analysis", "analysis", () => analyzeResume(resumeText));
     setResult(analysis);
-    toast.success("Resume analyzed successfully!");
+    if (user?.role === "student" && user.profileId) {
+      setIsSaving(true);
+      const recommendations = suggestionsFor(analysis.missingSkills);
+      try {
+        await measure("Save resume analysis", "database", async () => {
+          const { error } = await supabase.from("resume_analyses").insert({
+            student_id: user.profileId as string,
+            user_id: user.id,
+            file_name: fileName?.replace(/[\\/]/g, "_").slice(0, 255) ?? null,
+            overall_score: analysis.overallScore,
+            ats_score: analysis.atsScore,
+            word_count: analysis.wordCount,
+            detected_skills: analysis.detectedSkills,
+            missing_skills: analysis.missingSkills,
+            keywords: analysis.foundKeywords,
+            sections: analysis.sections,
+            recommendations,
+          });
+          if (error) throw error;
+        });
+        await logAudit("resume.analyzed", { role: user.role, resource: "resume_analysis", metadata: { ats_score: analysis.atsScore, overall_score: analysis.overallScore } });
+        await queryClient.invalidateQueries({ queryKey: ["resume-tracking", user.profileId, "analyses"] });
+        toast.success("Analysis saved to your private progress history.");
+      } catch {
+        toast.error("Analysis is ready, but could not be saved to your private history. Please retry.");
+      } finally {
+        setIsSaving(false);
+      }
+    } else {
+      toast.success("Resume analyzed. Sign in as a student to save a private history.");
+    }
+  };
+
+  const addMilestone = async () => {
+    const skill = milestoneSkill.trim().slice(0, 80);
+    if (!user?.profileId || !skill) return;
+    try {
+      const latestAnalysis = analyses.data?.[0];
+      const { error } = await supabase.from("skill_progress").upsert({
+        student_id: user.profileId,
+        user_id: user.id,
+        analysis_id: latestAnalysis?.id ?? null,
+        skill,
+        action_type: milestoneType,
+        status: "in_progress",
+      }, { onConflict: "student_id,skill,action_type" });
+      if (error) throw error;
+      await logAudit("progress.milestone_created", { role: user.role, resource: "skill_progress", metadata: { action_type: milestoneType } });
+      await queryClient.invalidateQueries({ queryKey: ["resume-tracking", user.profileId, "progress"] });
+      setMilestoneSkill("");
+      toast.success("Progress milestone added.");
+    } catch {
+      toast.error("Could not save this milestone. Please try again.");
+    }
+  };
+
+  const updateMilestone = async (id: string, status: string) => {
+    if (!user?.profileId) return;
+    try {
+      const { error } = await supabase.from("skill_progress").update({
+        status,
+        completed_at: status === "completed" ? new Date().toISOString() : null,
+      }).eq("id", id).eq("student_id", user.profileId);
+      if (error) throw error;
+      await logAudit("progress.milestone_updated", { role: user.role, resource: "skill_progress", metadata: { status } });
+      await queryClient.invalidateQueries({ queryKey: ["resume-tracking", user.profileId, "progress"] });
+    } catch {
+      toast.error("Could not update milestone. Please try again.");
+    }
   };
 
   const careers = result ? recommendCareers(result.detectedSkills) : [];
