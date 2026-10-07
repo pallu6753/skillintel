@@ -1,6 +1,7 @@
 import React, { createContext, useContext, useState, useEffect, useCallback } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import type { User, Session } from "@supabase/supabase-js";
+import { measure } from "@/lib/perf";
 
 export type UserRole = "student" | "faculty" | "placement" | "admin";
 
@@ -96,9 +97,13 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   const login = useCallback(async (email: string, password: string, _role: UserRole) => {
-    const { error } = await supabase.auth.signInWithPassword({ email, password });
-    if (error) return { error: error.message };
-    return { error: null };
+    try {
+      const { error } = await measure("Email sign-in", "auth", () => supabase.auth.signInWithPassword({ email, password }));
+      if (error) return { error: error.message };
+      return { error: null };
+    } catch {
+      return { error: "Sign in could not reach the service. Check your connection and try again." };
+    }
   }, []);
 
   const signup = useCallback(async (email: string, password: string, fullName: string, role: UserRole) => {

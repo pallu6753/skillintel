@@ -222,7 +222,7 @@ export default function ResumeAnalyzer() {
     }
   };
 
-  const careers = result ? recommendCareers(result.detectedSkills) : [];
+  const careers = result ? measureSync("Career recommendations", "recommendation", () => recommendCareers(result.detectedSkills)) : [];
   const history = analyses.data ?? [];
   const latestAnalysis = history[0];
   const previousAnalysis = history[1];
