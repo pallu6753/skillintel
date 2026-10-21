@@ -35,6 +35,7 @@ import ModelMetrics from "./pages/ModelMetrics";
 import ActivityLog from "./pages/ActivityLog";
 import Documentation from "./pages/Documentation";
 import SystemOverview from "./pages/SystemOverview";
+import PerformancePage from "./pages/PerformancePage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -87,6 +88,7 @@ const AppRoutes = () => (
     <Route path="/activity" element={<ProtectedRoute><ActivityLog /></ProtectedRoute>} />
     <Route path="/documentation" element={<ProtectedRoute><Documentation /></ProtectedRoute>} />
     <Route path="/system-overview" element={<ProtectedRoute><SystemOverview /></ProtectedRoute>} />
+    <Route path="/performance" element={<ProtectedRoute><PerformancePage /></ProtectedRoute>} />
     <Route path="*" element={<NotFound />} />
   </Routes>
 );

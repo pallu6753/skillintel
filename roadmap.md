@@ -1,8 +1,10 @@
 # Skill Intel implementation roadmap
 
 - [ ] Confirm and remediate the new security-linter findings from the additive tracking migration before continuing application work.
-- [ ] Persist resume-analysis results without raw resume contents; show history, compare analyses, and guide milestone tracking.
-- [ ] Add actual client-measured performance instrumentation and a restricted report.
-- [ ] Add permission-aware live updates for resume analyses and student progress.
-- [ ] Validate through project build/diagnostics and identify any hosted-service blockers to authenticated end-to-end tests.
+- [x] Persist resume-analysis results without raw resume contents; show history, compare analyses, and guide milestone tracking.
+- [x] Add actual client-measured performance instrumentation and a restricted report.
+- [x] Add permission-aware live updates for resume analyses and student progress.
+- [x] Validate through project build/diagnostics and identify any hosted-service blockers to authenticated end-to-end tests. (Build OK, types OK, tests pass; sign-in test blocked by backend connection error.)
 - [ ] Continue remaining requirements from the user's uploaded trusted real-world data specification after the current security/tracking work.
+## Added Oct 21
+- [ ] Run build/tests and live preview checks after current edits ("run the codes").

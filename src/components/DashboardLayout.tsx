@@ -7,7 +7,7 @@ import {
   LogOut, GraduationCap, BarChart3, FileText, ChevronLeft,
   ChevronRight, Target, TrendingUp, AlertTriangle, Menu, X, Briefcase,
   Trophy, ClipboardList, Bot, Code2, Mic, ChevronDown, Server, Clock,
-  Activity, Download, Eye,
+  Activity, Download, Eye, Gauge,
 } from "lucide-react";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { Button } from "@/components/ui/button";
@@ -78,6 +78,7 @@ const facultyNav: NavEntry[] = [
   { label: "Placement Intelligence", path: "/placement-intelligence", icon: Briefcase },
   { label: "Leaderboard", path: "/leaderboard", icon: Trophy },
   { label: "Analytics", path: "/analytics", icon: BarChart3 },
+  { label: "Performance", path: "/performance", icon: Gauge },
   { label: "Notifications", path: "/notifications", icon: Bell },
   { label: "Settings", path: "/settings", icon: Settings },
 ];
@@ -87,6 +88,7 @@ const placementNav: NavEntry[] = [
   { label: "Students", path: "/students", icon: Users },
   { label: "Placement Drives", path: "/placement-drives", icon: Briefcase },
   { label: "Placement Intelligence", path: "/placement-intelligence", icon: Target },
+  { label: "Performance", path: "/performance", icon: Gauge },
   { label: "Leaderboard", path: "/leaderboard", icon: Trophy },
   { label: "Analytics", path: "/analytics", icon: BarChart3 },
   { label: "Notifications", path: "/notifications", icon: Bell },
@@ -100,6 +102,7 @@ const adminNav: NavEntry[] = [
   { label: "Skills Hub", path: "/skills-db", icon: Brain },
   { label: "Placement Intelligence", path: "/placement-intelligence", icon: Target },
   { label: "Model Metrics", path: "/model-metrics", icon: Activity },
+  { label: "Performance", path: "/performance", icon: Gauge },
   { label: "System Architecture", path: "/system-architecture", icon: Server },
   { label: "Leaderboard", path: "/leaderboard", icon: Trophy },
   { label: "Analytics", path: "/analytics", icon: BarChart3 },
