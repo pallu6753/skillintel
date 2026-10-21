@@ -6,3 +6,5 @@
 - [ ] Add permission-aware live updates for resume analyses and student progress.
 - [ ] Validate through project build/diagnostics and identify any hosted-service blockers to authenticated end-to-end tests.
 - [ ] Continue remaining requirements from the user's uploaded trusted real-world data specification after the current security/tracking work.
+## Added Oct 21
+- [ ] Run build/tests and live preview checks after current edits ("run the codes").
