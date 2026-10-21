@@ -1,0 +1,302 @@
+[
+  {
+    "student_number": 1,
+    "usn": "1TJ23DS001",
+    "full_name": "ABHIJIT SAGAR",
+    "college": "T. John Institute of Technology",
+    "department": "DS",
+    "email": "abhisagar145@gmail.com",
+    "phone": "7338249132",
+    "data_source": "SEEL student login-details workbook"
+  },
+  {
+    "student_number": 2,
+    "usn": "1TJ23DS002",
+    "full_name": "AFREEN MAIDUR",
+    "college": "T. John Institute of Technology",
+    "department": "DS",
+    "email": "afreenmaidur@gmail.com",
+    "phone": "8088288738",
+    "data_source": "SEEL student login-details workbook"
+  },
+  {
+    "student_number": 3,
+    "usn": "1TJ23DS003",
+    "full_name": "ANIL Y. H.",
+    "college": "T. John Institute of Technology",
+    "department": "DS",
+    "email": "thenameisani889@gmail.com",
+    "phone": "9380171061",
+    "data_source": "SEEL student login-details workbook"
+  },
+  {
+    "student_number": 4,
+    "usn": "1TJ23DS004",
+    "full_name": "ANSON JOLLY",
+    "college": "T. John Institute of Technology",
+    "department": "DS",
+    "email": "ansonjolly33@gmail.com",
+    "phone": "7483762871",
+    "data_source": "SEEL student login-details workbook"
+  },
+  {
+    "student_number": 5,
+    "usn": "1TJ23DS005",
+    "full_name": "CHARAN SAI A.",
+    "college": "T. John Institute of Technology",
+    "department": "DS",
+    "email": "charanadi065@gmail.com",
+    "phone": "8317465714",
+    "data_source": "SEEL student login-details workbook"
+  },
+  {
+    "student_number": 6,
+    "usn": "1TJ23DS006",
+    "full_name": "CHARITHA J",
+    "college": "T. John Institute of Technology",
+    "department": "DS",
+    "email": "jcharitha31@gmail.com",
+    "phone": "6363768669",
+    "data_source": "SEEL student login-details workbook"
+  },
+  {
+    "student_number": 7,
+    "usn": "1TJ23DS007",
+    "full_name": "DIVYA  PRABHA K.",
+    "college": "T. John Institute of Technology",
+    "department": "DS",
+    "email": "divyaprabha5544@gmail.com",
+    "phone": "6363915242",
+    "data_source": "SEEL student login-details workbook"
+  },
+  {
+    "student_number": 8,
+    "usn": "1TJ23DS008",
+    "full_name": "HEMANTH S",
+    "college": "T. John Institute of Technology",
+    "department": "DS",
+    "email": "hemanthh0789@gmail.com",
+    "phone": "8147947485",
+    "data_source": "SEEL student login-details workbook"
+  },
+  {
+    "student_number": 9,
+    "usn": "1TJ23DS009",
+    "full_name": "K M KUSUMA",
+    "college": "T. John Institute of Technology",
+    "department": "DS",
+    "email": "kusuma99.tech@gmail.com",
+    "phone": "6361559859",
+    "data_source": "SEEL student login-details workbook"
+  },
+  {
+    "student_number": 10,
+    "usn": "1TJ23DS010",
+    "full_name": "KARTHIK KUMAR.S",
+    "college": "T. John Institute of Technology",
+    "department": "DS",
+    "email": "karthik901913@gmail.com",
+    "phone": "9019131717",
+    "data_source": "SEEL student login-details workbook"
+  },
+  {
+    "student_number": 11,
+    "usn": "1TJ23DS011",
+    "full_name": "KAVERI H.",
+    "college": "T. John Institute of Technology",
+    "department": "DS",
+    "email": "kkaverih6@gmail.com",
+    "phone": "9008513822",
+    "data_source": "SEEL student login-details workbook"
+  },
+  {
+    "student_number": 12,
+    "usn": "1TJ23DS012",
+    "full_name": "LAKHAN SINGH",
+    "college": "T. John Institute of Technology",
+    "department": "DS",
+    "email": "lakhan93050@gmail.com",
+    "phone": "9305093638",
+    "data_source": "SEEL student login-details workbook"
+  },
+  {
+    "student_number": 13,
+    "usn": "1TJ23DS013",
+    "full_name": "M K RAMYA",
+    "college": "T. John Institute of Technology",
+    "department": "DS",
+    "email": "ramyamk971@gmail.com",
+    "phone": "9110229048",
+    "data_source": "SEEL student login-details workbook"
+  },
+  {
+    "student_number": 14,
+    "usn": "1TJ23DS014",
+    "full_name": "MD SAQIB B",
+    "college": "T. John Institute of Technology",
+    "department": "DS",
+    "email": "mdsaqib2005786@gmail.com",
+    "phone": "9686327074",
+    "data_source": "SEEL student login-details workbook"
+  },
+  {
+    "student_number": 15,
+    "usn": "1TJ23DS015",
+    "full_name": "MOHAMMED TALHA ANJUM",
+    "college": "T. John Institute of Technology",
+    "department": "DS",
+    "email": "mohammedtalha132132@gmail.com",
+    "phone": "8217006569",
+    "data_source": "SEEL student login-details workbook"
+  },
+  {
+    "student_number": 16,
+    "usn": "1TJ23DS016",
+    "full_name": "NARASIMHA N.",
+    "college": "T. John Institute of Technology",
+    "department": "DS",
+    "email": "narasimhan7018@gmail.com",
+    "phone": "9066066788",
+    "data_source": "SEEL student login-details workbook"
+  },
+  {
+    "student_number": 17,
+    "usn": "1TJ23DS017",
+    "full_name": "NEHA SUNIL",
+    "college": "T. John Institute of Technology",
+    "department": "DS",
+    "email": "nehasunil588@gmail.com",
+    "phone": "7022757878",
+    "data_source": "SEEL student login-details workbook"
+  },
+  {
+    "student_number": 18,
+    "usn": "1TJ23DS018",
+    "full_name": "P. SNEHA",
+    "college": "T. John Institute of Technology",
+    "department": "DS",
+    "email": "palyamsneha27@gmail.com",
+    "phone": "9392877963",
+    "data_source": "SEEL student login-details workbook"
+  },
+  {
+    "student_number": 19,
+    "usn": "1TJ23DS019",
+    "full_name": "PALLAVI R.",
+    "college": "T. John Institute of Technology",
+    "department": "DS",
+    "email": "pallavirpallavir20@gmail.com",
+    "phone": "7975582202",
+    "data_source": "SEEL student login-details workbook"
+  },
+  {
+    "student_number": 20,
+    "usn": "1TJ23DS020",
+    "full_name": "PANKAJ H. P.",
+    "college": "T. John Institute of Technology",
+    "department": "DS",
+    "email": "pankajhp7019@gmail.com",
+    "phone": "7019795126",
+    "data_source": "SEEL student login-details workbook"
+  },
+  {
+    "student_number": 21,
+    "usn": "1TJ23DS021",
+    "full_name": "PAVAN R.",
+    "college": "T. John Institute of Technology",
+    "department": "DS",
+    "email": "pavanrpavanr567@gmail.com",
+    "phone": "8317497526",
+    "data_source": "SEEL student login-details workbook"
+  },
+  {
+    "student_number": 22,
+    "usn": "1TJ23DS022",
+    "full_name": "PIJUSH HAZRA",
+    "college": "T. John Institute of Technology",
+    "department": "DS",
+    "email": "hazrapijush60@gmail.com",
+    "phone": "9606741049",
+    "data_source": "SEEL student login-details workbook"
+  },
+  {
+    "student_number": 23,
+    "usn": "1TJ23DS023",
+    "full_name": "PRIYANKA S PAI",
+    "college": "T. John Institute of Technology",
+    "department": "DS",
+    "email": "priyanka.pai1304@gmail.com",
+    "phone": "7019571208",
+    "data_source": "SEEL student login-details workbook"
+  },
+  {
+    "student_number": 24,
+    "usn": "1TJ23DS024",
+    "full_name": "RISHI MOHAN",
+    "college": "T. John Institute of Technology",
+    "department": "DS",
+    "email": "mohanrishi432@gmail.com",
+    "phone": "8340229959",
+    "data_source": "SEEL student login-details workbook"
+  },
+  {
+    "student_number": 25,
+    "usn": "1TJ23DS025",
+    "full_name": "S. R. ABHILASH",
+    "college": "T. John Institute of Technology",
+    "department": "DS",
+    "email": "abhilashsiriger01@gmail.com",
+    "phone": "9550599621",
+    "data_source": "SEEL student login-details workbook"
+  },
+  {
+    "student_number": 26,
+    "usn": "1TJ23DS026",
+    "full_name": "SHASHI KUMAR M.",
+    "college": "T. John Institute of Technology",
+    "department": "DS",
+    "email": "shashisfs2020@gmail.com",
+    "phone": "8310498316",
+    "data_source": "SEEL student login-details workbook"
+  },
+  {
+    "student_number": 27,
+    "usn": "1TJ23DS027",
+    "full_name": "SHWETHA",
+    "college": "T. John Institute of Technology",
+    "department": "DS",
+    "email": "shwethaladdekar21@gmail.com",
+    "phone": "8867622138",
+    "data_source": "SEEL student login-details workbook"
+  },
+  {
+    "student_number": 28,
+    "usn": "1TJ23DS028",
+    "full_name": "SUDAR GANESH S",
+    "college": "T. John Institute of Technology",
+    "department": "DS",
+    "email": "sudarganesh735@gmail.com",
+    "phone": "9008768412",
+    "data_source": "SEEL student login-details workbook"
+  },
+  {
+    "student_number": 29,
+    "usn": "1TJ23DS029",
+    "full_name": "SYEDA UMME KULSOOM",
+    "college": "T. John Institute of Technology",
+    "department": "DS",
+    "email": "syedauk2602@gmail.com",
+    "phone": "9886900827",
+    "data_source": "SEEL student login-details workbook"
+  },
+  {
+    "student_number": 30,
+    "usn": "1TJ23DS031",
+    "full_name": "VISHAL CHAUHAN",
+    "college": "T. John Institute of Technology",
+    "department": "DS",
+    "email": "vc7332166@gmail.com",
+    "phone": "9678441073",
+    "data_source": "SEEL student login-details workbook"
+  }
+]

@@ -266,8 +266,8 @@ export function DashboardLayout({ children }: { children: React.ReactNode }) {
     <>
       {/* Logo */}
       <div className="flex items-center gap-3 px-4 py-5 border-b border-sidebar-border">
-        <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-sidebar-primary">
-          <GraduationCap className="h-5 w-5 text-sidebar-primary-foreground" />
+        <div className="flex h-9 w-9 items-center justify-center rounded-lg overflow-hidden">
+          <img src="/skillintel-logo.png" alt="SkillIntel Logo" className="h-full w-full object-cover" />
         </div>
         {!collapsed && (
           <div className="overflow-hidden flex-1">

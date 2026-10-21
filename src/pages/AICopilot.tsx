@@ -13,7 +13,8 @@ import { Bot, Send, User, Sparkles, Brain, Target, BookOpen, FileText, TrendingU
 import ReactMarkdown from "react-markdown";
 
 const quickPrompts = [
-  { label: "Career guidance", prompt: "What career should I pursue?", icon: Target },
+  { label: "Verified Roster", prompt: "Show verified student roster", icon: User },
+  { label: "Data Science alignment", prompt: "How do I become a Data Scientist?", icon: Target },
   { label: "Skill gaps", prompt: "What skills am I missing?", icon: Brain },
   { label: "Find jobs", prompt: "Find jobs for me", icon: Search },
   { label: "Learning path", prompt: "Make me a personalized learning path", icon: BookOpen },
@@ -83,7 +84,7 @@ export default function AICopilot() {
 
     // Simulate typing delay
     setTimeout(() => {
-      const response = generateResponse(msg, student, data.skills);
+      const response = generateResponse(msg, student, data.skills, user?.role);
       const assistantMsg: CopilotMessage = {
         id: `msg-${Date.now()}-resp`,
         role: "assistant",

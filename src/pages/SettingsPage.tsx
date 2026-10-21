@@ -83,7 +83,7 @@ export default function SettingsPage() {
           <CardHeader><CardTitle className="font-display text-lg">System Info</CardTitle></CardHeader>
           <CardContent className="space-y-2 text-sm">
             <p><span className="text-muted-foreground">Platform:</span> SkillIntel v2.0</p>
-            <p><span className="text-muted-foreground">Backend:</span> Lovable Cloud (PostgreSQL + Edge Functions)</p>
+            <p><span className="text-muted-foreground">Backend:</span> Supabase (PostgreSQL + Edge Functions)</p>
             <p><span className="text-muted-foreground">Tables:</span> 11 normalized tables with RLS</p>
             <p><span className="text-muted-foreground">Auth:</span> JWT + RBAC (4 roles)</p>
             <p><span className="text-muted-foreground">Last Updated:</span> {new Date().toLocaleDateString()}</p>

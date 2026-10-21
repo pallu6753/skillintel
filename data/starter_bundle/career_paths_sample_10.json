@@ -1,0 +1,152 @@
+[
+  {
+    "path_id": "CP001",
+    "role_title": "Data Analyst",
+    "required_skills": [
+      "SQL",
+      "Excel",
+      "Power BI",
+      "statistics",
+      "data visualization"
+    ],
+    "min_cgpa": null,
+    "required_certifications": [],
+    "demand_score": null,
+    "source_type": "synthetic starter example"
+  },
+  {
+    "path_id": "CP002",
+    "role_title": "Data Engineer",
+    "required_skills": [
+      "SQL",
+      "data modeling",
+      "ETL",
+      "Python",
+      "data warehousing"
+    ],
+    "min_cgpa": null,
+    "required_certifications": [],
+    "demand_score": null,
+    "source_type": "synthetic starter example"
+  },
+  {
+    "path_id": "CP003",
+    "role_title": "Data Scientist",
+    "required_skills": [
+      "statistics",
+      "SQL",
+      "Python",
+      "machine learning",
+      "experimentation"
+    ],
+    "min_cgpa": null,
+    "required_certifications": [],
+    "demand_score": null,
+    "source_type": "synthetic starter example"
+  },
+  {
+    "path_id": "CP004",
+    "role_title": "Machine Learning Engineer",
+    "required_skills": [
+      "model evaluation",
+      "Python",
+      "ML pipelines",
+      "APIs",
+      "deployment"
+    ],
+    "min_cgpa": null,
+    "required_certifications": [],
+    "demand_score": null,
+    "source_type": "synthetic starter example"
+  },
+  {
+    "path_id": "CP005",
+    "role_title": "Full Stack Software Engineer",
+    "required_skills": [
+      "JavaScript",
+      "React",
+      "API design",
+      "SQL",
+      "Git"
+    ],
+    "min_cgpa": null,
+    "required_certifications": [],
+    "demand_score": null,
+    "source_type": "synthetic starter example"
+  },
+  {
+    "path_id": "CP006",
+    "role_title": "Backend Developer",
+    "required_skills": [
+      "API design",
+      "SQL",
+      "authentication",
+      "testing",
+      "Git"
+    ],
+    "min_cgpa": null,
+    "required_certifications": [],
+    "demand_score": null,
+    "source_type": "synthetic starter example"
+  },
+  {
+    "path_id": "CP007",
+    "role_title": "Frontend Developer",
+    "required_skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "accessibility"
+    ],
+    "min_cgpa": null,
+    "required_certifications": [],
+    "demand_score": null,
+    "source_type": "synthetic starter example"
+  },
+  {
+    "path_id": "CP008",
+    "role_title": "QA Automation Engineer",
+    "required_skills": [
+      "test design",
+      "automation",
+      "API testing",
+      "SQL",
+      "CI/CD"
+    ],
+    "min_cgpa": null,
+    "required_certifications": [],
+    "demand_score": null,
+    "source_type": "synthetic starter example"
+  },
+  {
+    "path_id": "CP009",
+    "role_title": "Cloud / DevOps Engineer",
+    "required_skills": [
+      "Linux",
+      "CI/CD",
+      "containers",
+      "cloud IAM",
+      "monitoring"
+    ],
+    "min_cgpa": null,
+    "required_certifications": [],
+    "demand_score": null,
+    "source_type": "synthetic starter example"
+  },
+  {
+    "path_id": "CP010",
+    "role_title": "Cybersecurity Analyst",
+    "required_skills": [
+      "networking",
+      "security fundamentals",
+      "SIEM",
+      "incident response",
+      "scripting"
+    ],
+    "min_cgpa": null,
+    "required_certifications": [],
+    "demand_score": null,
+    "source_type": "synthetic starter example"
+  }
+]

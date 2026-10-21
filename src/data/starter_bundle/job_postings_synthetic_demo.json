@@ -1,0 +1,35 @@
+[
+  {
+    "job_id": "JOB-DEMO-001",
+    "title": "Graduate Data Analyst (sample)",
+    "company": "Example Company — synthetic",
+    "source_platform": "demo",
+    "location": "Bengaluru, India (sample)",
+    "required_skills": [
+      "SQL",
+      "Excel",
+      "data visualization"
+    ],
+    "application_url": null,
+    "source_url": null,
+    "last_verified_at": null,
+    "status": "demo_only"
+  },
+  {
+    "job_id": "JOB-DEMO-002",
+    "title": "Junior Software Engineer (sample)",
+    "company": "Example Company — synthetic",
+    "source_platform": "demo",
+    "location": "India (sample)",
+    "required_skills": [
+      "programming fundamentals",
+      "SQL",
+      "Git",
+      "testing"
+    ],
+    "application_url": null,
+    "source_url": null,
+    "last_verified_at": null,
+    "status": "demo_only"
+  }
+]

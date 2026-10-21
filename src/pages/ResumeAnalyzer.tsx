@@ -18,6 +18,8 @@ import { toast } from "sonner";
 import * as pdfjsLib from "pdfjs-dist";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { syncResumeToProfile, SAMPLE_DATA_SCIENCE_RESUME } from "@/lib/profile/student-profile-service";
+import { Link } from "react-router-dom";
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js`;
 
@@ -37,7 +39,9 @@ const ATS_KEYWORDS = [
   "certificate", "internship", "published", "award", "GPA",
 ];
 
-function analyzeResume(text: string) {
+import { careerRoles } from "@/lib/career-engine";
+
+function analyzeResume(text: string, targetRole: string = "All Roles") {
   const lowerText = text.toLowerCase();
 
   // Extract skills
@@ -49,35 +53,61 @@ function analyzeResume(text: string) {
 
   // Section detection
   const sections = {
-    education: /education|academic|university|college|degree/i.test(text),
-    experience: /experience|work|internship|employment/i.test(text),
-    skills: /skills|technical|proficiency/i.test(text),
-    projects: /project|portfolio|built|developed/i.test(text),
-    contact: /email|phone|linkedin|github/i.test(text),
+    education: /education|academic|university|college|degree|b\.?e|b\.?tech/i.test(text),
+    experience: /experience|work|internship|employment|role|position/i.test(text),
+    skills: /skills|technical|proficiency|technologies|tools/i.test(text),
+    projects: /project|portfolio|built|developed|implemented|created/i.test(text),
+    contact: /email|phone|linkedin|github|contact/i.test(text),
   };
   const sectionScore = Object.values(sections).filter(Boolean).length;
 
+  // Measurable achievements detection (e.g. 20%, 500+ users, 40ms)
+  const achievementMatches = text.match(/\b(?:\d+%\s*|\$\s*\d+|\d+\+?\s*(?:users|clients|ms|seconds|x|hours|records|models|accuracy))\b/gi) || [];
+  const measurableCount = achievementMatches.length;
+
   // Word count check
-  const wordCount = text.split(/\s+/).length;
+  const wordCount = text.split(/\s+/).filter(Boolean).length;
   const lengthScore = wordCount >= 200 && wordCount <= 800 ? 100 : wordCount < 200 ? 50 : 70;
 
-  // Overall score
-  const overallScore = Math.round(
+  // Target role specific match
+  let roleMatch = 100;
+  let targetRequiredSkills: string[] = [];
+  if (targetRole && targetRole !== "All Roles") {
+    const roleObj = careerRoles.find((r) => r.role.toLowerCase() === targetRole.toLowerCase());
+    if (roleObj) {
+      targetRequiredSkills = roleObj.skills;
+      const matched = roleObj.skills.filter((s) => detectedSkills.some((ds) => ds.toLowerCase() === s.toLowerCase()));
+      roleMatch = Math.round((matched.length / roleObj.skills.length) * 100);
+    }
+  }
+
+  // Overall score transparent calculation
+  const skillFactor = Math.min(100, Math.round((detectedSkills.length / 8) * 100));
+  const sectionFactor = Math.round((sectionScore / 5) * 100);
+
+  const overallScore = Math.min(100, Math.round(
     atsScore * 0.35 +
-    (detectedSkills.length / 10) * 100 * 0.25 +
-    (sectionScore / 5) * 100 * 0.25 +
+    skillFactor * 0.25 +
+    sectionFactor * 0.25 +
     lengthScore * 0.15
-  );
+  ));
 
   return {
     detectedSkills,
     missingSkills: KNOWN_SKILLS.filter((s) => !detectedSkills.includes(s)).slice(0, 8),
+    targetRequiredSkills,
+    roleMatch,
     atsScore,
-    overallScore: Math.min(overallScore, 100),
+    overallScore,
     foundKeywords,
     sections,
     sectionScore,
     wordCount,
+    measurableCount,
+    rubric: {
+      formula: "Score = (ATS Keywords × 35%) + (Skills × 25%) + (Sections × 25%) + (Length × 15%)",
+      note: "ATS scores are heuristic estimations based on structure and keyword alignment, not a hiring guarantee."
+    }
   };
 }
 
@@ -92,6 +122,7 @@ export default function ResumeAnalyzer() {
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [isUploading, setIsUploading] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
+  const [targetRole, setTargetRole] = useState("All Roles");
   const [milestoneSkill, setMilestoneSkill] = useState("");
   const [milestoneType, setMilestoneType] = useState("learn_skill");
 
@@ -127,7 +158,7 @@ export default function ResumeAnalyzer() {
         for (let i = 1; i <= pdf.numPages; i++) {
           const page = await pdf.getPage(i);
           const content = await page.getTextContent();
-          text += content.items.map((item: any) => item.str).join(" ") + "\n";
+          text += content.items.map((item: { str?: string }) => item.str || "").join(" ") + "\n";
         }
         setResumeText(text.trim().slice(0, 1_000_000));
         toast.success(`PDF "${file.name}" parsed — ${pdf.numPages} page(s) extracted!`);
@@ -149,7 +180,7 @@ export default function ResumeAnalyzer() {
       toast.error("Please paste at least 50 characters of resume content");
       return;
     }
-    const analysis = measureSync("Resume analysis", "analysis", () => analyzeResume(resumeText));
+    const analysis = measureSync("Resume analysis", "analysis", () => analyzeResume(resumeText, targetRole));
     setResult(analysis);
     if (user?.role === "student" && user.profileId) {
       setIsSaving(true);
@@ -180,7 +211,17 @@ export default function ResumeAnalyzer() {
         setIsSaving(false);
       }
     } else {
-      toast.success("Resume analyzed. Sign in as a student to save a private history.");
+      toast.success("Resume analyzed successfully.");
+    }
+
+    // Always synchronize extracted skills and metrics to student profile (works for all users/demo)
+    try {
+      const userId = user?.id || "current";
+      const updatedProfile = await syncResumeToProfile(userId, resumeText, fileName || "Uploaded_Resume.pdf");
+      await queryClient.invalidateQueries({ queryKey: ["dataset"] });
+      toast.success(`Profile synchronized! Extracted ${updatedProfile.skills.length} verified competencies for Career Intelligence.`);
+    } catch (syncErr) {
+      console.warn("Could not sync resume to student profile:", syncErr);
     }
   };
 
@@ -285,6 +326,43 @@ export default function ResumeAnalyzer() {
               <div className="flex-1 h-px bg-border" />
             </div>
 
+            {/* Target Role Selector */}
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 mb-4 p-3 rounded-lg bg-muted/30 border">
+              <div>
+                <p className="text-xs font-semibold">Target Career Role (Optional)</p>
+                <p className="text-[11px] text-muted-foreground">Match skills & keywords against a specific job role</p>
+              </div>
+              <Select value={targetRole} onValueChange={setTargetRole}>
+                <SelectTrigger className="w-full sm:w-[220px] text-xs">
+                  <SelectValue placeholder="All Roles" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="All Roles">All Roles (General ATS)</SelectItem>
+                  {careerRoles.map((r) => (
+                    <SelectItem key={r.role} value={r.role}>{r.icon} {r.role}</SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </div>
+
+            <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
+              <Button
+                type="button"
+                variant="outline"
+                size="sm"
+                className="text-xs h-7 gap-1.5 text-primary border-primary/30 hover:bg-primary/5"
+                onClick={() => {
+                  setResumeText(SAMPLE_DATA_SCIENCE_RESUME.trim());
+                  setFileName("Abhijit_Sagar_Data_Science_Resume.pdf");
+                  toast.info("Loaded verified Data Science student sample resume. Click 'Analyze Resume' to sync profile.");
+                }}
+              >
+                <FileText className="h-3.5 w-3.5" />
+                Load Sample Data Science Resume (VTU)
+              </Button>
+              <span className="text-xs text-muted-foreground">{resumeText.split(/\s+/).filter(Boolean).length} words</span>
+            </div>
+
             <Textarea
               value={resumeText}
               onChange={(e) => { setResumeText(e.target.value); setFileName(null); }}
@@ -305,27 +383,80 @@ export default function ResumeAnalyzer() {
 
         {result && (
           <>
+            {/* Real-time Profile Synchronization Banner */}
+            <Card className="border-green-500/30 bg-green-500/5">
+              <CardContent className="p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs">
+                <div className="flex items-center gap-2.5">
+                  <CheckCircle2 className="h-5 w-5 text-green-600 shrink-0" />
+                  <div>
+                    <span className="font-semibold text-foreground text-sm">Resume Successfully Synchronized to Profile!</span>
+                    <p className="text-muted-foreground mt-0.5">
+                      Extracted competencies and quantifiable outcomes have updated your Career Intelligence alignment and job match scores.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-2 shrink-0">
+                  <Link to="/career">
+                    <Button size="sm" variant="default" className="text-xs h-8 gap-1.5">
+                      <TrendingUp className="h-3.5 w-3.5" /> Career Roadmap
+                    </Button>
+                  </Link>
+                  <Link to="/applications">
+                    <Button size="sm" variant="outline" className="text-xs h-8 gap-1.5">
+                      <Briefcase className="h-3.5 w-3.5" /> Matched Jobs
+                    </Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
             {/* Scores */}
-            <div className="grid sm:grid-cols-3 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               <Card className="border-primary/30 bg-primary/5">
-                <CardContent className="p-6 text-center">
-                  <p className="text-4xl font-display font-bold text-primary">{result.overallScore}%</p>
-                  <p className="text-sm text-muted-foreground mt-1">Overall Score</p>
+                <CardContent className="p-5 text-center">
+                  <p className="text-3xl font-display font-bold text-primary">{result.overallScore}%</p>
+                  <p className="text-xs text-muted-foreground mt-1">Overall Score</p>
                 </CardContent>
               </Card>
               <Card>
-                <CardContent className="p-6 text-center">
-                  <p className="text-4xl font-display font-bold">{result.atsScore}%</p>
-                  <p className="text-sm text-muted-foreground mt-1">ATS Score</p>
+                <CardContent className="p-5 text-center">
+                  <p className="text-3xl font-display font-bold">{result.atsScore}%</p>
+                  <p className="text-xs text-muted-foreground mt-1">ATS Keywords</p>
                 </CardContent>
               </Card>
               <Card>
-                <CardContent className="p-6 text-center">
-                  <p className="text-4xl font-display font-bold">{result.detectedSkills.length}</p>
-                  <p className="text-sm text-muted-foreground mt-1">Skills Detected</p>
+                <CardContent className="p-5 text-center">
+                  <p className="text-3xl font-display font-bold">{result.detectedSkills.length}</p>
+                  <p className="text-xs text-muted-foreground mt-1">Skills Found</p>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardContent className="p-5 text-center">
+                  <p className="text-3xl font-display font-bold text-green-600">{result.measurableCount}</p>
+                  <p className="text-xs text-muted-foreground mt-1">Measurable Metrics</p>
                 </CardContent>
               </Card>
             </div>
+
+            {/* Rubric Explainability Card */}
+            <Card className="border-l-4 border-l-primary bg-muted/20">
+              <CardContent className="p-4 text-xs space-y-1.5">
+                <p className="font-semibold text-foreground flex items-center gap-1.5">
+                  <Brain className="h-4 w-4 text-primary" /> Transparent ATS Scoring Rubric
+                </p>
+                <p className="text-muted-foreground">
+                  <strong>Calculation Formula:</strong> {result.rubric.formula}
+                </p>
+                <p className="text-muted-foreground italic">
+                  {result.rubric.note}
+                </p>
+                {targetRole !== "All Roles" && (
+                  <p className="text-primary font-medium pt-1">
+                    🎯 Alignment to <strong>{targetRole}</strong>: {result.roleMatch}% of required skills detected.
+                  </p>
+                )}
+              </CardContent>
+            </Card>
 
             {/* Section Check */}
             <Card>

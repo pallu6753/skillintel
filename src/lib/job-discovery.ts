@@ -36,6 +36,33 @@ export function getJobSearchLinks(role: string): JobSearchLink[] {
   ];
 }
 
+export interface JobPortalLinks {
+  linkedIn: string;
+  indeed: string;
+  googleJobs: string;
+  naukri: string;
+  companyPortal: string;
+}
+
+export function getDirectJobApplyLinks(
+  role: string,
+  company: string,
+  location: string = "India",
+  directApplyUrl?: string
+): JobPortalLinks {
+  const query = `${role} ${company}`.trim();
+  const encodedQuery = encodeURIComponent(query);
+  const encodedLocation = encodeURIComponent(location);
+
+  return {
+    linkedIn: `https://www.linkedin.com/jobs/search/?keywords=${encodedQuery}&location=${encodedLocation}`,
+    indeed: `https://www.indeed.com/jobs?q=${encodedQuery.replace(/%20/g, "+")}&l=${encodedLocation.replace(/%20/g, "+")}`,
+    googleJobs: `https://www.google.com/search?q=${encodedQuery}+jobs+apply&ibp=htl;jobs`,
+    naukri: `https://www.naukri.com/${role.toLowerCase().replace(/\s+/g, "-")}-jobs`,
+    companyPortal: directApplyUrl || `https://www.google.com/search?q=${encodeURIComponent(company + " careers " + role + " apply")}`,
+  };
+}
+
 export function isJobReady(readinessScore: number): boolean {
   return readinessScore >= 70;
 }

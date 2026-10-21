@@ -16,6 +16,7 @@ import CodingPractice from "./pages/CodingPractice";
 import InterviewSimulator from "./pages/InterviewSimulator";
 import SkillGap from "./pages/SkillGap";
 import CareerIntelligence from "./pages/CareerIntelligence";
+import DataTrustCenter from "./pages/DataTrustCenter";
 import StudyHabits from "./pages/StudyHabits";
 import Notifications from "./pages/Notifications";
 import StudentsPage from "./pages/StudentsPage";
@@ -36,6 +37,8 @@ import ActivityLog from "./pages/ActivityLog";
 import Documentation from "./pages/Documentation";
 import SystemOverview from "./pages/SystemOverview";
 import PerformancePage from "./pages/PerformancePage";
+import JobDetails from "./pages/JobDetails";
+import ApplicationWorkspace from "./pages/ApplicationWorkspace";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -69,6 +72,9 @@ const AppRoutes = () => (
     <Route path="/interview-simulator" element={<ProtectedRoute><InterviewSimulator /></ProtectedRoute>} />
     <Route path="/skill-gap" element={<ProtectedRoute><SkillGap /></ProtectedRoute>} />
     <Route path="/career" element={<ProtectedRoute><CareerIntelligence /></ProtectedRoute>} />
+    <Route path="/trust-center" element={<ProtectedRoute><DataTrustCenter /></ProtectedRoute>} />
+    <Route path="/job/:id" element={<ProtectedRoute><JobDetails /></ProtectedRoute>} />
+    <Route path="/application-workspace/:id" element={<ProtectedRoute><ApplicationWorkspace /></ProtectedRoute>} />
     <Route path="/study-habits" element={<ProtectedRoute><StudyHabits /></ProtectedRoute>} />
     <Route path="/notifications" element={<ProtectedRoute><Notifications /></ProtectedRoute>} />
     <Route path="/students" element={<ProtectedRoute><StudentsPage /></ProtectedRoute>} />

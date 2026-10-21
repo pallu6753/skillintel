@@ -1,0 +1,26 @@
+[
+  {
+    "interview_id": "INT-DEMO-001",
+    "candidate_id": "SYNTH-001",
+    "module_type": "Behavioral",
+    "prompt": "Tell me about a time you had to learn something quickly.",
+    "transcript": "Synthetic demonstration transcript: I identified the task, broke it into smaller steps, practiced with a small example, and asked for feedback.",
+    "relevance_score": null,
+    "clarity_score": null,
+    "technical_accuracy_score": null,
+    "feedback_summary": "Trainer should score using the approved rubric; scores are intentionally blank.",
+    "source_type": "synthetic demonstration only"
+  },
+  {
+    "interview_id": "INT-DEMO-002",
+    "candidate_id": "SYNTH-002",
+    "module_type": "Technical",
+    "prompt": "Explain how an SQL INNER JOIN works.",
+    "transcript": "Synthetic demonstration transcript: An INNER JOIN returns rows with matching join keys in both joined tables.",
+    "relevance_score": null,
+    "clarity_score": null,
+    "technical_accuracy_score": null,
+    "feedback_summary": "Trainer should score using the approved rubric; scores are intentionally blank.",
+    "source_type": "synthetic demonstration only"
+  }
+]

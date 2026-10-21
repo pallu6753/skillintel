@@ -1,3 +1,5 @@
+import { starterBundle } from "./ai/starter-bundle-service";
+
 export interface CodingChallenge {
   id: string;
   title: string;
@@ -10,7 +12,22 @@ export interface CodingChallenge {
   testCases: string[];
 }
 
+const bundleCodingChallenges: CodingChallenge[] = starterBundle.codingProblems
+  .filter((p) => p.problem_id === "CPROB002")
+  .map((p) => ({
+    id: p.problem_id,
+    title: p.title,
+    description: p.description,
+    difficulty: (p.difficulty as "Easy" | "Medium" | "Hard") || "Easy",
+    topic: p.domain,
+    starterCode: p.starter_code.sql || "-- Write SQL query here",
+    solution: typeof p.expected_output === "string" ? p.expected_output : JSON.stringify(p.expected_output),
+    explanation: p.editorial_summary || "",
+    testCases: ["customer_id grouped aggregation", "ORDER BY customer_id ASC"],
+  }));
+
 export const codingChallenges: CodingChallenge[] = [
+  ...bundleCodingChallenges,
   // Arrays
   {
     id: "arr1",

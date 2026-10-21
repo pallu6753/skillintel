@@ -11,7 +11,7 @@ const layers = [
     items: ["React 18 SPA", "Tailwind CSS Design System", "Recharts Visualizations", "Role-Based UI Routing"],
   },
   {
-    title: "API Layer (Lovable Cloud)",
+    title: "API Layer (Supabase)",
     icon: Globe,
     color: "bg-accent/10 text-accent",
     items: ["RESTful Endpoints", "Edge Functions", "JWT Authentication", "Row-Level Security"],

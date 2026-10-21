@@ -1,3 +1,5 @@
+import { starterBundle } from "./ai/starter-bundle-service";
+
 export interface QuizQuestion {
   id: string;
   question: string;
@@ -9,7 +11,19 @@ export interface QuizQuestion {
   explanation: string;
 }
 
+const bundleQuestions: QuizQuestion[] = starterBundle.quizQuestions.map((q) => ({
+  id: q.question_id,
+  question: q.question,
+  options: q.options,
+  correctAnswer: q.correct_option_index,
+  category: ["Data Structures", "Algorithms", "Operating Systems", "Computer Networks"].includes(q.category) ? "academic" : "skill",
+  topic: q.category,
+  difficulty: (q.difficulty.toLowerCase() as "easy" | "medium" | "hard") || "medium",
+  explanation: q.explanation,
+}));
+
 export const questionBank: QuizQuestion[] = [
+  ...bundleQuestions,
   // Python
   { id: "py1", question: "What is the output of print(type([])) in Python?", options: ["<class 'list'>", "<class 'tuple'>", "<class 'dict'>", "<class 'set'>"], correctAnswer: 0, category: "skill", topic: "Python", difficulty: "easy", explanation: "[] creates an empty list, so type([]) returns <class 'list'>." },
   { id: "py2", question: "What does 'self' refer to in a Python class?", options: ["The class itself", "The current instance", "A global variable", "The parent class"], correctAnswer: 1, category: "skill", topic: "Python", difficulty: "easy", explanation: "'self' refers to the current instance of the class, allowing access to its attributes and methods." },

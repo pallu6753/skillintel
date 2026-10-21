@@ -1,0 +1,11 @@
+﻿path_id,role_title,required_skills,min_cgpa,required_certifications,demand_score,source_type
+CP001,Data Analyst,"['SQL', 'Excel', 'Power BI', 'statistics', 'data visualization']",,[],,synthetic starter example
+CP002,Data Engineer,"['SQL', 'data modeling', 'ETL', 'Python', 'data warehousing']",,[],,synthetic starter example
+CP003,Data Scientist,"['statistics', 'SQL', 'Python', 'machine learning', 'experimentation']",,[],,synthetic starter example
+CP004,Machine Learning Engineer,"['model evaluation', 'Python', 'ML pipelines', 'APIs', 'deployment']",,[],,synthetic starter example
+CP005,Full Stack Software Engineer,"['JavaScript', 'React', 'API design', 'SQL', 'Git']",,[],,synthetic starter example
+CP006,Backend Developer,"['API design', 'SQL', 'authentication', 'testing', 'Git']",,[],,synthetic starter example
+CP007,Frontend Developer,"['HTML', 'CSS', 'JavaScript', 'React', 'accessibility']",,[],,synthetic starter example
+CP008,QA Automation Engineer,"['test design', 'automation', 'API testing', 'SQL', 'CI/CD']",,[],,synthetic starter example
+CP009,Cloud / DevOps Engineer,"['Linux', 'CI/CD', 'containers', 'cloud IAM', 'monitoring']",,[],,synthetic starter example
+CP010,Cybersecurity Analyst,"['networking', 'security fundamentals', 'SIEM', 'incident response', 'scripting']",,[],,synthetic starter example

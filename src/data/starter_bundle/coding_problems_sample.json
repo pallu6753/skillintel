@@ -1,0 +1,82 @@
+[
+  {
+    "problem_id": "CPROB001",
+    "title": "Two Sum",
+    "domain": "Arrays & Hashing",
+    "difficulty": "Easy",
+    "description": "Given an integer array nums and an integer target, return the indices of two distinct elements whose values add to target. Assume exactly one valid answer.",
+    "input_example": {
+      "nums": [
+        2,
+        7,
+        11,
+        15
+      ],
+      "target": 9
+    },
+    "expected_output": [
+      0,
+      1
+    ],
+    "visible_test_cases": [
+      {
+        "input": {
+          "nums": [
+            2,
+            7,
+            11,
+            15
+          ],
+          "target": 9
+        },
+        "expected_output": [
+          0,
+          1
+        ]
+      },
+      {
+        "input": {
+          "nums": [
+            3,
+            2,
+            4
+          ],
+          "target": 6
+        },
+        "expected_output": [
+          1,
+          2
+        ]
+      }
+    ],
+    "hidden_test_cases": [],
+    "expected_time_complexity": "O(n) expected with a hash map",
+    "expected_space_complexity": "O(n)",
+    "starter_code": {
+      "python": "def two_sum(nums, target):\n    pass",
+      "javascript": "function twoSum(nums, target) {\n  // implement\n}"
+    },
+    "editorial_summary": "Track previously seen values in a hash map and look up target - current value.",
+    "source_type": "original demonstration problem; verify before publishing"
+  },
+  {
+    "problem_id": "CPROB002",
+    "title": "Count SQL Orders",
+    "domain": "SQL",
+    "difficulty": "Easy",
+    "description": "Given an orders table with order_id and customer_id, write a query that returns the number of orders per customer, sorted by customer_id.",
+    "input_example": {
+      "table": "orders(order_id, customer_id)"
+    },
+    "expected_output": "SELECT customer_id, COUNT(*) AS order_count FROM orders GROUP BY customer_id ORDER BY customer_id;",
+    "visible_test_cases": [],
+    "hidden_test_cases": [],
+    "expected_time_complexity": null,
+    "expected_space_complexity": null,
+    "starter_code": {
+      "sql": "SELECT customer_id, COUNT(*) AS order_count\nFROM orders\nGROUP BY customer_id\nORDER BY customer_id;"
+    },
+    "editorial_summary": "Group rows by customer_id and aggregate with COUNT(*).",
+    "source_type": "original demonstration problem; verify before publishing"
+  }
+]

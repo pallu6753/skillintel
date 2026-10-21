@@ -1,0 +1,51 @@
+[
+  {
+    "resume_id": "RES-DEMO-001",
+    "candidate_name": "Synthetic Candidate A",
+    "extracted_skills": [
+      "SQL",
+      "Excel",
+      "Power BI"
+    ],
+    "experience_months": 0,
+    "education_history": [
+      {
+        "degree": "B.E. (synthetic example)",
+        "field": "Data Science",
+        "status": "sample only"
+      }
+    ],
+    "ats_score": null,
+    "keyword_density": null,
+    "formatting_issues": [
+      "Sample placeholder: replace with parser output"
+    ],
+    "source_type": "synthetic example",
+    "consent_status": "not a real candidate; demo only"
+  },
+  {
+    "resume_id": "RES-DEMO-002",
+    "candidate_name": "Synthetic Candidate B",
+    "extracted_skills": [
+      "JavaScript",
+      "React",
+      "SQL",
+      "Git"
+    ],
+    "experience_months": 6,
+    "education_history": [
+      {
+        "degree": "B.E. (synthetic example)",
+        "field": "Computer Science",
+        "status": "sample only"
+      }
+    ],
+    "ats_score": null,
+    "keyword_density": null,
+    "formatting_issues": [
+      "Sample placeholder: replace with parser output"
+    ],
+    "source_type": "synthetic example",
+    "consent_status": "not a real candidate; demo only"
+  }
+]
