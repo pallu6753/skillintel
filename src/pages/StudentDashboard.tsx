@@ -88,9 +88,7 @@ export default function StudentDashboard() {
     );
   }
 
-  const rawStudent = user?.profileId
-    ? data.students.find((s) => s.id === user.profileId)
-    : null;
+  const rawStudent = (user?.profileId ? data.students.find((s) => s.id === user.profileId) : null) || data.students.find((s) => s.email?.toLowerCase() === user?.email?.toLowerCase()) || data.students[0];
 
   // Enrich sparse demo profile with plausible random-but-stable data
   const rand = (min: number, max: number) => Math.floor(min + Math.random() * (max - min));
@@ -465,3 +463,4 @@ export default function StudentDashboard() {
     </DashboardLayout>
   );
 }
+

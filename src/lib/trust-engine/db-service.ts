@@ -84,17 +84,7 @@ export async function persistProcessingResult(jobId: string, result: any) {
 export async function fetchTrustedJobs() {
   // Fetch from the materialized view (or join if view isn't available)
   // For the sake of the client mapping, we'll join the raw/cleaned/score tables
-  const { data, error } = await supabase
-    .from('raw_job_records')
-    .select(`
-      *,
-      job_cleaning_results(*),
-      job_quality_scores(*),
-      job_duplicates(*)
-    `)
-    // Filter directly on the joined tables to match the "trusted_jobs" view logic
-    .eq('job_quality_scores.verification_status', 'VERIFIED')
-    .neq('job_duplicates.is_duplicate', true);
+  let data = null; let error = null; try { const queryPromise = supabase.from("raw_job_records").select("*, job_cleaning_results(*), job_quality_scores(*), job_duplicates(*)").eq("job_quality_scores.verification_status", "VERIFIED").neq("job_duplicates.is_duplicate", true); const timeoutPromise = new Promise<any>((res) => setTimeout(() => res({ data: null, error: new Error("timeout") }), 1000)); const res = await Promise.race([queryPromise, timeoutPromise]); data = res.data; error = res.error; } catch (e) { error = e; }
 
   const verifiedDefaultJobs = [
     {
@@ -233,3 +223,4 @@ export async function fetchLineage(jobId: string) {
         score
     };
 }
+

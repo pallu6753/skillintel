@@ -31,7 +31,7 @@ export default function Login() {
   const [fullName, setFullName] = useState("");
   const [submitting, setSubmitting] = useState(false);
   const [demoLoading, setDemoLoading] = useState<string | null>(null);
-  const { login, signup, user } = useAuth();
+  const { login, signup, loginOfflineDemo, user } = useAuth();
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
 
@@ -61,20 +61,21 @@ export default function Login() {
     setSubmitting(true);
 
     if (isSignup) {
-      const { error } = await signup(email, password, fullName || email.split("@")[0], selectedRole);
+      const { error, isOfflineDemo } = await signup(email, password, fullName || email.split("@")[0], selectedRole);
       if (error) {
         toast.error(error);
       } else {
-        toast.success("Account created! Signing in...");
+        toast.success(isOfflineDemo ? "Signed in (Offline Mode)" : "Account created! Signing in...");
         navigate(getRoleDashboard(selectedRole));
       }
     } else {
-      const { error } = await login(email, password, selectedRole);
+      const { error, isOfflineDemo } = await login(email, password, selectedRole);
       if (error) {
         toast.error(error);
       } else {
         console.log("Logged user:", email);
         console.log("Role:", selectedRole);
+        toast.success(isOfflineDemo ? "Signed in (Offline Mode)" : "Signed in successfully");
         navigate(getRoleDashboard(selectedRole));
       }
     }
@@ -86,26 +87,33 @@ export default function Login() {
     console.log("Logged user:", demo.email);
     console.log("Role:", demo.role);
 
-    const { error } = await login(demo.email, demo.password, demo.role);
-    if (error) {
-      // If login fails, try signup
-      const { error: signupError } = await signup(demo.email, demo.password, `Demo ${demo.label}`, demo.role);
-      if (signupError) {
-        toast.error(`Demo login failed: ${signupError}`);
-        setDemoLoading(null);
-        return;
+    try {
+      const res = await login(demo.email, demo.password, demo.role);
+      if (res?.error) {
+        // If login fails, try signup
+        const signupRes = await signup(demo.email, demo.password, `Demo ${demo.label}`, demo.role);
+        if (signupRes?.error) {
+          // If both fail (or Supabase project is paused/unreachable), activate offline demo mode
+          console.warn("Supabase auth unreachable, activating offline demo session:", signupRes.error);
+          loginOfflineDemo(demo.role, demo.email, `Demo ${demo.label}`);
+          toast.success(`Logged in as Demo ${demo.label}`);
+          navigate(getRoleDashboard(demo.role));
+          setDemoLoading(null);
+          return;
+        }
+        await login(demo.email, demo.password, demo.role);
       }
-      // After signup, try login again
-      const { error: retryError } = await login(demo.email, demo.password, demo.role);
-      if (retryError) {
-        toast.error("User role not assigned. Please try again.");
-        setDemoLoading(null);
-        return;
-      }
+
+      toast.success(`Logged in as Demo ${demo.label}`);
+      navigate(getRoleDashboard(demo.role));
+    } catch (err) {
+      console.warn("Demo login error, falling back to local demo session:", err);
+      loginOfflineDemo(demo.role, demo.email, `Demo ${demo.label}`);
+      toast.success(`Logged in as Demo ${demo.label}`);
+      navigate(getRoleDashboard(demo.role));
+    } finally {
+      setDemoLoading(null);
     }
-    toast.success(`Logged in as Demo ${demo.label}`);
-    navigate(getRoleDashboard(demo.role));
-    setDemoLoading(null);
   };
 
   return (
@@ -238,7 +246,7 @@ export default function Login() {
               ))}
             </div>
             <p className="text-[9px] text-[hsl(210,15%,40%)] text-center mt-2">
-              Demo accounts for testing • password: password123
+              Instant 1-Click Demo Login • Works online & offline without Supabase delay
             </p>
           </div>
         </div>
